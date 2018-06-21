@@ -1,7 +1,7 @@
-@if(count($favQuestions) > 0)
+@if(count($favorites) > 0)
 <div class="page-content page-content-user">
     <div class="user-questions">
-        @foreach($favQuestions as $thread)
+        @foreach($favorites as $thread)
         <article class="question user-question">
             <h3>
                 <span class="question-remove">
@@ -27,7 +27,7 @@
 </div>
 
 <div class="height_20"></div>
-{{ $favQuestions->links() }}
+{{ $favorites->links() }}
 <!-- End pagination -->
 <!-- if no questions -->
 @else

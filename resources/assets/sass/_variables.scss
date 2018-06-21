@@ -6,3 +6,10 @@ $body-bg: #f5f8fa;
 $font-family-sans-serif: "Raleway", sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+.recent-message {
+    background: lightblue;
+    transition: all 2s ease;
+}
+.swal2-popup {
+    font-size: 1.6rem !important;
+  }

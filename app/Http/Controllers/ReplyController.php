@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreReplyRequest;
+use App\Reply;
 use App\Thread;
+use Illuminate\Http\Request;
 
 class ReplyController extends Controller
 {
@@ -17,14 +19,30 @@ class ReplyController extends Controller
      * @param Thread $thread
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store($channelId, Thread $thread)
+    public function store($channelId, Thread $thread, StoreReplyRequest $request)
     {
         $thread->addReply([
-            'message' => request('message'),
+            'message' => $request->message,
             'channel_id' => $channelId,
             'user_id' => auth()->id()
         ]);
         session()->flash('success', 'Your comment post successfully !');
         return back();
+    }
+
+    public function destroy(Reply $reply)
+    {
+        $this->authorize('delete', $reply);
+        $reply->delete();
+        if (request()->expectsJson()) {
+            return response(['status' => 'Reply deleted']);
+        }
+        // session()->flash('success', 'Your comment deleted successfully !');
+        return back();
+    }
+
+    public function update(Reply $reply, Request $request)
+    {
+        $reply->update($request->all());
     }
 }

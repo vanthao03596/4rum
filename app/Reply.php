@@ -2,18 +2,21 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Traits\Favoritable;
+use App\Traits\RecordActivity;
+use Illuminate\Database\Eloquent\Model;
 
 class Reply extends Model
 {
-    use Favoritable;
+    use Favoritable,RecordActivity;
 
     protected $fillable = [
         'thread_id',
         'user_id',
         'message'
     ];
+    protected $appends = ['isFavorited'];
+
     protected static function boot()
     {
         parent::boot();
@@ -34,7 +37,7 @@ class Reply extends Model
 
     public function thread()
     {
-        return $this->belongsTo(Thread::Class, 'thread_id');
+        return $this->belongsTo(Thread::class, 'thread_id');
     }
 
     public function channel()
@@ -42,7 +45,8 @@ class Reply extends Model
         return $this->belongsTo(Channel::class, 'channel_id');
     }
 
-
-
-
+    public function path()
+    {
+        return $this->thread->path() . "#reply-{$this->id}";
+    }
 }

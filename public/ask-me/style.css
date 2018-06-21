@@ -1614,6 +1614,7 @@ div[class*="slider_shadow"]:before, div[class^="header_shadow"] {
 }
 .comment-body {
 	padding: 20px;
+	transition: all 2s ease;
 }
 .commentlist {
 	list-style: none;

@@ -13,7 +13,7 @@ class ObserverServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \App\Thread::observe(\App\Observers\ThreadsObservers::class);
+        // \App\Thread::observe(\App\Observers\ThreadsObservers::class);
     }
 
     /**

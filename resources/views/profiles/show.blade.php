@@ -1,13 +1,7 @@
 @extends('layouts.profile')
 @section('page-content')
-    @if(isset($questions))
-        @include('profiles.partials.questions')
-    @elseif (isset($favQuestions))
-        @include('profiles.partials.favorite_questions')
-    @elseif (isset($answers))
-        @include('profiles.partials.answers')
-    @elseif (isset($history))
-        @include('profiles.partials.points')
+    @if(Request::segment(3) != null)
+        @include('profiles.partials.' . Request::segment(3))
     @else
         @include('profiles.partials.table')
     @endif

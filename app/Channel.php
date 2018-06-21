@@ -13,7 +13,6 @@ class Channel extends Model
     protected static function boot()
     {
         parent::boot();
-
     }
 
     /**
@@ -39,5 +38,10 @@ class Channel extends Model
     public function getRouteKeyName()
     {
         return 'slug';
+    }
+
+    public function path()
+    {
+        return route('channels.index', $this->slug);
     }
 }

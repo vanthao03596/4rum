@@ -9,6 +9,7 @@
 	<title>Ask me – Responsive Questions and Answers Template</title>
 	<meta name="description" content="Ask me Responsive Questions and Answers Template">
 	<meta name="author" content="2code.info">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,10 +22,16 @@
 
 	<!-- Responsive Style -->
     <link rel="stylesheet" href="{{ asset('ask-me/css/responsive.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/default.min.css') }}">
+  <style type="text/css">
+    [v-cloak] { display:none; }
+  </style>
 	<!-- Favicons -->
-	<link rel="shortcut icon" href="{{ asset('images/favicon.png') }}">
-
+  <link rel="shortcut icon" href="{{ asset('ask-me/images/favicon.png') }}">
+  <script>
+    window.App = @json(auth()->user())
+  </script>
 </head>
 <body>
 
@@ -49,7 +56,10 @@
 
 	@include('partials.status')
 
-	@yield('content')<!-- End container -->
+  <div id="app">
+    @yield('content')
+    <!-- End container -->
+  </div>
 
 	@include('partials.footer')<!-- End footer-bottom -->
 </div><!-- End wrap -->
@@ -57,6 +67,8 @@
 <div class="go-up"><i class="icon-chevron-up"></i></div>
 
 <!-- js -->
+<script src="{{ asset('js/app.js') }}"></script>
+
 <script src="{{ asset('ask-me/js/jquery.min.js') }}"></script>
 <script src="{{ asset('ask-me/js/jquery-ui-1.10.3.custom.min.js') }}"></script>
 <script src="{{ asset('ask-me/js/jquery.easing.1.3.min.js') }}"></script>
@@ -74,6 +86,32 @@
 <script src="{{ asset('ask-me/js/tags.js') }}"></script>
 <script src="{{ asset('ask-me/js/jquery.bxslider.min.js') }}"></script>
 <script src="{{ asset('ask-me/js/custom.js') }}"></script>
+<script src="{{ asset('js/toastr.js') }}"></script>
+<script src="{{ asset('js/highlight.min.js') }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+@if(session()->get('success'))
+<script type="text/javascript">
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-bottom-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+    toastr.success('{{ session()->get('success' )}}', 'SYSTEM')
+</script>
+@endif
+@yield('js')
 <!-- End js -->
 
 </body>

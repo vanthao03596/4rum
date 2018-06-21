@@ -8,7 +8,7 @@
                 <li><a href="login.html" id="login-panel"><i class="icon-user"></i>Login Area</a></li>
                 @else
                 <li>
-                    <a href="#"><i class="icon-user"></i>{{ Auth::user()->name }}</a>
+                    <a href="{{ route('profile.show', Auth::user()->name) }}"><i class="icon-user"></i>{{ Auth::user()->name }}</a>
                 </li>
                 <li><a href=""><i class="icon-wrench"></i>Setting</a></li>
                 <li>

@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('content')
 @section('breadcrumbs', Breadcrumbs::render('thread', $thread))
+<thread-view :init-replies-count="{{ $thread->replies_count }}" inline-template>
 <section class="container main-content">
     <div class="row">
         <div class="col-md-9">
@@ -13,12 +14,12 @@
                 <div class="question-inner">
                     <div class="clearfix"></div>
                     <div class="question-desc">
-                        <p>{{ $thread->body }}</p>
+                                <p>{{ $thread->body }}</p>
                         @can('delete', $thread)
                             <form action="{{ route('threads.delete', [$thread->channel->slug, $thread->id]) }}" method="post">
                                 @csrf
                                 @method('delete')
-                                <button type="submit" class="button small red-button">Delete</a>
+                                <button type="submit" class="button small red-button">Delete</button>
                             </form>
                         @endcan
                     </div>
@@ -49,10 +50,11 @@
             <!-- End related-posts -->
             <div id="commentlist" class="page-content">
                     <div class="boxedtitle page-title">
-                        <h2>Answers ( <span class="color">{{ $thread->replies_count }}</span> )</h2>
+                        <h2>Answers ( <span class="color" v-text="repliesCount"></span> )</h2>
                     </div>
                     @if($thread->replies_count > 0)
-                        @include('threads.inc.comments.comment_list', ['collection' => $comments['root']])
+                        <replies :data="{{ $comments['root'] }}" @removed="repliesCount--"></replies>
+                        {{-- @include('threads.inc.comments.comment_list', ['collection' => $comments['root']]) --}}
                     @endif
             </div>
             <!-- End page-content -->
@@ -76,6 +78,21 @@
         </div><!-- End main -->
         @include('partials.sidebar')
         <!-- End sidebar -->
-    </div><!-- End row -->
-</section><!-- End container -->
+    </div>
+    <!-- End row -->
+</section>
+<!-- End container -->
+</thread-view>
+@stop
+@section('js')
+<script type="text/javascript">
+    var id = window.location.hash;
+    if(id !== '')
+    {
+        $(id).addClass("recent-message");
+        setTimeout(function(){
+            $(id).removeClass("recent-message");
+        }, 3000);
+    }
+</script>
 @stop
