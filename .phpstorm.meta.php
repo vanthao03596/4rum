@@ -3,7 +3,7 @@ namespace PHPSTORM_META {
 
    /**
     * PhpStorm Meta file, to provide autocomplete information for PhpStorm
-    * Generated on 2018-06-19 16:23:52.
+    * Generated on 2018-06-25 17:11:14.
     *
     * @author Barry vd. Heuvel <barryvdh@gmail.com>
     * @see https://github.com/barryvdh/laravel-ide-helper
@@ -42,6 +42,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -184,6 +185,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -326,6 +328,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -468,6 +471,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -610,6 +614,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -752,6 +757,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,
@@ -894,6 +900,7 @@ namespace PHPSTORM_META {
         'Barryvdh\Debugbar\LaravelDebugbar' => \Barryvdh\Debugbar\LaravelDebugbar::class,
         'command.debugbar.clear' => \Barryvdh\Debugbar\Console\ClearCommand::class,
         'image' => \Intervention\Image\ImageManager::class,
+        'Laravel\Scout\EngineManager' => \Laravel\Scout\EngineManager::class,
         'avatar' => \Laravolt\Avatar\Avatar::class,
         'avatar.generator' => \Laravolt\Avatar\Generator\DefaultGenerator::class,
         'command.ide-helper.generate' => \Barryvdh\LaravelIdeHelper\Console\GeneratorCommand::class,

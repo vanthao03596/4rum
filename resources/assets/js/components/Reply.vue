@@ -16,7 +16,7 @@
           <!-- @endauth -->
           <div class="comment-meta">
             <div class="date">
-              <i class="icon-time"></i>{{ data.created_at }}</div>
+              <i class="icon-time"></i>{{ ago }}</div>
           </div>
           <a class="comment-reply" href="single_question.html#">
             <i class="icon-reply"></i>Reply</a>
@@ -25,14 +25,15 @@
           <div v-if="editing">
             <textarea style="width: 100%;" v-model="message"></textarea>
             <button class="button mini blue-button" @click="update">Update</button>
-            <button class="button mini" @click="cancel">Cancel</button>
+            <button class="button mini dark-blue-button" @click="cancel">Cancel</button>
           </div>
           <div v-else>
             <p v-text="message"></p>
           </div>
-          <button class="button mini blue-button" v-if="!editing" @click="editing = true">Edit</button>
-          <button class="button mini red-button" v-if="!editing" @click="destroy">Delete</button>
-
+          <div v-if="canUpdate">
+            <button class="button mini blue-button" v-if="!editing" @click="editing = true">Edit</button>
+            <button class="button mini red-button" v-if="!editing" @click="destroy">Delete</button>
+          </div>
         </div>
       </div>
 
@@ -45,14 +46,23 @@
 
 <script>
   import favorite from "./Favorite.vue";
+  import moment from 'moment';
   export default {
-    props: ["data"],
+    props: ['data'],
     data() {
       return {
         editing: false,
         message: this.data.message,
         id: this.data.id
       };
+    },
+    computed: {
+        canUpdate() {
+            return this.authorize(user => this.data.user_id == user.id);
+        },
+        ago() {
+          return moment(this.data.created_at).fromNow()
+        }
     },
     methods: {
       update() {

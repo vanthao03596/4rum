@@ -22,20 +22,39 @@
 
 	<!-- Responsive Style -->
     <link rel="stylesheet" href="{{ asset('ask-me/css/responsive.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
+    
   <style type="text/css">
     [v-cloak] { display:none; }
   </style>
 	<!-- Favicons -->
   <link rel="shortcut icon" href="{{ asset('ask-me/images/favicon.png') }}">
   <script>
-    window.App = @json(auth()->user())
+    window.App = @json([
+      'user' => auth()->user(),
+      'signedIn' => auth()->check() 
+    ])
   </script>
 </head>
 <body>
 
-<div class="loader"><div class="loader_html"></div></div>
+<div class="loader">
+  <div class="sk-circle">
+  <div class="sk-circle1 sk-child"></div>
+  <div class="sk-circle2 sk-child"></div>
+  <div class="sk-circle3 sk-child"></div>
+  <div class="sk-circle4 sk-child"></div>
+  <div class="sk-circle5 sk-child"></div>
+  <div class="sk-circle6 sk-child"></div>
+  <div class="sk-circle7 sk-child"></div>
+  <div class="sk-circle8 sk-child"></div>
+  <div class="sk-circle9 sk-child"></div>
+  <div class="sk-circle10 sk-child"></div>
+  <div class="sk-circle11 sk-child"></div>
+  <div class="sk-circle12 sk-child"></div>
+</div>
+</div>
 
 <div id="wrap" class="grid_1200">
 

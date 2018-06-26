@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Laravel\Scout\Searchable;
 use App\Traits\Favoritable;
 use App\Traits\RecordActivity;
 use Carbon\Carbon;
@@ -12,7 +13,8 @@ class Thread extends Model
 {
     use Favoritable;
     use RecordActivity;
-
+    use Searchable;
+    
     protected $fillable = [
         'user_id',
         'title',
@@ -54,7 +56,7 @@ class Thread extends Model
 
     public function replies()
     {
-        return $this->hasMany(Reply::class)->latest()->withCount('favorites');
+        return $this->hasMany(Reply::class)->withCount('favorites');
     }
 
     public function latestReply()
@@ -74,7 +76,7 @@ class Thread extends Model
 
     public function addReply($reply)
     {
-        $this->replies()->create($reply);
+        return $this->replies()->create($reply);
     }
 
     public function channel()
@@ -106,5 +108,10 @@ class Thread extends Model
     public function scopeFilter($query, $filter)
     {
         return $filter->apply($query);
+    }
+
+    public function toSearchableArray()
+    {
+        return $this->toArray() + ['path' => $this->path()];
     }
 }

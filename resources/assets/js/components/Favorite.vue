@@ -5,7 +5,7 @@
             <li>
                 <a href="/" class="single-question-vote-down" title="Dislike"><i class="icon-thumbs-down"></i></a>
             </li>
-            <li>
+            <li v-if="signedIn">
                 <a href="#" :class="classes" @click.prevent="toogle" title="Like">
                     <i class="icon-thumbs-up"></i>
                 </a>
@@ -32,7 +32,12 @@ export default {
         },
         endpoint() {
             return '/replies/' + this.reply.id + '/favorites';
-        }
+        },
+        signedIn() {
+            return window.App.signedIn;
+        },
+        
+
     },
     methods: {
         toogle() {

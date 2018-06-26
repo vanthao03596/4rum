@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
 @section('breadcrumbs', Breadcrumbs::render('thread', $thread))
-<thread-view :init-replies-count="{{ $thread->replies_count }}" inline-template>
+<thread-view inline-template>
 <section class="container main-content">
     <div class="row">
         <div class="col-md-9">
@@ -48,21 +48,13 @@
 
             @include('threads.inc.related')
             <!-- End related-posts -->
-            <div id="commentlist" class="page-content">
-                    <div class="boxedtitle page-title">
-                        <h2>Answers ( <span class="color" v-text="repliesCount"></span> )</h2>
-                    </div>
-                    @if($thread->replies_count > 0)
-                        <replies :data="{{ $comments['root'] }}" @removed="repliesCount--"></replies>
-                        {{-- @include('threads.inc.comments.comment_list', ['collection' => $comments['root']]) --}}
-                    @endif
-            </div>
-            <!-- End page-content -->
-            @guest
-                <p class="text-center">Please <a href="{{ route('login') }}">sign in</a> to participate
-            @else
-                @include('threads.inc.form')
-            @endguest
+
+            <replies :init-replies-count="{{ $thread->replies_count }}" >
+
+            </replies>
+                {{-- @include('threads.inc.comments.comment_list', ['collection' => $comments['root']]) --}}
+
+
             <div class="post-next-prev clearfix">
                 @if($thread->previous())
                 <p class="prev-post">

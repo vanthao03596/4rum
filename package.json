@@ -20,7 +20,10 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "sweetalert2": "^7.23.1",
-        "toastr": "^2.1.4"
+        "moment": "^2.22.2",
+        "sweetalert2": "^7.24.1",
+        "toastr": "^2.1.4",
+        "vue-instantsearch": "^1.7.0",
+        "vue-simple-spinner": "^1.2.8"
     }
 }

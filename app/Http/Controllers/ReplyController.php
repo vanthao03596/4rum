@@ -14,6 +14,15 @@ class ReplyController extends Controller
         $this->middleware('auth');
     }
 
+    public function index($channelId, Thread $thread)
+    {
+        // $page = request('page', 0);
+        // $limit = 5;
+        // $offset = $page * $limit;
+        // return $thread->replies()->offset($offset)->take($limit)->get();
+        return $thread->replies()->orderBy('favorites_count', 'desc')->paginate(5);
+    }
+
     /**
      * @param $channelId
      * @param Thread $thread
@@ -21,11 +30,14 @@ class ReplyController extends Controller
      */
     public function store($channelId, Thread $thread, StoreReplyRequest $request)
     {
-        $thread->addReply([
+        $reply = $thread->addReply([
             'message' => $request->message,
             'channel_id' => $channelId,
             'user_id' => auth()->id()
         ]);
+        if (request()->expectsJson()) {
+            return $reply->load('owner');
+        }
         session()->flash('success', 'Your comment post successfully !');
         return back();
     }

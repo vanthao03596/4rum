@@ -22,6 +22,7 @@ Route::post('/threads', 'ThreadController@store')->name('threads.store');
 Route::delete('/threads/{channel}/{thread}', 'ThreadController@destroy')->name('threads.delete');
 Route::get('/threads', 'ThreadController@getData');
 // Reply
+Route::get('/threads/{channel}/{thread}/replies', 'ReplyController@index');
 Route::post('/threads/{channel}/{thread}/replies', 'ReplyController@store');
 Route::patch('replies/{reply}', 'ReplyController@update')->name('replies.update');
 Route::delete('/replies/{reply}', 'ReplyController@destroy')->name('replies.delete');
@@ -45,3 +46,5 @@ Auth::routes();
 
 Route::get('/test', 'HomeController@index')->name('home');
 Route::post('/test', 'HomeController@post')->name('test');
+
+Route::view('/abc', 'welcome');

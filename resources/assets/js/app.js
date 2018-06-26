@@ -7,6 +7,12 @@
 
 require('./bootstrap');
 window.Vue = require('vue');
+window.Vue.prototype.authorize = function (handler) {
+    let user = window.App.user;
+    return user ? handler(user) : false;
+}
+import InstantSearch from 'vue-instantsearch';
+Vue.use(InstantSearch);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -17,7 +23,6 @@ Vue.component('replies', require('./components/Replies.vue'));
 Vue.component('reply', require('./components/Reply.vue'));
 Vue.component('favorite', require('./components/Favorite.vue'));
 Vue.component('ThreadView', require('./pages/Thread.vue'));
-
 const app = new Vue({
     el: '#app'
 });
