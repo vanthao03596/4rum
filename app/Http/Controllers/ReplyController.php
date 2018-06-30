@@ -11,7 +11,7 @@ class ReplyController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['index']);
     }
 
     public function index($channelId, Thread $thread)
@@ -38,8 +38,6 @@ class ReplyController extends Controller
         if (request()->expectsJson()) {
             return $reply->load('owner');
         }
-        session()->flash('success', 'Your comment post successfully !');
-        return back();
     }
 
     public function destroy(Reply $reply)
@@ -55,6 +53,7 @@ class ReplyController extends Controller
 
     public function update(Reply $reply, Request $request)
     {
+        dd($request->all());
         $reply->update($request->all());
     }
 }

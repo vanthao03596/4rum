@@ -23,12 +23,12 @@
         </div>
         <div class="text">
           <div v-if="editing">
-            <textarea style="width: 100%;" v-model="message"></textarea>
+            <html-textarea style="width: 100%;" v-model="message"></html-textarea>
             <button class="button mini blue-button" @click="update">Update</button>
             <button class="button mini dark-blue-button" @click="cancel">Cancel</button>
           </div>
           <div v-else>
-            <p v-text="message"></p>
+            <p v-html="message"></p>
           </div>
           <div v-if="canUpdate">
             <button class="button mini blue-button" v-if="!editing" @click="editing = true">Edit</button>

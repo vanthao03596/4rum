@@ -20,9 +20,13 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
+        "at.js": "^1.5.4",
+        "jquery.caret": "^0.3.1",
         "moment": "^2.22.2",
         "sweetalert2": "^7.24.1",
+        "textarea-caret": "^3.1.0",
         "toastr": "^2.1.4",
+        "vue-at": "^2.4.0-beta",
         "vue-instantsearch": "^1.7.0",
         "vue-simple-spinner": "^1.2.8"
     }

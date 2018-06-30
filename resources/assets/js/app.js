@@ -23,6 +23,20 @@ Vue.component('replies', require('./components/Replies.vue'));
 Vue.component('reply', require('./components/Reply.vue'));
 Vue.component('favorite', require('./components/Favorite.vue'));
 Vue.component('ThreadView', require('./pages/Thread.vue'));
+
+Vue.component('html-textarea',{
+    template:'<div contenteditable="true" @input="updateHTML"></div>',
+    props:['value'],
+    mounted: function () {
+      this.$el.innerHTML = this.value;
+    },
+    methods: {
+      updateHTML: function(e) {
+        this.$emit('input', e.target.innerHTML);
+      }
+    }
+  });
+  
 const app = new Vue({
     el: '#app'
 });

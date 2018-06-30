@@ -41,6 +41,10 @@ Route::get('/profile/{user}/questions', 'ProfileController@show')->name('profile
 Route::get('/profile/{user}/answers', 'ProfileController@show')->name('profile.answers');
 Route::get('/profile/{user}/favorites', 'ProfileController@show')->name('profile.favorites');
 Route::get('/profile/{user}/histories', 'ProfileController@show')->name('profile.histories');
+
+//User
+
+Route::get('/user/search', 'UserController@search');
 // Auth
 Auth::routes();
 

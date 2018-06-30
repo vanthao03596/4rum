@@ -26,6 +26,9 @@ class Reply extends Model
         static::addGlobalScope('favorites', function ($builder) {
             $builder->with('favorites');
         });
+        static::created(function ($reply) {
+            $reply->thread->increment('replies_count');
+        });
     }
 
     // protected $with = ['owner', 'favorites'];
@@ -48,5 +51,16 @@ class Reply extends Model
     public function path()
     {
         return $this->thread->path() . "#reply-{$this->id}";
+    }
+
+    public function mentionedUsers()
+    {
+        preg_match_all('/@([\w\-]+)/', $this->message, $matches);
+        return $matches[1];
+    }
+
+    public function setMessageAttribute($body)
+    {
+        $this->attributes['message'] = preg_replace('/@([\w\-]+)/', '<a href="/profile/$1">$0</a>', $body);
     }
 }

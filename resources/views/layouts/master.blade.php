@@ -23,6 +23,7 @@
 	<!-- Responsive Style -->
     <link rel="stylesheet" href="{{ asset('ask-me/css/responsive.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/default.min.css') }}">
+    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.atwho.css') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     
   <style type="text/css">
@@ -107,6 +108,7 @@
 <script src="{{ asset('ask-me/js/custom.js') }}"></script>
 <script src="{{ asset('js/toastr.js') }}"></script>
 <script src="{{ asset('js/highlight.min.js') }}"></script>
+
 <script>hljs.initHighlightingOnLoad();</script>
 @if(session()->get('success'))
 <script type="text/javascript">

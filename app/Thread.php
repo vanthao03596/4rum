@@ -8,6 +8,7 @@ use App\Traits\RecordActivity;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use App\Events\ThreadReceivedReply;
 
 class Thread extends Model
 {
@@ -19,7 +20,8 @@ class Thread extends Model
         'user_id',
         'title',
         'body',
-        'channel_id'
+        'channel_id',
+        'replies_count'
     ];
 
 
@@ -32,9 +34,7 @@ class Thread extends Model
         static::addGlobalScope('channel', function (Builder  $builder) {
             $builder->with('channel');
         });
-        static::addGlobalScope('replies_count', function (Builder  $builder) {
-            $builder->withCount('replies');
-        });
+
         static::addGlobalScope('favorites_count', function (Builder  $builder) {
             $builder->withCount('favorites');
         });
@@ -76,7 +76,11 @@ class Thread extends Model
 
     public function addReply($reply)
     {
-        return $this->replies()->create($reply);
+        $reply = $this->replies()->create($reply);
+
+        event(new ThreadReceivedReply($reply));
+
+        return $reply;
     }
 
     public function channel()

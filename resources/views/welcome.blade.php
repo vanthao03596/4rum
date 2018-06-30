@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.atwho.min.css') }}">
         <!-- Styles -->
         <style>
             html, body {
@@ -66,7 +67,9 @@
         </style>
     </head>
     <body>
-        <div id="app">
+        <input type="text" id="inputor">
+            
+        {{-- <div id="app">
         <template>
         
 
@@ -89,7 +92,28 @@
                 
             </ais-index>
             </template>
-        </div>
+        </div> --}}
     </body>
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="{{ asset('js/jquery.caret.min.js')}}"></script>
+
+  <script src="{{ asset('js/jquery.atwho.js') }}"></script>
+    <script>
+        $('#inputor').atwho({
+                at: "@",
+                delay: 2000,
+                limit : 5,
+                callbacks: {
+                    remoteFilter: function(query, callback) {
+                    $.getJSON("/users.json", {q: query}, function(data) {
+                        callback(data)
+                    });
+                    }
+                }
+            })
+    </script>
+    {{-- <script src="{{ asset('js/app.js') }}"></script> --}}
 </html>
