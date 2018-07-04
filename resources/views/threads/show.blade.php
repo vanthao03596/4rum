@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('content')
 @section('breadcrumbs', Breadcrumbs::render('thread', $thread))
+
 <thread-view inline-template>
 <section class="container main-content">
     <div class="row">

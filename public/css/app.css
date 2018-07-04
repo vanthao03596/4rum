@@ -171,6 +171,97 @@
   }
 }
 
+/* Create the blue navigation bar */
+
+.navbar {
+  font-size: 22px;
+  padding: 5px 10px;
+}
+
+/* Define how each icon button should look like */
+
+.button {
+  color: white;
+  display: inline-block;
+  /* Inline elements with width and height. TL;DR they make the icon buttons stack from left-to-right instead of top-to-bottom */
+  position: relative;
+  /* All 'absolute'ly positioned elements are relative to this one */
+  padding: 2px 5px;
+  /* Add some padding so it looks nice */
+}
+
+/* Make the badge float in the top right corner of the button */
+
+.button__badge {
+  background-color: #fa3e3e;
+  border-radius: 2px;
+  color: white;
+  padding: 1px 3px;
+  font-size: 10px;
+  position: absolute;
+  /* Position the badge within the relatively positioned button */
+  top: 0;
+  right: 0;
+}
+
+#notificationContainer {
+  background-color: #fff;
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  overflow: visible;
+  position: absolute;
+  top: 30px;
+  margin-left: -170px;
+  width: 400px;
+  z-index: 1000;
+  display: none;
+}
+
+#notificationContainer:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  color: transparent;
+  border: 10px solid black;
+  border-color: transparent transparent white;
+  margin-top: -20px;
+  margin-left: 188px;
+}
+
+#notificationTitle {
+  font-weight: bold;
+  padding: 8px;
+  font-size: 13px;
+  background-color: #ffffff;
+  z-index: 1000;
+  width: 384px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#notificationsBody {
+  padding: 33px 0px 0px 0px !important;
+  min-height: 300px;
+}
+
+#notificationFooter {
+  background-color: #e9eaed;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 12px;
+  border-top: 1px solid #dddddd;
+}
+
+i.fa fa-globe:hover {
+  color: white;
+}
+
+.content {
+  padding-left: 10px;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);

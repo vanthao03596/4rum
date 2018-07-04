@@ -41,6 +41,7 @@ $factory->define(App\Thread::class, function ($faker) {
         },
         'title' => $faker->sentence,
         'body' => $faker->paragraph,
+        'replies_count' => 0,
         'created_at' => $faker->dateTimeBetween($start_date = '-40 days', $endDate = 'now')
     ];
 });

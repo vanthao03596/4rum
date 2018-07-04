@@ -20,15 +20,18 @@
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
                 </form>
-
                 @endguest
             </ul>
         </nav>
+
         <div class="header-search">
-            <form>
+            @auth
+                <header-notification></header-notification>
+            @endauth
+            <!-- <form>
                 <input type="text" value="Search here ..." onfocus="if(this.value=='Search here ...')this.value='';" onblur="if(this.value=='')this.value='Search here ...';">
                 <button type="submit" class="search-submit"></button>
-            </form>
+            </form> -->
         </div>
     </section><!-- End container -->
 </div>

@@ -25,7 +25,8 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/default.min.css') }}">
     {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.atwho.css') }}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
-    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+
   <style type="text/css">
     [v-cloak] { display:none; }
   </style>
@@ -34,7 +35,7 @@
   <script>
     window.App = @json([
       'user' => auth()->user(),
-      'signedIn' => auth()->check() 
+      'signedIn' => auth()->check()
     ])
   </script>
 </head>
@@ -67,7 +68,7 @@
 
     @include('partials.password')
     <!-- End lost-password -->
-
+  <div id="app">
 	@include('partials.top')
     <!-- End header-top -->
 	@include('partials.header')
@@ -76,7 +77,7 @@
 
 	@include('partials.status')
 
-  <div id="app">
+
     @yield('content')
     <!-- End container -->
   </div>
@@ -110,6 +111,30 @@
 <script src="{{ asset('js/highlight.min.js') }}"></script>
 
 <script>hljs.initHighlightingOnLoad();</script>
+
+<!-- <script type="text/javascript" >
+$(document).ready(function()
+{
+$("#notificationLink").click(function()
+{
+$("#notificationContainer").fadeToggle(300);
+  $("#notification_count").fadeOut("slow");
+  return false;
+});
+
+//Document Click hiding the popup
+$(document).click(function()
+{
+  $("#notificationContainer").hide();
+});
+
+//Popup on click
+$("#notificationContainer").click(function()
+{
+  return false;
+});
+});
+</script> -->
 @if(session()->get('success'))
 <script type="text/javascript">
     toastr.options = {

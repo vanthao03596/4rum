@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+	return view('welcome');
 });
 // Thread
 Route::get('/', 'ThreadController@index')->name('threads.index');
@@ -29,6 +29,7 @@ Route::delete('/replies/{reply}', 'ReplyController@destroy')->name('replies.dele
 
 // Channel
 Route::get('/threads/{channel}', 'ChannelController@index')->name('channels.index');
+Route::post('channels', 'ChannelController@store')->name('channels.store');
 
 // Favorite
 Route::post('/replies/{reply}/favorites', 'FavoriteController@store')->name('like');
@@ -41,6 +42,7 @@ Route::get('/profile/{user}/questions', 'ProfileController@show')->name('profile
 Route::get('/profile/{user}/answers', 'ProfileController@show')->name('profile.answers');
 Route::get('/profile/{user}/favorites', 'ProfileController@show')->name('profile.favorites');
 Route::get('/profile/{user}/histories', 'ProfileController@show')->name('profile.histories');
+Route::get('/profile/{user}/notifications', 'UserNotificationController@index');
 
 //User
 

@@ -12,7 +12,8 @@
         "laravel/framework": "5.6.*",
         "laravel/scout": "^4.0",
         "laravel/tinker": "^1.0",
-        "laravolt/avatar": "^2.0"
+        "laravolt/avatar": "^2.0",
+        "pusher/pusher-php-server": "~3.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",

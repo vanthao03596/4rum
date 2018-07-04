@@ -23,6 +23,7 @@ Vue.component('replies', require('./components/Replies.vue'));
 Vue.component('reply', require('./components/Reply.vue'));
 Vue.component('favorite', require('./components/Favorite.vue'));
 Vue.component('ThreadView', require('./pages/Thread.vue'));
+Vue.component('HeaderNotification', require('./components/HeaderNotification.vue'));
 
 Vue.component('html-textarea',{
     template:'<div contenteditable="true" @input="updateHTML"></div>',
@@ -36,7 +37,7 @@ Vue.component('html-textarea',{
       }
     }
   });
-  
+
 const app = new Vue({
     el: '#app'
 });

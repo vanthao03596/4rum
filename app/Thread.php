@@ -14,8 +14,8 @@ class Thread extends Model
 {
     use Favoritable;
     use RecordActivity;
-    use Searchable;
-    
+    // use Searchable;
+
     protected $fillable = [
         'user_id',
         'title',
