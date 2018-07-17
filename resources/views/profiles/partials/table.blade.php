@@ -8,15 +8,15 @@
         </div>
         <div class="user-stats-item">
             <div class="block-stats-1">Questions</div>
-            <div class="block-stats-2">5</div>
-            <div class="block-stats-3">20</div>
-            <div class="block-stats-4">100</div>
+            <div class="block-stats-2">{{ $table['questionToday']}}</div>
+            <div class="block-stats-3">{{ $table['questionMonth']}}</div>
+            <div class="block-stats-4">{{ $table['totalQuestion']}}</div>
         </div>
         <div class="user-stats-item">
             <div class="block-stats-1">Answers</div>
-            <div class="block-stats-2">30</div>
-            <div class="block-stats-3">150</div>
-            <div class="block-stats-4">1000</div>
+            <div class="block-stats-2">{{ $table['answerToday']}}</div>
+            <div class="block-stats-3">{{ $table['answerMonth']}}</div>
+            <div class="block-stats-4">{{ $table['totalAnswer']}}</div>
         </div>
         <div class="user-stats-item user-stats-item-last">
             <div class="block-stats-1">Visitors</div>
@@ -24,5 +24,6 @@
             <div class="block-stats-3">3000</div>
             <div class="block-stats-4">5000</div>
         </div>
-    </div><!-- End user-stats -->
+    </div>
+    <!-- End user-stats -->
 </div>

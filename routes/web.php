@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-	return view('welcome');
+    return view('welcome');
 });
 // Thread
 Route::get('/', 'ThreadController@index')->name('threads.index');
@@ -54,3 +54,7 @@ Route::get('/test', 'HomeController@index')->name('home');
 Route::post('/test', 'HomeController@post')->name('test');
 
 Route::view('/abc', 'welcome');
+
+Route::get('/abc123', function () {
+    return App\Thread::getLatestReply();
+});

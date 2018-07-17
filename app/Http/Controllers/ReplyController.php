@@ -53,7 +53,6 @@ class ReplyController extends Controller
 
     public function update(Reply $reply, Request $request)
     {
-        dd($request->all());
         $reply->update($request->all());
     }
 }

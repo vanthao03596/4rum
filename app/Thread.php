@@ -58,7 +58,12 @@ class Thread extends Model
     {
         return $this->hasMany(Reply::class)->withCount('favorites');
     }
-
+    public static function getLatestReply()
+    {
+        return (new static)->with(['replies' => function ($q) {
+            $q->latest();
+        }])->get();
+    }
     public function latestReply()
     {
         return $this->hasOne(Reply::class)->latest();
