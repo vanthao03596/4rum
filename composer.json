@@ -9,11 +9,15 @@
         "algolia/algoliasearch-client-php": "^1.27",
         "davejamesmiller/laravel-breadcrumbs": "5.x",
         "fideloper/proxy": "^4.0",
+        "jeroennoten/laravel-adminlte": "^1.23",
         "laravel/framework": "5.6.*",
         "laravel/scout": "^4.0",
         "laravel/tinker": "^1.0",
         "laravolt/avatar": "^2.0",
-        "pusher/pusher-php-server": "~3.0"
+        "pusher/pusher-php-server": "~3.0",
+        "yajra/laravel-datatables-buttons": "^3.2",
+        "yajra/laravel-datatables-html": "3.0",
+        "yajra/laravel-datatables-oracle": "8.*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",

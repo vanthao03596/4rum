@@ -1,4 +1,9 @@
 <aside class="col-md-3 sidebar">
+    @auth
+    <div class="widget widget_stats">
+        <a href="{{ route('threads.create') }}" style="color:white;"class="button large blue-button">Ask now</a>
+    </div>
+    @endauth
     <div class="widget widget_stats">
         <h3 class="widget_title">Stats</h3>
         <div class="ul_list ul_list-icon-ok">

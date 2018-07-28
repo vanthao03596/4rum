@@ -43,3 +43,14 @@ Breadcrumbs::for('errors.404', function ($trail) {
     $trail->parent('home');
     $trail->push('Page Not Found');
 });
+
+
+
+Breadcrumbs::for('admin.dashboard', function ($trail) {
+    $trail->push('Dashboard', route('admin.dashboard'));
+});
+
+Breadcrumbs::for('admin.users.index', function ($trail) {
+    $trail->parent('admin.dashboard');
+    $trail->push('User', route('admin.users.index'));
+});

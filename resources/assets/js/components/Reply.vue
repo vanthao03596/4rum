@@ -1,9 +1,9 @@
 <template>
   <li class="comment">
-    <div id="'reply-' + id" class="comment-body clearfix">
+    <div :id="replyId" class="comment-body clearfix">
       <div class="avatar">
         <a :href="'/profile/' + data.owner.name" :original-title="data.owner.name" class="tooltip-n">
-          <img alt="">
+          <img alt="" :src="avatar">
         </a>
       </div>
       <div class="comment-text">
@@ -62,6 +62,12 @@ export default {
     },
     ago() {
       return moment(this.data.created_at).fromNow();
+    },
+    replyId() {
+      return '#reply-' + this.id
+    },
+    avatar() {
+      return window.App.baseUrl + '/' + this.data.owner.profile.avatar
     }
   },
   methods: {

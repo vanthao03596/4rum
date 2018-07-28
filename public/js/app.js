@@ -4612,7 +4612,7 @@ module.exports = isArray;
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(100);
+var freeGlobal = __webpack_require__(102);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -4630,7 +4630,7 @@ module.exports = root;
 "use strict";
 
 
-var bind = __webpack_require__(92);
+var bind = __webpack_require__(94);
 var isBuffer = __webpack_require__(298);
 
 /*global toString:true*/
@@ -5073,8 +5073,8 @@ module.exports = baseIteratee;
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(99),
-    baseKeys = __webpack_require__(101),
+var arrayLikeKeys = __webpack_require__(101),
+    baseKeys = __webpack_require__(103),
     isArrayLike = __webpack_require__(9);
 
 /**
@@ -5117,7 +5117,7 @@ module.exports = keys;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(18),
-    isLength = __webpack_require__(66);
+    isLength = __webpack_require__(65);
 
 /**
  * Checks if `value` is array-like. A value is considered array-like if it's
@@ -5218,7 +5218,7 @@ module.exports = arrayMap;
 
 var arrayMap = __webpack_require__(11),
     baseIteratee = __webpack_require__(7),
-    baseMap = __webpack_require__(126),
+    baseMap = __webpack_require__(128),
     isArray = __webpack_require__(1);
 
 /**
@@ -5461,8 +5461,8 @@ module.exports = eq;
 /***/ (function(module, exports, __webpack_require__) {
 
 var identity = __webpack_require__(14),
-    overRest = __webpack_require__(108),
-    setToString = __webpack_require__(71);
+    overRest = __webpack_require__(110),
+    setToString = __webpack_require__(70);
 
 /**
  * The base implementation of `_.rest` which doesn't validate or coerce arguments.
@@ -5483,9 +5483,9 @@ module.exports = baseRest;
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayEach = __webpack_require__(72),
-    baseEach = __webpack_require__(55),
-    castFunction = __webpack_require__(114),
+var arrayEach = __webpack_require__(71),
+    baseEach = __webpack_require__(54),
+    castFunction = __webpack_require__(116),
     isArray = __webpack_require__(1);
 
 /**
@@ -5531,9 +5531,9 @@ module.exports = forEach;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArray = __webpack_require__(1),
-    isKey = __webpack_require__(77),
+    isKey = __webpack_require__(76),
     stringToPath = __webpack_require__(403),
-    toString = __webpack_require__(78);
+    toString = __webpack_require__(77);
 
 /**
  * Casts `value` to a path array if it's not one.
@@ -5584,7 +5584,7 @@ module.exports = toKey;
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignValue = __webpack_require__(80),
+var assignValue = __webpack_require__(79),
     baseAssignValue = __webpack_require__(38);
 
 /**
@@ -6130,7 +6130,7 @@ module.exports = baseUnary;
 /* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(106),
+var baseFindIndex = __webpack_require__(108),
     baseIsNaN = __webpack_require__(376),
     strictIndexOf = __webpack_require__(377);
 
@@ -6156,7 +6156,7 @@ module.exports = baseIndexOf;
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFor = __webpack_require__(113),
+var baseFor = __webpack_require__(115),
     keys = __webpack_require__(8);
 
 /**
@@ -6179,12 +6179,12 @@ module.exports = baseForOwn;
 /***/ (function(module, exports, __webpack_require__) {
 
 var DataView = __webpack_require__(398),
-    Map = __webpack_require__(69),
+    Map = __webpack_require__(68),
     Promise = __webpack_require__(399),
     Set = __webpack_require__(400),
-    WeakMap = __webpack_require__(121),
+    WeakMap = __webpack_require__(123),
     baseGetTag = __webpack_require__(10),
-    toSource = __webpack_require__(104);
+    toSource = __webpack_require__(106);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -6278,7 +6278,7 @@ module.exports = isSymbol;
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayReduce = __webpack_require__(411),
-    baseEach = __webpack_require__(55),
+    baseEach = __webpack_require__(54),
     baseIteratee = __webpack_require__(7),
     baseReduce = __webpack_require__(412),
     isArray = __webpack_require__(1);
@@ -6334,7 +6334,7 @@ module.exports = reduce;
 /* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var defineProperty = __webpack_require__(110);
+var defineProperty = __webpack_require__(112);
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -6365,7 +6365,7 @@ module.exports = baseAssignValue;
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayLikeKeys = __webpack_require__(99),
+var arrayLikeKeys = __webpack_require__(101),
     baseKeysIn = __webpack_require__(416),
     isArrayLike = __webpack_require__(9);
 
@@ -6445,14 +6445,14 @@ module.exports = toInteger;
 /* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseKeys = __webpack_require__(101),
+var baseKeys = __webpack_require__(103),
     getTag = __webpack_require__(35),
     isArguments = __webpack_require__(29),
     isArray = __webpack_require__(1),
     isArrayLike = __webpack_require__(9),
     isBuffer = __webpack_require__(30),
-    isPrototype = __webpack_require__(50),
-    isTypedArray = __webpack_require__(49);
+    isPrototype = __webpack_require__(49),
+    isTypedArray = __webpack_require__(48);
 
 /** `Object#toString` result references. */
 var mapTag = '[object Map]',
@@ -6581,6 +6581,6574 @@ module.exports = getHolder;
 
 /***/ }),
 /* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+// This file hosts our error definitions
+// We use custom error "types" so that we can act on them when we need it
+// e.g.: if error instanceof errors.UnparsableJSON then..
+
+var inherits = __webpack_require__(63);
+
+function AlgoliaSearchError(message, extraProperties) {
+  var forEach = __webpack_require__(15);
+
+  var error = this;
+
+  // try to get a stacktrace
+  if (typeof Error.captureStackTrace === 'function') {
+    Error.captureStackTrace(this, this.constructor);
+  } else {
+    error.stack = (new Error()).stack || 'Cannot get a stacktrace, browser is too old';
+  }
+
+  this.name = 'AlgoliaSearchError';
+  this.message = message || 'Unknown error';
+
+  if (extraProperties) {
+    forEach(extraProperties, function addToErrorObject(value, key) {
+      error[key] = value;
+    });
+  }
+}
+
+inherits(AlgoliaSearchError, Error);
+
+function createCustomError(name, message) {
+  function AlgoliaSearchCustomError() {
+    var args = Array.prototype.slice.call(arguments, 0);
+
+    // custom message not set, use default
+    if (typeof args[0] !== 'string') {
+      args.unshift(message);
+    }
+
+    AlgoliaSearchError.apply(this, args);
+    this.name = 'AlgoliaSearch' + name + 'Error';
+  }
+
+  inherits(AlgoliaSearchCustomError, AlgoliaSearchError);
+
+  return AlgoliaSearchCustomError;
+}
+
+// late exports to let various fn defs and inherits take place
+module.exports = {
+  AlgoliaSearchError: AlgoliaSearchError,
+  UnparsableJSON: createCustomError(
+    'UnparsableJSON',
+    'Could not parse the incoming response as JSON, see err.more for details'
+  ),
+  RequestTimeout: createCustomError(
+    'RequestTimeout',
+    'Request timedout before getting a response'
+  ),
+  Network: createCustomError(
+    'Network',
+    'Network issue, see err.more for details'
+  ),
+  JSONPScriptFail: createCustomError(
+    'JSONPScriptFail',
+    '<script> was loaded but did not call our provided callback'
+  ),
+  JSONPScriptError: createCustomError(
+    'JSONPScriptError',
+    '<script> unable to load due to an `error` event on it'
+  ),
+  Unknown: createCustomError(
+    'Unknown',
+    'Unknown error occured'
+  )
+};
+
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var foreach = __webpack_require__(15);
+
+module.exports = function map(arr, fn) {
+  var newArr = [];
+  foreach(arr, function(item, itemIndex) {
+    newArr.push(fn(item, itemIndex, arr));
+  });
+  return newArr;
+};
+
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * This is the web browser implementation of `debug()`.
+ *
+ * Expose `debug()` as the module.
+ */
+
+exports = module.exports = __webpack_require__(332);
+exports.log = log;
+exports.formatArgs = formatArgs;
+exports.save = save;
+exports.load = load;
+exports.useColors = useColors;
+exports.storage = 'undefined' != typeof chrome
+               && 'undefined' != typeof chrome.storage
+                  ? chrome.storage.local
+                  : localstorage();
+
+/**
+ * Colors.
+ */
+
+exports.colors = [
+  'lightseagreen',
+  'forestgreen',
+  'goldenrod',
+  'dodgerblue',
+  'darkorchid',
+  'crimson'
+];
+
+/**
+ * Currently only WebKit-based Web Inspectors, Firefox >= v31,
+ * and the Firebug extension (any Firefox version) are known
+ * to support "%c" CSS customizations.
+ *
+ * TODO: add a `localStorage` variable to explicitly enable/disable colors
+ */
+
+function useColors() {
+  // NB: In an Electron preload script, document will be defined but not fully
+  // initialized. Since we know we're in Chrome, we'll just detect this case
+  // explicitly
+  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
+    return true;
+  }
+
+  // is webkit? http://stackoverflow.com/a/16459606/376773
+  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
+  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
+    // is firebug? http://stackoverflow.com/a/398120/376773
+    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
+    // is firefox >= v31?
+    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
+    // double check webkit in userAgent just in case we are in a worker
+    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
+}
+
+/**
+ * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
+ */
+
+exports.formatters.j = function(v) {
+  try {
+    return JSON.stringify(v);
+  } catch (err) {
+    return '[UnexpectedJSONParseError]: ' + err.message;
+  }
+};
+
+
+/**
+ * Colorize log arguments if enabled.
+ *
+ * @api public
+ */
+
+function formatArgs(args) {
+  var useColors = this.useColors;
+
+  args[0] = (useColors ? '%c' : '')
+    + this.namespace
+    + (useColors ? ' %c' : ' ')
+    + args[0]
+    + (useColors ? '%c ' : ' ')
+    + '+' + exports.humanize(this.diff);
+
+  if (!useColors) return;
+
+  var c = 'color: ' + this.color;
+  args.splice(1, 0, c, 'color: inherit')
+
+  // the final "%c" is somewhat tricky, because there could be other
+  // arguments passed either before or after the %c, so we need to
+  // figure out the correct index to insert the CSS into
+  var index = 0;
+  var lastC = 0;
+  args[0].replace(/%[a-zA-Z%]/g, function(match) {
+    if ('%%' === match) return;
+    index++;
+    if ('%c' === match) {
+      // we only are interested in the *last* %c
+      // (the user may have provided their own)
+      lastC = index;
+    }
+  });
+
+  args.splice(lastC, 0, c);
+}
+
+/**
+ * Invokes `console.log()` when available.
+ * No-op when `console.log` is not a "function".
+ *
+ * @api public
+ */
+
+function log() {
+  // this hackery is required for IE8/9, where
+  // the `console.log` function doesn't have 'apply'
+  return 'object' === typeof console
+    && console.log
+    && Function.prototype.apply.call(console.log, console, arguments);
+}
+
+/**
+ * Save `namespaces`.
+ *
+ * @param {String} namespaces
+ * @api private
+ */
+
+function save(namespaces) {
+  try {
+    if (null == namespaces) {
+      exports.storage.removeItem('debug');
+    } else {
+      exports.storage.debug = namespaces;
+    }
+  } catch(e) {}
+}
+
+/**
+ * Load `namespaces`.
+ *
+ * @return {String} returns the previously persisted debug modes
+ * @api private
+ */
+
+function load() {
+  var r;
+  try {
+    r = exports.storage.debug;
+  } catch(e) {}
+
+  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
+  if (!r && typeof process !== 'undefined' && 'env' in process) {
+    r = Object({"MIX_PUSHER_APP_CLUSTER":"ap1","MIX_PUSHER_APP_KEY":"4feb05b793d9599a1894","NODE_ENV":"development"}).DEBUG;
+  }
+
+  return r;
+}
+
+/**
+ * Enable namespaces listed in `localStorage.debug` initially.
+ */
+
+exports.enable(load());
+
+/**
+ * Localstorage attempts to return the localstorage.
+ *
+ * This is necessary because safari throws
+ * when a user disables cookies/localstorage
+ * and you attempt to access it.
+ *
+ * @return {LocalStorage}
+ * @api private
+ */
+
+function localstorage() {
+  try {
+    return window.localStorage;
+  } catch (e) {}
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIsTypedArray = __webpack_require__(349),
+    baseUnary = __webpack_require__(32),
+    nodeUtil = __webpack_require__(66);
+
+/* Node.js helper references. */
+var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
+
+/**
+ * Checks if `value` is classified as a typed array.
+ *
+ * @static
+ * @memberOf _
+ * @since 3.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
+ * @example
+ *
+ * _.isTypedArray(new Uint8Array);
+ * // => true
+ *
+ * _.isTypedArray([]);
+ * // => false
+ */
+var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
+
+module.exports = isTypedArray;
+
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports) {
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/**
+ * Checks if `value` is likely a prototype object.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
+ */
+function isPrototype(value) {
+  var Ctor = value && value.constructor,
+      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
+
+  return value === proto;
+}
+
+module.exports = isPrototype;
+
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getNative = __webpack_require__(13);
+
+/* Built-in method references that are verified to be native. */
+var nativeCreate = getNative(Object, 'create');
+
+module.exports = nativeCreate;
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var listCacheClear = __webpack_require__(364),
+    listCacheDelete = __webpack_require__(365),
+    listCacheGet = __webpack_require__(366),
+    listCacheHas = __webpack_require__(367),
+    listCacheSet = __webpack_require__(368);
+
+/**
+ * Creates an list cache object.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function ListCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `ListCache`.
+ListCache.prototype.clear = listCacheClear;
+ListCache.prototype['delete'] = listCacheDelete;
+ListCache.prototype.get = listCacheGet;
+ListCache.prototype.has = listCacheHas;
+ListCache.prototype.set = listCacheSet;
+
+module.exports = ListCache;
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var eq = __webpack_require__(19);
+
+/**
+ * Gets the index at which the `key` is found in `array` of key-value pairs.
+ *
+ * @private
+ * @param {Array} array The array to inspect.
+ * @param {*} key The key to search for.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ */
+function assocIndexOf(array, key) {
+  var length = array.length;
+  while (length--) {
+    if (eq(array[length][0], key)) {
+      return length;
+    }
+  }
+  return -1;
+}
+
+module.exports = assocIndexOf;
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isKeyable = __webpack_require__(370);
+
+/**
+ * Gets the data for `map`.
+ *
+ * @private
+ * @param {Object} map The map to query.
+ * @param {string} key The reference key.
+ * @returns {*} Returns the map data.
+ */
+function getMapData(map, key) {
+  var data = map.__data__;
+  return isKeyable(key)
+    ? data[typeof key == 'string' ? 'string' : 'hash']
+    : data.map;
+}
+
+module.exports = getMapData;
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseForOwn = __webpack_require__(34),
+    createBaseEach = __webpack_require__(383);
+
+/**
+ * The base implementation of `_.forEach` without support for iteratee shorthands.
+ *
+ * @private
+ * @param {Array|Object} collection The collection to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array|Object} Returns `collection`.
+ */
+var baseEach = createBaseEach(baseForOwn);
+
+module.exports = baseEach;
+
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var ListCache = __webpack_require__(51),
+    stackClear = __webpack_require__(387),
+    stackDelete = __webpack_require__(388),
+    stackGet = __webpack_require__(389),
+    stackHas = __webpack_require__(390),
+    stackSet = __webpack_require__(391);
+
+/**
+ * Creates a stack cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function Stack(entries) {
+  var data = this.__data__ = new ListCache(entries);
+  this.size = data.size;
+}
+
+// Add methods to `Stack`.
+Stack.prototype.clear = stackClear;
+Stack.prototype['delete'] = stackDelete;
+Stack.prototype.get = stackGet;
+Stack.prototype.has = stackHas;
+Stack.prototype.set = stackSet;
+
+module.exports = Stack;
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var castPath = __webpack_require__(22),
+    toKey = __webpack_require__(23);
+
+/**
+ * The base implementation of `_.get` without support for default values.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @param {Array|string} path The path of the property to get.
+ * @returns {*} Returns the resolved value.
+ */
+function baseGet(object, path) {
+  path = castPath(path, object);
+
+  var index = 0,
+      length = path.length;
+
+  while (object != null && index < length) {
+    object = object[toKey(path[index++])];
+  }
+  return (index && index == length) ? object : undefined;
+}
+
+module.exports = baseGet;
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports) {
+
+/**
+ * Copies the values of `source` to `array`.
+ *
+ * @private
+ * @param {Array} source The array to copy values from.
+ * @param {Array} [array=[]] The array to copy values to.
+ * @returns {Array} Returns `array`.
+ */
+function copyArray(source, array) {
+  var index = -1,
+      length = source.length;
+
+  array || (array = Array(length));
+  while (++index < length) {
+    array[index] = source[index];
+  }
+  return array;
+}
+
+module.exports = copyArray;
+
+
+/***/ }),
+/* 58 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isObject = __webpack_require__(5);
+
+/** Built-in value references. */
+var objectCreate = Object.create;
+
+/**
+ * The base implementation of `_.create` without support for assigning
+ * properties to the created object.
+ *
+ * @private
+ * @param {Object} proto The object to inherit from.
+ * @returns {Object} Returns the new object.
+ */
+var baseCreate = (function() {
+  function object() {}
+  return function(proto) {
+    if (!isObject(proto)) {
+      return {};
+    }
+    if (objectCreate) {
+      return objectCreate(proto);
+    }
+    object.prototype = proto;
+    var result = new object;
+    object.prototype = undefined;
+    return result;
+  };
+}());
+
+module.exports = baseCreate;
+
+
+/***/ }),
+/* 59 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIndexOf = __webpack_require__(33),
+    toInteger = __webpack_require__(40);
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMax = Math.max;
+
+/**
+ * Gets the index at which the first occurrence of `value` is found in `array`
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons. If `fromIndex` is negative, it's used as the
+ * offset from the end of `array`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Array
+ * @param {Array} array The array to inspect.
+ * @param {*} value The value to search for.
+ * @param {number} [fromIndex=0] The index to search from.
+ * @returns {number} Returns the index of the matched value, else `-1`.
+ * @example
+ *
+ * _.indexOf([1, 2, 1, 2], 2);
+ * // => 1
+ *
+ * // Search from the `fromIndex`.
+ * _.indexOf([1, 2, 1, 2], 2, 2);
+ * // => 3
+ */
+function indexOf(array, value, fromIndex) {
+  var length = array == null ? 0 : array.length;
+  if (!length) {
+    return -1;
+  }
+  var index = fromIndex == null ? 0 : toInteger(fromIndex);
+  if (index < 0) {
+    index = nativeMax(length + index, 0);
+  }
+  return baseIndexOf(array, value, index);
+}
+
+module.exports = indexOf;
+
+
+/***/ }),
+/* 60 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var createFind = __webpack_require__(438),
+    findIndex = __webpack_require__(140);
+
+/**
+ * Iterates over elements of `collection`, returning the first element
+ * `predicate` returns truthy for. The predicate is invoked with three
+ * arguments: (value, index|key, collection).
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Collection
+ * @param {Array|Object} collection The collection to inspect.
+ * @param {Function} [predicate=_.identity] The function invoked per iteration.
+ * @param {number} [fromIndex=0] The index to search from.
+ * @returns {*} Returns the matched element, else `undefined`.
+ * @example
+ *
+ * var users = [
+ *   { 'user': 'barney',  'age': 36, 'active': true },
+ *   { 'user': 'fred',    'age': 40, 'active': false },
+ *   { 'user': 'pebbles', 'age': 1,  'active': true }
+ * ];
+ *
+ * _.find(users, function(o) { return o.age < 40; });
+ * // => object for 'barney'
+ *
+ * // The `_.matches` iteratee shorthand.
+ * _.find(users, { 'age': 1, 'active': true });
+ * // => object for 'pebbles'
+ *
+ * // The `_.matchesProperty` iteratee shorthand.
+ * _.find(users, ['active', false]);
+ * // => object for 'fred'
+ *
+ * // The `_.property` iteratee shorthand.
+ * _.find(users, 'active');
+ * // => object for 'barney'
+ */
+var find = createFind(findIndex);
+
+module.exports = find;
+
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseCreate = __webpack_require__(58),
+    isObject = __webpack_require__(5);
+
+/**
+ * Creates a function that produces an instance of `Ctor` regardless of
+ * whether it was invoked as part of a `new` expression or by `call` or `apply`.
+ *
+ * @private
+ * @param {Function} Ctor The constructor to wrap.
+ * @returns {Function} Returns the new wrapped function.
+ */
+function createCtor(Ctor) {
+  return function() {
+    // Use a `switch` statement to work with class constructors. See
+    // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+    // for more details.
+    var args = arguments;
+    switch (args.length) {
+      case 0: return new Ctor;
+      case 1: return new Ctor(args[0]);
+      case 2: return new Ctor(args[0], args[1]);
+      case 3: return new Ctor(args[0], args[1], args[2]);
+      case 4: return new Ctor(args[0], args[1], args[2], args[3]);
+      case 5: return new Ctor(args[0], args[1], args[2], args[3], args[4]);
+      case 6: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5]);
+      case 7: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
+    }
+    var thisBinding = baseCreate(Ctor.prototype),
+        result = Ctor.apply(thisBinding, args);
+
+    // Mimic the constructor's `return` behavior.
+    // See https://es5.github.io/#x13.2.2 for more details.
+    return isObject(result) ? result : thisBinding;
+  };
+}
+
+module.exports = createCtor;
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var utils = __webpack_require__(3);
+var normalizeHeaderName = __webpack_require__(300);
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(95);
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(95);
+  }
+  return adapter;
+}
+
+var defaults = {
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Content-Type');
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data)) {
+      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports) {
+
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var keys = __webpack_require__(8);
+var intersection = __webpack_require__(351);
+var forOwn = __webpack_require__(381);
+var forEach = __webpack_require__(21);
+var filter = __webpack_require__(72);
+var map = __webpack_require__(12);
+var reduce = __webpack_require__(37);
+var omit = __webpack_require__(129);
+var indexOf = __webpack_require__(59);
+var isNaN = __webpack_require__(436);
+var isEmpty = __webpack_require__(41);
+var isEqual = __webpack_require__(437);
+var isUndefined = __webpack_require__(139);
+var isString = __webpack_require__(42);
+var isFunction = __webpack_require__(18);
+var find = __webpack_require__(60);
+var trim = __webpack_require__(141);
+
+var defaults = __webpack_require__(84);
+var merge = __webpack_require__(85);
+
+var valToNumber = __webpack_require__(450);
+
+var filterState = __webpack_require__(451);
+
+var RefinementList = __webpack_require__(452);
+
+/**
+ * like _.find but using _.isEqual to be able to use it
+ * to find arrays.
+ * @private
+ * @param {any[]} array array to search into
+ * @param {any} searchedValue the value we're looking for
+ * @return {any} the searched value or undefined
+ */
+function findArray(array, searchedValue) {
+  return find(array, function(currentValue) {
+    return isEqual(currentValue, searchedValue);
+  });
+}
+
+/**
+ * The facet list is the structure used to store the list of values used to
+ * filter a single attribute.
+ * @typedef {string[]} SearchParameters.FacetList
+ */
+
+/**
+ * Structure to store numeric filters with the operator as the key. The supported operators
+ * are `=`, `>`, `<`, `>=`, `<=` and `!=`.
+ * @typedef {Object.<string, Array.<number|number[]>>} SearchParameters.OperatorList
+ */
+
+/**
+ * SearchParameters is the data structure that contains all the information
+ * usable for making a search to Algolia API. It doesn't do the search itself,
+ * nor does it contains logic about the parameters.
+ * It is an immutable object, therefore it has been created in a way that each
+ * changes does not change the object itself but returns a copy with the
+ * modification.
+ * This object should probably not be instantiated outside of the helper. It will
+ * be provided when needed. This object is documented for reference as you'll
+ * get it from events generated by the {@link AlgoliaSearchHelper}.
+ * If need be, instantiate the Helper from the factory function {@link SearchParameters.make}
+ * @constructor
+ * @classdesc contains all the parameters of a search
+ * @param {object|SearchParameters} newParameters existing parameters or partial object
+ * for the properties of a new SearchParameters
+ * @see SearchParameters.make
+ * @example <caption>SearchParameters of the first query in
+ *   <a href="http://demos.algolia.com/instant-search-demo/">the instant search demo</a></caption>
+{
+   "query": "",
+   "disjunctiveFacets": [
+      "customerReviewCount",
+      "category",
+      "salePrice_range",
+      "manufacturer"
+  ],
+   "maxValuesPerFacet": 30,
+   "page": 0,
+   "hitsPerPage": 10,
+   "facets": [
+      "type",
+      "shipping"
+  ]
+}
+ */
+function SearchParameters(newParameters) {
+  var params = newParameters ? SearchParameters._parseNumbers(newParameters) : {};
+
+  /**
+   * Targeted index. This parameter is mandatory.
+   * @member {string}
+   */
+  this.index = params.index || '';
+
+  // Query
+  /**
+   * Query string of the instant search. The empty string is a valid query.
+   * @member {string}
+   * @see https://www.algolia.com/doc/rest#param-query
+   */
+  this.query = params.query || '';
+
+  // Facets
+  /**
+   * This attribute contains the list of all the conjunctive facets
+   * used. This list will be added to requested facets in the
+   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
+   * @member {string[]}
+   */
+  this.facets = params.facets || [];
+  /**
+   * This attribute contains the list of all the disjunctive facets
+   * used. This list will be added to requested facets in the
+   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
+   * @member {string[]}
+   */
+  this.disjunctiveFacets = params.disjunctiveFacets || [];
+  /**
+   * This attribute contains the list of all the hierarchical facets
+   * used. This list will be added to requested facets in the
+   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
+   * Hierarchical facets are a sub type of disjunctive facets that
+   * let you filter faceted attributes hierarchically.
+   * @member {string[]|object[]}
+   */
+  this.hierarchicalFacets = params.hierarchicalFacets || [];
+
+  // Refinements
+  /**
+   * This attribute contains all the filters that need to be
+   * applied on the conjunctive facets. Each facet must be properly
+   * defined in the `facets` attribute.
+   *
+   * The key is the name of the facet, and the `FacetList` contains all
+   * filters selected for the associated facet name.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `facetFilters` attribute.
+   * @member {Object.<string, SearchParameters.FacetList>}
+   */
+  this.facetsRefinements = params.facetsRefinements || {};
+  /**
+   * This attribute contains all the filters that need to be
+   * excluded from the conjunctive facets. Each facet must be properly
+   * defined in the `facets` attribute.
+   *
+   * The key is the name of the facet, and the `FacetList` contains all
+   * filters excluded for the associated facet name.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `facetFilters` attribute.
+   * @member {Object.<string, SearchParameters.FacetList>}
+   */
+  this.facetsExcludes = params.facetsExcludes || {};
+  /**
+   * This attribute contains all the filters that need to be
+   * applied on the disjunctive facets. Each facet must be properly
+   * defined in the `disjunctiveFacets` attribute.
+   *
+   * The key is the name of the facet, and the `FacetList` contains all
+   * filters selected for the associated facet name.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `facetFilters` attribute.
+   * @member {Object.<string, SearchParameters.FacetList>}
+   */
+  this.disjunctiveFacetsRefinements = params.disjunctiveFacetsRefinements || {};
+  /**
+   * This attribute contains all the filters that need to be
+   * applied on the numeric attributes.
+   *
+   * The key is the name of the attribute, and the value is the
+   * filters to apply to this attribute.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `numericFilters` attribute.
+   * @member {Object.<string, SearchParameters.OperatorList>}
+   */
+  this.numericRefinements = params.numericRefinements || {};
+  /**
+   * This attribute contains all the tags used to refine the query.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `tagFilters` attribute.
+   * @member {string[]}
+   */
+  this.tagRefinements = params.tagRefinements || [];
+  /**
+   * This attribute contains all the filters that need to be
+   * applied on the hierarchical facets. Each facet must be properly
+   * defined in the `hierarchicalFacets` attribute.
+   *
+   * The key is the name of the facet, and the `FacetList` contains all
+   * filters selected for the associated facet name. The FacetList values
+   * are structured as a string that contain the values for each level
+   * separated by the configured separator.
+   *
+   * When querying algolia, the values stored in this attribute will
+   * be translated into the `facetFilters` attribute.
+   * @member {Object.<string, SearchParameters.FacetList>}
+   */
+  this.hierarchicalFacetsRefinements = params.hierarchicalFacetsRefinements || {};
+
+  /**
+   * Contains the numeric filters in the raw format of the Algolia API. Setting
+   * this parameter is not compatible with the usage of numeric filters methods.
+   * @see https://www.algolia.com/doc/javascript#numericFilters
+   * @member {string}
+   */
+  this.numericFilters = params.numericFilters;
+
+  /**
+   * Contains the tag filters in the raw format of the Algolia API. Setting this
+   * parameter is not compatible with the of the add/remove/toggle methods of the
+   * tag api.
+   * @see https://www.algolia.com/doc/rest#param-tagFilters
+   * @member {string}
+   */
+  this.tagFilters = params.tagFilters;
+
+  /**
+   * Contains the optional tag filters in the raw format of the Algolia API.
+   * @see https://www.algolia.com/doc/rest#param-tagFilters
+   * @member {string}
+   */
+  this.optionalTagFilters = params.optionalTagFilters;
+
+  /**
+   * Contains the optional facet filters in the raw format of the Algolia API.
+   * @see https://www.algolia.com/doc/rest#param-tagFilters
+   * @member {string}
+   */
+  this.optionalFacetFilters = params.optionalFacetFilters;
+
+
+  // Misc. parameters
+  /**
+   * Number of hits to be returned by the search API
+   * @member {number}
+   * @see https://www.algolia.com/doc/rest#param-hitsPerPage
+   */
+  this.hitsPerPage = params.hitsPerPage;
+  /**
+   * Number of values for each faceted attribute
+   * @member {number}
+   * @see https://www.algolia.com/doc/rest#param-maxValuesPerFacet
+   */
+  this.maxValuesPerFacet = params.maxValuesPerFacet;
+  /**
+   * The current page number
+   * @member {number}
+   * @see https://www.algolia.com/doc/rest#param-page
+   */
+  this.page = params.page || 0;
+  /**
+   * How the query should be treated by the search engine.
+   * Possible values: prefixAll, prefixLast, prefixNone
+   * @see https://www.algolia.com/doc/rest#param-queryType
+   * @member {string}
+   */
+  this.queryType = params.queryType;
+  /**
+   * How the typo tolerance behave in the search engine.
+   * Possible values: true, false, min, strict
+   * @see https://www.algolia.com/doc/rest#param-typoTolerance
+   * @member {string}
+   */
+  this.typoTolerance = params.typoTolerance;
+
+  /**
+   * Number of characters to wait before doing one character replacement.
+   * @see https://www.algolia.com/doc/rest#param-minWordSizefor1Typo
+   * @member {number}
+   */
+  this.minWordSizefor1Typo = params.minWordSizefor1Typo;
+  /**
+   * Number of characters to wait before doing a second character replacement.
+   * @see https://www.algolia.com/doc/rest#param-minWordSizefor2Typos
+   * @member {number}
+   */
+  this.minWordSizefor2Typos = params.minWordSizefor2Typos;
+  /**
+   * Configure the precision of the proximity ranking criterion
+   * @see https://www.algolia.com/doc/rest#param-minProximity
+   */
+  this.minProximity = params.minProximity;
+  /**
+   * Should the engine allow typos on numerics.
+   * @see https://www.algolia.com/doc/rest#param-allowTyposOnNumericTokens
+   * @member {boolean}
+   */
+  this.allowTyposOnNumericTokens = params.allowTyposOnNumericTokens;
+  /**
+   * Should the plurals be ignored
+   * @see https://www.algolia.com/doc/rest#param-ignorePlurals
+   * @member {boolean}
+   */
+  this.ignorePlurals = params.ignorePlurals;
+  /**
+   * Restrict which attribute is searched.
+   * @see https://www.algolia.com/doc/rest#param-restrictSearchableAttributes
+   * @member {string}
+   */
+  this.restrictSearchableAttributes = params.restrictSearchableAttributes;
+  /**
+   * Enable the advanced syntax.
+   * @see https://www.algolia.com/doc/rest#param-advancedSyntax
+   * @member {boolean}
+   */
+  this.advancedSyntax = params.advancedSyntax;
+  /**
+   * Enable the analytics
+   * @see https://www.algolia.com/doc/rest#param-analytics
+   * @member {boolean}
+   */
+  this.analytics = params.analytics;
+  /**
+   * Tag of the query in the analytics.
+   * @see https://www.algolia.com/doc/rest#param-analyticsTags
+   * @member {string}
+   */
+  this.analyticsTags = params.analyticsTags;
+  /**
+   * Enable the synonyms
+   * @see https://www.algolia.com/doc/rest#param-synonyms
+   * @member {boolean}
+   */
+  this.synonyms = params.synonyms;
+  /**
+   * Should the engine replace the synonyms in the highlighted results.
+   * @see https://www.algolia.com/doc/rest#param-replaceSynonymsInHighlight
+   * @member {boolean}
+   */
+  this.replaceSynonymsInHighlight = params.replaceSynonymsInHighlight;
+  /**
+   * Add some optional words to those defined in the dashboard
+   * @see https://www.algolia.com/doc/rest#param-optionalWords
+   * @member {string}
+   */
+  this.optionalWords = params.optionalWords;
+  /**
+   * Possible values are "lastWords" "firstWords" "allOptional" "none" (default)
+   * @see https://www.algolia.com/doc/rest#param-removeWordsIfNoResults
+   * @member {string}
+   */
+  this.removeWordsIfNoResults = params.removeWordsIfNoResults;
+  /**
+   * List of attributes to retrieve
+   * @see https://www.algolia.com/doc/rest#param-attributesToRetrieve
+   * @member {string}
+   */
+  this.attributesToRetrieve = params.attributesToRetrieve;
+  /**
+   * List of attributes to highlight
+   * @see https://www.algolia.com/doc/rest#param-attributesToHighlight
+   * @member {string}
+   */
+  this.attributesToHighlight = params.attributesToHighlight;
+  /**
+   * Code to be embedded on the left part of the highlighted results
+   * @see https://www.algolia.com/doc/rest#param-highlightPreTag
+   * @member {string}
+   */
+  this.highlightPreTag = params.highlightPreTag;
+  /**
+   * Code to be embedded on the right part of the highlighted results
+   * @see https://www.algolia.com/doc/rest#param-highlightPostTag
+   * @member {string}
+   */
+  this.highlightPostTag = params.highlightPostTag;
+  /**
+   * List of attributes to snippet
+   * @see https://www.algolia.com/doc/rest#param-attributesToSnippet
+   * @member {string}
+   */
+  this.attributesToSnippet = params.attributesToSnippet;
+  /**
+   * Enable the ranking informations in the response, set to 1 to activate
+   * @see https://www.algolia.com/doc/rest#param-getRankingInfo
+   * @member {number}
+   */
+  this.getRankingInfo = params.getRankingInfo;
+  /**
+   * Remove duplicates based on the index setting attributeForDistinct
+   * @see https://www.algolia.com/doc/rest#param-distinct
+   * @member {boolean|number}
+   */
+  this.distinct = params.distinct;
+  /**
+   * Center of the geo search.
+   * @see https://www.algolia.com/doc/rest#param-aroundLatLng
+   * @member {string}
+   */
+  this.aroundLatLng = params.aroundLatLng;
+  /**
+   * Center of the search, retrieve from the user IP.
+   * @see https://www.algolia.com/doc/rest#param-aroundLatLngViaIP
+   * @member {boolean}
+   */
+  this.aroundLatLngViaIP = params.aroundLatLngViaIP;
+  /**
+   * Radius of the geo search.
+   * @see https://www.algolia.com/doc/rest#param-aroundRadius
+   * @member {number}
+   */
+  this.aroundRadius = params.aroundRadius;
+  /**
+   * Precision of the geo search.
+   * @see https://www.algolia.com/doc/rest#param-aroundPrecision
+   * @member {number}
+   */
+  this.minimumAroundRadius = params.minimumAroundRadius;
+  /**
+   * Precision of the geo search.
+   * @see https://www.algolia.com/doc/rest#param-minimumAroundRadius
+   * @member {number}
+   */
+  this.aroundPrecision = params.aroundPrecision;
+  /**
+   * Geo search inside a box.
+   * @see https://www.algolia.com/doc/rest#param-insideBoundingBox
+   * @member {string}
+   */
+  this.insideBoundingBox = params.insideBoundingBox;
+  /**
+   * Geo search inside a polygon.
+   * @see https://www.algolia.com/doc/rest#param-insidePolygon
+   * @member {string}
+   */
+  this.insidePolygon = params.insidePolygon;
+  /**
+   * Allows to specify an ellipsis character for the snippet when we truncate the text
+   * (added before and after if truncated).
+   * The default value is an empty string and we recommend to set it to "…"
+   * @see https://www.algolia.com/doc/rest#param-insidePolygon
+   * @member {string}
+   */
+  this.snippetEllipsisText = params.snippetEllipsisText;
+  /**
+   * Allows to specify some attributes name on which exact won't be applied.
+   * Attributes are separated with a comma (for example "name,address" ), you can also use a
+   * JSON string array encoding (for example encodeURIComponent('["name","address"]') ).
+   * By default the list is empty.
+   * @see https://www.algolia.com/doc/rest#param-disableExactOnAttributes
+   * @member {string|string[]}
+   */
+  this.disableExactOnAttributes = params.disableExactOnAttributes;
+  /**
+   * Applies 'exact' on single word queries if the word contains at least 3 characters
+   * and is not a stop word.
+   * Can take two values: true or false.
+   * By default, its set to false.
+   * @see https://www.algolia.com/doc/rest#param-enableExactOnSingleWordQuery
+   * @member {boolean}
+   */
+  this.enableExactOnSingleWordQuery = params.enableExactOnSingleWordQuery;
+
+  // Undocumented parameters, still needed otherwise we fail
+  this.offset = params.offset;
+  this.length = params.length;
+
+  var self = this;
+  forOwn(params, function checkForUnknownParameter(paramValue, paramName) {
+    if (SearchParameters.PARAMETERS.indexOf(paramName) === -1) {
+      self[paramName] = paramValue;
+    }
+  });
+}
+
+/**
+ * List all the properties in SearchParameters and therefore all the known Algolia properties
+ * This doesn't contain any beta/hidden features.
+ * @private
+ */
+SearchParameters.PARAMETERS = keys(new SearchParameters());
+
+/**
+ * @private
+ * @param {object} partialState full or part of a state
+ * @return {object} a new object with the number keys as number
+ */
+SearchParameters._parseNumbers = function(partialState) {
+  // Do not reparse numbers in SearchParameters, they ought to be parsed already
+  if (partialState instanceof SearchParameters) return partialState;
+
+  var numbers = {};
+
+  var numberKeys = [
+    'aroundPrecision',
+    'aroundRadius',
+    'getRankingInfo',
+    'minWordSizefor2Typos',
+    'minWordSizefor1Typo',
+    'page',
+    'maxValuesPerFacet',
+    'distinct',
+    'minimumAroundRadius',
+    'hitsPerPage',
+    'minProximity'
+  ];
+
+  forEach(numberKeys, function(k) {
+    var value = partialState[k];
+    if (isString(value)) {
+      var parsedValue = parseFloat(value);
+      numbers[k] = isNaN(parsedValue) ? value : parsedValue;
+    }
+  });
+
+  // there's two formats of insideBoundingBox, we need to parse
+  // the one which is an array of float geo rectangles
+  if (Array.isArray(partialState.insideBoundingBox)) {
+    numbers.insideBoundingBox = partialState.insideBoundingBox.map(function(geoRect) {
+      return geoRect.map(function(value) {
+        return parseFloat(value);
+      });
+    });
+  }
+
+  if (partialState.numericRefinements) {
+    var numericRefinements = {};
+    forEach(partialState.numericRefinements, function(operators, attribute) {
+      numericRefinements[attribute] = {};
+      forEach(operators, function(values, operator) {
+        var parsedValues = map(values, function(v) {
+          if (Array.isArray(v)) {
+            return map(v, function(vPrime) {
+              if (isString(vPrime)) {
+                return parseFloat(vPrime);
+              }
+              return vPrime;
+            });
+          } else if (isString(v)) {
+            return parseFloat(v);
+          }
+          return v;
+        });
+        numericRefinements[attribute][operator] = parsedValues;
+      });
+    });
+    numbers.numericRefinements = numericRefinements;
+  }
+
+  return merge({}, partialState, numbers);
+};
+
+/**
+ * Factory for SearchParameters
+ * @param {object|SearchParameters} newParameters existing parameters or partial
+ * object for the properties of a new SearchParameters
+ * @return {SearchParameters} frozen instance of SearchParameters
+ */
+SearchParameters.make = function makeSearchParameters(newParameters) {
+  var instance = new SearchParameters(newParameters);
+
+  forEach(newParameters.hierarchicalFacets, function(facet) {
+    if (facet.rootPath) {
+      var currentRefinement = instance.getHierarchicalRefinement(facet.name);
+
+      if (currentRefinement.length > 0 && currentRefinement[0].indexOf(facet.rootPath) !== 0) {
+        instance = instance.clearRefinements(facet.name);
+      }
+
+      // get it again in case it has been cleared
+      currentRefinement = instance.getHierarchicalRefinement(facet.name);
+      if (currentRefinement.length === 0) {
+        instance = instance.toggleHierarchicalFacetRefinement(facet.name, facet.rootPath);
+      }
+    }
+  });
+
+  return instance;
+};
+
+/**
+ * Validates the new parameters based on the previous state
+ * @param {SearchParameters} currentState the current state
+ * @param {object|SearchParameters} parameters the new parameters to set
+ * @return {Error|null} Error if the modification is invalid, null otherwise
+ */
+SearchParameters.validate = function(currentState, parameters) {
+  var params = parameters || {};
+
+  if (currentState.tagFilters && params.tagRefinements && params.tagRefinements.length > 0) {
+    return new Error(
+      '[Tags] Cannot switch from the managed tag API to the advanced API. It is probably ' +
+      'an error, if it is really what you want, you should first clear the tags with clearTags method.');
+  }
+
+  if (currentState.tagRefinements.length > 0 && params.tagFilters) {
+    return new Error(
+      '[Tags] Cannot switch from the advanced tag API to the managed API. It is probably ' +
+      'an error, if it is not, you should first clear the tags with clearTags method.');
+  }
+
+  if (currentState.numericFilters && params.numericRefinements && !isEmpty(params.numericRefinements)) {
+    return new Error(
+      "[Numeric filters] Can't switch from the advanced to the managed API. It" +
+      ' is probably an error, if this is really what you want, you have to first' +
+      ' clear the numeric filters.');
+  }
+
+  if (!isEmpty(currentState.numericRefinements) && params.numericFilters) {
+    return new Error(
+      "[Numeric filters] Can't switch from the managed API to the advanced. It" +
+      ' is probably an error, if this is really what you want, you have to first' +
+      ' clear the numeric filters.');
+  }
+
+  return null;
+};
+
+SearchParameters.prototype = {
+  constructor: SearchParameters,
+
+  /**
+   * Remove all refinements (disjunctive + conjunctive + excludes + numeric filters)
+   * @method
+   * @param {undefined|string|SearchParameters.clearCallback} [attribute] optional string or function
+   * - If not given, means to clear all the filters.
+   * - If `string`, means to clear all refinements for the `attribute` named filter.
+   * - If `function`, means to clear all the refinements that return truthy values.
+   * @return {SearchParameters}
+   */
+  clearRefinements: function clearRefinements(attribute) {
+    var clear = RefinementList.clearRefinement;
+    var patch = {
+      numericRefinements: this._clearNumericRefinements(attribute),
+      facetsRefinements: clear(this.facetsRefinements, attribute, 'conjunctiveFacet'),
+      facetsExcludes: clear(this.facetsExcludes, attribute, 'exclude'),
+      disjunctiveFacetsRefinements: clear(this.disjunctiveFacetsRefinements, attribute, 'disjunctiveFacet'),
+      hierarchicalFacetsRefinements: clear(this.hierarchicalFacetsRefinements, attribute, 'hierarchicalFacet')
+    };
+    if (patch.numericRefinements === this.numericRefinements &&
+        patch.facetsRefinements === this.facetsRefinements &&
+        patch.facetsExcludes === this.facetsExcludes &&
+        patch.disjunctiveFacetsRefinements === this.disjunctiveFacetsRefinements &&
+        patch.hierarchicalFacetsRefinements === this.hierarchicalFacetsRefinements) {
+      return this;
+    }
+    return this.setQueryParameters(patch);
+  },
+  /**
+   * Remove all the refined tags from the SearchParameters
+   * @method
+   * @return {SearchParameters}
+   */
+  clearTags: function clearTags() {
+    if (this.tagFilters === undefined && this.tagRefinements.length === 0) return this;
+
+    return this.setQueryParameters({
+      tagFilters: undefined,
+      tagRefinements: []
+    });
+  },
+  /**
+   * Set the index.
+   * @method
+   * @param {string} index the index name
+   * @return {SearchParameters}
+   */
+  setIndex: function setIndex(index) {
+    if (index === this.index) return this;
+
+    return this.setQueryParameters({
+      index: index
+    });
+  },
+  /**
+   * Query setter
+   * @method
+   * @param {string} newQuery value for the new query
+   * @return {SearchParameters}
+   */
+  setQuery: function setQuery(newQuery) {
+    if (newQuery === this.query) return this;
+
+    return this.setQueryParameters({
+      query: newQuery
+    });
+  },
+  /**
+   * Page setter
+   * @method
+   * @param {number} newPage new page number
+   * @return {SearchParameters}
+   */
+  setPage: function setPage(newPage) {
+    if (newPage === this.page) return this;
+
+    return this.setQueryParameters({
+      page: newPage
+    });
+  },
+  /**
+   * Facets setter
+   * The facets are the simple facets, used for conjunctive (and) faceting.
+   * @method
+   * @param {string[]} facets all the attributes of the algolia records used for conjunctive faceting
+   * @return {SearchParameters}
+   */
+  setFacets: function setFacets(facets) {
+    return this.setQueryParameters({
+      facets: facets
+    });
+  },
+  /**
+   * Disjunctive facets setter
+   * Change the list of disjunctive (or) facets the helper chan handle.
+   * @method
+   * @param {string[]} facets all the attributes of the algolia records used for disjunctive faceting
+   * @return {SearchParameters}
+   */
+  setDisjunctiveFacets: function setDisjunctiveFacets(facets) {
+    return this.setQueryParameters({
+      disjunctiveFacets: facets
+    });
+  },
+  /**
+   * HitsPerPage setter
+   * Hits per page represents the number of hits retrieved for this query
+   * @method
+   * @param {number} n number of hits retrieved per page of results
+   * @return {SearchParameters}
+   */
+  setHitsPerPage: function setHitsPerPage(n) {
+    if (this.hitsPerPage === n) return this;
+
+    return this.setQueryParameters({
+      hitsPerPage: n
+    });
+  },
+  /**
+   * typoTolerance setter
+   * Set the value of typoTolerance
+   * @method
+   * @param {string} typoTolerance new value of typoTolerance ("true", "false", "min" or "strict")
+   * @return {SearchParameters}
+   */
+  setTypoTolerance: function setTypoTolerance(typoTolerance) {
+    if (this.typoTolerance === typoTolerance) return this;
+
+    return this.setQueryParameters({
+      typoTolerance: typoTolerance
+    });
+  },
+  /**
+   * Add a numeric filter for a given attribute
+   * When value is an array, they are combined with OR
+   * When value is a single value, it will combined with AND
+   * @method
+   * @param {string} attribute attribute to set the filter on
+   * @param {string} operator operator of the filter (possible values: =, >, >=, <, <=, !=)
+   * @param {number | number[]} value value of the filter
+   * @return {SearchParameters}
+   * @example
+   * // for price = 50 or 40
+   * searchparameter.addNumericRefinement('price', '=', [50, 40]);
+   * @example
+   * // for size = 38 and 40
+   * searchparameter.addNumericRefinement('size', '=', 38);
+   * searchparameter.addNumericRefinement('size', '=', 40);
+   */
+  addNumericRefinement: function(attribute, operator, v) {
+    var value = valToNumber(v);
+
+    if (this.isNumericRefined(attribute, operator, value)) return this;
+
+    var mod = merge({}, this.numericRefinements);
+
+    mod[attribute] = merge({}, mod[attribute]);
+
+    if (mod[attribute][operator]) {
+      // Array copy
+      mod[attribute][operator] = mod[attribute][operator].slice();
+      // Add the element. Concat can't be used here because value can be an array.
+      mod[attribute][operator].push(value);
+    } else {
+      mod[attribute][operator] = [value];
+    }
+
+    return this.setQueryParameters({
+      numericRefinements: mod
+    });
+  },
+  /**
+   * Get the list of conjunctive refinements for a single facet
+   * @param {string} facetName name of the attribute used for faceting
+   * @return {string[]} list of refinements
+   */
+  getConjunctiveRefinements: function(facetName) {
+    if (!this.isConjunctiveFacet(facetName)) {
+      throw new Error(facetName + ' is not defined in the facets attribute of the helper configuration');
+    }
+    return this.facetsRefinements[facetName] || [];
+  },
+  /**
+   * Get the list of disjunctive refinements for a single facet
+   * @param {string} facetName name of the attribute used for faceting
+   * @return {string[]} list of refinements
+   */
+  getDisjunctiveRefinements: function(facetName) {
+    if (!this.isDisjunctiveFacet(facetName)) {
+      throw new Error(
+        facetName + ' is not defined in the disjunctiveFacets attribute of the helper configuration'
+      );
+    }
+    return this.disjunctiveFacetsRefinements[facetName] || [];
+  },
+  /**
+   * Get the list of hierarchical refinements for a single facet
+   * @param {string} facetName name of the attribute used for faceting
+   * @return {string[]} list of refinements
+   */
+  getHierarchicalRefinement: function(facetName) {
+    // we send an array but we currently do not support multiple
+    // hierarchicalRefinements for a hierarchicalFacet
+    return this.hierarchicalFacetsRefinements[facetName] || [];
+  },
+  /**
+   * Get the list of exclude refinements for a single facet
+   * @param {string} facetName name of the attribute used for faceting
+   * @return {string[]} list of refinements
+   */
+  getExcludeRefinements: function(facetName) {
+    if (!this.isConjunctiveFacet(facetName)) {
+      throw new Error(facetName + ' is not defined in the facets attribute of the helper configuration');
+    }
+    return this.facetsExcludes[facetName] || [];
+  },
+
+  /**
+   * Remove all the numeric filter for a given (attribute, operator)
+   * @method
+   * @param {string} attribute attribute to set the filter on
+   * @param {string} [operator] operator of the filter (possible values: =, >, >=, <, <=, !=)
+   * @param {number} [number] the value to be removed
+   * @return {SearchParameters}
+   */
+  removeNumericRefinement: function(attribute, operator, paramValue) {
+    if (paramValue !== undefined) {
+      var paramValueAsNumber = valToNumber(paramValue);
+      if (!this.isNumericRefined(attribute, operator, paramValueAsNumber)) return this;
+      return this.setQueryParameters({
+        numericRefinements: this._clearNumericRefinements(function(value, key) {
+          return key === attribute && value.op === operator && isEqual(value.val, paramValueAsNumber);
+        })
+      });
+    } else if (operator !== undefined) {
+      if (!this.isNumericRefined(attribute, operator)) return this;
+      return this.setQueryParameters({
+        numericRefinements: this._clearNumericRefinements(function(value, key) {
+          return key === attribute && value.op === operator;
+        })
+      });
+    }
+
+    if (!this.isNumericRefined(attribute)) return this;
+    return this.setQueryParameters({
+      numericRefinements: this._clearNumericRefinements(function(value, key) {
+        return key === attribute;
+      })
+    });
+  },
+  /**
+   * Get the list of numeric refinements for a single facet
+   * @param {string} facetName name of the attribute used for faceting
+   * @return {SearchParameters.OperatorList[]} list of refinements
+   */
+  getNumericRefinements: function(facetName) {
+    return this.numericRefinements[facetName] || {};
+  },
+  /**
+   * Return the current refinement for the (attribute, operator)
+   * @param {string} attribute attribute in the record
+   * @param {string} operator operator applied on the refined values
+   * @return {Array.<number|number[]>} refined values
+   */
+  getNumericRefinement: function(attribute, operator) {
+    return this.numericRefinements[attribute] && this.numericRefinements[attribute][operator];
+  },
+  /**
+   * Clear numeric filters.
+   * @method
+   * @private
+   * @param {string|SearchParameters.clearCallback} [attribute] optional string or function
+   * - If not given, means to clear all the filters.
+   * - If `string`, means to clear all refinements for the `attribute` named filter.
+   * - If `function`, means to clear all the refinements that return truthy values.
+   * @return {Object.<string, OperatorList>}
+   */
+  _clearNumericRefinements: function _clearNumericRefinements(attribute) {
+    if (isUndefined(attribute)) {
+      if (isEmpty(this.numericRefinements)) return this.numericRefinements;
+      return {};
+    } else if (isString(attribute)) {
+      if (isEmpty(this.numericRefinements[attribute])) return this.numericRefinements;
+      return omit(this.numericRefinements, attribute);
+    } else if (isFunction(attribute)) {
+      var hasChanged = false;
+      var newNumericRefinements = reduce(this.numericRefinements, function(memo, operators, key) {
+        var operatorList = {};
+
+        forEach(operators, function(values, operator) {
+          var outValues = [];
+          forEach(values, function(value) {
+            var predicateResult = attribute({val: value, op: operator}, key, 'numeric');
+            if (!predicateResult) outValues.push(value);
+          });
+          if (!isEmpty(outValues)) {
+            if (outValues.length !== values.length) hasChanged = true;
+            operatorList[operator] = outValues;
+          }
+          else hasChanged = true;
+        });
+
+        if (!isEmpty(operatorList)) memo[key] = operatorList;
+
+        return memo;
+      }, {});
+
+      if (hasChanged) return newNumericRefinements;
+      return this.numericRefinements;
+    }
+  },
+  /**
+   * Add a facet to the facets attribute of the helper configuration, if it
+   * isn't already present.
+   * @method
+   * @param {string} facet facet name to add
+   * @return {SearchParameters}
+   */
+  addFacet: function addFacet(facet) {
+    if (this.isConjunctiveFacet(facet)) {
+      return this;
+    }
+
+    return this.setQueryParameters({
+      facets: this.facets.concat([facet])
+    });
+  },
+  /**
+   * Add a disjunctive facet to the disjunctiveFacets attribute of the helper
+   * configuration, if it isn't already present.
+   * @method
+   * @param {string} facet disjunctive facet name to add
+   * @return {SearchParameters}
+   */
+  addDisjunctiveFacet: function addDisjunctiveFacet(facet) {
+    if (this.isDisjunctiveFacet(facet)) {
+      return this;
+    }
+
+    return this.setQueryParameters({
+      disjunctiveFacets: this.disjunctiveFacets.concat([facet])
+    });
+  },
+  /**
+   * Add a hierarchical facet to the hierarchicalFacets attribute of the helper
+   * configuration.
+   * @method
+   * @param {object} hierarchicalFacet hierarchical facet to add
+   * @return {SearchParameters}
+   * @throws will throw an error if a hierarchical facet with the same name was already declared
+   */
+  addHierarchicalFacet: function addHierarchicalFacet(hierarchicalFacet) {
+    if (this.isHierarchicalFacet(hierarchicalFacet.name)) {
+      throw new Error(
+        'Cannot declare two hierarchical facets with the same name: `' + hierarchicalFacet.name + '`');
+    }
+
+    return this.setQueryParameters({
+      hierarchicalFacets: this.hierarchicalFacets.concat([hierarchicalFacet])
+    });
+  },
+  /**
+   * Add a refinement on a "normal" facet
+   * @method
+   * @param {string} facet attribute to apply the faceting on
+   * @param {string} value value of the attribute (will be converted to string)
+   * @return {SearchParameters}
+   */
+  addFacetRefinement: function addFacetRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    if (RefinementList.isRefined(this.facetsRefinements, facet, value)) return this;
+
+    return this.setQueryParameters({
+      facetsRefinements: RefinementList.addRefinement(this.facetsRefinements, facet, value)
+    });
+  },
+  /**
+   * Exclude a value from a "normal" facet
+   * @method
+   * @param {string} facet attribute to apply the exclusion on
+   * @param {string} value value of the attribute (will be converted to string)
+   * @return {SearchParameters}
+   */
+  addExcludeRefinement: function addExcludeRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    if (RefinementList.isRefined(this.facetsExcludes, facet, value)) return this;
+
+    return this.setQueryParameters({
+      facetsExcludes: RefinementList.addRefinement(this.facetsExcludes, facet, value)
+    });
+  },
+  /**
+   * Adds a refinement on a disjunctive facet.
+   * @method
+   * @param {string} facet attribute to apply the faceting on
+   * @param {string} value value of the attribute (will be converted to string)
+   * @return {SearchParameters}
+   */
+  addDisjunctiveFacetRefinement: function addDisjunctiveFacetRefinement(facet, value) {
+    if (!this.isDisjunctiveFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
+    }
+
+    if (RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value)) return this;
+
+    return this.setQueryParameters({
+      disjunctiveFacetsRefinements: RefinementList.addRefinement(
+        this.disjunctiveFacetsRefinements, facet, value)
+    });
+  },
+  /**
+   * addTagRefinement adds a tag to the list used to filter the results
+   * @param {string} tag tag to be added
+   * @return {SearchParameters}
+   */
+  addTagRefinement: function addTagRefinement(tag) {
+    if (this.isTagRefined(tag)) return this;
+
+    var modification = {
+      tagRefinements: this.tagRefinements.concat(tag)
+    };
+
+    return this.setQueryParameters(modification);
+  },
+  /**
+   * Remove a facet from the facets attribute of the helper configuration, if it
+   * is present.
+   * @method
+   * @param {string} facet facet name to remove
+   * @return {SearchParameters}
+   */
+  removeFacet: function removeFacet(facet) {
+    if (!this.isConjunctiveFacet(facet)) {
+      return this;
+    }
+
+    return this.clearRefinements(facet).setQueryParameters({
+      facets: filter(this.facets, function(f) {
+        return f !== facet;
+      })
+    });
+  },
+  /**
+   * Remove a disjunctive facet from the disjunctiveFacets attribute of the
+   * helper configuration, if it is present.
+   * @method
+   * @param {string} facet disjunctive facet name to remove
+   * @return {SearchParameters}
+   */
+  removeDisjunctiveFacet: function removeDisjunctiveFacet(facet) {
+    if (!this.isDisjunctiveFacet(facet)) {
+      return this;
+    }
+
+    return this.clearRefinements(facet).setQueryParameters({
+      disjunctiveFacets: filter(this.disjunctiveFacets, function(f) {
+        return f !== facet;
+      })
+    });
+  },
+  /**
+   * Remove a hierarchical facet from the hierarchicalFacets attribute of the
+   * helper configuration, if it is present.
+   * @method
+   * @param {string} facet hierarchical facet name to remove
+   * @return {SearchParameters}
+   */
+  removeHierarchicalFacet: function removeHierarchicalFacet(facet) {
+    if (!this.isHierarchicalFacet(facet)) {
+      return this;
+    }
+
+    return this.clearRefinements(facet).setQueryParameters({
+      hierarchicalFacets: filter(this.hierarchicalFacets, function(f) {
+        return f.name !== facet;
+      })
+    });
+  },
+  /**
+   * Remove a refinement set on facet. If a value is provided, it will clear the
+   * refinement for the given value, otherwise it will clear all the refinement
+   * values for the faceted attribute.
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {string} [value] value used to filter
+   * @return {SearchParameters}
+   */
+  removeFacetRefinement: function removeFacetRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    if (!RefinementList.isRefined(this.facetsRefinements, facet, value)) return this;
+
+    return this.setQueryParameters({
+      facetsRefinements: RefinementList.removeRefinement(this.facetsRefinements, facet, value)
+    });
+  },
+  /**
+   * Remove a negative refinement on a facet
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {string} value value used to filter
+   * @return {SearchParameters}
+   */
+  removeExcludeRefinement: function removeExcludeRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    if (!RefinementList.isRefined(this.facetsExcludes, facet, value)) return this;
+
+    return this.setQueryParameters({
+      facetsExcludes: RefinementList.removeRefinement(this.facetsExcludes, facet, value)
+    });
+  },
+  /**
+   * Remove a refinement on a disjunctive facet
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {string} value value used to filter
+   * @return {SearchParameters}
+   */
+  removeDisjunctiveFacetRefinement: function removeDisjunctiveFacetRefinement(facet, value) {
+    if (!this.isDisjunctiveFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
+    }
+    if (!RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value)) return this;
+
+    return this.setQueryParameters({
+      disjunctiveFacetsRefinements: RefinementList.removeRefinement(
+        this.disjunctiveFacetsRefinements, facet, value)
+    });
+  },
+  /**
+   * Remove a tag from the list of tag refinements
+   * @method
+   * @param {string} tag the tag to remove
+   * @return {SearchParameters}
+   */
+  removeTagRefinement: function removeTagRefinement(tag) {
+    if (!this.isTagRefined(tag)) return this;
+
+    var modification = {
+      tagRefinements: filter(this.tagRefinements, function(t) { return t !== tag; })
+    };
+
+    return this.setQueryParameters(modification);
+  },
+  /**
+   * Generic toggle refinement method to use with facet, disjunctive facets
+   * and hierarchical facets
+   * @param  {string} facet the facet to refine
+   * @param  {string} value the associated value
+   * @return {SearchParameters}
+   * @throws will throw an error if the facet is not declared in the settings of the helper
+   * @deprecated since version 2.19.0, see {@link SearchParameters#toggleFacetRefinement}
+   */
+  toggleRefinement: function toggleRefinement(facet, value) {
+    return this.toggleFacetRefinement(facet, value);
+  },
+  /**
+   * Generic toggle refinement method to use with facet, disjunctive facets
+   * and hierarchical facets
+   * @param  {string} facet the facet to refine
+   * @param  {string} value the associated value
+   * @return {SearchParameters}
+   * @throws will throw an error if the facet is not declared in the settings of the helper
+   */
+  toggleFacetRefinement: function toggleFacetRefinement(facet, value) {
+    if (this.isHierarchicalFacet(facet)) {
+      return this.toggleHierarchicalFacetRefinement(facet, value);
+    } else if (this.isConjunctiveFacet(facet)) {
+      return this.toggleConjunctiveFacetRefinement(facet, value);
+    } else if (this.isDisjunctiveFacet(facet)) {
+      return this.toggleDisjunctiveFacetRefinement(facet, value);
+    }
+
+    throw new Error('Cannot refine the undeclared facet ' + facet +
+      '; it should be added to the helper options facets, disjunctiveFacets or hierarchicalFacets');
+  },
+  /**
+   * Switch the refinement applied over a facet/value
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {SearchParameters}
+   */
+  toggleConjunctiveFacetRefinement: function toggleConjunctiveFacetRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+
+    return this.setQueryParameters({
+      facetsRefinements: RefinementList.toggleRefinement(this.facetsRefinements, facet, value)
+    });
+  },
+  /**
+   * Switch the refinement applied over a facet/value
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {SearchParameters}
+   */
+  toggleExcludeFacetRefinement: function toggleExcludeFacetRefinement(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+
+    return this.setQueryParameters({
+      facetsExcludes: RefinementList.toggleRefinement(this.facetsExcludes, facet, value)
+    });
+  },
+  /**
+   * Switch the refinement applied over a facet/value
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {SearchParameters}
+   */
+  toggleDisjunctiveFacetRefinement: function toggleDisjunctiveFacetRefinement(facet, value) {
+    if (!this.isDisjunctiveFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
+    }
+
+    return this.setQueryParameters({
+      disjunctiveFacetsRefinements: RefinementList.toggleRefinement(
+        this.disjunctiveFacetsRefinements, facet, value)
+    });
+  },
+  /**
+   * Switch the refinement applied over a facet/value
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {SearchParameters}
+   */
+  toggleHierarchicalFacetRefinement: function toggleHierarchicalFacetRefinement(facet, value) {
+    if (!this.isHierarchicalFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the hierarchicalFacets attribute of the helper configuration');
+    }
+
+    var separator = this._getHierarchicalFacetSeparator(this.getHierarchicalFacetByName(facet));
+
+    var mod = {};
+
+    var upOneOrMultipleLevel = this.hierarchicalFacetsRefinements[facet] !== undefined &&
+      this.hierarchicalFacetsRefinements[facet].length > 0 && (
+      // remove current refinement:
+      // refinement was 'beer > IPA', call is toggleRefine('beer > IPA'), refinement should be `beer`
+      this.hierarchicalFacetsRefinements[facet][0] === value ||
+      // remove a parent refinement of the current refinement:
+      //  - refinement was 'beer > IPA > Flying dog'
+      //  - call is toggleRefine('beer > IPA')
+      //  - refinement should be `beer`
+      this.hierarchicalFacetsRefinements[facet][0].indexOf(value + separator) === 0
+    );
+
+    if (upOneOrMultipleLevel) {
+      if (value.indexOf(separator) === -1) {
+        // go back to root level
+        mod[facet] = [];
+      } else {
+        mod[facet] = [value.slice(0, value.lastIndexOf(separator))];
+      }
+    } else {
+      mod[facet] = [value];
+    }
+
+    return this.setQueryParameters({
+      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
+    });
+  },
+
+  /**
+   * Adds a refinement on a hierarchical facet.
+   * @param {string} facet the facet name
+   * @param {string} path the hierarchical facet path
+   * @return {SearchParameter} the new state
+   * @throws Error if the facet is not defined or if the facet is refined
+   */
+  addHierarchicalFacetRefinement: function(facet, path) {
+    if (this.isHierarchicalFacetRefined(facet)) {
+      throw new Error(facet + ' is already refined.');
+    }
+    var mod = {};
+    mod[facet] = [path];
+    return this.setQueryParameters({
+      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
+    });
+  },
+
+  /**
+   * Removes the refinement set on a hierarchical facet.
+   * @param {string} facet the facet name
+   * @return {SearchParameter} the new state
+   * @throws Error if the facet is not defined or if the facet is not refined
+   */
+  removeHierarchicalFacetRefinement: function(facet) {
+    if (!this.isHierarchicalFacetRefined(facet)) {
+      throw new Error(facet + ' is not refined.');
+    }
+    var mod = {};
+    mod[facet] = [];
+    return this.setQueryParameters({
+      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
+    });
+  },
+  /**
+   * Switch the tag refinement
+   * @method
+   * @param {string} tag the tag to remove or add
+   * @return {SearchParameters}
+   */
+  toggleTagRefinement: function toggleTagRefinement(tag) {
+    if (this.isTagRefined(tag)) {
+      return this.removeTagRefinement(tag);
+    }
+
+    return this.addTagRefinement(tag);
+  },
+  /**
+   * Test if the facet name is from one of the disjunctive facets
+   * @method
+   * @param {string} facet facet name to test
+   * @return {boolean}
+   */
+  isDisjunctiveFacet: function(facet) {
+    return indexOf(this.disjunctiveFacets, facet) > -1;
+  },
+  /**
+   * Test if the facet name is from one of the hierarchical facets
+   * @method
+   * @param {string} facetName facet name to test
+   * @return {boolean}
+   */
+  isHierarchicalFacet: function(facetName) {
+    return this.getHierarchicalFacetByName(facetName) !== undefined;
+  },
+  /**
+   * Test if the facet name is from one of the conjunctive/normal facets
+   * @method
+   * @param {string} facet facet name to test
+   * @return {boolean}
+   */
+  isConjunctiveFacet: function(facet) {
+    return indexOf(this.facets, facet) > -1;
+  },
+  /**
+   * Returns true if the facet is refined, either for a specific value or in
+   * general.
+   * @method
+   * @param {string} facet name of the attribute for used for faceting
+   * @param {string} value, optional value. If passed will test that this value
+   * is filtering the given facet.
+   * @return {boolean} returns true if refined
+   */
+  isFacetRefined: function isFacetRefined(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    return RefinementList.isRefined(this.facetsRefinements, facet, value);
+  },
+  /**
+   * Returns true if the facet contains exclusions or if a specific value is
+   * excluded.
+   *
+   * @method
+   * @param {string} facet name of the attribute for used for faceting
+   * @param {string} [value] optional value. If passed will test that this value
+   * is filtering the given facet.
+   * @return {boolean} returns true if refined
+   */
+  isExcludeRefined: function isExcludeRefined(facet, value) {
+    if (!this.isConjunctiveFacet(facet)) {
+      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
+    }
+    return RefinementList.isRefined(this.facetsExcludes, facet, value);
+  },
+  /**
+   * Returns true if the facet contains a refinement, or if a value passed is a
+   * refinement for the facet.
+   * @method
+   * @param {string} facet name of the attribute for used for faceting
+   * @param {string} value optional, will test if the value is used for refinement
+   * if there is one, otherwise will test if the facet contains any refinement
+   * @return {boolean}
+   */
+  isDisjunctiveFacetRefined: function isDisjunctiveFacetRefined(facet, value) {
+    if (!this.isDisjunctiveFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
+    }
+    return RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value);
+  },
+  /**
+   * Returns true if the facet contains a refinement, or if a value passed is a
+   * refinement for the facet.
+   * @method
+   * @param {string} facet name of the attribute for used for faceting
+   * @param {string} value optional, will test if the value is used for refinement
+   * if there is one, otherwise will test if the facet contains any refinement
+   * @return {boolean}
+   */
+  isHierarchicalFacetRefined: function isHierarchicalFacetRefined(facet, value) {
+    if (!this.isHierarchicalFacet(facet)) {
+      throw new Error(
+        facet + ' is not defined in the hierarchicalFacets attribute of the helper configuration');
+    }
+
+    var refinements = this.getHierarchicalRefinement(facet);
+
+    if (!value) {
+      return refinements.length > 0;
+    }
+
+    return indexOf(refinements, value) !== -1;
+  },
+  /**
+   * Test if the triple (attribute, operator, value) is already refined.
+   * If only the attribute and the operator are provided, it tests if the
+   * contains any refinement value.
+   * @method
+   * @param {string} attribute attribute for which the refinement is applied
+   * @param {string} [operator] operator of the refinement
+   * @param {string} [value] value of the refinement
+   * @return {boolean} true if it is refined
+   */
+  isNumericRefined: function isNumericRefined(attribute, operator, value) {
+    if (isUndefined(value) && isUndefined(operator)) {
+      return !!this.numericRefinements[attribute];
+    }
+
+    var isOperatorDefined = this.numericRefinements[attribute] &&
+      !isUndefined(this.numericRefinements[attribute][operator]);
+
+    if (isUndefined(value) || !isOperatorDefined) {
+      return isOperatorDefined;
+    }
+
+    var parsedValue = valToNumber(value);
+    var isAttributeValueDefined = !isUndefined(
+      findArray(this.numericRefinements[attribute][operator], parsedValue)
+    );
+
+    return isOperatorDefined && isAttributeValueDefined;
+  },
+  /**
+   * Returns true if the tag refined, false otherwise
+   * @method
+   * @param {string} tag the tag to check
+   * @return {boolean}
+   */
+  isTagRefined: function isTagRefined(tag) {
+    return indexOf(this.tagRefinements, tag) !== -1;
+  },
+  /**
+   * Returns the list of all disjunctive facets refined
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {string[]}
+   */
+  getRefinedDisjunctiveFacets: function getRefinedDisjunctiveFacets() {
+    // attributes used for numeric filter can also be disjunctive
+    var disjunctiveNumericRefinedFacets = intersection(
+      keys(this.numericRefinements),
+      this.disjunctiveFacets
+    );
+
+    return keys(this.disjunctiveFacetsRefinements)
+      .concat(disjunctiveNumericRefinedFacets)
+      .concat(this.getRefinedHierarchicalFacets());
+  },
+  /**
+   * Returns the list of all disjunctive facets refined
+   * @method
+   * @param {string} facet name of the attribute used for faceting
+   * @param {value} value value used for filtering
+   * @return {string[]}
+   */
+  getRefinedHierarchicalFacets: function getRefinedHierarchicalFacets() {
+    return intersection(
+      // enforce the order between the two arrays,
+      // so that refinement name index === hierarchical facet index
+      map(this.hierarchicalFacets, 'name'),
+      keys(this.hierarchicalFacetsRefinements)
+    );
+  },
+  /**
+   * Returned the list of all disjunctive facets not refined
+   * @method
+   * @return {string[]}
+   */
+  getUnrefinedDisjunctiveFacets: function() {
+    var refinedFacets = this.getRefinedDisjunctiveFacets();
+
+    return filter(this.disjunctiveFacets, function(f) {
+      return indexOf(refinedFacets, f) === -1;
+    });
+  },
+
+  managedParameters: [
+    'index',
+    'facets', 'disjunctiveFacets', 'facetsRefinements',
+    'facetsExcludes', 'disjunctiveFacetsRefinements',
+    'numericRefinements', 'tagRefinements', 'hierarchicalFacets', 'hierarchicalFacetsRefinements'
+  ],
+  getQueryParams: function getQueryParams() {
+    var managedParameters = this.managedParameters;
+
+    var queryParams = {};
+
+    forOwn(this, function(paramValue, paramName) {
+      if (indexOf(managedParameters, paramName) === -1 && paramValue !== undefined) {
+        queryParams[paramName] = paramValue;
+      }
+    });
+
+    return queryParams;
+  },
+  /**
+   * Let the user retrieve any parameter value from the SearchParameters
+   * @param {string} paramName name of the parameter
+   * @return {any} the value of the parameter
+   */
+  getQueryParameter: function getQueryParameter(paramName) {
+    if (!this.hasOwnProperty(paramName)) {
+      throw new Error(
+        "Parameter '" + paramName + "' is not an attribute of SearchParameters " +
+        '(http://algolia.github.io/algoliasearch-helper-js/docs/SearchParameters.html)');
+    }
+
+    return this[paramName];
+  },
+  /**
+   * Let the user set a specific value for a given parameter. Will return the
+   * same instance if the parameter is invalid or if the value is the same as the
+   * previous one.
+   * @method
+   * @param {string} parameter the parameter name
+   * @param {any} value the value to be set, must be compliant with the definition
+   * of the attribute on the object
+   * @return {SearchParameters} the updated state
+   */
+  setQueryParameter: function setParameter(parameter, value) {
+    if (this[parameter] === value) return this;
+
+    var modification = {};
+
+    modification[parameter] = value;
+
+    return this.setQueryParameters(modification);
+  },
+  /**
+   * Let the user set any of the parameters with a plain object.
+   * @method
+   * @param {object} params all the keys and the values to be updated
+   * @return {SearchParameters} a new updated instance
+   */
+  setQueryParameters: function setQueryParameters(params) {
+    if (!params) return this;
+
+    var error = SearchParameters.validate(this, params);
+
+    if (error) {
+      throw error;
+    }
+
+    var parsedParams = SearchParameters._parseNumbers(params);
+
+    return this.mutateMe(function mergeWith(newInstance) {
+      var ks = keys(params);
+
+      forEach(ks, function(k) {
+        newInstance[k] = parsedParams[k];
+      });
+
+      return newInstance;
+    });
+  },
+
+  /**
+   * Returns an object with only the selected attributes.
+   * @param {string[]} filters filters to retrieve only a subset of the state. It
+   * accepts strings that can be either attributes of the SearchParameters (e.g. hitsPerPage)
+   * or attributes of the index with the notation 'attribute:nameOfMyAttribute'
+   * @return {object}
+   */
+  filter: function(filters) {
+    return filterState(this, filters);
+  },
+  /**
+   * Helper function to make it easier to build new instances from a mutating
+   * function
+   * @private
+   * @param {function} fn newMutableState -> previousState -> () function that will
+   * change the value of the newMutable to the desired state
+   * @return {SearchParameters} a new instance with the specified modifications applied
+   */
+  mutateMe: function mutateMe(fn) {
+    var newState = new this.constructor(this);
+
+    fn(newState, this);
+    return newState;
+  },
+
+  /**
+   * Helper function to get the hierarchicalFacet separator or the default one (`>`)
+   * @param  {object} hierarchicalFacet
+   * @return {string} returns the hierarchicalFacet.separator or `>` as default
+   */
+  _getHierarchicalFacetSortBy: function(hierarchicalFacet) {
+    return hierarchicalFacet.sortBy || ['isRefined:desc', 'name:asc'];
+  },
+
+  /**
+   * Helper function to get the hierarchicalFacet separator or the default one (`>`)
+   * @private
+   * @param  {object} hierarchicalFacet
+   * @return {string} returns the hierarchicalFacet.separator or `>` as default
+   */
+  _getHierarchicalFacetSeparator: function(hierarchicalFacet) {
+    return hierarchicalFacet.separator || ' > ';
+  },
+
+  /**
+   * Helper function to get the hierarchicalFacet prefix path or null
+   * @private
+   * @param  {object} hierarchicalFacet
+   * @return {string} returns the hierarchicalFacet.rootPath or null as default
+   */
+  _getHierarchicalRootPath: function(hierarchicalFacet) {
+    return hierarchicalFacet.rootPath || null;
+  },
+
+  /**
+   * Helper function to check if we show the parent level of the hierarchicalFacet
+   * @private
+   * @param  {object} hierarchicalFacet
+   * @return {string} returns the hierarchicalFacet.showParentLevel or true as default
+   */
+  _getHierarchicalShowParentLevel: function(hierarchicalFacet) {
+    if (typeof hierarchicalFacet.showParentLevel === 'boolean') {
+      return hierarchicalFacet.showParentLevel;
+    }
+    return true;
+  },
+
+  /**
+   * Helper function to get the hierarchicalFacet by it's name
+   * @param  {string} hierarchicalFacetName
+   * @return {object} a hierarchicalFacet
+   */
+  getHierarchicalFacetByName: function(hierarchicalFacetName) {
+    return find(
+      this.hierarchicalFacets,
+      {name: hierarchicalFacetName}
+    );
+  },
+
+  /**
+   * Get the current breadcrumb for a hierarchical facet, as an array
+   * @param  {string} facetName Hierarchical facet name
+   * @return {array.<string>} the path as an array of string
+   */
+  getHierarchicalFacetBreadcrumb: function(facetName) {
+    if (!this.isHierarchicalFacet(facetName)) {
+      throw new Error(
+        'Cannot get the breadcrumb of an unknown hierarchical facet: `' + facetName + '`');
+    }
+
+    var refinement = this.getHierarchicalRefinement(facetName)[0];
+    if (!refinement) return [];
+
+    var separator = this._getHierarchicalFacetSeparator(
+      this.getHierarchicalFacetByName(facetName)
+    );
+    var path = refinement.split(separator);
+    return map(path, trim);
+  },
+
+  toString: function() {
+    return JSON.stringify(this, null, 2);
+  }
+};
+
+/**
+ * Callback used for clearRefinement method
+ * @callback SearchParameters.clearCallback
+ * @param {OperatorList|FacetList} value the value of the filter
+ * @param {string} key the current attribute name
+ * @param {string} type `numeric`, `disjunctiveFacet`, `conjunctiveFacet`, `hierarchicalFacet` or `exclude`
+ * depending on the type of facet
+ * @return {boolean} `true` if the element should be removed. `false` otherwise.
+ */
+module.exports = SearchParameters;
+
+
+/***/ }),
+/* 65 */
+/***/ (function(module, exports) {
+
+/** Used as references for various `Number` constants. */
+var MAX_SAFE_INTEGER = 9007199254740991;
+
+/**
+ * Checks if `value` is a valid array-like length.
+ *
+ * **Note:** This method is loosely based on
+ * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
+ * @example
+ *
+ * _.isLength(3);
+ * // => true
+ *
+ * _.isLength(Number.MIN_VALUE);
+ * // => false
+ *
+ * _.isLength(Infinity);
+ * // => false
+ *
+ * _.isLength('3');
+ * // => false
+ */
+function isLength(value) {
+  return typeof value == 'number' &&
+    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
+}
+
+module.exports = isLength;
+
+
+/***/ }),
+/* 66 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(102);
+
+/** Detect free variable `exports`. */
+var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
+
+/** Detect free variable `module`. */
+var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+
+/** Detect the popular CommonJS extension `module.exports`. */
+var moduleExports = freeModule && freeModule.exports === freeExports;
+
+/** Detect free variable `process` from Node.js. */
+var freeProcess = moduleExports && freeGlobal.process;
+
+/** Used to access faster Node.js helpers. */
+var nodeUtil = (function() {
+  try {
+    // Use `util.types` for Node.js 10+.
+    var types = freeModule && freeModule.require && freeModule.require('util').types;
+
+    if (types) {
+      return types;
+    }
+
+    // Legacy `process.binding('util')` for Node.js < 10.
+    return freeProcess && freeProcess.binding && freeProcess.binding('util');
+  } catch (e) {}
+}());
+
+module.exports = nodeUtil;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)(module)))
+
+/***/ }),
+/* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var mapCacheClear = __webpack_require__(353),
+    mapCacheDelete = __webpack_require__(369),
+    mapCacheGet = __webpack_require__(371),
+    mapCacheHas = __webpack_require__(372),
+    mapCacheSet = __webpack_require__(373);
+
+/**
+ * Creates a map cache object to store key-value pairs.
+ *
+ * @private
+ * @constructor
+ * @param {Array} [entries] The key-value pairs to cache.
+ */
+function MapCache(entries) {
+  var index = -1,
+      length = entries == null ? 0 : entries.length;
+
+  this.clear();
+  while (++index < length) {
+    var entry = entries[index];
+    this.set(entry[0], entry[1]);
+  }
+}
+
+// Add methods to `MapCache`.
+MapCache.prototype.clear = mapCacheClear;
+MapCache.prototype['delete'] = mapCacheDelete;
+MapCache.prototype.get = mapCacheGet;
+MapCache.prototype.has = mapCacheHas;
+MapCache.prototype.set = mapCacheSet;
+
+module.exports = MapCache;
+
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var getNative = __webpack_require__(13),
+    root = __webpack_require__(2);
+
+/* Built-in method references that are verified to be native. */
+var Map = getNative(root, 'Map');
+
+module.exports = Map;
+
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports) {
+
+/**
+ * A faster alternative to `Function#apply`, this function invokes `func`
+ * with the `this` binding of `thisArg` and the arguments of `args`.
+ *
+ * @private
+ * @param {Function} func The function to invoke.
+ * @param {*} thisArg The `this` binding of `func`.
+ * @param {Array} args The arguments to invoke `func` with.
+ * @returns {*} Returns the result of `func`.
+ */
+function apply(func, thisArg, args) {
+  switch (args.length) {
+    case 0: return func.call(thisArg);
+    case 1: return func.call(thisArg, args[0]);
+    case 2: return func.call(thisArg, args[0], args[1]);
+    case 3: return func.call(thisArg, args[0], args[1], args[2]);
+  }
+  return func.apply(thisArg, args);
+}
+
+module.exports = apply;
+
+
+/***/ }),
+/* 70 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseSetToString = __webpack_require__(379),
+    shortOut = __webpack_require__(113);
+
+/**
+ * Sets the `toString` method of `func` to return `string`.
+ *
+ * @private
+ * @param {Function} func The function to modify.
+ * @param {Function} string The `toString` result.
+ * @returns {Function} Returns `func`.
+ */
+var setToString = shortOut(baseSetToString);
+
+module.exports = setToString;
+
+
+/***/ }),
+/* 71 */
+/***/ (function(module, exports) {
+
+/**
+ * A specialized version of `_.forEach` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} iteratee The function invoked per iteration.
+ * @returns {Array} Returns `array`.
+ */
+function arrayEach(array, iteratee) {
+  var index = -1,
+      length = array == null ? 0 : array.length;
+
+  while (++index < length) {
+    if (iteratee(array[index], index, array) === false) {
+      break;
+    }
+  }
+  return array;
+}
+
+module.exports = arrayEach;
+
+
+/***/ }),
+/* 72 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayFilter = __webpack_require__(117),
+    baseFilter = __webpack_require__(384),
+    baseIteratee = __webpack_require__(7),
+    isArray = __webpack_require__(1);
+
+/**
+ * Iterates over elements of `collection`, returning an array of all elements
+ * `predicate` returns truthy for. The predicate is invoked with three
+ * arguments: (value, index|key, collection).
+ *
+ * **Note:** Unlike `_.remove`, this method returns a new array.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.1.0
+ * @category Collection
+ * @param {Array|Object} collection The collection to iterate over.
+ * @param {Function} [predicate=_.identity] The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ * @see _.reject
+ * @example
+ *
+ * var users = [
+ *   { 'user': 'barney', 'age': 36, 'active': true },
+ *   { 'user': 'fred',   'age': 40, 'active': false }
+ * ];
+ *
+ * _.filter(users, function(o) { return !o.active; });
+ * // => objects for ['fred']
+ *
+ * // The `_.matches` iteratee shorthand.
+ * _.filter(users, { 'age': 36, 'active': true });
+ * // => objects for ['barney']
+ *
+ * // The `_.matchesProperty` iteratee shorthand.
+ * _.filter(users, ['active', false]);
+ * // => objects for ['fred']
+ *
+ * // The `_.property` iteratee shorthand.
+ * _.filter(users, 'active');
+ * // => objects for ['barney']
+ */
+function filter(collection, predicate) {
+  var func = isArray(collection) ? arrayFilter : baseFilter;
+  return func(collection, baseIteratee(predicate, 3));
+}
+
+module.exports = filter;
+
+
+/***/ }),
+/* 73 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseIsEqualDeep = __webpack_require__(392),
+    isObjectLike = __webpack_require__(4);
+
+/**
+ * The base implementation of `_.isEqual` which supports partial comparisons
+ * and tracks traversed objects.
+ *
+ * @private
+ * @param {*} value The value to compare.
+ * @param {*} other The other value to compare.
+ * @param {boolean} bitmask The bitmask flags.
+ *  1 - Unordered comparison
+ *  2 - Partial comparison
+ * @param {Function} [customizer] The function to customize comparisons.
+ * @param {Object} [stack] Tracks traversed `value` and `other` objects.
+ * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
+ */
+function baseIsEqual(value, other, bitmask, customizer, stack) {
+  if (value === other) {
+    return true;
+  }
+  if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
+    return value !== value && other !== other;
+  }
+  return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
+}
+
+module.exports = baseIsEqual;
+
+
+/***/ }),
+/* 74 */
+/***/ (function(module, exports) {
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+      length = values.length,
+      offset = array.length;
+
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+
+module.exports = arrayPush;
+
+
+/***/ }),
+/* 75 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var arrayFilter = __webpack_require__(117),
+    stubArray = __webpack_require__(122);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Built-in value references. */
+var propertyIsEnumerable = objectProto.propertyIsEnumerable;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeGetSymbols = Object.getOwnPropertySymbols;
+
+/**
+ * Creates an array of the own enumerable symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of symbols.
+ */
+var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
+  if (object == null) {
+    return [];
+  }
+  object = Object(object);
+  return arrayFilter(nativeGetSymbols(object), function(symbol) {
+    return propertyIsEnumerable.call(object, symbol);
+  });
+};
+
+module.exports = getSymbols;
+
+
+/***/ }),
+/* 76 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var isArray = __webpack_require__(1),
+    isSymbol = __webpack_require__(36);
+
+/** Used to match property names within property paths. */
+var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
+    reIsPlainProp = /^\w*$/;
+
+/**
+ * Checks if `value` is a property name and not a property path.
+ *
+ * @private
+ * @param {*} value The value to check.
+ * @param {Object} [object] The object to query keys on.
+ * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
+ */
+function isKey(value, object) {
+  if (isArray(value)) {
+    return false;
+  }
+  var type = typeof value;
+  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
+      value == null || isSymbol(value)) {
+    return true;
+  }
+  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
+    (object != null && value in Object(object));
+}
+
+module.exports = isKey;
+
+
+/***/ }),
+/* 77 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseToString = __webpack_require__(78);
+
+/**
+ * Converts `value` to a string. An empty string is returned for `null`
+ * and `undefined` values. The sign of `-0` is preserved.
+ *
+ * @static
+ * @memberOf _
+ * @since 4.0.0
+ * @category Lang
+ * @param {*} value The value to convert.
+ * @returns {string} Returns the converted string.
+ * @example
+ *
+ * _.toString(null);
+ * // => ''
+ *
+ * _.toString(-0);
+ * // => '-0'
+ *
+ * _.toString([1, 2, 3]);
+ * // => '1,2,3'
+ */
+function toString(value) {
+  return value == null ? '' : baseToString(value);
+}
+
+module.exports = toString;
+
+
+/***/ }),
+/* 78 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Symbol = __webpack_require__(17),
+    arrayMap = __webpack_require__(11),
+    isArray = __webpack_require__(1),
+    isSymbol = __webpack_require__(36);
+
+/** Used as references for various `Number` constants. */
+var INFINITY = 1 / 0;
+
+/** Used to convert symbols to primitives and strings. */
+var symbolProto = Symbol ? Symbol.prototype : undefined,
+    symbolToString = symbolProto ? symbolProto.toString : undefined;
+
+/**
+ * The base implementation of `_.toString` which doesn't convert nullish
+ * values to empty strings.
+ *
+ * @private
+ * @param {*} value The value to process.
+ * @returns {string} Returns the string.
+ */
+function baseToString(value) {
+  // Exit early for strings to avoid a performance hit in some environments.
+  if (typeof value == 'string') {
+    return value;
+  }
+  if (isArray(value)) {
+    // Recursively convert values (susceptible to call stack limits).
+    return arrayMap(value, baseToString) + '';
+  }
+  if (isSymbol(value)) {
+    return symbolToString ? symbolToString.call(value) : '';
+  }
+  var result = (value + '');
+  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
+}
+
+module.exports = baseToString;
+
+
+/***/ }),
+/* 79 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseAssignValue = __webpack_require__(38),
+    eq = __webpack_require__(19);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Assigns `value` to `key` of `object` if the existing value is not equivalent
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
+ * for equality comparisons.
+ *
+ * @private
+ * @param {Object} object The object to modify.
+ * @param {string} key The key of the property to assign.
+ * @param {*} value The value to assign.
+ */
+function assignValue(object, key, value) {
+  var objValue = object[key];
+  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
+      (value === undefined && !(key in object))) {
+    baseAssignValue(object, key, value);
+  }
+}
+
+module.exports = assignValue;
+
+
+/***/ }),
+/* 80 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var overArg = __webpack_require__(104);
+
+/** Built-in value references. */
+var getPrototype = overArg(Object.getPrototypeOf, Object);
+
+module.exports = getPrototype;
+
+
+/***/ }),
+/* 81 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetAllKeys = __webpack_require__(121),
+    getSymbolsIn = __webpack_require__(131),
+    keysIn = __webpack_require__(39);
+
+/**
+ * Creates an array of own and inherited enumerable property names and
+ * symbols of `object`.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names and symbols.
+ */
+function getAllKeysIn(object) {
+  return baseGetAllKeys(object, keysIn, getSymbolsIn);
+}
+
+module.exports = getAllKeysIn;
+
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var Uint8Array = __webpack_require__(119);
+
+/**
+ * Creates a clone of `arrayBuffer`.
+ *
+ * @private
+ * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
+ * @returns {ArrayBuffer} Returns the cloned array buffer.
+ */
+function cloneArrayBuffer(arrayBuffer) {
+  var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
+  new Uint8Array(result).set(new Uint8Array(arrayBuffer));
+  return result;
+}
+
+module.exports = cloneArrayBuffer;
+
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseGetTag = __webpack_require__(10),
+    getPrototype = __webpack_require__(80),
+    isObjectLike = __webpack_require__(4);
+
+/** `Object#toString` result references. */
+var objectTag = '[object Object]';
+
+/** Used for built-in method references. */
+var funcProto = Function.prototype,
+    objectProto = Object.prototype;
+
+/** Used to resolve the decompiled source of functions. */
+var funcToString = funcProto.toString;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/** Used to infer the `Object` constructor. */
+var objectCtorString = funcToString.call(Object);
+
+/**
+ * Checks if `value` is a plain object, that is, an object created by the
+ * `Object` constructor or one with a `[[Prototype]]` of `null`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.8.0
+ * @category Lang
+ * @param {*} value The value to check.
+ * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
+ * @example
+ *
+ * function Foo() {
+ *   this.a = 1;
+ * }
+ *
+ * _.isPlainObject(new Foo);
+ * // => false
+ *
+ * _.isPlainObject([1, 2, 3]);
+ * // => false
+ *
+ * _.isPlainObject({ 'x': 0, 'y': 0 });
+ * // => true
+ *
+ * _.isPlainObject(Object.create(null));
+ * // => true
+ */
+function isPlainObject(value) {
+  if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
+    return false;
+  }
+  var proto = getPrototype(value);
+  if (proto === null) {
+    return true;
+  }
+  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
+  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
+    funcToString.call(Ctor) == objectCtorString;
+}
+
+module.exports = isPlainObject;
+
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseRest = __webpack_require__(20),
+    eq = __webpack_require__(19),
+    isIterateeCall = __webpack_require__(142),
+    keysIn = __webpack_require__(39);
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Assigns own and inherited enumerable string keyed properties of source
+ * objects to the destination object for all destination properties that
+ * resolve to `undefined`. Source objects are applied from left to right.
+ * Once a property is set, additional values of the same property are ignored.
+ *
+ * **Note:** This method mutates `object`.
+ *
+ * @static
+ * @since 0.1.0
+ * @memberOf _
+ * @category Object
+ * @param {Object} object The destination object.
+ * @param {...Object} [sources] The source objects.
+ * @returns {Object} Returns `object`.
+ * @see _.defaultsDeep
+ * @example
+ *
+ * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
+ * // => { 'a': 1, 'b': 2 }
+ */
+var defaults = baseRest(function(object, sources) {
+  object = Object(object);
+
+  var index = -1;
+  var length = sources.length;
+  var guard = length > 2 ? sources[2] : undefined;
+
+  if (guard && isIterateeCall(sources[0], sources[1], guard)) {
+    length = 1;
+  }
+
+  while (++index < length) {
+    var source = sources[index];
+    var props = keysIn(source);
+    var propsIndex = -1;
+    var propsLength = props.length;
+
+    while (++propsIndex < propsLength) {
+      var key = props[propsIndex];
+      var value = object[key];
+
+      if (value === undefined ||
+          (eq(value, objectProto[key]) && !hasOwnProperty.call(object, key))) {
+        object[key] = source[key];
+      }
+    }
+  }
+
+  return object;
+});
+
+module.exports = defaults;
+
+
+/***/ }),
+/* 85 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseMerge = __webpack_require__(446),
+    createAssigner = __webpack_require__(449);
+
+/**
+ * This method is like `_.assign` except that it recursively merges own and
+ * inherited enumerable string keyed properties of source objects into the
+ * destination object. Source properties that resolve to `undefined` are
+ * skipped if a destination value exists. Array and plain object properties
+ * are merged recursively. Other objects and value types are overridden by
+ * assignment. Source objects are applied from left to right. Subsequent
+ * sources overwrite property assignments of previous sources.
+ *
+ * **Note:** This method mutates `object`.
+ *
+ * @static
+ * @memberOf _
+ * @since 0.5.0
+ * @category Object
+ * @param {Object} object The destination object.
+ * @param {...Object} [sources] The source objects.
+ * @returns {Object} Returns `object`.
+ * @example
+ *
+ * var object = {
+ *   'a': [{ 'b': 2 }, { 'd': 4 }]
+ * };
+ *
+ * var other = {
+ *   'a': [{ 'c': 3 }, { 'e': 5 }]
+ * };
+ *
+ * _.merge(object, other);
+ * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
+ */
+var merge = createAssigner(function(object, source, srcIndex) {
+  baseMerge(object, source, srcIndex);
+});
+
+module.exports = merge;
+
+
+/***/ }),
+/* 86 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseSetData = __webpack_require__(147),
+    createBind = __webpack_require__(464),
+    createCurry = __webpack_require__(465),
+    createHybrid = __webpack_require__(149),
+    createPartial = __webpack_require__(477),
+    getData = __webpack_require__(153),
+    mergeData = __webpack_require__(478),
+    setData = __webpack_require__(155),
+    setWrapToString = __webpack_require__(156),
+    toInteger = __webpack_require__(40);
+
+/** Error message constants. */
+var FUNC_ERROR_TEXT = 'Expected a function';
+
+/** Used to compose bitmasks for function metadata. */
+var WRAP_BIND_FLAG = 1,
+    WRAP_BIND_KEY_FLAG = 2,
+    WRAP_CURRY_FLAG = 8,
+    WRAP_CURRY_RIGHT_FLAG = 16,
+    WRAP_PARTIAL_FLAG = 32,
+    WRAP_PARTIAL_RIGHT_FLAG = 64;
+
+/* Built-in method references for those with the same name as other `lodash` methods. */
+var nativeMax = Math.max;
+
+/**
+ * Creates a function that either curries or invokes `func` with optional
+ * `this` binding and partially applied arguments.
+ *
+ * @private
+ * @param {Function|string} func The function or method name to wrap.
+ * @param {number} bitmask The bitmask flags.
+ *    1 - `_.bind`
+ *    2 - `_.bindKey`
+ *    4 - `_.curry` or `_.curryRight` of a bound function
+ *    8 - `_.curry`
+ *   16 - `_.curryRight`
+ *   32 - `_.partial`
+ *   64 - `_.partialRight`
+ *  128 - `_.rearg`
+ *  256 - `_.ary`
+ *  512 - `_.flip`
+ * @param {*} [thisArg] The `this` binding of `func`.
+ * @param {Array} [partials] The arguments to be partially applied.
+ * @param {Array} [holders] The `partials` placeholder indexes.
+ * @param {Array} [argPos] The argument positions of the new function.
+ * @param {number} [ary] The arity cap of `func`.
+ * @param {number} [arity] The arity of `func`.
+ * @returns {Function} Returns the new wrapped function.
+ */
+function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
+  var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
+  if (!isBindKey && typeof func != 'function') {
+    throw new TypeError(FUNC_ERROR_TEXT);
+  }
+  var length = partials ? partials.length : 0;
+  if (!length) {
+    bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
+    partials = holders = undefined;
+  }
+  ary = ary === undefined ? ary : nativeMax(toInteger(ary), 0);
+  arity = arity === undefined ? arity : toInteger(arity);
+  length -= holders ? holders.length : 0;
+
+  if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
+    var partialsRight = partials,
+        holdersRight = holders;
+
+    partials = holders = undefined;
+  }
+  var data = isBindKey ? undefined : getData(func);
+
+  var newData = [
+    func, bitmask, thisArg, partials, holders, partialsRight, holdersRight,
+    argPos, ary, arity
+  ];
+
+  if (data) {
+    mergeData(newData, data);
+  }
+  func = newData[0];
+  bitmask = newData[1];
+  thisArg = newData[2];
+  partials = newData[3];
+  holders = newData[4];
+  arity = newData[9] = newData[9] === undefined
+    ? (isBindKey ? 0 : func.length)
+    : nativeMax(newData[9] - length, 0);
+
+  if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) {
+    bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
+  }
+  if (!bitmask || bitmask == WRAP_BIND_FLAG) {
+    var result = createBind(func, bitmask, thisArg);
+  } else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) {
+    result = createCurry(func, bitmask, arity);
+  } else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) {
+    result = createPartial(func, bitmask, thisArg, partials);
+  } else {
+    result = createHybrid.apply(undefined, newData);
+  }
+  var setter = data ? baseSetData : setData;
+  return setWrapToString(setter(result, newData), func, bitmask);
+}
+
+module.exports = createWrap;
+
+
+/***/ }),
+/* 87 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var baseCreate = __webpack_require__(58),
+    baseLodash = __webpack_require__(88);
+
+/** Used as references for the maximum length and index of an array. */
+var MAX_ARRAY_LENGTH = 4294967295;
+
+/**
+ * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
+ *
+ * @private
+ * @constructor
+ * @param {*} value The value to wrap.
+ */
+function LazyWrapper(value) {
+  this.__wrapped__ = value;
+  this.__actions__ = [];
+  this.__dir__ = 1;
+  this.__filtered__ = false;
+  this.__iteratees__ = [];
+  this.__takeCount__ = MAX_ARRAY_LENGTH;
+  this.__views__ = [];
+}
+
+// Ensure `LazyWrapper` is an instance of `baseLodash`.
+LazyWrapper.prototype = baseCreate(baseLodash.prototype);
+LazyWrapper.prototype.constructor = LazyWrapper;
+
+module.exports = LazyWrapper;
+
+
+/***/ }),
+/* 88 */
+/***/ (function(module, exports) {
+
+/**
+ * The function whose prototype chain sequence wrappers inherit from.
+ *
+ * @private
+ */
+function baseLodash() {
+  // No operation performed.
+}
+
+module.exports = baseLodash;
+
+
+/***/ }),
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var has = Object.prototype.hasOwnProperty;
+
+var hexTable = (function () {
+    var array = [];
+    for (var i = 0; i < 256; ++i) {
+        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
+    }
+
+    return array;
+}());
+
+var compactQueue = function compactQueue(queue) {
+    var obj;
+
+    while (queue.length) {
+        var item = queue.pop();
+        obj = item.obj[item.prop];
+
+        if (Array.isArray(obj)) {
+            var compacted = [];
+
+            for (var j = 0; j < obj.length; ++j) {
+                if (typeof obj[j] !== 'undefined') {
+                    compacted.push(obj[j]);
+                }
+            }
+
+            item.obj[item.prop] = compacted;
+        }
+    }
+
+    return obj;
+};
+
+var arrayToObject = function arrayToObject(source, options) {
+    var obj = options && options.plainObjects ? Object.create(null) : {};
+    for (var i = 0; i < source.length; ++i) {
+        if (typeof source[i] !== 'undefined') {
+            obj[i] = source[i];
+        }
+    }
+
+    return obj;
+};
+
+var merge = function merge(target, source, options) {
+    if (!source) {
+        return target;
+    }
+
+    if (typeof source !== 'object') {
+        if (Array.isArray(target)) {
+            target.push(source);
+        } else if (typeof target === 'object') {
+            if (options.plainObjects || options.allowPrototypes || !has.call(Object.prototype, source)) {
+                target[source] = true;
+            }
+        } else {
+            return [target, source];
+        }
+
+        return target;
+    }
+
+    if (typeof target !== 'object') {
+        return [target].concat(source);
+    }
+
+    var mergeTarget = target;
+    if (Array.isArray(target) && !Array.isArray(source)) {
+        mergeTarget = arrayToObject(target, options);
+    }
+
+    if (Array.isArray(target) && Array.isArray(source)) {
+        source.forEach(function (item, i) {
+            if (has.call(target, i)) {
+                if (target[i] && typeof target[i] === 'object') {
+                    target[i] = merge(target[i], item, options);
+                } else {
+                    target.push(item);
+                }
+            } else {
+                target[i] = item;
+            }
+        });
+        return target;
+    }
+
+    return Object.keys(source).reduce(function (acc, key) {
+        var value = source[key];
+
+        if (has.call(acc, key)) {
+            acc[key] = merge(acc[key], value, options);
+        } else {
+            acc[key] = value;
+        }
+        return acc;
+    }, mergeTarget);
+};
+
+var assign = function assignSingleSource(target, source) {
+    return Object.keys(source).reduce(function (acc, key) {
+        acc[key] = source[key];
+        return acc;
+    }, target);
+};
+
+var decode = function (str) {
+    try {
+        return decodeURIComponent(str.replace(/\+/g, ' '));
+    } catch (e) {
+        return str;
+    }
+};
+
+var encode = function encode(str) {
+    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+    // It has been adapted here for stricter adherence to RFC 3986
+    if (str.length === 0) {
+        return str;
+    }
+
+    var string = typeof str === 'string' ? str : String(str);
+
+    var out = '';
+    for (var i = 0; i < string.length; ++i) {
+        var c = string.charCodeAt(i);
+
+        if (
+            c === 0x2D // -
+            || c === 0x2E // .
+            || c === 0x5F // _
+            || c === 0x7E // ~
+            || (c >= 0x30 && c <= 0x39) // 0-9
+            || (c >= 0x41 && c <= 0x5A) // a-z
+            || (c >= 0x61 && c <= 0x7A) // A-Z
+        ) {
+            out += string.charAt(i);
+            continue;
+        }
+
+        if (c < 0x80) {
+            out = out + hexTable[c];
+            continue;
+        }
+
+        if (c < 0x800) {
+            out = out + (hexTable[0xC0 | (c >> 6)] + hexTable[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        if (c < 0xD800 || c >= 0xE000) {
+            out = out + (hexTable[0xE0 | (c >> 12)] + hexTable[0x80 | ((c >> 6) & 0x3F)] + hexTable[0x80 | (c & 0x3F)]);
+            continue;
+        }
+
+        i += 1;
+        c = 0x10000 + (((c & 0x3FF) << 10) | (string.charCodeAt(i) & 0x3FF));
+        out += hexTable[0xF0 | (c >> 18)]
+            + hexTable[0x80 | ((c >> 12) & 0x3F)]
+            + hexTable[0x80 | ((c >> 6) & 0x3F)]
+            + hexTable[0x80 | (c & 0x3F)];
+    }
+
+    return out;
+};
+
+var compact = function compact(value) {
+    var queue = [{ obj: { o: value }, prop: 'o' }];
+    var refs = [];
+
+    for (var i = 0; i < queue.length; ++i) {
+        var item = queue[i];
+        var obj = item.obj[item.prop];
+
+        var keys = Object.keys(obj);
+        for (var j = 0; j < keys.length; ++j) {
+            var key = keys[j];
+            var val = obj[key];
+            if (typeof val === 'object' && val !== null && refs.indexOf(val) === -1) {
+                queue.push({ obj: obj, prop: key });
+                refs.push(val);
+            }
+        }
+    }
+
+    return compactQueue(queue);
+};
+
+var isRegExp = function isRegExp(obj) {
+    return Object.prototype.toString.call(obj) === '[object RegExp]';
+};
+
+var isBuffer = function isBuffer(obj) {
+    if (obj === null || typeof obj === 'undefined') {
+        return false;
+    }
+
+    return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
+};
+
+module.exports = {
+    arrayToObject: arrayToObject,
+    assign: assign,
+    compact: compact,
+    decode: decode,
+    encode: encode,
+    isBuffer: isBuffer,
+    isRegExp: isRegExp,
+    merge: merge
+};
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+  Modified by Evan You @yyx990803
+*/
+
+var hasDocument = typeof document !== 'undefined'
+
+if (typeof DEBUG !== 'undefined' && DEBUG) {
+  if (!hasDocument) {
+    throw new Error(
+    'vue-style-loader cannot be used in a non-browser environment. ' +
+    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
+  ) }
+}
+
+var listToStyles = __webpack_require__(502)
+
+/*
+type StyleObject = {
+  id: number;
+  parts: Array<StyleObjectPart>
+}
+
+type StyleObjectPart = {
+  css: string;
+  media: string;
+  sourceMap: ?string
+}
+*/
+
+var stylesInDom = {/*
+  [id: number]: {
+    id: number,
+    refs: number,
+    parts: Array<(obj?: StyleObjectPart) => void>
+  }
+*/}
+
+var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
+var singletonElement = null
+var singletonCounter = 0
+var isProduction = false
+var noop = function () {}
+var options = null
+var ssrIdKey = 'data-vue-ssr-id'
+
+// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+// tags it will allow on a page
+var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
+
+module.exports = function (parentId, list, _isProduction, _options) {
+  isProduction = _isProduction
+
+  options = _options || {}
+
+  var styles = listToStyles(parentId, list)
+  addStylesToDom(styles)
+
+  return function update (newList) {
+    var mayRemove = []
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i]
+      var domStyle = stylesInDom[item.id]
+      domStyle.refs--
+      mayRemove.push(domStyle)
+    }
+    if (newList) {
+      styles = listToStyles(parentId, newList)
+      addStylesToDom(styles)
+    } else {
+      styles = []
+    }
+    for (var i = 0; i < mayRemove.length; i++) {
+      var domStyle = mayRemove[i]
+      if (domStyle.refs === 0) {
+        for (var j = 0; j < domStyle.parts.length; j++) {
+          domStyle.parts[j]()
+        }
+        delete stylesInDom[domStyle.id]
+      }
+    }
+  }
+}
+
+function addStylesToDom (styles /* Array<StyleObject> */) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i]
+    var domStyle = stylesInDom[item.id]
+    if (domStyle) {
+      domStyle.refs++
+      for (var j = 0; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j])
+      }
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j]))
+      }
+      if (domStyle.parts.length > item.parts.length) {
+        domStyle.parts.length = item.parts.length
+      }
+    } else {
+      var parts = []
+      for (var j = 0; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j]))
+      }
+      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
+    }
+  }
+}
+
+function createStyleElement () {
+  var styleElement = document.createElement('style')
+  styleElement.type = 'text/css'
+  head.appendChild(styleElement)
+  return styleElement
+}
+
+function addStyle (obj /* StyleObjectPart */) {
+  var update, remove
+  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
+
+  if (styleElement) {
+    if (isProduction) {
+      // has SSR styles and in production mode.
+      // simply do nothing.
+      return noop
+    } else {
+      // has SSR styles but in dev mode.
+      // for some reason Chrome can't handle source map in server-rendered
+      // style tags - source maps in <style> only works if the style tag is
+      // created and inserted dynamically. So we remove the server rendered
+      // styles and inject new ones.
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  if (isOldIE) {
+    // use singleton mode for IE9.
+    var styleIndex = singletonCounter++
+    styleElement = singletonElement || (singletonElement = createStyleElement())
+    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
+    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
+  } else {
+    // use multi-style-tag mode in all other cases
+    styleElement = createStyleElement()
+    update = applyToTag.bind(null, styleElement)
+    remove = function () {
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  update(obj)
+
+  return function updateStyle (newObj /* StyleObjectPart */) {
+    if (newObj) {
+      if (newObj.css === obj.css &&
+          newObj.media === obj.media &&
+          newObj.sourceMap === obj.sourceMap) {
+        return
+      }
+      update(obj = newObj)
+    } else {
+      remove()
+    }
+  }
+}
+
+var replaceText = (function () {
+  var textStore = []
+
+  return function (index, replacement) {
+    textStore[index] = replacement
+    return textStore.filter(Boolean).join('\n')
+  }
+})()
+
+function applyToSingletonTag (styleElement, index, remove, obj) {
+  var css = remove ? '' : obj.css
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = replaceText(index, css)
+  } else {
+    var cssNode = document.createTextNode(css)
+    var childNodes = styleElement.childNodes
+    if (childNodes[index]) styleElement.removeChild(childNodes[index])
+    if (childNodes.length) {
+      styleElement.insertBefore(cssNode, childNodes[index])
+    } else {
+      styleElement.appendChild(cssNode)
+    }
+  }
+}
+
+function applyToTag (styleElement, obj) {
+  var css = obj.css
+  var media = obj.media
+  var sourceMap = obj.sourceMap
+
+  if (media) {
+    styleElement.setAttribute('media', media)
+  }
+  if (options.ssrId) {
+    styleElement.setAttribute(ssrIdKey, obj.id)
+  }
+
+  if (sourceMap) {
+    // https://developer.chrome.com/devtools/docs/javascript-debugging
+    // this makes source maps inside style tags work properly in Chrome
+    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
+    // http://stackoverflow.com/a/26603875
+    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
+  }
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild)
+    }
+    styleElement.appendChild(document.createTextNode(css))
+  }
+}
+
+
+/***/ }),
+/* 92 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* WEBPACK VAR INJECTION */(function(global) {/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.14.3
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
+
+var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
+var timeoutDuration = 0;
+for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
+  if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
+    timeoutDuration = 1;
+    break;
+  }
+}
+
+function microtaskDebounce(fn) {
+  var called = false;
+  return function () {
+    if (called) {
+      return;
+    }
+    called = true;
+    window.Promise.resolve().then(function () {
+      called = false;
+      fn();
+    });
+  };
+}
+
+function taskDebounce(fn) {
+  var scheduled = false;
+  return function () {
+    if (!scheduled) {
+      scheduled = true;
+      setTimeout(function () {
+        scheduled = false;
+        fn();
+      }, timeoutDuration);
+    }
+  };
+}
+
+var supportsMicroTasks = isBrowser && window.Promise;
+
+/**
+* Create a debounced version of a method, that's asynchronously deferred
+* but called in the minimum time possible.
+*
+* @method
+* @memberof Popper.Utils
+* @argument {Function} fn
+* @returns {Function}
+*/
+var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
+
+/**
+ * Check if the given variable is a function
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Any} functionToCheck - variable to check
+ * @returns {Boolean} answer to: is a function?
+ */
+function isFunction(functionToCheck) {
+  var getType = {};
+  return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
+}
+
+/**
+ * Get CSS computed property of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Eement} element
+ * @argument {String} property
+ */
+function getStyleComputedProperty(element, property) {
+  if (element.nodeType !== 1) {
+    return [];
+  }
+  // NOTE: 1 DOM access here
+  var css = getComputedStyle(element, null);
+  return property ? css[property] : css;
+}
+
+/**
+ * Returns the parentNode or the host of the element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} parent
+ */
+function getParentNode(element) {
+  if (element.nodeName === 'HTML') {
+    return element;
+  }
+  return element.parentNode || element.host;
+}
+
+/**
+ * Returns the scrolling parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} scroll parent
+ */
+function getScrollParent(element) {
+  // Return body, `getScroll` will take care to get the correct `scrollTop` from it
+  if (!element) {
+    return document.body;
+  }
+
+  switch (element.nodeName) {
+    case 'HTML':
+    case 'BODY':
+      return element.ownerDocument.body;
+    case '#document':
+      return element.body;
+  }
+
+  // Firefox want us to check `-x` and `-y` variations as well
+
+  var _getStyleComputedProp = getStyleComputedProperty(element),
+      overflow = _getStyleComputedProp.overflow,
+      overflowX = _getStyleComputedProp.overflowX,
+      overflowY = _getStyleComputedProp.overflowY;
+
+  if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) {
+    return element;
+  }
+
+  return getScrollParent(getParentNode(element));
+}
+
+var isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
+var isIE10 = isBrowser && /MSIE 10/.test(navigator.userAgent);
+
+/**
+ * Determines if the browser is Internet Explorer
+ * @method
+ * @memberof Popper.Utils
+ * @param {Number} version to check
+ * @returns {Boolean} isIE
+ */
+function isIE(version) {
+  if (version === 11) {
+    return isIE11;
+  }
+  if (version === 10) {
+    return isIE10;
+  }
+  return isIE11 || isIE10;
+}
+
+/**
+ * Returns the offset parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} offset parent
+ */
+function getOffsetParent(element) {
+  if (!element) {
+    return document.documentElement;
+  }
+
+  var noOffsetParent = isIE(10) ? document.body : null;
+
+  // NOTE: 1 DOM access here
+  var offsetParent = element.offsetParent;
+  // Skip hidden elements which don't have an offsetParent
+  while (offsetParent === noOffsetParent && element.nextElementSibling) {
+    offsetParent = (element = element.nextElementSibling).offsetParent;
+  }
+
+  var nodeName = offsetParent && offsetParent.nodeName;
+
+  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
+    return element ? element.ownerDocument.documentElement : document.documentElement;
+  }
+
+  // .offsetParent will return the closest TD or TABLE in case
+  // no offsetParent is present, I hate this job...
+  if (['TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
+    return getOffsetParent(offsetParent);
+  }
+
+  return offsetParent;
+}
+
+function isOffsetContainer(element) {
+  var nodeName = element.nodeName;
+
+  if (nodeName === 'BODY') {
+    return false;
+  }
+  return nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element;
+}
+
+/**
+ * Finds the root node (document, shadowDOM root) of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} node
+ * @returns {Element} root node
+ */
+function getRoot(node) {
+  if (node.parentNode !== null) {
+    return getRoot(node.parentNode);
+  }
+
+  return node;
+}
+
+/**
+ * Finds the offset parent common to the two provided nodes
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element1
+ * @argument {Element} element2
+ * @returns {Element} common offset parent
+ */
+function findCommonOffsetParent(element1, element2) {
+  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+  if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
+    return document.documentElement;
+  }
+
+  // Here we make sure to give as "start" the element that comes first in the DOM
+  var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+  var start = order ? element1 : element2;
+  var end = order ? element2 : element1;
+
+  // Get common ancestor container
+  var range = document.createRange();
+  range.setStart(start, 0);
+  range.setEnd(end, 0);
+  var commonAncestorContainer = range.commonAncestorContainer;
+
+  // Both nodes are inside #document
+
+  if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
+    if (isOffsetContainer(commonAncestorContainer)) {
+      return commonAncestorContainer;
+    }
+
+    return getOffsetParent(commonAncestorContainer);
+  }
+
+  // one of the nodes is inside shadowDOM, find which one
+  var element1root = getRoot(element1);
+  if (element1root.host) {
+    return findCommonOffsetParent(element1root.host, element2);
+  } else {
+    return findCommonOffsetParent(element1, getRoot(element2).host);
+  }
+}
+
+/**
+ * Gets the scroll value of the given element in the given side (top and left)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {String} side `top` or `left`
+ * @returns {number} amount of scrolled pixels
+ */
+function getScroll(element) {
+  var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'top';
+
+  var upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
+  var nodeName = element.nodeName;
+
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    var html = element.ownerDocument.documentElement;
+    var scrollingElement = element.ownerDocument.scrollingElement || html;
+    return scrollingElement[upperSide];
+  }
+
+  return element[upperSide];
+}
+
+/*
+ * Sum or subtract the element scroll values (left and top) from a given rect object
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} rect - Rect object you want to change
+ * @param {HTMLElement} element - The element from the function reads the scroll values
+ * @param {Boolean} subtract - set to true if you want to subtract the scroll values
+ * @return {Object} rect - The modifier rect object
+ */
+function includeScroll(rect, element) {
+  var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var scrollTop = getScroll(element, 'top');
+  var scrollLeft = getScroll(element, 'left');
+  var modifier = subtract ? -1 : 1;
+  rect.top += scrollTop * modifier;
+  rect.bottom += scrollTop * modifier;
+  rect.left += scrollLeft * modifier;
+  rect.right += scrollLeft * modifier;
+  return rect;
+}
+
+/*
+ * Helper to detect borders of a given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {CSSStyleDeclaration} styles
+ * Result of `getStyleComputedProperty` on the given element
+ * @param {String} axis - `x` or `y`
+ * @return {number} borders - The borders size of the given axis
+ */
+
+function getBordersSize(styles, axis) {
+  var sideA = axis === 'x' ? 'Left' : 'Top';
+  var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
+
+  return parseFloat(styles['border' + sideA + 'Width'], 10) + parseFloat(styles['border' + sideB + 'Width'], 10);
+}
+
+function getSize(axis, body, html, computedStyle) {
+  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE(10) ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
+}
+
+function getWindowSizes() {
+  var body = document.body;
+  var html = document.documentElement;
+  var computedStyle = isIE(10) && getComputedStyle(html);
+
+  return {
+    height: getSize('Height', body, html, computedStyle),
+    width: getSize('Width', body, html, computedStyle)
+  };
+}
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+/**
+ * Given element offsets, generate an output similar to getBoundingClientRect
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} offsets
+ * @returns {Object} ClientRect like output
+ */
+function getClientRect(offsets) {
+  return _extends({}, offsets, {
+    right: offsets.left + offsets.width,
+    bottom: offsets.top + offsets.height
+  });
+}
+
+/**
+ * Get bounding client rect of given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} element
+ * @return {Object} client rect
+ */
+function getBoundingClientRect(element) {
+  var rect = {};
+
+  // IE10 10 FIX: Please, don't ask, the element isn't
+  // considered in DOM in some circumstances...
+  // This isn't reproducible in IE10 compatibility mode of IE11
+  try {
+    if (isIE(10)) {
+      rect = element.getBoundingClientRect();
+      var scrollTop = getScroll(element, 'top');
+      var scrollLeft = getScroll(element, 'left');
+      rect.top += scrollTop;
+      rect.left += scrollLeft;
+      rect.bottom += scrollTop;
+      rect.right += scrollLeft;
+    } else {
+      rect = element.getBoundingClientRect();
+    }
+  } catch (e) {}
+
+  var result = {
+    left: rect.left,
+    top: rect.top,
+    width: rect.right - rect.left,
+    height: rect.bottom - rect.top
+  };
+
+  // subtract scrollbar size from sizes
+  var sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
+  var width = sizes.width || element.clientWidth || result.right - result.left;
+  var height = sizes.height || element.clientHeight || result.bottom - result.top;
+
+  var horizScrollbar = element.offsetWidth - width;
+  var vertScrollbar = element.offsetHeight - height;
+
+  // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
+  // we make this check conditional for performance reasons
+  if (horizScrollbar || vertScrollbar) {
+    var styles = getStyleComputedProperty(element);
+    horizScrollbar -= getBordersSize(styles, 'x');
+    vertScrollbar -= getBordersSize(styles, 'y');
+
+    result.width -= horizScrollbar;
+    result.height -= vertScrollbar;
+  }
+
+  return getClientRect(result);
+}
+
+function getOffsetRectRelativeToArbitraryNode(children, parent) {
+  var fixedPosition = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var isIE10 = isIE(10);
+  var isHTML = parent.nodeName === 'HTML';
+  var childrenRect = getBoundingClientRect(children);
+  var parentRect = getBoundingClientRect(parent);
+  var scrollParent = getScrollParent(children);
+
+  var styles = getStyleComputedProperty(parent);
+  var borderTopWidth = parseFloat(styles.borderTopWidth, 10);
+  var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10);
+
+  // In cases where the parent is fixed, we must ignore negative scroll in offset calc
+  if (fixedPosition && parent.nodeName === 'HTML') {
+    parentRect.top = Math.max(parentRect.top, 0);
+    parentRect.left = Math.max(parentRect.left, 0);
+  }
+  var offsets = getClientRect({
+    top: childrenRect.top - parentRect.top - borderTopWidth,
+    left: childrenRect.left - parentRect.left - borderLeftWidth,
+    width: childrenRect.width,
+    height: childrenRect.height
+  });
+  offsets.marginTop = 0;
+  offsets.marginLeft = 0;
+
+  // Subtract margins of documentElement in case it's being used as parent
+  // we do this only on HTML because it's the only element that behaves
+  // differently when margins are applied to it. The margins are included in
+  // the box of the documentElement, in the other cases not.
+  if (!isIE10 && isHTML) {
+    var marginTop = parseFloat(styles.marginTop, 10);
+    var marginLeft = parseFloat(styles.marginLeft, 10);
+
+    offsets.top -= borderTopWidth - marginTop;
+    offsets.bottom -= borderTopWidth - marginTop;
+    offsets.left -= borderLeftWidth - marginLeft;
+    offsets.right -= borderLeftWidth - marginLeft;
+
+    // Attach marginTop and marginLeft because in some circumstances we may need them
+    offsets.marginTop = marginTop;
+    offsets.marginLeft = marginLeft;
+  }
+
+  if (isIE10 && !fixedPosition ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
+    offsets = includeScroll(offsets, parent);
+  }
+
+  return offsets;
+}
+
+function getViewportOffsetRectRelativeToArtbitraryNode(element) {
+  var excludeScroll = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var html = element.ownerDocument.documentElement;
+  var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
+  var width = Math.max(html.clientWidth, window.innerWidth || 0);
+  var height = Math.max(html.clientHeight, window.innerHeight || 0);
+
+  var scrollTop = !excludeScroll ? getScroll(html) : 0;
+  var scrollLeft = !excludeScroll ? getScroll(html, 'left') : 0;
+
+  var offset = {
+    top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
+    left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
+    width: width,
+    height: height
+  };
+
+  return getClientRect(offset);
+}
+
+/**
+ * Check if the given element is fixed or is inside a fixed parent
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {Element} customContainer
+ * @returns {Boolean} answer to "isFixed?"
+ */
+function isFixed(element) {
+  var nodeName = element.nodeName;
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    return false;
+  }
+  if (getStyleComputedProperty(element, 'position') === 'fixed') {
+    return true;
+  }
+  return isFixed(getParentNode(element));
+}
+
+/**
+ * Finds the first parent of an element that has a transformed property defined
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} first transformed parent or documentElement
+ */
+
+function getFixedPositionOffsetParent(element) {
+  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+  if (!element || !element.parentElement || isIE()) {
+    return document.documentElement;
+  }
+  var el = element.parentElement;
+  while (el && getStyleComputedProperty(el, 'transform') === 'none') {
+    el = el.parentElement;
+  }
+  return el || document.documentElement;
+}
+
+/**
+ * Computed the boundaries limits and return them
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} popper
+ * @param {HTMLElement} reference
+ * @param {number} padding
+ * @param {HTMLElement} boundariesElement - Element used to define the boundaries
+ * @param {Boolean} fixedPosition - Is in fixed position mode
+ * @returns {Object} Coordinates of the boundaries
+ */
+function getBoundaries(popper, reference, padding, boundariesElement) {
+  var fixedPosition = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
+
+  // NOTE: 1 DOM access here
+
+  var boundaries = { top: 0, left: 0 };
+  var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
+
+  // Handle viewport case
+  if (boundariesElement === 'viewport') {
+    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
+  } else {
+    // Handle other cases based on DOM element used as boundaries
+    var boundariesNode = void 0;
+    if (boundariesElement === 'scrollParent') {
+      boundariesNode = getScrollParent(getParentNode(reference));
+      if (boundariesNode.nodeName === 'BODY') {
+        boundariesNode = popper.ownerDocument.documentElement;
+      }
+    } else if (boundariesElement === 'window') {
+      boundariesNode = popper.ownerDocument.documentElement;
+    } else {
+      boundariesNode = boundariesElement;
+    }
+
+    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
+
+    // In case of HTML, we need a different computation
+    if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
+      var _getWindowSizes = getWindowSizes(),
+          height = _getWindowSizes.height,
+          width = _getWindowSizes.width;
+
+      boundaries.top += offsets.top - offsets.marginTop;
+      boundaries.bottom = height + offsets.top;
+      boundaries.left += offsets.left - offsets.marginLeft;
+      boundaries.right = width + offsets.left;
+    } else {
+      // for all the other DOM elements, this one is good
+      boundaries = offsets;
+    }
+  }
+
+  // Add paddings
+  boundaries.left += padding;
+  boundaries.top += padding;
+  boundaries.right -= padding;
+  boundaries.bottom -= padding;
+
+  return boundaries;
+}
+
+function getArea(_ref) {
+  var width = _ref.width,
+      height = _ref.height;
+
+  return width * height;
+}
+
+/**
+ * Utility used to transform the `auto` placement to the placement with more
+ * available space.
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
+  var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+
+  if (placement.indexOf('auto') === -1) {
+    return placement;
+  }
+
+  var boundaries = getBoundaries(popper, reference, padding, boundariesElement);
+
+  var rects = {
+    top: {
+      width: boundaries.width,
+      height: refRect.top - boundaries.top
+    },
+    right: {
+      width: boundaries.right - refRect.right,
+      height: boundaries.height
+    },
+    bottom: {
+      width: boundaries.width,
+      height: boundaries.bottom - refRect.bottom
+    },
+    left: {
+      width: refRect.left - boundaries.left,
+      height: boundaries.height
+    }
+  };
+
+  var sortedAreas = Object.keys(rects).map(function (key) {
+    return _extends({
+      key: key
+    }, rects[key], {
+      area: getArea(rects[key])
+    });
+  }).sort(function (a, b) {
+    return b.area - a.area;
+  });
+
+  var filteredAreas = sortedAreas.filter(function (_ref2) {
+    var width = _ref2.width,
+        height = _ref2.height;
+    return width >= popper.clientWidth && height >= popper.clientHeight;
+  });
+
+  var computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].key : sortedAreas[0].key;
+
+  var variation = placement.split('-')[1];
+
+  return computedPlacement + (variation ? '-' + variation : '');
+}
+
+/**
+ * Get offsets to the reference element
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} state
+ * @param {Element} popper - the popper element
+ * @param {Element} reference - the reference element (the popper will be relative to this)
+ * @param {Element} fixedPosition - is in fixed position mode
+ * @returns {Object} An object containing the offsets which will be applied to the popper
+ */
+function getReferenceOffsets(state, popper, reference) {
+  var fixedPosition = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
+
+  var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
+  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
+}
+
+/**
+ * Get the outer sizes of the given element (offset size + margins)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Object} object containing width and height properties
+ */
+function getOuterSizes(element) {
+  var styles = getComputedStyle(element);
+  var x = parseFloat(styles.marginTop) + parseFloat(styles.marginBottom);
+  var y = parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
+  var result = {
+    width: element.offsetWidth + y,
+    height: element.offsetHeight + x
+  };
+  return result;
+}
+
+/**
+ * Get the opposite placement of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement
+ * @returns {String} flipped placement
+ */
+function getOppositePlacement(placement) {
+  var hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
+  return placement.replace(/left|right|bottom|top/g, function (matched) {
+    return hash[matched];
+  });
+}
+
+/**
+ * Get offsets to the popper
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} position - CSS position the Popper will get applied
+ * @param {HTMLElement} popper - the popper element
+ * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
+ * @param {String} placement - one of the valid placement options
+ * @returns {Object} popperOffsets - An object containing the offsets which will be applied to the popper
+ */
+function getPopperOffsets(popper, referenceOffsets, placement) {
+  placement = placement.split('-')[0];
+
+  // Get popper node sizes
+  var popperRect = getOuterSizes(popper);
+
+  // Add position, width and height to our offsets object
+  var popperOffsets = {
+    width: popperRect.width,
+    height: popperRect.height
+  };
+
+  // depending by the popper placement we have to compute its offsets slightly differently
+  var isHoriz = ['right', 'left'].indexOf(placement) !== -1;
+  var mainSide = isHoriz ? 'top' : 'left';
+  var secondarySide = isHoriz ? 'left' : 'top';
+  var measurement = isHoriz ? 'height' : 'width';
+  var secondaryMeasurement = !isHoriz ? 'height' : 'width';
+
+  popperOffsets[mainSide] = referenceOffsets[mainSide] + referenceOffsets[measurement] / 2 - popperRect[measurement] / 2;
+  if (placement === secondarySide) {
+    popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
+  } else {
+    popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
+  }
+
+  return popperOffsets;
+}
+
+/**
+ * Mimics the `find` method of Array
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */
+function find(arr, check) {
+  // use native find if supported
+  if (Array.prototype.find) {
+    return arr.find(check);
+  }
+
+  // use `filter` to obtain the same behavior of `find`
+  return arr.filter(check)[0];
+}
+
+/**
+ * Return the index of the matching object
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */
+function findIndex(arr, prop, value) {
+  // use native findIndex if supported
+  if (Array.prototype.findIndex) {
+    return arr.findIndex(function (cur) {
+      return cur[prop] === value;
+    });
+  }
+
+  // use `find` + `indexOf` if `findIndex` isn't supported
+  var match = find(arr, function (obj) {
+    return obj[prop] === value;
+  });
+  return arr.indexOf(match);
+}
+
+/**
+ * Loop trough the list of modifiers and run them in order,
+ * each of them will then edit the data object.
+ * @method
+ * @memberof Popper.Utils
+ * @param {dataObject} data
+ * @param {Array} modifiers
+ * @param {String} ends - Optional modifier name used as stopper
+ * @returns {dataObject}
+ */
+function runModifiers(modifiers, data, ends) {
+  var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, 'name', ends));
+
+  modifiersToRun.forEach(function (modifier) {
+    if (modifier['function']) {
+      // eslint-disable-line dot-notation
+      console.warn('`modifier.function` is deprecated, use `modifier.fn`!');
+    }
+    var fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
+    if (modifier.enabled && isFunction(fn)) {
+      // Add properties to offsets to make them a complete clientRect object
+      // we do this before each modifier to make sure the previous one doesn't
+      // mess with these values
+      data.offsets.popper = getClientRect(data.offsets.popper);
+      data.offsets.reference = getClientRect(data.offsets.reference);
+
+      data = fn(data, modifier);
+    }
+  });
+
+  return data;
+}
+
+/**
+ * Updates the position of the popper, computing the new offsets and applying
+ * the new style.<br />
+ * Prefer `scheduleUpdate` over `update` because of performance reasons.
+ * @method
+ * @memberof Popper
+ */
+function update() {
+  // if popper is destroyed, don't perform any further update
+  if (this.state.isDestroyed) {
+    return;
+  }
+
+  var data = {
+    instance: this,
+    styles: {},
+    arrowStyles: {},
+    attributes: {},
+    flipped: false,
+    offsets: {}
+  };
+
+  // compute reference element offsets
+  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference, this.options.positionFixed);
+
+  // compute auto placement, store placement inside the data object,
+  // modifiers will be able to edit `placement` if needed
+  // and refer to originalPlacement to know the original value
+  data.placement = computeAutoPlacement(this.options.placement, data.offsets.reference, this.popper, this.reference, this.options.modifiers.flip.boundariesElement, this.options.modifiers.flip.padding);
+
+  // store the computed placement inside `originalPlacement`
+  data.originalPlacement = data.placement;
+
+  data.positionFixed = this.options.positionFixed;
+
+  // compute the popper offsets
+  data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
+
+  data.offsets.popper.position = this.options.positionFixed ? 'fixed' : 'absolute';
+
+  // run the modifiers
+  data = runModifiers(this.modifiers, data);
+
+  // the first `update` will call `onCreate` callback
+  // the other ones will call `onUpdate` callback
+  if (!this.state.isCreated) {
+    this.state.isCreated = true;
+    this.options.onCreate(data);
+  } else {
+    this.options.onUpdate(data);
+  }
+}
+
+/**
+ * Helper used to know if the given modifier is enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @returns {Boolean}
+ */
+function isModifierEnabled(modifiers, modifierName) {
+  return modifiers.some(function (_ref) {
+    var name = _ref.name,
+        enabled = _ref.enabled;
+    return enabled && name === modifierName;
+  });
+}
+
+/**
+ * Get the prefixed supported property name
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} property (camelCase)
+ * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
+ */
+function getSupportedPropertyName(property) {
+  var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];
+  var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
+
+  for (var i = 0; i < prefixes.length; i++) {
+    var prefix = prefixes[i];
+    var toCheck = prefix ? '' + prefix + upperProp : property;
+    if (typeof document.body.style[toCheck] !== 'undefined') {
+      return toCheck;
+    }
+  }
+  return null;
+}
+
+/**
+ * Destroy the popper
+ * @method
+ * @memberof Popper
+ */
+function destroy() {
+  this.state.isDestroyed = true;
+
+  // touch DOM only if `applyStyle` modifier is enabled
+  if (isModifierEnabled(this.modifiers, 'applyStyle')) {
+    this.popper.removeAttribute('x-placement');
+    this.popper.style.position = '';
+    this.popper.style.top = '';
+    this.popper.style.left = '';
+    this.popper.style.right = '';
+    this.popper.style.bottom = '';
+    this.popper.style.willChange = '';
+    this.popper.style[getSupportedPropertyName('transform')] = '';
+  }
+
+  this.disableEventListeners();
+
+  // remove the popper if user explicity asked for the deletion on destroy
+  // do not use `remove` because IE11 doesn't support it
+  if (this.options.removeOnDestroy) {
+    this.popper.parentNode.removeChild(this.popper);
+  }
+  return this;
+}
+
+/**
+ * Get the window associated with the element
+ * @argument {Element} element
+ * @returns {Window}
+ */
+function getWindow(element) {
+  var ownerDocument = element.ownerDocument;
+  return ownerDocument ? ownerDocument.defaultView : window;
+}
+
+function attachToScrollParents(scrollParent, event, callback, scrollParents) {
+  var isBody = scrollParent.nodeName === 'BODY';
+  var target = isBody ? scrollParent.ownerDocument.defaultView : scrollParent;
+  target.addEventListener(event, callback, { passive: true });
+
+  if (!isBody) {
+    attachToScrollParents(getScrollParent(target.parentNode), event, callback, scrollParents);
+  }
+  scrollParents.push(target);
+}
+
+/**
+ * Setup needed event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */
+function setupEventListeners(reference, options, state, updateBound) {
+  // Resize event listener on window
+  state.updateBound = updateBound;
+  getWindow(reference).addEventListener('resize', state.updateBound, { passive: true });
+
+  // Scroll event listener on scroll parents
+  var scrollElement = getScrollParent(reference);
+  attachToScrollParents(scrollElement, 'scroll', state.updateBound, state.scrollParents);
+  state.scrollElement = scrollElement;
+  state.eventsEnabled = true;
+
+  return state;
+}
+
+/**
+ * It will add resize/scroll events and start recalculating
+ * position of the popper element when they are triggered.
+ * @method
+ * @memberof Popper
+ */
+function enableEventListeners() {
+  if (!this.state.eventsEnabled) {
+    this.state = setupEventListeners(this.reference, this.options, this.state, this.scheduleUpdate);
+  }
+}
+
+/**
+ * Remove event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */
+function removeEventListeners(reference, state) {
+  // Remove resize event listener on window
+  getWindow(reference).removeEventListener('resize', state.updateBound);
+
+  // Remove scroll event listener on scroll parents
+  state.scrollParents.forEach(function (target) {
+    target.removeEventListener('scroll', state.updateBound);
+  });
+
+  // Reset state
+  state.updateBound = null;
+  state.scrollParents = [];
+  state.scrollElement = null;
+  state.eventsEnabled = false;
+  return state;
+}
+
+/**
+ * It will remove resize/scroll events and won't recalculate popper position
+ * when they are triggered. It also won't trigger onUpdate callback anymore,
+ * unless you call `update` method manually.
+ * @method
+ * @memberof Popper
+ */
+function disableEventListeners() {
+  if (this.state.eventsEnabled) {
+    cancelAnimationFrame(this.scheduleUpdate);
+    this.state = removeEventListeners(this.reference, this.state);
+  }
+}
+
+/**
+ * Tells if a given input is a number
+ * @method
+ * @memberof Popper.Utils
+ * @param {*} input to check
+ * @return {Boolean}
+ */
+function isNumeric(n) {
+  return n !== '' && !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+/**
+ * Set the style to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the style to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */
+function setStyles(element, styles) {
+  Object.keys(styles).forEach(function (prop) {
+    var unit = '';
+    // add unit if the value is numeric and is one of the following
+    if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 && isNumeric(styles[prop])) {
+      unit = 'px';
+    }
+    element.style[prop] = styles[prop] + unit;
+  });
+}
+
+/**
+ * Set the attributes to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the attributes to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */
+function setAttributes(element, attributes) {
+  Object.keys(attributes).forEach(function (prop) {
+    var value = attributes[prop];
+    if (value !== false) {
+      element.setAttribute(prop, attributes[prop]);
+    } else {
+      element.removeAttribute(prop);
+    }
+  });
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} data.styles - List of style properties - values to apply to popper element
+ * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The same data object
+ */
+function applyStyle(data) {
+  // any property present in `data.styles` will be applied to the popper,
+  // in this way we can make the 3rd party modifiers add custom styles to it
+  // Be aware, modifiers could override the properties defined in the previous
+  // lines of this modifier!
+  setStyles(data.instance.popper, data.styles);
+
+  // any property present in `data.attributes` will be applied to the popper,
+  // they will be set as HTML attributes of the element
+  setAttributes(data.instance.popper, data.attributes);
+
+  // if arrowElement is defined and arrowStyles has some properties
+  if (data.arrowElement && Object.keys(data.arrowStyles).length) {
+    setStyles(data.arrowElement, data.arrowStyles);
+  }
+
+  return data;
+}
+
+/**
+ * Set the x-placement attribute before everything else because it could be used
+ * to add margins to the popper margins needs to be calculated to get the
+ * correct popper offsets.
+ * @method
+ * @memberof Popper.modifiers
+ * @param {HTMLElement} reference - The reference element used to position the popper
+ * @param {HTMLElement} popper - The HTML element used as popper
+ * @param {Object} options - Popper.js options
+ */
+function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
+  // compute reference element offsets
+  var referenceOffsets = getReferenceOffsets(state, popper, reference, options.positionFixed);
+
+  // compute auto placement, store placement inside the data object,
+  // modifiers will be able to edit `placement` if needed
+  // and refer to originalPlacement to know the original value
+  var placement = computeAutoPlacement(options.placement, referenceOffsets, popper, reference, options.modifiers.flip.boundariesElement, options.modifiers.flip.padding);
+
+  popper.setAttribute('x-placement', placement);
+
+  // Apply `position` to popper before anything else because
+  // without the position applied we can't guarantee correct computations
+  setStyles(popper, { position: options.positionFixed ? 'fixed' : 'absolute' });
+
+  return options;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function computeStyle(data, options) {
+  var x = options.x,
+      y = options.y;
+  var popper = data.offsets.popper;
+
+  // Remove this legacy support in Popper.js v2
+
+  var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
+    return modifier.name === 'applyStyle';
+  }).gpuAcceleration;
+  if (legacyGpuAccelerationOption !== undefined) {
+    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
+  }
+  var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
+
+  var offsetParent = getOffsetParent(data.instance.popper);
+  var offsetParentRect = getBoundingClientRect(offsetParent);
+
+  // Styles
+  var styles = {
+    position: popper.position
+  };
+
+  // Avoid blurry text by using full pixel integers.
+  // For pixel-perfect positioning, top/bottom prefers rounded
+  // values, while left/right prefers floored values.
+  var offsets = {
+    left: Math.floor(popper.left),
+    top: Math.round(popper.top),
+    bottom: Math.round(popper.bottom),
+    right: Math.floor(popper.right)
+  };
+
+  var sideA = x === 'bottom' ? 'top' : 'bottom';
+  var sideB = y === 'right' ? 'left' : 'right';
+
+  // if gpuAcceleration is set to `true` and transform is supported,
+  //  we use `translate3d` to apply the position to the popper we
+  // automatically use the supported prefixed version if needed
+  var prefixedProperty = getSupportedPropertyName('transform');
+
+  // now, let's make a step back and look at this code closely (wtf?)
+  // If the content of the popper grows once it's been positioned, it
+  // may happen that the popper gets misplaced because of the new content
+  // overflowing its reference element
+  // To avoid this problem, we provide two options (x and y), which allow
+  // the consumer to define the offset origin.
+  // If we position a popper on top of a reference element, we can set
+  // `x` to `top` to make the popper grow towards its top instead of
+  // its bottom.
+  var left = void 0,
+      top = void 0;
+  if (sideA === 'bottom') {
+    top = -offsetParentRect.height + offsets.bottom;
+  } else {
+    top = offsets.top;
+  }
+  if (sideB === 'right') {
+    left = -offsetParentRect.width + offsets.right;
+  } else {
+    left = offsets.left;
+  }
+  if (gpuAcceleration && prefixedProperty) {
+    styles[prefixedProperty] = 'translate3d(' + left + 'px, ' + top + 'px, 0)';
+    styles[sideA] = 0;
+    styles[sideB] = 0;
+    styles.willChange = 'transform';
+  } else {
+    // othwerise, we use the standard `top`, `left`, `bottom` and `right` properties
+    var invertTop = sideA === 'bottom' ? -1 : 1;
+    var invertLeft = sideB === 'right' ? -1 : 1;
+    styles[sideA] = top * invertTop;
+    styles[sideB] = left * invertLeft;
+    styles.willChange = sideA + ', ' + sideB;
+  }
+
+  // Attributes
+  var attributes = {
+    'x-placement': data.placement
+  };
+
+  // Update `data` attributes, styles and arrowStyles
+  data.attributes = _extends({}, attributes, data.attributes);
+  data.styles = _extends({}, styles, data.styles);
+  data.arrowStyles = _extends({}, data.offsets.arrow, data.arrowStyles);
+
+  return data;
+}
+
+/**
+ * Helper used to know if the given modifier depends from another one.<br />
+ * It checks if the needed modifier is listed and enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @param {Array} modifiers - list of modifiers
+ * @param {String} requestingName - name of requesting modifier
+ * @param {String} requestedName - name of requested modifier
+ * @returns {Boolean}
+ */
+function isModifierRequired(modifiers, requestingName, requestedName) {
+  var requesting = find(modifiers, function (_ref) {
+    var name = _ref.name;
+    return name === requestingName;
+  });
+
+  var isRequired = !!requesting && modifiers.some(function (modifier) {
+    return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
+  });
+
+  if (!isRequired) {
+    var _requesting = '`' + requestingName + '`';
+    var requested = '`' + requestedName + '`';
+    console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to include it before ' + _requesting + '!');
+  }
+  return isRequired;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function arrow(data, options) {
+  var _data$offsets$arrow;
+
+  // arrow depends on keepTogether in order to work
+  if (!isModifierRequired(data.instance.modifiers, 'arrow', 'keepTogether')) {
+    return data;
+  }
+
+  var arrowElement = options.element;
+
+  // if arrowElement is a string, suppose it's a CSS selector
+  if (typeof arrowElement === 'string') {
+    arrowElement = data.instance.popper.querySelector(arrowElement);
+
+    // if arrowElement is not found, don't run the modifier
+    if (!arrowElement) {
+      return data;
+    }
+  } else {
+    // if the arrowElement isn't a query selector we must check that the
+    // provided DOM node is child of its popper node
+    if (!data.instance.popper.contains(arrowElement)) {
+      console.warn('WARNING: `arrow.element` must be child of its popper element!');
+      return data;
+    }
+  }
+
+  var placement = data.placement.split('-')[0];
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var isVertical = ['left', 'right'].indexOf(placement) !== -1;
+
+  var len = isVertical ? 'height' : 'width';
+  var sideCapitalized = isVertical ? 'Top' : 'Left';
+  var side = sideCapitalized.toLowerCase();
+  var altSide = isVertical ? 'left' : 'top';
+  var opSide = isVertical ? 'bottom' : 'right';
+  var arrowElementSize = getOuterSizes(arrowElement)[len];
+
+  //
+  // extends keepTogether behavior making sure the popper and its
+  // reference have enough pixels in conjuction
+  //
+
+  // top/left side
+  if (reference[opSide] - arrowElementSize < popper[side]) {
+    data.offsets.popper[side] -= popper[side] - (reference[opSide] - arrowElementSize);
+  }
+  // bottom/right side
+  if (reference[side] + arrowElementSize > popper[opSide]) {
+    data.offsets.popper[side] += reference[side] + arrowElementSize - popper[opSide];
+  }
+  data.offsets.popper = getClientRect(data.offsets.popper);
+
+  // compute center of the popper
+  var center = reference[side] + reference[len] / 2 - arrowElementSize / 2;
+
+  // Compute the sideValue using the updated popper offsets
+  // take popper margin in account because we don't have this info available
+  var css = getStyleComputedProperty(data.instance.popper);
+  var popperMarginSide = parseFloat(css['margin' + sideCapitalized], 10);
+  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width'], 10);
+  var sideValue = center - data.offsets.popper[side] - popperMarginSide - popperBorderSide;
+
+  // prevent arrowElement from being placed not contiguously to its popper
+  sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
+
+  data.arrowElement = arrowElement;
+  data.offsets.arrow = (_data$offsets$arrow = {}, defineProperty(_data$offsets$arrow, side, Math.round(sideValue)), defineProperty(_data$offsets$arrow, altSide, ''), _data$offsets$arrow);
+
+  return data;
+}
+
+/**
+ * Get the opposite placement variation of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement variation
+ * @returns {String} flipped placement variation
+ */
+function getOppositeVariation(variation) {
+  if (variation === 'end') {
+    return 'start';
+  } else if (variation === 'start') {
+    return 'end';
+  }
+  return variation;
+}
+
+/**
+ * List of accepted placements to use as values of the `placement` option.<br />
+ * Valid placements are:
+ * - `auto`
+ * - `top`
+ * - `right`
+ * - `bottom`
+ * - `left`
+ *
+ * Each placement can have a variation from this list:
+ * - `-start`
+ * - `-end`
+ *
+ * Variations are interpreted easily if you think of them as the left to right
+ * written languages. Horizontally (`top` and `bottom`), `start` is left and `end`
+ * is right.<br />
+ * Vertically (`left` and `right`), `start` is top and `end` is bottom.
+ *
+ * Some valid examples are:
+ * - `top-end` (on top of reference, right aligned)
+ * - `right-start` (on right of reference, top aligned)
+ * - `bottom` (on bottom, centered)
+ * - `auto-right` (on the side with more space available, alignment depends by placement)
+ *
+ * @static
+ * @type {Array}
+ * @enum {String}
+ * @readonly
+ * @method placements
+ * @memberof Popper
+ */
+var placements = ['auto-start', 'auto', 'auto-end', 'top-start', 'top', 'top-end', 'right-start', 'right', 'right-end', 'bottom-end', 'bottom', 'bottom-start', 'left-end', 'left', 'left-start'];
+
+// Get rid of `auto` `auto-start` and `auto-end`
+var validPlacements = placements.slice(3);
+
+/**
+ * Given an initial placement, returns all the subsequent placements
+ * clockwise (or counter-clockwise).
+ *
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement - A valid placement (it accepts variations)
+ * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
+ * @returns {Array} placements including their variations
+ */
+function clockwise(placement) {
+  var counter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var index = validPlacements.indexOf(placement);
+  var arr = validPlacements.slice(index + 1).concat(validPlacements.slice(0, index));
+  return counter ? arr.reverse() : arr;
+}
+
+var BEHAVIORS = {
+  FLIP: 'flip',
+  CLOCKWISE: 'clockwise',
+  COUNTERCLOCKWISE: 'counterclockwise'
+};
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function flip(data, options) {
+  // if `inner` modifier is enabled, we can't use the `flip` modifier
+  if (isModifierEnabled(data.instance.modifiers, 'inner')) {
+    return data;
+  }
+
+  if (data.flipped && data.placement === data.originalPlacement) {
+    // seems like flip is trying to loop, probably there's not enough space on any of the flippable sides
+    return data;
+  }
+
+  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement, data.positionFixed);
+
+  var placement = data.placement.split('-')[0];
+  var placementOpposite = getOppositePlacement(placement);
+  var variation = data.placement.split('-')[1] || '';
+
+  var flipOrder = [];
+
+  switch (options.behavior) {
+    case BEHAVIORS.FLIP:
+      flipOrder = [placement, placementOpposite];
+      break;
+    case BEHAVIORS.CLOCKWISE:
+      flipOrder = clockwise(placement);
+      break;
+    case BEHAVIORS.COUNTERCLOCKWISE:
+      flipOrder = clockwise(placement, true);
+      break;
+    default:
+      flipOrder = options.behavior;
+  }
+
+  flipOrder.forEach(function (step, index) {
+    if (placement !== step || flipOrder.length === index + 1) {
+      return data;
+    }
+
+    placement = data.placement.split('-')[0];
+    placementOpposite = getOppositePlacement(placement);
+
+    var popperOffsets = data.offsets.popper;
+    var refOffsets = data.offsets.reference;
+
+    // using floor because the reference offsets may contain decimals we are not going to consider here
+    var floor = Math.floor;
+    var overlapsRef = placement === 'left' && floor(popperOffsets.right) > floor(refOffsets.left) || placement === 'right' && floor(popperOffsets.left) < floor(refOffsets.right) || placement === 'top' && floor(popperOffsets.bottom) > floor(refOffsets.top) || placement === 'bottom' && floor(popperOffsets.top) < floor(refOffsets.bottom);
+
+    var overflowsLeft = floor(popperOffsets.left) < floor(boundaries.left);
+    var overflowsRight = floor(popperOffsets.right) > floor(boundaries.right);
+    var overflowsTop = floor(popperOffsets.top) < floor(boundaries.top);
+    var overflowsBottom = floor(popperOffsets.bottom) > floor(boundaries.bottom);
+
+    var overflowsBoundaries = placement === 'left' && overflowsLeft || placement === 'right' && overflowsRight || placement === 'top' && overflowsTop || placement === 'bottom' && overflowsBottom;
+
+    // flip the variation if required
+    var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+    var flippedVariation = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
+
+    if (overlapsRef || overflowsBoundaries || flippedVariation) {
+      // this boolean to detect any flip loop
+      data.flipped = true;
+
+      if (overlapsRef || overflowsBoundaries) {
+        placement = flipOrder[index + 1];
+      }
+
+      if (flippedVariation) {
+        variation = getOppositeVariation(variation);
+      }
+
+      data.placement = placement + (variation ? '-' + variation : '');
+
+      // this object contains `position`, we want to preserve it along with
+      // any additional property we may add in the future
+      data.offsets.popper = _extends({}, data.offsets.popper, getPopperOffsets(data.instance.popper, data.offsets.reference, data.placement));
+
+      data = runModifiers(data.instance.modifiers, data, 'flip');
+    }
+  });
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function keepTogether(data) {
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var placement = data.placement.split('-')[0];
+  var floor = Math.floor;
+  var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+  var side = isVertical ? 'right' : 'bottom';
+  var opSide = isVertical ? 'left' : 'top';
+  var measurement = isVertical ? 'width' : 'height';
+
+  if (popper[side] < floor(reference[opSide])) {
+    data.offsets.popper[opSide] = floor(reference[opSide]) - popper[measurement];
+  }
+  if (popper[opSide] > floor(reference[side])) {
+    data.offsets.popper[opSide] = floor(reference[side]);
+  }
+
+  return data;
+}
+
+/**
+ * Converts a string containing value + unit into a px value number
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} str - Value + unit string
+ * @argument {String} measurement - `height` or `width`
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @returns {Number|String}
+ * Value in pixels, or original string if no values were extracted
+ */
+function toValue(str, measurement, popperOffsets, referenceOffsets) {
+  // separate value from unit
+  var split = str.match(/((?:\-|\+)?\d*\.?\d*)(.*)/);
+  var value = +split[1];
+  var unit = split[2];
+
+  // If it's not a number it's an operator, I guess
+  if (!value) {
+    return str;
+  }
+
+  if (unit.indexOf('%') === 0) {
+    var element = void 0;
+    switch (unit) {
+      case '%p':
+        element = popperOffsets;
+        break;
+      case '%':
+      case '%r':
+      default:
+        element = referenceOffsets;
+    }
+
+    var rect = getClientRect(element);
+    return rect[measurement] / 100 * value;
+  } else if (unit === 'vh' || unit === 'vw') {
+    // if is a vh or vw, we calculate the size based on the viewport
+    var size = void 0;
+    if (unit === 'vh') {
+      size = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    } else {
+      size = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    }
+    return size / 100 * value;
+  } else {
+    // if is an explicit pixel unit, we get rid of the unit and keep the value
+    // if is an implicit unit, it's px, and we return just the value
+    return value;
+  }
+}
+
+/**
+ * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} offset
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @argument {String} basePlacement
+ * @returns {Array} a two cells array with x and y offsets in numbers
+ */
+function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
+  var offsets = [0, 0];
+
+  // Use height if placement is left or right and index is 0 otherwise use width
+  // in this way the first offset will use an axis and the second one
+  // will use the other one
+  var useHeight = ['right', 'left'].indexOf(basePlacement) !== -1;
+
+  // Split the offset string to obtain a list of values and operands
+  // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
+  var fragments = offset.split(/(\+|\-)/).map(function (frag) {
+    return frag.trim();
+  });
+
+  // Detect if the offset string contains a pair of values or a single one
+  // they could be separated by comma or space
+  var divider = fragments.indexOf(find(fragments, function (frag) {
+    return frag.search(/,|\s/) !== -1;
+  }));
+
+  if (fragments[divider] && fragments[divider].indexOf(',') === -1) {
+    console.warn('Offsets separated by white space(s) are deprecated, use a comma (,) instead.');
+  }
+
+  // If divider is found, we divide the list of values and operands to divide
+  // them by ofset X and Y.
+  var splitRegex = /\s*,\s*|\s+/;
+  var ops = divider !== -1 ? [fragments.slice(0, divider).concat([fragments[divider].split(splitRegex)[0]]), [fragments[divider].split(splitRegex)[1]].concat(fragments.slice(divider + 1))] : [fragments];
+
+  // Convert the values with units to absolute pixels to allow our computations
+  ops = ops.map(function (op, index) {
+    // Most of the units rely on the orientation of the popper
+    var measurement = (index === 1 ? !useHeight : useHeight) ? 'height' : 'width';
+    var mergeWithPrevious = false;
+    return op
+    // This aggregates any `+` or `-` sign that aren't considered operators
+    // e.g.: 10 + +5 => [10, +, +5]
+    .reduce(function (a, b) {
+      if (a[a.length - 1] === '' && ['+', '-'].indexOf(b) !== -1) {
+        a[a.length - 1] = b;
+        mergeWithPrevious = true;
+        return a;
+      } else if (mergeWithPrevious) {
+        a[a.length - 1] += b;
+        mergeWithPrevious = false;
+        return a;
+      } else {
+        return a.concat(b);
+      }
+    }, [])
+    // Here we convert the string values into number values (in px)
+    .map(function (str) {
+      return toValue(str, measurement, popperOffsets, referenceOffsets);
+    });
+  });
+
+  // Loop trough the offsets arrays and execute the operations
+  ops.forEach(function (op, index) {
+    op.forEach(function (frag, index2) {
+      if (isNumeric(frag)) {
+        offsets[index] += frag * (op[index2 - 1] === '-' ? -1 : 1);
+      }
+    });
+  });
+  return offsets;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @argument {Number|String} options.offset=0
+ * The offset value as described in the modifier description
+ * @returns {Object} The data object, properly modified
+ */
+function offset(data, _ref) {
+  var offset = _ref.offset;
+  var placement = data.placement,
+      _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var basePlacement = placement.split('-')[0];
+
+  var offsets = void 0;
+  if (isNumeric(+offset)) {
+    offsets = [+offset, 0];
+  } else {
+    offsets = parseOffset(offset, popper, reference, basePlacement);
+  }
+
+  if (basePlacement === 'left') {
+    popper.top += offsets[0];
+    popper.left -= offsets[1];
+  } else if (basePlacement === 'right') {
+    popper.top += offsets[0];
+    popper.left += offsets[1];
+  } else if (basePlacement === 'top') {
+    popper.left += offsets[0];
+    popper.top -= offsets[1];
+  } else if (basePlacement === 'bottom') {
+    popper.left += offsets[0];
+    popper.top += offsets[1];
+  }
+
+  data.popper = popper;
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function preventOverflow(data, options) {
+  var boundariesElement = options.boundariesElement || getOffsetParent(data.instance.popper);
+
+  // If offsetParent is the reference element, we really want to
+  // go one step up and use the next offsetParent as reference to
+  // avoid to make this modifier completely useless and look like broken
+  if (data.instance.reference === boundariesElement) {
+    boundariesElement = getOffsetParent(boundariesElement);
+  }
+
+  // NOTE: DOM access here
+  // resets the popper's position so that the document size can be calculated excluding
+  // the size of the popper element itself
+  var transformProp = getSupportedPropertyName('transform');
+  var popperStyles = data.instance.popper.style; // assignment to help minification
+  var top = popperStyles.top,
+      left = popperStyles.left,
+      transform = popperStyles[transformProp];
+
+  popperStyles.top = '';
+  popperStyles.left = '';
+  popperStyles[transformProp] = '';
+
+  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement, data.positionFixed);
+
+  // NOTE: DOM access here
+  // restores the original style properties after the offsets have been computed
+  popperStyles.top = top;
+  popperStyles.left = left;
+  popperStyles[transformProp] = transform;
+
+  options.boundaries = boundaries;
+
+  var order = options.priority;
+  var popper = data.offsets.popper;
+
+  var check = {
+    primary: function primary(placement) {
+      var value = popper[placement];
+      if (popper[placement] < boundaries[placement] && !options.escapeWithReference) {
+        value = Math.max(popper[placement], boundaries[placement]);
+      }
+      return defineProperty({}, placement, value);
+    },
+    secondary: function secondary(placement) {
+      var mainSide = placement === 'right' ? 'left' : 'top';
+      var value = popper[mainSide];
+      if (popper[placement] > boundaries[placement] && !options.escapeWithReference) {
+        value = Math.min(popper[mainSide], boundaries[placement] - (placement === 'right' ? popper.width : popper.height));
+      }
+      return defineProperty({}, mainSide, value);
+    }
+  };
+
+  order.forEach(function (placement) {
+    var side = ['left', 'top'].indexOf(placement) !== -1 ? 'primary' : 'secondary';
+    popper = _extends({}, popper, check[side](placement));
+  });
+
+  data.offsets.popper = popper;
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function shift(data) {
+  var placement = data.placement;
+  var basePlacement = placement.split('-')[0];
+  var shiftvariation = placement.split('-')[1];
+
+  // if shift shiftvariation is specified, run the modifier
+  if (shiftvariation) {
+    var _data$offsets = data.offsets,
+        reference = _data$offsets.reference,
+        popper = _data$offsets.popper;
+
+    var isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
+    var side = isVertical ? 'left' : 'top';
+    var measurement = isVertical ? 'width' : 'height';
+
+    var shiftOffsets = {
+      start: defineProperty({}, side, reference[side]),
+      end: defineProperty({}, side, reference[side] + reference[measurement] - popper[measurement])
+    };
+
+    data.offsets.popper = _extends({}, popper, shiftOffsets[shiftvariation]);
+  }
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function hide(data) {
+  if (!isModifierRequired(data.instance.modifiers, 'hide', 'preventOverflow')) {
+    return data;
+  }
+
+  var refRect = data.offsets.reference;
+  var bound = find(data.instance.modifiers, function (modifier) {
+    return modifier.name === 'preventOverflow';
+  }).boundaries;
+
+  if (refRect.bottom < bound.top || refRect.left > bound.right || refRect.top > bound.bottom || refRect.right < bound.left) {
+    // Avoid unnecessary DOM access if visibility hasn't changed
+    if (data.hide === true) {
+      return data;
+    }
+
+    data.hide = true;
+    data.attributes['x-out-of-boundaries'] = '';
+  } else {
+    // Avoid unnecessary DOM access if visibility hasn't changed
+    if (data.hide === false) {
+      return data;
+    }
+
+    data.hide = false;
+    data.attributes['x-out-of-boundaries'] = false;
+  }
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function inner(data) {
+  var placement = data.placement;
+  var basePlacement = placement.split('-')[0];
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var isHoriz = ['left', 'right'].indexOf(basePlacement) !== -1;
+
+  var subtractLength = ['top', 'left'].indexOf(basePlacement) === -1;
+
+  popper[isHoriz ? 'left' : 'top'] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? 'width' : 'height'] : 0);
+
+  data.placement = getOppositePlacement(placement);
+  data.offsets.popper = getClientRect(popper);
+
+  return data;
+}
+
+/**
+ * Modifier function, each modifier can have a function of this type assigned
+ * to its `fn` property.<br />
+ * These functions will be called on each update, this means that you must
+ * make sure they are performant enough to avoid performance bottlenecks.
+ *
+ * @function ModifierFn
+ * @argument {dataObject} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {dataObject} The data object, properly modified
+ */
+
+/**
+ * Modifiers are plugins used to alter the behavior of your poppers.<br />
+ * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
+ * needed by the library.
+ *
+ * Usually you don't want to override the `order`, `fn` and `onLoad` props.
+ * All the other properties are configurations that could be tweaked.
+ * @namespace modifiers
+ */
+var modifiers = {
+  /**
+   * Modifier used to shift the popper on the start or end of its reference
+   * element.<br />
+   * It will read the variation of the `placement` property.<br />
+   * It can be one either `-end` or `-start`.
+   * @memberof modifiers
+   * @inner
+   */
+  shift: {
+    /** @prop {number} order=100 - Index used to define the order of execution */
+    order: 100,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: shift
+  },
+
+  /**
+   * The `offset` modifier can shift your popper on both its axis.
+   *
+   * It accepts the following units:
+   * - `px` or unitless, interpreted as pixels
+   * - `%` or `%r`, percentage relative to the length of the reference element
+   * - `%p`, percentage relative to the length of the popper element
+   * - `vw`, CSS viewport width unit
+   * - `vh`, CSS viewport height unit
+   *
+   * For length is intended the main axis relative to the placement of the popper.<br />
+   * This means that if the placement is `top` or `bottom`, the length will be the
+   * `width`. In case of `left` or `right`, it will be the height.
+   *
+   * You can provide a single value (as `Number` or `String`), or a pair of values
+   * as `String` divided by a comma or one (or more) white spaces.<br />
+   * The latter is a deprecated method because it leads to confusion and will be
+   * removed in v2.<br />
+   * Additionally, it accepts additions and subtractions between different units.
+   * Note that multiplications and divisions aren't supported.
+   *
+   * Valid examples are:
+   * ```
+   * 10
+   * '10%'
+   * '10, 10'
+   * '10%, 10'
+   * '10 + 10%'
+   * '10 - 5vh + 3%'
+   * '-10px + 5vh, 5px - 6%'
+   * ```
+   * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
+   * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
+   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  offset: {
+    /** @prop {number} order=200 - Index used to define the order of execution */
+    order: 200,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: offset,
+    /** @prop {Number|String} offset=0
+     * The offset value as described in the modifier description
+     */
+    offset: 0
+  },
+
+  /**
+   * Modifier used to prevent the popper from being positioned outside the boundary.
+   *
+   * An scenario exists where the reference itself is not within the boundaries.<br />
+   * We can say it has "escaped the boundaries" — or just "escaped".<br />
+   * In this case we need to decide whether the popper should either:
+   *
+   * - detach from the reference and remain "trapped" in the boundaries, or
+   * - if it should ignore the boundary and "escape with its reference"
+   *
+   * When `escapeWithReference` is set to`true` and reference is completely
+   * outside its boundaries, the popper will overflow (or completely leave)
+   * the boundaries in order to remain attached to the edge of the reference.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  preventOverflow: {
+    /** @prop {number} order=300 - Index used to define the order of execution */
+    order: 300,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: preventOverflow,
+    /**
+     * @prop {Array} [priority=['left','right','top','bottom']]
+     * Popper will try to prevent overflow following these priorities by default,
+     * then, it could overflow on the left and on top of the `boundariesElement`
+     */
+    priority: ['left', 'right', 'top', 'bottom'],
+    /**
+     * @prop {number} padding=5
+     * Amount of pixel used to define a minimum distance between the boundaries
+     * and the popper this makes sure the popper has always a little padding
+     * between the edges of its container
+     */
+    padding: 5,
+    /**
+     * @prop {String|HTMLElement} boundariesElement='scrollParent'
+     * Boundaries used by the modifier, can be `scrollParent`, `window`,
+     * `viewport` or any DOM element.
+     */
+    boundariesElement: 'scrollParent'
+  },
+
+  /**
+   * Modifier used to make sure the reference and its popper stay near eachothers
+   * without leaving any gap between the two. Expecially useful when the arrow is
+   * enabled and you want to assure it to point to its reference element.
+   * It cares only about the first axis, you can still have poppers with margin
+   * between the popper and its reference element.
+   * @memberof modifiers
+   * @inner
+   */
+  keepTogether: {
+    /** @prop {number} order=400 - Index used to define the order of execution */
+    order: 400,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: keepTogether
+  },
+
+  /**
+   * This modifier is used to move the `arrowElement` of the popper to make
+   * sure it is positioned between the reference element and its popper element.
+   * It will read the outer size of the `arrowElement` node to detect how many
+   * pixels of conjuction are needed.
+   *
+   * It has no effect if no `arrowElement` is provided.
+   * @memberof modifiers
+   * @inner
+   */
+  arrow: {
+    /** @prop {number} order=500 - Index used to define the order of execution */
+    order: 500,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: arrow,
+    /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */
+    element: '[x-arrow]'
+  },
+
+  /**
+   * Modifier used to flip the popper's placement when it starts to overlap its
+   * reference element.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   *
+   * **NOTE:** this modifier will interrupt the current update cycle and will
+   * restart it if it detects the need to flip the placement.
+   * @memberof modifiers
+   * @inner
+   */
+  flip: {
+    /** @prop {number} order=600 - Index used to define the order of execution */
+    order: 600,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: flip,
+    /**
+     * @prop {String|Array} behavior='flip'
+     * The behavior used to change the popper's placement. It can be one of
+     * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
+     * placements (with optional variations).
+     */
+    behavior: 'flip',
+    /**
+     * @prop {number} padding=5
+     * The popper will flip if it hits the edges of the `boundariesElement`
+     */
+    padding: 5,
+    /**
+     * @prop {String|HTMLElement} boundariesElement='viewport'
+     * The element which will define the boundaries of the popper position,
+     * the popper will never be placed outside of the defined boundaries
+     * (except if keepTogether is enabled)
+     */
+    boundariesElement: 'viewport'
+  },
+
+  /**
+   * Modifier used to make the popper flow toward the inner of the reference element.
+   * By default, when this modifier is disabled, the popper will be placed outside
+   * the reference element.
+   * @memberof modifiers
+   * @inner
+   */
+  inner: {
+    /** @prop {number} order=700 - Index used to define the order of execution */
+    order: 700,
+    /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */
+    enabled: false,
+    /** @prop {ModifierFn} */
+    fn: inner
+  },
+
+  /**
+   * Modifier used to hide the popper when its reference element is outside of the
+   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
+   * be used to hide with a CSS selector the popper when its reference is
+   * out of boundaries.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   * @memberof modifiers
+   * @inner
+   */
+  hide: {
+    /** @prop {number} order=800 - Index used to define the order of execution */
+    order: 800,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: hide
+  },
+
+  /**
+   * Computes the style that will be applied to the popper element to gets
+   * properly positioned.
+   *
+   * Note that this modifier will not touch the DOM, it just prepares the styles
+   * so that `applyStyle` modifier can apply it. This separation is useful
+   * in case you need to replace `applyStyle` with a custom implementation.
+   *
+   * This modifier has `850` as `order` value to maintain backward compatibility
+   * with previous versions of Popper.js. Expect the modifiers ordering method
+   * to change in future major versions of the library.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  computeStyle: {
+    /** @prop {number} order=850 - Index used to define the order of execution */
+    order: 850,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: computeStyle,
+    /**
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3d transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties.
+     */
+    gpuAcceleration: true,
+    /**
+     * @prop {string} [x='bottom']
+     * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
+     * Change this if your popper should grow in a direction different from `bottom`
+     */
+    x: 'bottom',
+    /**
+     * @prop {string} [x='left']
+     * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
+     * Change this if your popper should grow in a direction different from `right`
+     */
+    y: 'right'
+  },
+
+  /**
+   * Applies the computed styles to the popper element.
+   *
+   * All the DOM manipulations are limited to this modifier. This is useful in case
+   * you want to integrate Popper.js inside a framework or view library and you
+   * want to delegate all the DOM manipulations to it.
+   *
+   * Note that if you disable this modifier, you must make sure the popper element
+   * has its position set to `absolute` before Popper.js can do its work!
+   *
+   * Just disable this modifier and define you own to achieve the desired effect.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  applyStyle: {
+    /** @prop {number} order=900 - Index used to define the order of execution */
+    order: 900,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: applyStyle,
+    /** @prop {Function} */
+    onLoad: applyStyleOnLoad,
+    /**
+     * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3d transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties.
+     */
+    gpuAcceleration: undefined
+  }
+};
+
+/**
+ * The `dataObject` is an object containing all the informations used by Popper.js
+ * this object get passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
+ * @name dataObject
+ * @property {Object} data.instance The Popper.js instance
+ * @property {String} data.placement Placement applied to popper
+ * @property {String} data.originalPlacement Placement originally defined on init
+ * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
+ * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper.
+ * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
+ * @property {Object} data.styles Any CSS property defined here will be applied to the popper, it expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow, it expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.boundaries Offsets of the popper boundaries
+ * @property {Object} data.offsets The measurements of popper, reference and arrow elements.
+ * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
+ */
+
+/**
+ * Default options provided to Popper.js constructor.<br />
+ * These can be overriden using the `options` argument of Popper.js.<br />
+ * To override an option, simply pass as 3rd argument an object with the same
+ * structure of this object, example:
+ * ```
+ * new Popper(ref, pop, {
+ *   modifiers: {
+ *     preventOverflow: { enabled: false }
+ *   }
+ * })
+ * ```
+ * @type {Object}
+ * @static
+ * @memberof Popper
+ */
+var Defaults = {
+  /**
+   * Popper's placement
+   * @prop {Popper.placements} placement='bottom'
+   */
+  placement: 'bottom',
+
+  /**
+   * Set this to true if you want popper to position it self in 'fixed' mode
+   * @prop {Boolean} positionFixed=false
+   */
+  positionFixed: false,
+
+  /**
+   * Whether events (resize, scroll) are initially enabled
+   * @prop {Boolean} eventsEnabled=true
+   */
+  eventsEnabled: true,
+
+  /**
+   * Set to true if you want to automatically remove the popper when
+   * you call the `destroy` method.
+   * @prop {Boolean} removeOnDestroy=false
+   */
+  removeOnDestroy: false,
+
+  /**
+   * Callback called when the popper is created.<br />
+   * By default, is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onCreate}
+   */
+  onCreate: function onCreate() {},
+
+  /**
+   * Callback called when the popper is updated, this callback is not called
+   * on the initialization/creation of the popper, but only on subsequent
+   * updates.<br />
+   * By default, is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onUpdate}
+   */
+  onUpdate: function onUpdate() {},
+
+  /**
+   * List of modifiers used to modify the offsets before they are applied to the popper.
+   * They provide most of the functionalities of Popper.js
+   * @prop {modifiers}
+   */
+  modifiers: modifiers
+};
+
+/**
+ * @callback onCreate
+ * @param {dataObject} data
+ */
+
+/**
+ * @callback onUpdate
+ * @param {dataObject} data
+ */
+
+// Utils
+// Methods
+var Popper = function () {
+  /**
+   * Create a new Popper.js instance
+   * @class Popper
+   * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
+   * @param {HTMLElement} popper - The HTML element used as popper.
+   * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
+   * @return {Object} instance - The generated Popper.js instance
+   */
+  function Popper(reference, popper) {
+    var _this = this;
+
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    classCallCheck(this, Popper);
+
+    this.scheduleUpdate = function () {
+      return requestAnimationFrame(_this.update);
+    };
+
+    // make update() debounced, so that it only runs at most once-per-tick
+    this.update = debounce(this.update.bind(this));
+
+    // with {} we create a new object with the options inside it
+    this.options = _extends({}, Popper.Defaults, options);
+
+    // init state
+    this.state = {
+      isDestroyed: false,
+      isCreated: false,
+      scrollParents: []
+    };
+
+    // get reference and popper elements (allow jQuery wrappers)
+    this.reference = reference && reference.jquery ? reference[0] : reference;
+    this.popper = popper && popper.jquery ? popper[0] : popper;
+
+    // Deep merge modifiers options
+    this.options.modifiers = {};
+    Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function (name) {
+      _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
+    });
+
+    // Refactoring modifiers' list (Object => Array)
+    this.modifiers = Object.keys(this.options.modifiers).map(function (name) {
+      return _extends({
+        name: name
+      }, _this.options.modifiers[name]);
+    })
+    // sort the modifiers by order
+    .sort(function (a, b) {
+      return a.order - b.order;
+    });
+
+    // modifiers have the ability to execute arbitrary code when Popper.js get inited
+    // such code is executed in the same order of its modifier
+    // they could add new properties to their options configuration
+    // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
+    this.modifiers.forEach(function (modifierOptions) {
+      if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) {
+        modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
+      }
+    });
+
+    // fire the first update to position the popper in the right place
+    this.update();
+
+    var eventsEnabled = this.options.eventsEnabled;
+    if (eventsEnabled) {
+      // setup event listeners, they will take care of update the position in specific situations
+      this.enableEventListeners();
+    }
+
+    this.state.eventsEnabled = eventsEnabled;
+  }
+
+  // We can't use class properties because they don't get listed in the
+  // class prototype and break stuff like Sinon stubs
+
+
+  createClass(Popper, [{
+    key: 'update',
+    value: function update$$1() {
+      return update.call(this);
+    }
+  }, {
+    key: 'destroy',
+    value: function destroy$$1() {
+      return destroy.call(this);
+    }
+  }, {
+    key: 'enableEventListeners',
+    value: function enableEventListeners$$1() {
+      return enableEventListeners.call(this);
+    }
+  }, {
+    key: 'disableEventListeners',
+    value: function disableEventListeners$$1() {
+      return disableEventListeners.call(this);
+    }
+
+    /**
+     * Schedule an update, it will run on the next UI update available
+     * @method scheduleUpdate
+     * @memberof Popper
+     */
+
+
+    /**
+     * Collection of utilities useful when writing custom modifiers.
+     * Starting from version 1.7, this method is available only if you
+     * include `popper-utils.js` before `popper.js`.
+     *
+     * **DEPRECATION**: This way to access PopperUtils is deprecated
+     * and will be removed in v2! Use the PopperUtils module directly instead.
+     * Due to the high instability of the methods contained in Utils, we can't
+     * guarantee them to follow semver. Use them at your own risk!
+     * @static
+     * @private
+     * @type {Object}
+     * @deprecated since version 1.8
+     * @member Utils
+     * @memberof Popper
+     */
+
+  }]);
+  return Popper;
+}();
+
+/**
+ * The `referenceObject` is an object that provides an interface compatible with Popper.js
+ * and lets you use it as replacement of a real DOM node.<br />
+ * You can use this method to position a popper relatively to a set of coordinates
+ * in case you don't have a DOM node to use as reference.
+ *
+ * ```
+ * new Popper(referenceObject, popperNode);
+ * ```
+ *
+ * NB: This feature isn't supported in Internet Explorer 10
+ * @name referenceObject
+ * @property {Function} data.getBoundingClientRect
+ * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
+ * @property {number} data.clientWidth
+ * An ES6 getter that will return the width of the virtual reference element.
+ * @property {number} data.clientHeight
+ * An ES6 getter that will return the height of the virtual reference element.
+ */
+
+
+Popper.Utils = (typeof window !== 'undefined' ? window : global).PopperUtils;
+Popper.placements = placements;
+Popper.Defaults = Defaults;
+
+/* harmony default export */ __webpack_exports__["default"] = (Popper);
+//# sourceMappingURL=popper.js.map
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(6)))
+
+/***/ }),
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -16951,6265 +23519,7 @@ return jQuery;
 
 
 /***/ }),
-/* 45 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// This file hosts our error definitions
-// We use custom error "types" so that we can act on them when we need it
-// e.g.: if error instanceof errors.UnparsableJSON then..
-
-var inherits = __webpack_require__(64);
-
-function AlgoliaSearchError(message, extraProperties) {
-  var forEach = __webpack_require__(15);
-
-  var error = this;
-
-  // try to get a stacktrace
-  if (typeof Error.captureStackTrace === 'function') {
-    Error.captureStackTrace(this, this.constructor);
-  } else {
-    error.stack = (new Error()).stack || 'Cannot get a stacktrace, browser is too old';
-  }
-
-  this.name = 'AlgoliaSearchError';
-  this.message = message || 'Unknown error';
-
-  if (extraProperties) {
-    forEach(extraProperties, function addToErrorObject(value, key) {
-      error[key] = value;
-    });
-  }
-}
-
-inherits(AlgoliaSearchError, Error);
-
-function createCustomError(name, message) {
-  function AlgoliaSearchCustomError() {
-    var args = Array.prototype.slice.call(arguments, 0);
-
-    // custom message not set, use default
-    if (typeof args[0] !== 'string') {
-      args.unshift(message);
-    }
-
-    AlgoliaSearchError.apply(this, args);
-    this.name = 'AlgoliaSearch' + name + 'Error';
-  }
-
-  inherits(AlgoliaSearchCustomError, AlgoliaSearchError);
-
-  return AlgoliaSearchCustomError;
-}
-
-// late exports to let various fn defs and inherits take place
-module.exports = {
-  AlgoliaSearchError: AlgoliaSearchError,
-  UnparsableJSON: createCustomError(
-    'UnparsableJSON',
-    'Could not parse the incoming response as JSON, see err.more for details'
-  ),
-  RequestTimeout: createCustomError(
-    'RequestTimeout',
-    'Request timedout before getting a response'
-  ),
-  Network: createCustomError(
-    'Network',
-    'Network issue, see err.more for details'
-  ),
-  JSONPScriptFail: createCustomError(
-    'JSONPScriptFail',
-    '<script> was loaded but did not call our provided callback'
-  ),
-  JSONPScriptError: createCustomError(
-    'JSONPScriptError',
-    '<script> unable to load due to an `error` event on it'
-  ),
-  Unknown: createCustomError(
-    'Unknown',
-    'Unknown error occured'
-  )
-};
-
-
-/***/ }),
-/* 46 */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-/* 47 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var foreach = __webpack_require__(15);
-
-module.exports = function map(arr, fn) {
-  var newArr = [];
-  foreach(arr, function(item, itemIndex) {
-    newArr.push(fn(item, itemIndex, arr));
-  });
-  return newArr;
-};
-
-
-/***/ }),
-/* 48 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * This is the web browser implementation of `debug()`.
- *
- * Expose `debug()` as the module.
- */
-
-exports = module.exports = __webpack_require__(332);
-exports.log = log;
-exports.formatArgs = formatArgs;
-exports.save = save;
-exports.load = load;
-exports.useColors = useColors;
-exports.storage = 'undefined' != typeof chrome
-               && 'undefined' != typeof chrome.storage
-                  ? chrome.storage.local
-                  : localstorage();
-
-/**
- * Colors.
- */
-
-exports.colors = [
-  'lightseagreen',
-  'forestgreen',
-  'goldenrod',
-  'dodgerblue',
-  'darkorchid',
-  'crimson'
-];
-
-/**
- * Currently only WebKit-based Web Inspectors, Firefox >= v31,
- * and the Firebug extension (any Firefox version) are known
- * to support "%c" CSS customizations.
- *
- * TODO: add a `localStorage` variable to explicitly enable/disable colors
- */
-
-function useColors() {
-  // NB: In an Electron preload script, document will be defined but not fully
-  // initialized. Since we know we're in Chrome, we'll just detect this case
-  // explicitly
-  if (typeof window !== 'undefined' && window.process && window.process.type === 'renderer') {
-    return true;
-  }
-
-  // is webkit? http://stackoverflow.com/a/16459606/376773
-  // document is undefined in react-native: https://github.com/facebook/react-native/pull/1632
-  return (typeof document !== 'undefined' && document.documentElement && document.documentElement.style && document.documentElement.style.WebkitAppearance) ||
-    // is firebug? http://stackoverflow.com/a/398120/376773
-    (typeof window !== 'undefined' && window.console && (window.console.firebug || (window.console.exception && window.console.table))) ||
-    // is firefox >= v31?
-    // https://developer.mozilla.org/en-US/docs/Tools/Web_Console#Styling_messages
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/firefox\/(\d+)/) && parseInt(RegExp.$1, 10) >= 31) ||
-    // double check webkit in userAgent just in case we are in a worker
-    (typeof navigator !== 'undefined' && navigator.userAgent && navigator.userAgent.toLowerCase().match(/applewebkit\/(\d+)/));
-}
-
-/**
- * Map %j to `JSON.stringify()`, since no Web Inspectors do that by default.
- */
-
-exports.formatters.j = function(v) {
-  try {
-    return JSON.stringify(v);
-  } catch (err) {
-    return '[UnexpectedJSONParseError]: ' + err.message;
-  }
-};
-
-
-/**
- * Colorize log arguments if enabled.
- *
- * @api public
- */
-
-function formatArgs(args) {
-  var useColors = this.useColors;
-
-  args[0] = (useColors ? '%c' : '')
-    + this.namespace
-    + (useColors ? ' %c' : ' ')
-    + args[0]
-    + (useColors ? '%c ' : ' ')
-    + '+' + exports.humanize(this.diff);
-
-  if (!useColors) return;
-
-  var c = 'color: ' + this.color;
-  args.splice(1, 0, c, 'color: inherit')
-
-  // the final "%c" is somewhat tricky, because there could be other
-  // arguments passed either before or after the %c, so we need to
-  // figure out the correct index to insert the CSS into
-  var index = 0;
-  var lastC = 0;
-  args[0].replace(/%[a-zA-Z%]/g, function(match) {
-    if ('%%' === match) return;
-    index++;
-    if ('%c' === match) {
-      // we only are interested in the *last* %c
-      // (the user may have provided their own)
-      lastC = index;
-    }
-  });
-
-  args.splice(lastC, 0, c);
-}
-
-/**
- * Invokes `console.log()` when available.
- * No-op when `console.log` is not a "function".
- *
- * @api public
- */
-
-function log() {
-  // this hackery is required for IE8/9, where
-  // the `console.log` function doesn't have 'apply'
-  return 'object' === typeof console
-    && console.log
-    && Function.prototype.apply.call(console.log, console, arguments);
-}
-
-/**
- * Save `namespaces`.
- *
- * @param {String} namespaces
- * @api private
- */
-
-function save(namespaces) {
-  try {
-    if (null == namespaces) {
-      exports.storage.removeItem('debug');
-    } else {
-      exports.storage.debug = namespaces;
-    }
-  } catch(e) {}
-}
-
-/**
- * Load `namespaces`.
- *
- * @return {String} returns the previously persisted debug modes
- * @api private
- */
-
-function load() {
-  var r;
-  try {
-    r = exports.storage.debug;
-  } catch(e) {}
-
-  // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
-  if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"MIX_PUSHER_APP_CLUSTER":"ap1","MIX_PUSHER_APP_KEY":"4feb05b793d9599a1894","NODE_ENV":"development"}).DEBUG;
-  }
-
-  return r;
-}
-
-/**
- * Enable namespaces listed in `localStorage.debug` initially.
- */
-
-exports.enable(load());
-
-/**
- * Localstorage attempts to return the localstorage.
- *
- * This is necessary because safari throws
- * when a user disables cookies/localstorage
- * and you attempt to access it.
- *
- * @return {LocalStorage}
- * @api private
- */
-
-function localstorage() {
-  try {
-    return window.localStorage;
-  } catch (e) {}
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseIsTypedArray = __webpack_require__(349),
-    baseUnary = __webpack_require__(32),
-    nodeUtil = __webpack_require__(67);
-
-/* Node.js helper references. */
-var nodeIsTypedArray = nodeUtil && nodeUtil.isTypedArray;
-
-/**
- * Checks if `value` is classified as a typed array.
- *
- * @static
- * @memberOf _
- * @since 3.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a typed array, else `false`.
- * @example
- *
- * _.isTypedArray(new Uint8Array);
- * // => true
- *
- * _.isTypedArray([]);
- * // => false
- */
-var isTypedArray = nodeIsTypedArray ? baseUnary(nodeIsTypedArray) : baseIsTypedArray;
-
-module.exports = isTypedArray;
-
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports) {
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/**
- * Checks if `value` is likely a prototype object.
- *
- * @private
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a prototype, else `false`.
- */
-function isPrototype(value) {
-  var Ctor = value && value.constructor,
-      proto = (typeof Ctor == 'function' && Ctor.prototype) || objectProto;
-
-  return value === proto;
-}
-
-module.exports = isPrototype;
-
-
-/***/ }),
-/* 51 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getNative = __webpack_require__(13);
-
-/* Built-in method references that are verified to be native. */
-var nativeCreate = getNative(Object, 'create');
-
-module.exports = nativeCreate;
-
-
-/***/ }),
-/* 52 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var listCacheClear = __webpack_require__(364),
-    listCacheDelete = __webpack_require__(365),
-    listCacheGet = __webpack_require__(366),
-    listCacheHas = __webpack_require__(367),
-    listCacheSet = __webpack_require__(368);
-
-/**
- * Creates an list cache object.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function ListCache(entries) {
-  var index = -1,
-      length = entries == null ? 0 : entries.length;
-
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `ListCache`.
-ListCache.prototype.clear = listCacheClear;
-ListCache.prototype['delete'] = listCacheDelete;
-ListCache.prototype.get = listCacheGet;
-ListCache.prototype.has = listCacheHas;
-ListCache.prototype.set = listCacheSet;
-
-module.exports = ListCache;
-
-
-/***/ }),
-/* 53 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var eq = __webpack_require__(19);
-
-/**
- * Gets the index at which the `key` is found in `array` of key-value pairs.
- *
- * @private
- * @param {Array} array The array to inspect.
- * @param {*} key The key to search for.
- * @returns {number} Returns the index of the matched value, else `-1`.
- */
-function assocIndexOf(array, key) {
-  var length = array.length;
-  while (length--) {
-    if (eq(array[length][0], key)) {
-      return length;
-    }
-  }
-  return -1;
-}
-
-module.exports = assocIndexOf;
-
-
-/***/ }),
-/* 54 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isKeyable = __webpack_require__(370);
-
-/**
- * Gets the data for `map`.
- *
- * @private
- * @param {Object} map The map to query.
- * @param {string} key The reference key.
- * @returns {*} Returns the map data.
- */
-function getMapData(map, key) {
-  var data = map.__data__;
-  return isKeyable(key)
-    ? data[typeof key == 'string' ? 'string' : 'hash']
-    : data.map;
-}
-
-module.exports = getMapData;
-
-
-/***/ }),
-/* 55 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseForOwn = __webpack_require__(34),
-    createBaseEach = __webpack_require__(383);
-
-/**
- * The base implementation of `_.forEach` without support for iteratee shorthands.
- *
- * @private
- * @param {Array|Object} collection The collection to iterate over.
- * @param {Function} iteratee The function invoked per iteration.
- * @returns {Array|Object} Returns `collection`.
- */
-var baseEach = createBaseEach(baseForOwn);
-
-module.exports = baseEach;
-
-
-/***/ }),
-/* 56 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ListCache = __webpack_require__(52),
-    stackClear = __webpack_require__(387),
-    stackDelete = __webpack_require__(388),
-    stackGet = __webpack_require__(389),
-    stackHas = __webpack_require__(390),
-    stackSet = __webpack_require__(391);
-
-/**
- * Creates a stack cache object to store key-value pairs.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function Stack(entries) {
-  var data = this.__data__ = new ListCache(entries);
-  this.size = data.size;
-}
-
-// Add methods to `Stack`.
-Stack.prototype.clear = stackClear;
-Stack.prototype['delete'] = stackDelete;
-Stack.prototype.get = stackGet;
-Stack.prototype.has = stackHas;
-Stack.prototype.set = stackSet;
-
-module.exports = Stack;
-
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var castPath = __webpack_require__(22),
-    toKey = __webpack_require__(23);
-
-/**
- * The base implementation of `_.get` without support for default values.
- *
- * @private
- * @param {Object} object The object to query.
- * @param {Array|string} path The path of the property to get.
- * @returns {*} Returns the resolved value.
- */
-function baseGet(object, path) {
-  path = castPath(path, object);
-
-  var index = 0,
-      length = path.length;
-
-  while (object != null && index < length) {
-    object = object[toKey(path[index++])];
-  }
-  return (index && index == length) ? object : undefined;
-}
-
-module.exports = baseGet;
-
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports) {
-
-/**
- * Copies the values of `source` to `array`.
- *
- * @private
- * @param {Array} source The array to copy values from.
- * @param {Array} [array=[]] The array to copy values to.
- * @returns {Array} Returns `array`.
- */
-function copyArray(source, array) {
-  var index = -1,
-      length = source.length;
-
-  array || (array = Array(length));
-  while (++index < length) {
-    array[index] = source[index];
-  }
-  return array;
-}
-
-module.exports = copyArray;
-
-
-/***/ }),
-/* 59 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(5);
-
-/** Built-in value references. */
-var objectCreate = Object.create;
-
-/**
- * The base implementation of `_.create` without support for assigning
- * properties to the created object.
- *
- * @private
- * @param {Object} proto The object to inherit from.
- * @returns {Object} Returns the new object.
- */
-var baseCreate = (function() {
-  function object() {}
-  return function(proto) {
-    if (!isObject(proto)) {
-      return {};
-    }
-    if (objectCreate) {
-      return objectCreate(proto);
-    }
-    object.prototype = proto;
-    var result = new object;
-    object.prototype = undefined;
-    return result;
-  };
-}());
-
-module.exports = baseCreate;
-
-
-/***/ }),
-/* 60 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseIndexOf = __webpack_require__(33),
-    toInteger = __webpack_require__(40);
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max;
-
-/**
- * Gets the index at which the first occurrence of `value` is found in `array`
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons. If `fromIndex` is negative, it's used as the
- * offset from the end of `array`.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Array
- * @param {Array} array The array to inspect.
- * @param {*} value The value to search for.
- * @param {number} [fromIndex=0] The index to search from.
- * @returns {number} Returns the index of the matched value, else `-1`.
- * @example
- *
- * _.indexOf([1, 2, 1, 2], 2);
- * // => 1
- *
- * // Search from the `fromIndex`.
- * _.indexOf([1, 2, 1, 2], 2, 2);
- * // => 3
- */
-function indexOf(array, value, fromIndex) {
-  var length = array == null ? 0 : array.length;
-  if (!length) {
-    return -1;
-  }
-  var index = fromIndex == null ? 0 : toInteger(fromIndex);
-  if (index < 0) {
-    index = nativeMax(length + index, 0);
-  }
-  return baseIndexOf(array, value, index);
-}
-
-module.exports = indexOf;
-
-
-/***/ }),
-/* 61 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var createFind = __webpack_require__(438),
-    findIndex = __webpack_require__(138);
-
-/**
- * Iterates over elements of `collection`, returning the first element
- * `predicate` returns truthy for. The predicate is invoked with three
- * arguments: (value, index|key, collection).
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Collection
- * @param {Array|Object} collection The collection to inspect.
- * @param {Function} [predicate=_.identity] The function invoked per iteration.
- * @param {number} [fromIndex=0] The index to search from.
- * @returns {*} Returns the matched element, else `undefined`.
- * @example
- *
- * var users = [
- *   { 'user': 'barney',  'age': 36, 'active': true },
- *   { 'user': 'fred',    'age': 40, 'active': false },
- *   { 'user': 'pebbles', 'age': 1,  'active': true }
- * ];
- *
- * _.find(users, function(o) { return o.age < 40; });
- * // => object for 'barney'
- *
- * // The `_.matches` iteratee shorthand.
- * _.find(users, { 'age': 1, 'active': true });
- * // => object for 'pebbles'
- *
- * // The `_.matchesProperty` iteratee shorthand.
- * _.find(users, ['active', false]);
- * // => object for 'fred'
- *
- * // The `_.property` iteratee shorthand.
- * _.find(users, 'active');
- * // => object for 'barney'
- */
-var find = createFind(findIndex);
-
-module.exports = find;
-
-
-/***/ }),
-/* 62 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseCreate = __webpack_require__(59),
-    isObject = __webpack_require__(5);
-
-/**
- * Creates a function that produces an instance of `Ctor` regardless of
- * whether it was invoked as part of a `new` expression or by `call` or `apply`.
- *
- * @private
- * @param {Function} Ctor The constructor to wrap.
- * @returns {Function} Returns the new wrapped function.
- */
-function createCtor(Ctor) {
-  return function() {
-    // Use a `switch` statement to work with class constructors. See
-    // http://ecma-international.org/ecma-262/7.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
-    // for more details.
-    var args = arguments;
-    switch (args.length) {
-      case 0: return new Ctor;
-      case 1: return new Ctor(args[0]);
-      case 2: return new Ctor(args[0], args[1]);
-      case 3: return new Ctor(args[0], args[1], args[2]);
-      case 4: return new Ctor(args[0], args[1], args[2], args[3]);
-      case 5: return new Ctor(args[0], args[1], args[2], args[3], args[4]);
-      case 6: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5]);
-      case 7: return new Ctor(args[0], args[1], args[2], args[3], args[4], args[5], args[6]);
-    }
-    var thisBinding = baseCreate(Ctor.prototype),
-        result = Ctor.apply(thisBinding, args);
-
-    // Mimic the constructor's `return` behavior.
-    // See https://es5.github.io/#x13.2.2 for more details.
-    return isObject(result) ? result : thisBinding;
-  };
-}
-
-module.exports = createCtor;
-
-
-/***/ }),
-/* 63 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-var utils = __webpack_require__(3);
-var normalizeHeaderName = __webpack_require__(300);
-
-var DEFAULT_CONTENT_TYPE = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-};
-
-function setContentTypeIfUnset(headers, value) {
-  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
-    headers['Content-Type'] = value;
-  }
-}
-
-function getDefaultAdapter() {
-  var adapter;
-  if (typeof XMLHttpRequest !== 'undefined') {
-    // For browsers use XHR adapter
-    adapter = __webpack_require__(93);
-  } else if (typeof process !== 'undefined') {
-    // For node use HTTP adapter
-    adapter = __webpack_require__(93);
-  }
-  return adapter;
-}
-
-var defaults = {
-  adapter: getDefaultAdapter(),
-
-  transformRequest: [function transformRequest(data, headers) {
-    normalizeHeaderName(headers, 'Content-Type');
-    if (utils.isFormData(data) ||
-      utils.isArrayBuffer(data) ||
-      utils.isBuffer(data) ||
-      utils.isStream(data) ||
-      utils.isFile(data) ||
-      utils.isBlob(data)
-    ) {
-      return data;
-    }
-    if (utils.isArrayBufferView(data)) {
-      return data.buffer;
-    }
-    if (utils.isURLSearchParams(data)) {
-      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-      return data.toString();
-    }
-    if (utils.isObject(data)) {
-      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
-      return JSON.stringify(data);
-    }
-    return data;
-  }],
-
-  transformResponse: [function transformResponse(data) {
-    /*eslint no-param-reassign:0*/
-    if (typeof data === 'string') {
-      try {
-        data = JSON.parse(data);
-      } catch (e) { /* Ignore */ }
-    }
-    return data;
-  }],
-
-  /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */
-  timeout: 0,
-
-  xsrfCookieName: 'XSRF-TOKEN',
-  xsrfHeaderName: 'X-XSRF-TOKEN',
-
-  maxContentLength: -1,
-
-  validateStatus: function validateStatus(status) {
-    return status >= 200 && status < 300;
-  }
-};
-
-defaults.headers = {
-  common: {
-    'Accept': 'application/json, text/plain, */*'
-  }
-};
-
-utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
-  defaults.headers[method] = {};
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-});
-
-module.exports = defaults;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28)))
-
-/***/ }),
-/* 64 */
-/***/ (function(module, exports) {
-
-if (typeof Object.create === 'function') {
-  // implementation from standard node.js 'util' module
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
-  };
-} else {
-  // old school shim for old browsers
-  module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
-  }
-}
-
-
-/***/ }),
-/* 65 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var keys = __webpack_require__(8);
-var intersection = __webpack_require__(351);
-var forOwn = __webpack_require__(381);
-var forEach = __webpack_require__(21);
-var filter = __webpack_require__(73);
-var map = __webpack_require__(12);
-var reduce = __webpack_require__(37);
-var omit = __webpack_require__(127);
-var indexOf = __webpack_require__(60);
-var isNaN = __webpack_require__(436);
-var isEmpty = __webpack_require__(41);
-var isEqual = __webpack_require__(437);
-var isUndefined = __webpack_require__(137);
-var isString = __webpack_require__(42);
-var isFunction = __webpack_require__(18);
-var find = __webpack_require__(61);
-var trim = __webpack_require__(139);
-
-var defaults = __webpack_require__(85);
-var merge = __webpack_require__(86);
-
-var valToNumber = __webpack_require__(450);
-
-var filterState = __webpack_require__(451);
-
-var RefinementList = __webpack_require__(452);
-
-/**
- * like _.find but using _.isEqual to be able to use it
- * to find arrays.
- * @private
- * @param {any[]} array array to search into
- * @param {any} searchedValue the value we're looking for
- * @return {any} the searched value or undefined
- */
-function findArray(array, searchedValue) {
-  return find(array, function(currentValue) {
-    return isEqual(currentValue, searchedValue);
-  });
-}
-
-/**
- * The facet list is the structure used to store the list of values used to
- * filter a single attribute.
- * @typedef {string[]} SearchParameters.FacetList
- */
-
-/**
- * Structure to store numeric filters with the operator as the key. The supported operators
- * are `=`, `>`, `<`, `>=`, `<=` and `!=`.
- * @typedef {Object.<string, Array.<number|number[]>>} SearchParameters.OperatorList
- */
-
-/**
- * SearchParameters is the data structure that contains all the information
- * usable for making a search to Algolia API. It doesn't do the search itself,
- * nor does it contains logic about the parameters.
- * It is an immutable object, therefore it has been created in a way that each
- * changes does not change the object itself but returns a copy with the
- * modification.
- * This object should probably not be instantiated outside of the helper. It will
- * be provided when needed. This object is documented for reference as you'll
- * get it from events generated by the {@link AlgoliaSearchHelper}.
- * If need be, instantiate the Helper from the factory function {@link SearchParameters.make}
- * @constructor
- * @classdesc contains all the parameters of a search
- * @param {object|SearchParameters} newParameters existing parameters or partial object
- * for the properties of a new SearchParameters
- * @see SearchParameters.make
- * @example <caption>SearchParameters of the first query in
- *   <a href="http://demos.algolia.com/instant-search-demo/">the instant search demo</a></caption>
-{
-   "query": "",
-   "disjunctiveFacets": [
-      "customerReviewCount",
-      "category",
-      "salePrice_range",
-      "manufacturer"
-  ],
-   "maxValuesPerFacet": 30,
-   "page": 0,
-   "hitsPerPage": 10,
-   "facets": [
-      "type",
-      "shipping"
-  ]
-}
- */
-function SearchParameters(newParameters) {
-  var params = newParameters ? SearchParameters._parseNumbers(newParameters) : {};
-
-  /**
-   * Targeted index. This parameter is mandatory.
-   * @member {string}
-   */
-  this.index = params.index || '';
-
-  // Query
-  /**
-   * Query string of the instant search. The empty string is a valid query.
-   * @member {string}
-   * @see https://www.algolia.com/doc/rest#param-query
-   */
-  this.query = params.query || '';
-
-  // Facets
-  /**
-   * This attribute contains the list of all the conjunctive facets
-   * used. This list will be added to requested facets in the
-   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
-   * @member {string[]}
-   */
-  this.facets = params.facets || [];
-  /**
-   * This attribute contains the list of all the disjunctive facets
-   * used. This list will be added to requested facets in the
-   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
-   * @member {string[]}
-   */
-  this.disjunctiveFacets = params.disjunctiveFacets || [];
-  /**
-   * This attribute contains the list of all the hierarchical facets
-   * used. This list will be added to requested facets in the
-   * [facets attribute](https://www.algolia.com/doc/rest-api/search#param-facets) sent to algolia.
-   * Hierarchical facets are a sub type of disjunctive facets that
-   * let you filter faceted attributes hierarchically.
-   * @member {string[]|object[]}
-   */
-  this.hierarchicalFacets = params.hierarchicalFacets || [];
-
-  // Refinements
-  /**
-   * This attribute contains all the filters that need to be
-   * applied on the conjunctive facets. Each facet must be properly
-   * defined in the `facets` attribute.
-   *
-   * The key is the name of the facet, and the `FacetList` contains all
-   * filters selected for the associated facet name.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `facetFilters` attribute.
-   * @member {Object.<string, SearchParameters.FacetList>}
-   */
-  this.facetsRefinements = params.facetsRefinements || {};
-  /**
-   * This attribute contains all the filters that need to be
-   * excluded from the conjunctive facets. Each facet must be properly
-   * defined in the `facets` attribute.
-   *
-   * The key is the name of the facet, and the `FacetList` contains all
-   * filters excluded for the associated facet name.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `facetFilters` attribute.
-   * @member {Object.<string, SearchParameters.FacetList>}
-   */
-  this.facetsExcludes = params.facetsExcludes || {};
-  /**
-   * This attribute contains all the filters that need to be
-   * applied on the disjunctive facets. Each facet must be properly
-   * defined in the `disjunctiveFacets` attribute.
-   *
-   * The key is the name of the facet, and the `FacetList` contains all
-   * filters selected for the associated facet name.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `facetFilters` attribute.
-   * @member {Object.<string, SearchParameters.FacetList>}
-   */
-  this.disjunctiveFacetsRefinements = params.disjunctiveFacetsRefinements || {};
-  /**
-   * This attribute contains all the filters that need to be
-   * applied on the numeric attributes.
-   *
-   * The key is the name of the attribute, and the value is the
-   * filters to apply to this attribute.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `numericFilters` attribute.
-   * @member {Object.<string, SearchParameters.OperatorList>}
-   */
-  this.numericRefinements = params.numericRefinements || {};
-  /**
-   * This attribute contains all the tags used to refine the query.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `tagFilters` attribute.
-   * @member {string[]}
-   */
-  this.tagRefinements = params.tagRefinements || [];
-  /**
-   * This attribute contains all the filters that need to be
-   * applied on the hierarchical facets. Each facet must be properly
-   * defined in the `hierarchicalFacets` attribute.
-   *
-   * The key is the name of the facet, and the `FacetList` contains all
-   * filters selected for the associated facet name. The FacetList values
-   * are structured as a string that contain the values for each level
-   * separated by the configured separator.
-   *
-   * When querying algolia, the values stored in this attribute will
-   * be translated into the `facetFilters` attribute.
-   * @member {Object.<string, SearchParameters.FacetList>}
-   */
-  this.hierarchicalFacetsRefinements = params.hierarchicalFacetsRefinements || {};
-
-  /**
-   * Contains the numeric filters in the raw format of the Algolia API. Setting
-   * this parameter is not compatible with the usage of numeric filters methods.
-   * @see https://www.algolia.com/doc/javascript#numericFilters
-   * @member {string}
-   */
-  this.numericFilters = params.numericFilters;
-
-  /**
-   * Contains the tag filters in the raw format of the Algolia API. Setting this
-   * parameter is not compatible with the of the add/remove/toggle methods of the
-   * tag api.
-   * @see https://www.algolia.com/doc/rest#param-tagFilters
-   * @member {string}
-   */
-  this.tagFilters = params.tagFilters;
-
-  /**
-   * Contains the optional tag filters in the raw format of the Algolia API.
-   * @see https://www.algolia.com/doc/rest#param-tagFilters
-   * @member {string}
-   */
-  this.optionalTagFilters = params.optionalTagFilters;
-
-  /**
-   * Contains the optional facet filters in the raw format of the Algolia API.
-   * @see https://www.algolia.com/doc/rest#param-tagFilters
-   * @member {string}
-   */
-  this.optionalFacetFilters = params.optionalFacetFilters;
-
-
-  // Misc. parameters
-  /**
-   * Number of hits to be returned by the search API
-   * @member {number}
-   * @see https://www.algolia.com/doc/rest#param-hitsPerPage
-   */
-  this.hitsPerPage = params.hitsPerPage;
-  /**
-   * Number of values for each faceted attribute
-   * @member {number}
-   * @see https://www.algolia.com/doc/rest#param-maxValuesPerFacet
-   */
-  this.maxValuesPerFacet = params.maxValuesPerFacet;
-  /**
-   * The current page number
-   * @member {number}
-   * @see https://www.algolia.com/doc/rest#param-page
-   */
-  this.page = params.page || 0;
-  /**
-   * How the query should be treated by the search engine.
-   * Possible values: prefixAll, prefixLast, prefixNone
-   * @see https://www.algolia.com/doc/rest#param-queryType
-   * @member {string}
-   */
-  this.queryType = params.queryType;
-  /**
-   * How the typo tolerance behave in the search engine.
-   * Possible values: true, false, min, strict
-   * @see https://www.algolia.com/doc/rest#param-typoTolerance
-   * @member {string}
-   */
-  this.typoTolerance = params.typoTolerance;
-
-  /**
-   * Number of characters to wait before doing one character replacement.
-   * @see https://www.algolia.com/doc/rest#param-minWordSizefor1Typo
-   * @member {number}
-   */
-  this.minWordSizefor1Typo = params.minWordSizefor1Typo;
-  /**
-   * Number of characters to wait before doing a second character replacement.
-   * @see https://www.algolia.com/doc/rest#param-minWordSizefor2Typos
-   * @member {number}
-   */
-  this.minWordSizefor2Typos = params.minWordSizefor2Typos;
-  /**
-   * Configure the precision of the proximity ranking criterion
-   * @see https://www.algolia.com/doc/rest#param-minProximity
-   */
-  this.minProximity = params.minProximity;
-  /**
-   * Should the engine allow typos on numerics.
-   * @see https://www.algolia.com/doc/rest#param-allowTyposOnNumericTokens
-   * @member {boolean}
-   */
-  this.allowTyposOnNumericTokens = params.allowTyposOnNumericTokens;
-  /**
-   * Should the plurals be ignored
-   * @see https://www.algolia.com/doc/rest#param-ignorePlurals
-   * @member {boolean}
-   */
-  this.ignorePlurals = params.ignorePlurals;
-  /**
-   * Restrict which attribute is searched.
-   * @see https://www.algolia.com/doc/rest#param-restrictSearchableAttributes
-   * @member {string}
-   */
-  this.restrictSearchableAttributes = params.restrictSearchableAttributes;
-  /**
-   * Enable the advanced syntax.
-   * @see https://www.algolia.com/doc/rest#param-advancedSyntax
-   * @member {boolean}
-   */
-  this.advancedSyntax = params.advancedSyntax;
-  /**
-   * Enable the analytics
-   * @see https://www.algolia.com/doc/rest#param-analytics
-   * @member {boolean}
-   */
-  this.analytics = params.analytics;
-  /**
-   * Tag of the query in the analytics.
-   * @see https://www.algolia.com/doc/rest#param-analyticsTags
-   * @member {string}
-   */
-  this.analyticsTags = params.analyticsTags;
-  /**
-   * Enable the synonyms
-   * @see https://www.algolia.com/doc/rest#param-synonyms
-   * @member {boolean}
-   */
-  this.synonyms = params.synonyms;
-  /**
-   * Should the engine replace the synonyms in the highlighted results.
-   * @see https://www.algolia.com/doc/rest#param-replaceSynonymsInHighlight
-   * @member {boolean}
-   */
-  this.replaceSynonymsInHighlight = params.replaceSynonymsInHighlight;
-  /**
-   * Add some optional words to those defined in the dashboard
-   * @see https://www.algolia.com/doc/rest#param-optionalWords
-   * @member {string}
-   */
-  this.optionalWords = params.optionalWords;
-  /**
-   * Possible values are "lastWords" "firstWords" "allOptional" "none" (default)
-   * @see https://www.algolia.com/doc/rest#param-removeWordsIfNoResults
-   * @member {string}
-   */
-  this.removeWordsIfNoResults = params.removeWordsIfNoResults;
-  /**
-   * List of attributes to retrieve
-   * @see https://www.algolia.com/doc/rest#param-attributesToRetrieve
-   * @member {string}
-   */
-  this.attributesToRetrieve = params.attributesToRetrieve;
-  /**
-   * List of attributes to highlight
-   * @see https://www.algolia.com/doc/rest#param-attributesToHighlight
-   * @member {string}
-   */
-  this.attributesToHighlight = params.attributesToHighlight;
-  /**
-   * Code to be embedded on the left part of the highlighted results
-   * @see https://www.algolia.com/doc/rest#param-highlightPreTag
-   * @member {string}
-   */
-  this.highlightPreTag = params.highlightPreTag;
-  /**
-   * Code to be embedded on the right part of the highlighted results
-   * @see https://www.algolia.com/doc/rest#param-highlightPostTag
-   * @member {string}
-   */
-  this.highlightPostTag = params.highlightPostTag;
-  /**
-   * List of attributes to snippet
-   * @see https://www.algolia.com/doc/rest#param-attributesToSnippet
-   * @member {string}
-   */
-  this.attributesToSnippet = params.attributesToSnippet;
-  /**
-   * Enable the ranking informations in the response, set to 1 to activate
-   * @see https://www.algolia.com/doc/rest#param-getRankingInfo
-   * @member {number}
-   */
-  this.getRankingInfo = params.getRankingInfo;
-  /**
-   * Remove duplicates based on the index setting attributeForDistinct
-   * @see https://www.algolia.com/doc/rest#param-distinct
-   * @member {boolean|number}
-   */
-  this.distinct = params.distinct;
-  /**
-   * Center of the geo search.
-   * @see https://www.algolia.com/doc/rest#param-aroundLatLng
-   * @member {string}
-   */
-  this.aroundLatLng = params.aroundLatLng;
-  /**
-   * Center of the search, retrieve from the user IP.
-   * @see https://www.algolia.com/doc/rest#param-aroundLatLngViaIP
-   * @member {boolean}
-   */
-  this.aroundLatLngViaIP = params.aroundLatLngViaIP;
-  /**
-   * Radius of the geo search.
-   * @see https://www.algolia.com/doc/rest#param-aroundRadius
-   * @member {number}
-   */
-  this.aroundRadius = params.aroundRadius;
-  /**
-   * Precision of the geo search.
-   * @see https://www.algolia.com/doc/rest#param-aroundPrecision
-   * @member {number}
-   */
-  this.minimumAroundRadius = params.minimumAroundRadius;
-  /**
-   * Precision of the geo search.
-   * @see https://www.algolia.com/doc/rest#param-minimumAroundRadius
-   * @member {number}
-   */
-  this.aroundPrecision = params.aroundPrecision;
-  /**
-   * Geo search inside a box.
-   * @see https://www.algolia.com/doc/rest#param-insideBoundingBox
-   * @member {string}
-   */
-  this.insideBoundingBox = params.insideBoundingBox;
-  /**
-   * Geo search inside a polygon.
-   * @see https://www.algolia.com/doc/rest#param-insidePolygon
-   * @member {string}
-   */
-  this.insidePolygon = params.insidePolygon;
-  /**
-   * Allows to specify an ellipsis character for the snippet when we truncate the text
-   * (added before and after if truncated).
-   * The default value is an empty string and we recommend to set it to "…"
-   * @see https://www.algolia.com/doc/rest#param-insidePolygon
-   * @member {string}
-   */
-  this.snippetEllipsisText = params.snippetEllipsisText;
-  /**
-   * Allows to specify some attributes name on which exact won't be applied.
-   * Attributes are separated with a comma (for example "name,address" ), you can also use a
-   * JSON string array encoding (for example encodeURIComponent('["name","address"]') ).
-   * By default the list is empty.
-   * @see https://www.algolia.com/doc/rest#param-disableExactOnAttributes
-   * @member {string|string[]}
-   */
-  this.disableExactOnAttributes = params.disableExactOnAttributes;
-  /**
-   * Applies 'exact' on single word queries if the word contains at least 3 characters
-   * and is not a stop word.
-   * Can take two values: true or false.
-   * By default, its set to false.
-   * @see https://www.algolia.com/doc/rest#param-enableExactOnSingleWordQuery
-   * @member {boolean}
-   */
-  this.enableExactOnSingleWordQuery = params.enableExactOnSingleWordQuery;
-
-  // Undocumented parameters, still needed otherwise we fail
-  this.offset = params.offset;
-  this.length = params.length;
-
-  var self = this;
-  forOwn(params, function checkForUnknownParameter(paramValue, paramName) {
-    if (SearchParameters.PARAMETERS.indexOf(paramName) === -1) {
-      self[paramName] = paramValue;
-    }
-  });
-}
-
-/**
- * List all the properties in SearchParameters and therefore all the known Algolia properties
- * This doesn't contain any beta/hidden features.
- * @private
- */
-SearchParameters.PARAMETERS = keys(new SearchParameters());
-
-/**
- * @private
- * @param {object} partialState full or part of a state
- * @return {object} a new object with the number keys as number
- */
-SearchParameters._parseNumbers = function(partialState) {
-  // Do not reparse numbers in SearchParameters, they ought to be parsed already
-  if (partialState instanceof SearchParameters) return partialState;
-
-  var numbers = {};
-
-  var numberKeys = [
-    'aroundPrecision',
-    'aroundRadius',
-    'getRankingInfo',
-    'minWordSizefor2Typos',
-    'minWordSizefor1Typo',
-    'page',
-    'maxValuesPerFacet',
-    'distinct',
-    'minimumAroundRadius',
-    'hitsPerPage',
-    'minProximity'
-  ];
-
-  forEach(numberKeys, function(k) {
-    var value = partialState[k];
-    if (isString(value)) {
-      var parsedValue = parseFloat(value);
-      numbers[k] = isNaN(parsedValue) ? value : parsedValue;
-    }
-  });
-
-  // there's two formats of insideBoundingBox, we need to parse
-  // the one which is an array of float geo rectangles
-  if (Array.isArray(partialState.insideBoundingBox)) {
-    numbers.insideBoundingBox = partialState.insideBoundingBox.map(function(geoRect) {
-      return geoRect.map(function(value) {
-        return parseFloat(value);
-      });
-    });
-  }
-
-  if (partialState.numericRefinements) {
-    var numericRefinements = {};
-    forEach(partialState.numericRefinements, function(operators, attribute) {
-      numericRefinements[attribute] = {};
-      forEach(operators, function(values, operator) {
-        var parsedValues = map(values, function(v) {
-          if (Array.isArray(v)) {
-            return map(v, function(vPrime) {
-              if (isString(vPrime)) {
-                return parseFloat(vPrime);
-              }
-              return vPrime;
-            });
-          } else if (isString(v)) {
-            return parseFloat(v);
-          }
-          return v;
-        });
-        numericRefinements[attribute][operator] = parsedValues;
-      });
-    });
-    numbers.numericRefinements = numericRefinements;
-  }
-
-  return merge({}, partialState, numbers);
-};
-
-/**
- * Factory for SearchParameters
- * @param {object|SearchParameters} newParameters existing parameters or partial
- * object for the properties of a new SearchParameters
- * @return {SearchParameters} frozen instance of SearchParameters
- */
-SearchParameters.make = function makeSearchParameters(newParameters) {
-  var instance = new SearchParameters(newParameters);
-
-  forEach(newParameters.hierarchicalFacets, function(facet) {
-    if (facet.rootPath) {
-      var currentRefinement = instance.getHierarchicalRefinement(facet.name);
-
-      if (currentRefinement.length > 0 && currentRefinement[0].indexOf(facet.rootPath) !== 0) {
-        instance = instance.clearRefinements(facet.name);
-      }
-
-      // get it again in case it has been cleared
-      currentRefinement = instance.getHierarchicalRefinement(facet.name);
-      if (currentRefinement.length === 0) {
-        instance = instance.toggleHierarchicalFacetRefinement(facet.name, facet.rootPath);
-      }
-    }
-  });
-
-  return instance;
-};
-
-/**
- * Validates the new parameters based on the previous state
- * @param {SearchParameters} currentState the current state
- * @param {object|SearchParameters} parameters the new parameters to set
- * @return {Error|null} Error if the modification is invalid, null otherwise
- */
-SearchParameters.validate = function(currentState, parameters) {
-  var params = parameters || {};
-
-  if (currentState.tagFilters && params.tagRefinements && params.tagRefinements.length > 0) {
-    return new Error(
-      '[Tags] Cannot switch from the managed tag API to the advanced API. It is probably ' +
-      'an error, if it is really what you want, you should first clear the tags with clearTags method.');
-  }
-
-  if (currentState.tagRefinements.length > 0 && params.tagFilters) {
-    return new Error(
-      '[Tags] Cannot switch from the advanced tag API to the managed API. It is probably ' +
-      'an error, if it is not, you should first clear the tags with clearTags method.');
-  }
-
-  if (currentState.numericFilters && params.numericRefinements && !isEmpty(params.numericRefinements)) {
-    return new Error(
-      "[Numeric filters] Can't switch from the advanced to the managed API. It" +
-      ' is probably an error, if this is really what you want, you have to first' +
-      ' clear the numeric filters.');
-  }
-
-  if (!isEmpty(currentState.numericRefinements) && params.numericFilters) {
-    return new Error(
-      "[Numeric filters] Can't switch from the managed API to the advanced. It" +
-      ' is probably an error, if this is really what you want, you have to first' +
-      ' clear the numeric filters.');
-  }
-
-  return null;
-};
-
-SearchParameters.prototype = {
-  constructor: SearchParameters,
-
-  /**
-   * Remove all refinements (disjunctive + conjunctive + excludes + numeric filters)
-   * @method
-   * @param {undefined|string|SearchParameters.clearCallback} [attribute] optional string or function
-   * - If not given, means to clear all the filters.
-   * - If `string`, means to clear all refinements for the `attribute` named filter.
-   * - If `function`, means to clear all the refinements that return truthy values.
-   * @return {SearchParameters}
-   */
-  clearRefinements: function clearRefinements(attribute) {
-    var clear = RefinementList.clearRefinement;
-    var patch = {
-      numericRefinements: this._clearNumericRefinements(attribute),
-      facetsRefinements: clear(this.facetsRefinements, attribute, 'conjunctiveFacet'),
-      facetsExcludes: clear(this.facetsExcludes, attribute, 'exclude'),
-      disjunctiveFacetsRefinements: clear(this.disjunctiveFacetsRefinements, attribute, 'disjunctiveFacet'),
-      hierarchicalFacetsRefinements: clear(this.hierarchicalFacetsRefinements, attribute, 'hierarchicalFacet')
-    };
-    if (patch.numericRefinements === this.numericRefinements &&
-        patch.facetsRefinements === this.facetsRefinements &&
-        patch.facetsExcludes === this.facetsExcludes &&
-        patch.disjunctiveFacetsRefinements === this.disjunctiveFacetsRefinements &&
-        patch.hierarchicalFacetsRefinements === this.hierarchicalFacetsRefinements) {
-      return this;
-    }
-    return this.setQueryParameters(patch);
-  },
-  /**
-   * Remove all the refined tags from the SearchParameters
-   * @method
-   * @return {SearchParameters}
-   */
-  clearTags: function clearTags() {
-    if (this.tagFilters === undefined && this.tagRefinements.length === 0) return this;
-
-    return this.setQueryParameters({
-      tagFilters: undefined,
-      tagRefinements: []
-    });
-  },
-  /**
-   * Set the index.
-   * @method
-   * @param {string} index the index name
-   * @return {SearchParameters}
-   */
-  setIndex: function setIndex(index) {
-    if (index === this.index) return this;
-
-    return this.setQueryParameters({
-      index: index
-    });
-  },
-  /**
-   * Query setter
-   * @method
-   * @param {string} newQuery value for the new query
-   * @return {SearchParameters}
-   */
-  setQuery: function setQuery(newQuery) {
-    if (newQuery === this.query) return this;
-
-    return this.setQueryParameters({
-      query: newQuery
-    });
-  },
-  /**
-   * Page setter
-   * @method
-   * @param {number} newPage new page number
-   * @return {SearchParameters}
-   */
-  setPage: function setPage(newPage) {
-    if (newPage === this.page) return this;
-
-    return this.setQueryParameters({
-      page: newPage
-    });
-  },
-  /**
-   * Facets setter
-   * The facets are the simple facets, used for conjunctive (and) faceting.
-   * @method
-   * @param {string[]} facets all the attributes of the algolia records used for conjunctive faceting
-   * @return {SearchParameters}
-   */
-  setFacets: function setFacets(facets) {
-    return this.setQueryParameters({
-      facets: facets
-    });
-  },
-  /**
-   * Disjunctive facets setter
-   * Change the list of disjunctive (or) facets the helper chan handle.
-   * @method
-   * @param {string[]} facets all the attributes of the algolia records used for disjunctive faceting
-   * @return {SearchParameters}
-   */
-  setDisjunctiveFacets: function setDisjunctiveFacets(facets) {
-    return this.setQueryParameters({
-      disjunctiveFacets: facets
-    });
-  },
-  /**
-   * HitsPerPage setter
-   * Hits per page represents the number of hits retrieved for this query
-   * @method
-   * @param {number} n number of hits retrieved per page of results
-   * @return {SearchParameters}
-   */
-  setHitsPerPage: function setHitsPerPage(n) {
-    if (this.hitsPerPage === n) return this;
-
-    return this.setQueryParameters({
-      hitsPerPage: n
-    });
-  },
-  /**
-   * typoTolerance setter
-   * Set the value of typoTolerance
-   * @method
-   * @param {string} typoTolerance new value of typoTolerance ("true", "false", "min" or "strict")
-   * @return {SearchParameters}
-   */
-  setTypoTolerance: function setTypoTolerance(typoTolerance) {
-    if (this.typoTolerance === typoTolerance) return this;
-
-    return this.setQueryParameters({
-      typoTolerance: typoTolerance
-    });
-  },
-  /**
-   * Add a numeric filter for a given attribute
-   * When value is an array, they are combined with OR
-   * When value is a single value, it will combined with AND
-   * @method
-   * @param {string} attribute attribute to set the filter on
-   * @param {string} operator operator of the filter (possible values: =, >, >=, <, <=, !=)
-   * @param {number | number[]} value value of the filter
-   * @return {SearchParameters}
-   * @example
-   * // for price = 50 or 40
-   * searchparameter.addNumericRefinement('price', '=', [50, 40]);
-   * @example
-   * // for size = 38 and 40
-   * searchparameter.addNumericRefinement('size', '=', 38);
-   * searchparameter.addNumericRefinement('size', '=', 40);
-   */
-  addNumericRefinement: function(attribute, operator, v) {
-    var value = valToNumber(v);
-
-    if (this.isNumericRefined(attribute, operator, value)) return this;
-
-    var mod = merge({}, this.numericRefinements);
-
-    mod[attribute] = merge({}, mod[attribute]);
-
-    if (mod[attribute][operator]) {
-      // Array copy
-      mod[attribute][operator] = mod[attribute][operator].slice();
-      // Add the element. Concat can't be used here because value can be an array.
-      mod[attribute][operator].push(value);
-    } else {
-      mod[attribute][operator] = [value];
-    }
-
-    return this.setQueryParameters({
-      numericRefinements: mod
-    });
-  },
-  /**
-   * Get the list of conjunctive refinements for a single facet
-   * @param {string} facetName name of the attribute used for faceting
-   * @return {string[]} list of refinements
-   */
-  getConjunctiveRefinements: function(facetName) {
-    if (!this.isConjunctiveFacet(facetName)) {
-      throw new Error(facetName + ' is not defined in the facets attribute of the helper configuration');
-    }
-    return this.facetsRefinements[facetName] || [];
-  },
-  /**
-   * Get the list of disjunctive refinements for a single facet
-   * @param {string} facetName name of the attribute used for faceting
-   * @return {string[]} list of refinements
-   */
-  getDisjunctiveRefinements: function(facetName) {
-    if (!this.isDisjunctiveFacet(facetName)) {
-      throw new Error(
-        facetName + ' is not defined in the disjunctiveFacets attribute of the helper configuration'
-      );
-    }
-    return this.disjunctiveFacetsRefinements[facetName] || [];
-  },
-  /**
-   * Get the list of hierarchical refinements for a single facet
-   * @param {string} facetName name of the attribute used for faceting
-   * @return {string[]} list of refinements
-   */
-  getHierarchicalRefinement: function(facetName) {
-    // we send an array but we currently do not support multiple
-    // hierarchicalRefinements for a hierarchicalFacet
-    return this.hierarchicalFacetsRefinements[facetName] || [];
-  },
-  /**
-   * Get the list of exclude refinements for a single facet
-   * @param {string} facetName name of the attribute used for faceting
-   * @return {string[]} list of refinements
-   */
-  getExcludeRefinements: function(facetName) {
-    if (!this.isConjunctiveFacet(facetName)) {
-      throw new Error(facetName + ' is not defined in the facets attribute of the helper configuration');
-    }
-    return this.facetsExcludes[facetName] || [];
-  },
-
-  /**
-   * Remove all the numeric filter for a given (attribute, operator)
-   * @method
-   * @param {string} attribute attribute to set the filter on
-   * @param {string} [operator] operator of the filter (possible values: =, >, >=, <, <=, !=)
-   * @param {number} [number] the value to be removed
-   * @return {SearchParameters}
-   */
-  removeNumericRefinement: function(attribute, operator, paramValue) {
-    if (paramValue !== undefined) {
-      var paramValueAsNumber = valToNumber(paramValue);
-      if (!this.isNumericRefined(attribute, operator, paramValueAsNumber)) return this;
-      return this.setQueryParameters({
-        numericRefinements: this._clearNumericRefinements(function(value, key) {
-          return key === attribute && value.op === operator && isEqual(value.val, paramValueAsNumber);
-        })
-      });
-    } else if (operator !== undefined) {
-      if (!this.isNumericRefined(attribute, operator)) return this;
-      return this.setQueryParameters({
-        numericRefinements: this._clearNumericRefinements(function(value, key) {
-          return key === attribute && value.op === operator;
-        })
-      });
-    }
-
-    if (!this.isNumericRefined(attribute)) return this;
-    return this.setQueryParameters({
-      numericRefinements: this._clearNumericRefinements(function(value, key) {
-        return key === attribute;
-      })
-    });
-  },
-  /**
-   * Get the list of numeric refinements for a single facet
-   * @param {string} facetName name of the attribute used for faceting
-   * @return {SearchParameters.OperatorList[]} list of refinements
-   */
-  getNumericRefinements: function(facetName) {
-    return this.numericRefinements[facetName] || {};
-  },
-  /**
-   * Return the current refinement for the (attribute, operator)
-   * @param {string} attribute attribute in the record
-   * @param {string} operator operator applied on the refined values
-   * @return {Array.<number|number[]>} refined values
-   */
-  getNumericRefinement: function(attribute, operator) {
-    return this.numericRefinements[attribute] && this.numericRefinements[attribute][operator];
-  },
-  /**
-   * Clear numeric filters.
-   * @method
-   * @private
-   * @param {string|SearchParameters.clearCallback} [attribute] optional string or function
-   * - If not given, means to clear all the filters.
-   * - If `string`, means to clear all refinements for the `attribute` named filter.
-   * - If `function`, means to clear all the refinements that return truthy values.
-   * @return {Object.<string, OperatorList>}
-   */
-  _clearNumericRefinements: function _clearNumericRefinements(attribute) {
-    if (isUndefined(attribute)) {
-      if (isEmpty(this.numericRefinements)) return this.numericRefinements;
-      return {};
-    } else if (isString(attribute)) {
-      if (isEmpty(this.numericRefinements[attribute])) return this.numericRefinements;
-      return omit(this.numericRefinements, attribute);
-    } else if (isFunction(attribute)) {
-      var hasChanged = false;
-      var newNumericRefinements = reduce(this.numericRefinements, function(memo, operators, key) {
-        var operatorList = {};
-
-        forEach(operators, function(values, operator) {
-          var outValues = [];
-          forEach(values, function(value) {
-            var predicateResult = attribute({val: value, op: operator}, key, 'numeric');
-            if (!predicateResult) outValues.push(value);
-          });
-          if (!isEmpty(outValues)) {
-            if (outValues.length !== values.length) hasChanged = true;
-            operatorList[operator] = outValues;
-          }
-          else hasChanged = true;
-        });
-
-        if (!isEmpty(operatorList)) memo[key] = operatorList;
-
-        return memo;
-      }, {});
-
-      if (hasChanged) return newNumericRefinements;
-      return this.numericRefinements;
-    }
-  },
-  /**
-   * Add a facet to the facets attribute of the helper configuration, if it
-   * isn't already present.
-   * @method
-   * @param {string} facet facet name to add
-   * @return {SearchParameters}
-   */
-  addFacet: function addFacet(facet) {
-    if (this.isConjunctiveFacet(facet)) {
-      return this;
-    }
-
-    return this.setQueryParameters({
-      facets: this.facets.concat([facet])
-    });
-  },
-  /**
-   * Add a disjunctive facet to the disjunctiveFacets attribute of the helper
-   * configuration, if it isn't already present.
-   * @method
-   * @param {string} facet disjunctive facet name to add
-   * @return {SearchParameters}
-   */
-  addDisjunctiveFacet: function addDisjunctiveFacet(facet) {
-    if (this.isDisjunctiveFacet(facet)) {
-      return this;
-    }
-
-    return this.setQueryParameters({
-      disjunctiveFacets: this.disjunctiveFacets.concat([facet])
-    });
-  },
-  /**
-   * Add a hierarchical facet to the hierarchicalFacets attribute of the helper
-   * configuration.
-   * @method
-   * @param {object} hierarchicalFacet hierarchical facet to add
-   * @return {SearchParameters}
-   * @throws will throw an error if a hierarchical facet with the same name was already declared
-   */
-  addHierarchicalFacet: function addHierarchicalFacet(hierarchicalFacet) {
-    if (this.isHierarchicalFacet(hierarchicalFacet.name)) {
-      throw new Error(
-        'Cannot declare two hierarchical facets with the same name: `' + hierarchicalFacet.name + '`');
-    }
-
-    return this.setQueryParameters({
-      hierarchicalFacets: this.hierarchicalFacets.concat([hierarchicalFacet])
-    });
-  },
-  /**
-   * Add a refinement on a "normal" facet
-   * @method
-   * @param {string} facet attribute to apply the faceting on
-   * @param {string} value value of the attribute (will be converted to string)
-   * @return {SearchParameters}
-   */
-  addFacetRefinement: function addFacetRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    if (RefinementList.isRefined(this.facetsRefinements, facet, value)) return this;
-
-    return this.setQueryParameters({
-      facetsRefinements: RefinementList.addRefinement(this.facetsRefinements, facet, value)
-    });
-  },
-  /**
-   * Exclude a value from a "normal" facet
-   * @method
-   * @param {string} facet attribute to apply the exclusion on
-   * @param {string} value value of the attribute (will be converted to string)
-   * @return {SearchParameters}
-   */
-  addExcludeRefinement: function addExcludeRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    if (RefinementList.isRefined(this.facetsExcludes, facet, value)) return this;
-
-    return this.setQueryParameters({
-      facetsExcludes: RefinementList.addRefinement(this.facetsExcludes, facet, value)
-    });
-  },
-  /**
-   * Adds a refinement on a disjunctive facet.
-   * @method
-   * @param {string} facet attribute to apply the faceting on
-   * @param {string} value value of the attribute (will be converted to string)
-   * @return {SearchParameters}
-   */
-  addDisjunctiveFacetRefinement: function addDisjunctiveFacetRefinement(facet, value) {
-    if (!this.isDisjunctiveFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
-    }
-
-    if (RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value)) return this;
-
-    return this.setQueryParameters({
-      disjunctiveFacetsRefinements: RefinementList.addRefinement(
-        this.disjunctiveFacetsRefinements, facet, value)
-    });
-  },
-  /**
-   * addTagRefinement adds a tag to the list used to filter the results
-   * @param {string} tag tag to be added
-   * @return {SearchParameters}
-   */
-  addTagRefinement: function addTagRefinement(tag) {
-    if (this.isTagRefined(tag)) return this;
-
-    var modification = {
-      tagRefinements: this.tagRefinements.concat(tag)
-    };
-
-    return this.setQueryParameters(modification);
-  },
-  /**
-   * Remove a facet from the facets attribute of the helper configuration, if it
-   * is present.
-   * @method
-   * @param {string} facet facet name to remove
-   * @return {SearchParameters}
-   */
-  removeFacet: function removeFacet(facet) {
-    if (!this.isConjunctiveFacet(facet)) {
-      return this;
-    }
-
-    return this.clearRefinements(facet).setQueryParameters({
-      facets: filter(this.facets, function(f) {
-        return f !== facet;
-      })
-    });
-  },
-  /**
-   * Remove a disjunctive facet from the disjunctiveFacets attribute of the
-   * helper configuration, if it is present.
-   * @method
-   * @param {string} facet disjunctive facet name to remove
-   * @return {SearchParameters}
-   */
-  removeDisjunctiveFacet: function removeDisjunctiveFacet(facet) {
-    if (!this.isDisjunctiveFacet(facet)) {
-      return this;
-    }
-
-    return this.clearRefinements(facet).setQueryParameters({
-      disjunctiveFacets: filter(this.disjunctiveFacets, function(f) {
-        return f !== facet;
-      })
-    });
-  },
-  /**
-   * Remove a hierarchical facet from the hierarchicalFacets attribute of the
-   * helper configuration, if it is present.
-   * @method
-   * @param {string} facet hierarchical facet name to remove
-   * @return {SearchParameters}
-   */
-  removeHierarchicalFacet: function removeHierarchicalFacet(facet) {
-    if (!this.isHierarchicalFacet(facet)) {
-      return this;
-    }
-
-    return this.clearRefinements(facet).setQueryParameters({
-      hierarchicalFacets: filter(this.hierarchicalFacets, function(f) {
-        return f.name !== facet;
-      })
-    });
-  },
-  /**
-   * Remove a refinement set on facet. If a value is provided, it will clear the
-   * refinement for the given value, otherwise it will clear all the refinement
-   * values for the faceted attribute.
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {string} [value] value used to filter
-   * @return {SearchParameters}
-   */
-  removeFacetRefinement: function removeFacetRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    if (!RefinementList.isRefined(this.facetsRefinements, facet, value)) return this;
-
-    return this.setQueryParameters({
-      facetsRefinements: RefinementList.removeRefinement(this.facetsRefinements, facet, value)
-    });
-  },
-  /**
-   * Remove a negative refinement on a facet
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {string} value value used to filter
-   * @return {SearchParameters}
-   */
-  removeExcludeRefinement: function removeExcludeRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    if (!RefinementList.isRefined(this.facetsExcludes, facet, value)) return this;
-
-    return this.setQueryParameters({
-      facetsExcludes: RefinementList.removeRefinement(this.facetsExcludes, facet, value)
-    });
-  },
-  /**
-   * Remove a refinement on a disjunctive facet
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {string} value value used to filter
-   * @return {SearchParameters}
-   */
-  removeDisjunctiveFacetRefinement: function removeDisjunctiveFacetRefinement(facet, value) {
-    if (!this.isDisjunctiveFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
-    }
-    if (!RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value)) return this;
-
-    return this.setQueryParameters({
-      disjunctiveFacetsRefinements: RefinementList.removeRefinement(
-        this.disjunctiveFacetsRefinements, facet, value)
-    });
-  },
-  /**
-   * Remove a tag from the list of tag refinements
-   * @method
-   * @param {string} tag the tag to remove
-   * @return {SearchParameters}
-   */
-  removeTagRefinement: function removeTagRefinement(tag) {
-    if (!this.isTagRefined(tag)) return this;
-
-    var modification = {
-      tagRefinements: filter(this.tagRefinements, function(t) { return t !== tag; })
-    };
-
-    return this.setQueryParameters(modification);
-  },
-  /**
-   * Generic toggle refinement method to use with facet, disjunctive facets
-   * and hierarchical facets
-   * @param  {string} facet the facet to refine
-   * @param  {string} value the associated value
-   * @return {SearchParameters}
-   * @throws will throw an error if the facet is not declared in the settings of the helper
-   * @deprecated since version 2.19.0, see {@link SearchParameters#toggleFacetRefinement}
-   */
-  toggleRefinement: function toggleRefinement(facet, value) {
-    return this.toggleFacetRefinement(facet, value);
-  },
-  /**
-   * Generic toggle refinement method to use with facet, disjunctive facets
-   * and hierarchical facets
-   * @param  {string} facet the facet to refine
-   * @param  {string} value the associated value
-   * @return {SearchParameters}
-   * @throws will throw an error if the facet is not declared in the settings of the helper
-   */
-  toggleFacetRefinement: function toggleFacetRefinement(facet, value) {
-    if (this.isHierarchicalFacet(facet)) {
-      return this.toggleHierarchicalFacetRefinement(facet, value);
-    } else if (this.isConjunctiveFacet(facet)) {
-      return this.toggleConjunctiveFacetRefinement(facet, value);
-    } else if (this.isDisjunctiveFacet(facet)) {
-      return this.toggleDisjunctiveFacetRefinement(facet, value);
-    }
-
-    throw new Error('Cannot refine the undeclared facet ' + facet +
-      '; it should be added to the helper options facets, disjunctiveFacets or hierarchicalFacets');
-  },
-  /**
-   * Switch the refinement applied over a facet/value
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {SearchParameters}
-   */
-  toggleConjunctiveFacetRefinement: function toggleConjunctiveFacetRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-
-    return this.setQueryParameters({
-      facetsRefinements: RefinementList.toggleRefinement(this.facetsRefinements, facet, value)
-    });
-  },
-  /**
-   * Switch the refinement applied over a facet/value
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {SearchParameters}
-   */
-  toggleExcludeFacetRefinement: function toggleExcludeFacetRefinement(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-
-    return this.setQueryParameters({
-      facetsExcludes: RefinementList.toggleRefinement(this.facetsExcludes, facet, value)
-    });
-  },
-  /**
-   * Switch the refinement applied over a facet/value
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {SearchParameters}
-   */
-  toggleDisjunctiveFacetRefinement: function toggleDisjunctiveFacetRefinement(facet, value) {
-    if (!this.isDisjunctiveFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
-    }
-
-    return this.setQueryParameters({
-      disjunctiveFacetsRefinements: RefinementList.toggleRefinement(
-        this.disjunctiveFacetsRefinements, facet, value)
-    });
-  },
-  /**
-   * Switch the refinement applied over a facet/value
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {SearchParameters}
-   */
-  toggleHierarchicalFacetRefinement: function toggleHierarchicalFacetRefinement(facet, value) {
-    if (!this.isHierarchicalFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the hierarchicalFacets attribute of the helper configuration');
-    }
-
-    var separator = this._getHierarchicalFacetSeparator(this.getHierarchicalFacetByName(facet));
-
-    var mod = {};
-
-    var upOneOrMultipleLevel = this.hierarchicalFacetsRefinements[facet] !== undefined &&
-      this.hierarchicalFacetsRefinements[facet].length > 0 && (
-      // remove current refinement:
-      // refinement was 'beer > IPA', call is toggleRefine('beer > IPA'), refinement should be `beer`
-      this.hierarchicalFacetsRefinements[facet][0] === value ||
-      // remove a parent refinement of the current refinement:
-      //  - refinement was 'beer > IPA > Flying dog'
-      //  - call is toggleRefine('beer > IPA')
-      //  - refinement should be `beer`
-      this.hierarchicalFacetsRefinements[facet][0].indexOf(value + separator) === 0
-    );
-
-    if (upOneOrMultipleLevel) {
-      if (value.indexOf(separator) === -1) {
-        // go back to root level
-        mod[facet] = [];
-      } else {
-        mod[facet] = [value.slice(0, value.lastIndexOf(separator))];
-      }
-    } else {
-      mod[facet] = [value];
-    }
-
-    return this.setQueryParameters({
-      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
-    });
-  },
-
-  /**
-   * Adds a refinement on a hierarchical facet.
-   * @param {string} facet the facet name
-   * @param {string} path the hierarchical facet path
-   * @return {SearchParameter} the new state
-   * @throws Error if the facet is not defined or if the facet is refined
-   */
-  addHierarchicalFacetRefinement: function(facet, path) {
-    if (this.isHierarchicalFacetRefined(facet)) {
-      throw new Error(facet + ' is already refined.');
-    }
-    var mod = {};
-    mod[facet] = [path];
-    return this.setQueryParameters({
-      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
-    });
-  },
-
-  /**
-   * Removes the refinement set on a hierarchical facet.
-   * @param {string} facet the facet name
-   * @return {SearchParameter} the new state
-   * @throws Error if the facet is not defined or if the facet is not refined
-   */
-  removeHierarchicalFacetRefinement: function(facet) {
-    if (!this.isHierarchicalFacetRefined(facet)) {
-      throw new Error(facet + ' is not refined.');
-    }
-    var mod = {};
-    mod[facet] = [];
-    return this.setQueryParameters({
-      hierarchicalFacetsRefinements: defaults({}, mod, this.hierarchicalFacetsRefinements)
-    });
-  },
-  /**
-   * Switch the tag refinement
-   * @method
-   * @param {string} tag the tag to remove or add
-   * @return {SearchParameters}
-   */
-  toggleTagRefinement: function toggleTagRefinement(tag) {
-    if (this.isTagRefined(tag)) {
-      return this.removeTagRefinement(tag);
-    }
-
-    return this.addTagRefinement(tag);
-  },
-  /**
-   * Test if the facet name is from one of the disjunctive facets
-   * @method
-   * @param {string} facet facet name to test
-   * @return {boolean}
-   */
-  isDisjunctiveFacet: function(facet) {
-    return indexOf(this.disjunctiveFacets, facet) > -1;
-  },
-  /**
-   * Test if the facet name is from one of the hierarchical facets
-   * @method
-   * @param {string} facetName facet name to test
-   * @return {boolean}
-   */
-  isHierarchicalFacet: function(facetName) {
-    return this.getHierarchicalFacetByName(facetName) !== undefined;
-  },
-  /**
-   * Test if the facet name is from one of the conjunctive/normal facets
-   * @method
-   * @param {string} facet facet name to test
-   * @return {boolean}
-   */
-  isConjunctiveFacet: function(facet) {
-    return indexOf(this.facets, facet) > -1;
-  },
-  /**
-   * Returns true if the facet is refined, either for a specific value or in
-   * general.
-   * @method
-   * @param {string} facet name of the attribute for used for faceting
-   * @param {string} value, optional value. If passed will test that this value
-   * is filtering the given facet.
-   * @return {boolean} returns true if refined
-   */
-  isFacetRefined: function isFacetRefined(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    return RefinementList.isRefined(this.facetsRefinements, facet, value);
-  },
-  /**
-   * Returns true if the facet contains exclusions or if a specific value is
-   * excluded.
-   *
-   * @method
-   * @param {string} facet name of the attribute for used for faceting
-   * @param {string} [value] optional value. If passed will test that this value
-   * is filtering the given facet.
-   * @return {boolean} returns true if refined
-   */
-  isExcludeRefined: function isExcludeRefined(facet, value) {
-    if (!this.isConjunctiveFacet(facet)) {
-      throw new Error(facet + ' is not defined in the facets attribute of the helper configuration');
-    }
-    return RefinementList.isRefined(this.facetsExcludes, facet, value);
-  },
-  /**
-   * Returns true if the facet contains a refinement, or if a value passed is a
-   * refinement for the facet.
-   * @method
-   * @param {string} facet name of the attribute for used for faceting
-   * @param {string} value optional, will test if the value is used for refinement
-   * if there is one, otherwise will test if the facet contains any refinement
-   * @return {boolean}
-   */
-  isDisjunctiveFacetRefined: function isDisjunctiveFacetRefined(facet, value) {
-    if (!this.isDisjunctiveFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the disjunctiveFacets attribute of the helper configuration');
-    }
-    return RefinementList.isRefined(this.disjunctiveFacetsRefinements, facet, value);
-  },
-  /**
-   * Returns true if the facet contains a refinement, or if a value passed is a
-   * refinement for the facet.
-   * @method
-   * @param {string} facet name of the attribute for used for faceting
-   * @param {string} value optional, will test if the value is used for refinement
-   * if there is one, otherwise will test if the facet contains any refinement
-   * @return {boolean}
-   */
-  isHierarchicalFacetRefined: function isHierarchicalFacetRefined(facet, value) {
-    if (!this.isHierarchicalFacet(facet)) {
-      throw new Error(
-        facet + ' is not defined in the hierarchicalFacets attribute of the helper configuration');
-    }
-
-    var refinements = this.getHierarchicalRefinement(facet);
-
-    if (!value) {
-      return refinements.length > 0;
-    }
-
-    return indexOf(refinements, value) !== -1;
-  },
-  /**
-   * Test if the triple (attribute, operator, value) is already refined.
-   * If only the attribute and the operator are provided, it tests if the
-   * contains any refinement value.
-   * @method
-   * @param {string} attribute attribute for which the refinement is applied
-   * @param {string} [operator] operator of the refinement
-   * @param {string} [value] value of the refinement
-   * @return {boolean} true if it is refined
-   */
-  isNumericRefined: function isNumericRefined(attribute, operator, value) {
-    if (isUndefined(value) && isUndefined(operator)) {
-      return !!this.numericRefinements[attribute];
-    }
-
-    var isOperatorDefined = this.numericRefinements[attribute] &&
-      !isUndefined(this.numericRefinements[attribute][operator]);
-
-    if (isUndefined(value) || !isOperatorDefined) {
-      return isOperatorDefined;
-    }
-
-    var parsedValue = valToNumber(value);
-    var isAttributeValueDefined = !isUndefined(
-      findArray(this.numericRefinements[attribute][operator], parsedValue)
-    );
-
-    return isOperatorDefined && isAttributeValueDefined;
-  },
-  /**
-   * Returns true if the tag refined, false otherwise
-   * @method
-   * @param {string} tag the tag to check
-   * @return {boolean}
-   */
-  isTagRefined: function isTagRefined(tag) {
-    return indexOf(this.tagRefinements, tag) !== -1;
-  },
-  /**
-   * Returns the list of all disjunctive facets refined
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {string[]}
-   */
-  getRefinedDisjunctiveFacets: function getRefinedDisjunctiveFacets() {
-    // attributes used for numeric filter can also be disjunctive
-    var disjunctiveNumericRefinedFacets = intersection(
-      keys(this.numericRefinements),
-      this.disjunctiveFacets
-    );
-
-    return keys(this.disjunctiveFacetsRefinements)
-      .concat(disjunctiveNumericRefinedFacets)
-      .concat(this.getRefinedHierarchicalFacets());
-  },
-  /**
-   * Returns the list of all disjunctive facets refined
-   * @method
-   * @param {string} facet name of the attribute used for faceting
-   * @param {value} value value used for filtering
-   * @return {string[]}
-   */
-  getRefinedHierarchicalFacets: function getRefinedHierarchicalFacets() {
-    return intersection(
-      // enforce the order between the two arrays,
-      // so that refinement name index === hierarchical facet index
-      map(this.hierarchicalFacets, 'name'),
-      keys(this.hierarchicalFacetsRefinements)
-    );
-  },
-  /**
-   * Returned the list of all disjunctive facets not refined
-   * @method
-   * @return {string[]}
-   */
-  getUnrefinedDisjunctiveFacets: function() {
-    var refinedFacets = this.getRefinedDisjunctiveFacets();
-
-    return filter(this.disjunctiveFacets, function(f) {
-      return indexOf(refinedFacets, f) === -1;
-    });
-  },
-
-  managedParameters: [
-    'index',
-    'facets', 'disjunctiveFacets', 'facetsRefinements',
-    'facetsExcludes', 'disjunctiveFacetsRefinements',
-    'numericRefinements', 'tagRefinements', 'hierarchicalFacets', 'hierarchicalFacetsRefinements'
-  ],
-  getQueryParams: function getQueryParams() {
-    var managedParameters = this.managedParameters;
-
-    var queryParams = {};
-
-    forOwn(this, function(paramValue, paramName) {
-      if (indexOf(managedParameters, paramName) === -1 && paramValue !== undefined) {
-        queryParams[paramName] = paramValue;
-      }
-    });
-
-    return queryParams;
-  },
-  /**
-   * Let the user retrieve any parameter value from the SearchParameters
-   * @param {string} paramName name of the parameter
-   * @return {any} the value of the parameter
-   */
-  getQueryParameter: function getQueryParameter(paramName) {
-    if (!this.hasOwnProperty(paramName)) {
-      throw new Error(
-        "Parameter '" + paramName + "' is not an attribute of SearchParameters " +
-        '(http://algolia.github.io/algoliasearch-helper-js/docs/SearchParameters.html)');
-    }
-
-    return this[paramName];
-  },
-  /**
-   * Let the user set a specific value for a given parameter. Will return the
-   * same instance if the parameter is invalid or if the value is the same as the
-   * previous one.
-   * @method
-   * @param {string} parameter the parameter name
-   * @param {any} value the value to be set, must be compliant with the definition
-   * of the attribute on the object
-   * @return {SearchParameters} the updated state
-   */
-  setQueryParameter: function setParameter(parameter, value) {
-    if (this[parameter] === value) return this;
-
-    var modification = {};
-
-    modification[parameter] = value;
-
-    return this.setQueryParameters(modification);
-  },
-  /**
-   * Let the user set any of the parameters with a plain object.
-   * @method
-   * @param {object} params all the keys and the values to be updated
-   * @return {SearchParameters} a new updated instance
-   */
-  setQueryParameters: function setQueryParameters(params) {
-    if (!params) return this;
-
-    var error = SearchParameters.validate(this, params);
-
-    if (error) {
-      throw error;
-    }
-
-    var parsedParams = SearchParameters._parseNumbers(params);
-
-    return this.mutateMe(function mergeWith(newInstance) {
-      var ks = keys(params);
-
-      forEach(ks, function(k) {
-        newInstance[k] = parsedParams[k];
-      });
-
-      return newInstance;
-    });
-  },
-
-  /**
-   * Returns an object with only the selected attributes.
-   * @param {string[]} filters filters to retrieve only a subset of the state. It
-   * accepts strings that can be either attributes of the SearchParameters (e.g. hitsPerPage)
-   * or attributes of the index with the notation 'attribute:nameOfMyAttribute'
-   * @return {object}
-   */
-  filter: function(filters) {
-    return filterState(this, filters);
-  },
-  /**
-   * Helper function to make it easier to build new instances from a mutating
-   * function
-   * @private
-   * @param {function} fn newMutableState -> previousState -> () function that will
-   * change the value of the newMutable to the desired state
-   * @return {SearchParameters} a new instance with the specified modifications applied
-   */
-  mutateMe: function mutateMe(fn) {
-    var newState = new this.constructor(this);
-
-    fn(newState, this);
-    return newState;
-  },
-
-  /**
-   * Helper function to get the hierarchicalFacet separator or the default one (`>`)
-   * @param  {object} hierarchicalFacet
-   * @return {string} returns the hierarchicalFacet.separator or `>` as default
-   */
-  _getHierarchicalFacetSortBy: function(hierarchicalFacet) {
-    return hierarchicalFacet.sortBy || ['isRefined:desc', 'name:asc'];
-  },
-
-  /**
-   * Helper function to get the hierarchicalFacet separator or the default one (`>`)
-   * @private
-   * @param  {object} hierarchicalFacet
-   * @return {string} returns the hierarchicalFacet.separator or `>` as default
-   */
-  _getHierarchicalFacetSeparator: function(hierarchicalFacet) {
-    return hierarchicalFacet.separator || ' > ';
-  },
-
-  /**
-   * Helper function to get the hierarchicalFacet prefix path or null
-   * @private
-   * @param  {object} hierarchicalFacet
-   * @return {string} returns the hierarchicalFacet.rootPath or null as default
-   */
-  _getHierarchicalRootPath: function(hierarchicalFacet) {
-    return hierarchicalFacet.rootPath || null;
-  },
-
-  /**
-   * Helper function to check if we show the parent level of the hierarchicalFacet
-   * @private
-   * @param  {object} hierarchicalFacet
-   * @return {string} returns the hierarchicalFacet.showParentLevel or true as default
-   */
-  _getHierarchicalShowParentLevel: function(hierarchicalFacet) {
-    if (typeof hierarchicalFacet.showParentLevel === 'boolean') {
-      return hierarchicalFacet.showParentLevel;
-    }
-    return true;
-  },
-
-  /**
-   * Helper function to get the hierarchicalFacet by it's name
-   * @param  {string} hierarchicalFacetName
-   * @return {object} a hierarchicalFacet
-   */
-  getHierarchicalFacetByName: function(hierarchicalFacetName) {
-    return find(
-      this.hierarchicalFacets,
-      {name: hierarchicalFacetName}
-    );
-  },
-
-  /**
-   * Get the current breadcrumb for a hierarchical facet, as an array
-   * @param  {string} facetName Hierarchical facet name
-   * @return {array.<string>} the path as an array of string
-   */
-  getHierarchicalFacetBreadcrumb: function(facetName) {
-    if (!this.isHierarchicalFacet(facetName)) {
-      throw new Error(
-        'Cannot get the breadcrumb of an unknown hierarchical facet: `' + facetName + '`');
-    }
-
-    var refinement = this.getHierarchicalRefinement(facetName)[0];
-    if (!refinement) return [];
-
-    var separator = this._getHierarchicalFacetSeparator(
-      this.getHierarchicalFacetByName(facetName)
-    );
-    var path = refinement.split(separator);
-    return map(path, trim);
-  },
-
-  toString: function() {
-    return JSON.stringify(this, null, 2);
-  }
-};
-
-/**
- * Callback used for clearRefinement method
- * @callback SearchParameters.clearCallback
- * @param {OperatorList|FacetList} value the value of the filter
- * @param {string} key the current attribute name
- * @param {string} type `numeric`, `disjunctiveFacet`, `conjunctiveFacet`, `hierarchicalFacet` or `exclude`
- * depending on the type of facet
- * @return {boolean} `true` if the element should be removed. `false` otherwise.
- */
-module.exports = SearchParameters;
-
-
-/***/ }),
-/* 66 */
-/***/ (function(module, exports) {
-
-/** Used as references for various `Number` constants. */
-var MAX_SAFE_INTEGER = 9007199254740991;
-
-/**
- * Checks if `value` is a valid array-like length.
- *
- * **Note:** This method is loosely based on
- * [`ToLength`](http://ecma-international.org/ecma-262/7.0/#sec-tolength).
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a valid length, else `false`.
- * @example
- *
- * _.isLength(3);
- * // => true
- *
- * _.isLength(Number.MIN_VALUE);
- * // => false
- *
- * _.isLength(Infinity);
- * // => false
- *
- * _.isLength('3');
- * // => false
- */
-function isLength(value) {
-  return typeof value == 'number' &&
-    value > -1 && value % 1 == 0 && value <= MAX_SAFE_INTEGER;
-}
-
-module.exports = isLength;
-
-
-/***/ }),
-/* 67 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(100);
-
-/** Detect free variable `exports`. */
-var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
-
-/** Detect free variable `module`. */
-var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
-
-/** Detect the popular CommonJS extension `module.exports`. */
-var moduleExports = freeModule && freeModule.exports === freeExports;
-
-/** Detect free variable `process` from Node.js. */
-var freeProcess = moduleExports && freeGlobal.process;
-
-/** Used to access faster Node.js helpers. */
-var nodeUtil = (function() {
-  try {
-    // Use `util.types` for Node.js 10+.
-    var types = freeModule && freeModule.require && freeModule.require('util').types;
-
-    if (types) {
-      return types;
-    }
-
-    // Legacy `process.binding('util')` for Node.js < 10.
-    return freeProcess && freeProcess.binding && freeProcess.binding('util');
-  } catch (e) {}
-}());
-
-module.exports = nodeUtil;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)(module)))
-
-/***/ }),
-/* 68 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var mapCacheClear = __webpack_require__(353),
-    mapCacheDelete = __webpack_require__(369),
-    mapCacheGet = __webpack_require__(371),
-    mapCacheHas = __webpack_require__(372),
-    mapCacheSet = __webpack_require__(373);
-
-/**
- * Creates a map cache object to store key-value pairs.
- *
- * @private
- * @constructor
- * @param {Array} [entries] The key-value pairs to cache.
- */
-function MapCache(entries) {
-  var index = -1,
-      length = entries == null ? 0 : entries.length;
-
-  this.clear();
-  while (++index < length) {
-    var entry = entries[index];
-    this.set(entry[0], entry[1]);
-  }
-}
-
-// Add methods to `MapCache`.
-MapCache.prototype.clear = mapCacheClear;
-MapCache.prototype['delete'] = mapCacheDelete;
-MapCache.prototype.get = mapCacheGet;
-MapCache.prototype.has = mapCacheHas;
-MapCache.prototype.set = mapCacheSet;
-
-module.exports = MapCache;
-
-
-/***/ }),
-/* 69 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var getNative = __webpack_require__(13),
-    root = __webpack_require__(2);
-
-/* Built-in method references that are verified to be native. */
-var Map = getNative(root, 'Map');
-
-module.exports = Map;
-
-
-/***/ }),
-/* 70 */
-/***/ (function(module, exports) {
-
-/**
- * A faster alternative to `Function#apply`, this function invokes `func`
- * with the `this` binding of `thisArg` and the arguments of `args`.
- *
- * @private
- * @param {Function} func The function to invoke.
- * @param {*} thisArg The `this` binding of `func`.
- * @param {Array} args The arguments to invoke `func` with.
- * @returns {*} Returns the result of `func`.
- */
-function apply(func, thisArg, args) {
-  switch (args.length) {
-    case 0: return func.call(thisArg);
-    case 1: return func.call(thisArg, args[0]);
-    case 2: return func.call(thisArg, args[0], args[1]);
-    case 3: return func.call(thisArg, args[0], args[1], args[2]);
-  }
-  return func.apply(thisArg, args);
-}
-
-module.exports = apply;
-
-
-/***/ }),
-/* 71 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseSetToString = __webpack_require__(379),
-    shortOut = __webpack_require__(111);
-
-/**
- * Sets the `toString` method of `func` to return `string`.
- *
- * @private
- * @param {Function} func The function to modify.
- * @param {Function} string The `toString` result.
- * @returns {Function} Returns `func`.
- */
-var setToString = shortOut(baseSetToString);
-
-module.exports = setToString;
-
-
-/***/ }),
-/* 72 */
-/***/ (function(module, exports) {
-
-/**
- * A specialized version of `_.forEach` for arrays without support for
- * iteratee shorthands.
- *
- * @private
- * @param {Array} [array] The array to iterate over.
- * @param {Function} iteratee The function invoked per iteration.
- * @returns {Array} Returns `array`.
- */
-function arrayEach(array, iteratee) {
-  var index = -1,
-      length = array == null ? 0 : array.length;
-
-  while (++index < length) {
-    if (iteratee(array[index], index, array) === false) {
-      break;
-    }
-  }
-  return array;
-}
-
-module.exports = arrayEach;
-
-
-/***/ }),
-/* 73 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayFilter = __webpack_require__(115),
-    baseFilter = __webpack_require__(384),
-    baseIteratee = __webpack_require__(7),
-    isArray = __webpack_require__(1);
-
-/**
- * Iterates over elements of `collection`, returning an array of all elements
- * `predicate` returns truthy for. The predicate is invoked with three
- * arguments: (value, index|key, collection).
- *
- * **Note:** Unlike `_.remove`, this method returns a new array.
- *
- * @static
- * @memberOf _
- * @since 0.1.0
- * @category Collection
- * @param {Array|Object} collection The collection to iterate over.
- * @param {Function} [predicate=_.identity] The function invoked per iteration.
- * @returns {Array} Returns the new filtered array.
- * @see _.reject
- * @example
- *
- * var users = [
- *   { 'user': 'barney', 'age': 36, 'active': true },
- *   { 'user': 'fred',   'age': 40, 'active': false }
- * ];
- *
- * _.filter(users, function(o) { return !o.active; });
- * // => objects for ['fred']
- *
- * // The `_.matches` iteratee shorthand.
- * _.filter(users, { 'age': 36, 'active': true });
- * // => objects for ['barney']
- *
- * // The `_.matchesProperty` iteratee shorthand.
- * _.filter(users, ['active', false]);
- * // => objects for ['fred']
- *
- * // The `_.property` iteratee shorthand.
- * _.filter(users, 'active');
- * // => objects for ['barney']
- */
-function filter(collection, predicate) {
-  var func = isArray(collection) ? arrayFilter : baseFilter;
-  return func(collection, baseIteratee(predicate, 3));
-}
-
-module.exports = filter;
-
-
-/***/ }),
-/* 74 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseIsEqualDeep = __webpack_require__(392),
-    isObjectLike = __webpack_require__(4);
-
-/**
- * The base implementation of `_.isEqual` which supports partial comparisons
- * and tracks traversed objects.
- *
- * @private
- * @param {*} value The value to compare.
- * @param {*} other The other value to compare.
- * @param {boolean} bitmask The bitmask flags.
- *  1 - Unordered comparison
- *  2 - Partial comparison
- * @param {Function} [customizer] The function to customize comparisons.
- * @param {Object} [stack] Tracks traversed `value` and `other` objects.
- * @returns {boolean} Returns `true` if the values are equivalent, else `false`.
- */
-function baseIsEqual(value, other, bitmask, customizer, stack) {
-  if (value === other) {
-    return true;
-  }
-  if (value == null || other == null || (!isObjectLike(value) && !isObjectLike(other))) {
-    return value !== value && other !== other;
-  }
-  return baseIsEqualDeep(value, other, bitmask, customizer, baseIsEqual, stack);
-}
-
-module.exports = baseIsEqual;
-
-
-/***/ }),
-/* 75 */
-/***/ (function(module, exports) {
-
-/**
- * Appends the elements of `values` to `array`.
- *
- * @private
- * @param {Array} array The array to modify.
- * @param {Array} values The values to append.
- * @returns {Array} Returns `array`.
- */
-function arrayPush(array, values) {
-  var index = -1,
-      length = values.length,
-      offset = array.length;
-
-  while (++index < length) {
-    array[offset + index] = values[index];
-  }
-  return array;
-}
-
-module.exports = arrayPush;
-
-
-/***/ }),
-/* 76 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var arrayFilter = __webpack_require__(115),
-    stubArray = __webpack_require__(120);
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Built-in value references. */
-var propertyIsEnumerable = objectProto.propertyIsEnumerable;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeGetSymbols = Object.getOwnPropertySymbols;
-
-/**
- * Creates an array of the own enumerable symbols of `object`.
- *
- * @private
- * @param {Object} object The object to query.
- * @returns {Array} Returns the array of symbols.
- */
-var getSymbols = !nativeGetSymbols ? stubArray : function(object) {
-  if (object == null) {
-    return [];
-  }
-  object = Object(object);
-  return arrayFilter(nativeGetSymbols(object), function(symbol) {
-    return propertyIsEnumerable.call(object, symbol);
-  });
-};
-
-module.exports = getSymbols;
-
-
-/***/ }),
-/* 77 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isArray = __webpack_require__(1),
-    isSymbol = __webpack_require__(36);
-
-/** Used to match property names within property paths. */
-var reIsDeepProp = /\.|\[(?:[^[\]]*|(["'])(?:(?!\1)[^\\]|\\.)*?\1)\]/,
-    reIsPlainProp = /^\w*$/;
-
-/**
- * Checks if `value` is a property name and not a property path.
- *
- * @private
- * @param {*} value The value to check.
- * @param {Object} [object] The object to query keys on.
- * @returns {boolean} Returns `true` if `value` is a property name, else `false`.
- */
-function isKey(value, object) {
-  if (isArray(value)) {
-    return false;
-  }
-  var type = typeof value;
-  if (type == 'number' || type == 'symbol' || type == 'boolean' ||
-      value == null || isSymbol(value)) {
-    return true;
-  }
-  return reIsPlainProp.test(value) || !reIsDeepProp.test(value) ||
-    (object != null && value in Object(object));
-}
-
-module.exports = isKey;
-
-
-/***/ }),
-/* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseToString = __webpack_require__(79);
-
-/**
- * Converts `value` to a string. An empty string is returned for `null`
- * and `undefined` values. The sign of `-0` is preserved.
- *
- * @static
- * @memberOf _
- * @since 4.0.0
- * @category Lang
- * @param {*} value The value to convert.
- * @returns {string} Returns the converted string.
- * @example
- *
- * _.toString(null);
- * // => ''
- *
- * _.toString(-0);
- * // => '-0'
- *
- * _.toString([1, 2, 3]);
- * // => '1,2,3'
- */
-function toString(value) {
-  return value == null ? '' : baseToString(value);
-}
-
-module.exports = toString;
-
-
-/***/ }),
-/* 79 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Symbol = __webpack_require__(17),
-    arrayMap = __webpack_require__(11),
-    isArray = __webpack_require__(1),
-    isSymbol = __webpack_require__(36);
-
-/** Used as references for various `Number` constants. */
-var INFINITY = 1 / 0;
-
-/** Used to convert symbols to primitives and strings. */
-var symbolProto = Symbol ? Symbol.prototype : undefined,
-    symbolToString = symbolProto ? symbolProto.toString : undefined;
-
-/**
- * The base implementation of `_.toString` which doesn't convert nullish
- * values to empty strings.
- *
- * @private
- * @param {*} value The value to process.
- * @returns {string} Returns the string.
- */
-function baseToString(value) {
-  // Exit early for strings to avoid a performance hit in some environments.
-  if (typeof value == 'string') {
-    return value;
-  }
-  if (isArray(value)) {
-    // Recursively convert values (susceptible to call stack limits).
-    return arrayMap(value, baseToString) + '';
-  }
-  if (isSymbol(value)) {
-    return symbolToString ? symbolToString.call(value) : '';
-  }
-  var result = (value + '');
-  return (result == '0' && (1 / value) == -INFINITY) ? '-0' : result;
-}
-
-module.exports = baseToString;
-
-
-/***/ }),
-/* 80 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseAssignValue = __webpack_require__(38),
-    eq = __webpack_require__(19);
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Assigns `value` to `key` of `object` if the existing value is not equivalent
- * using [`SameValueZero`](http://ecma-international.org/ecma-262/7.0/#sec-samevaluezero)
- * for equality comparisons.
- *
- * @private
- * @param {Object} object The object to modify.
- * @param {string} key The key of the property to assign.
- * @param {*} value The value to assign.
- */
-function assignValue(object, key, value) {
-  var objValue = object[key];
-  if (!(hasOwnProperty.call(object, key) && eq(objValue, value)) ||
-      (value === undefined && !(key in object))) {
-    baseAssignValue(object, key, value);
-  }
-}
-
-module.exports = assignValue;
-
-
-/***/ }),
-/* 81 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var overArg = __webpack_require__(102);
-
-/** Built-in value references. */
-var getPrototype = overArg(Object.getPrototypeOf, Object);
-
-module.exports = getPrototype;
-
-
-/***/ }),
-/* 82 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseGetAllKeys = __webpack_require__(119),
-    getSymbolsIn = __webpack_require__(129),
-    keysIn = __webpack_require__(39);
-
-/**
- * Creates an array of own and inherited enumerable property names and
- * symbols of `object`.
- *
- * @private
- * @param {Object} object The object to query.
- * @returns {Array} Returns the array of property names and symbols.
- */
-function getAllKeysIn(object) {
-  return baseGetAllKeys(object, keysIn, getSymbolsIn);
-}
-
-module.exports = getAllKeysIn;
-
-
-/***/ }),
-/* 83 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var Uint8Array = __webpack_require__(117);
-
-/**
- * Creates a clone of `arrayBuffer`.
- *
- * @private
- * @param {ArrayBuffer} arrayBuffer The array buffer to clone.
- * @returns {ArrayBuffer} Returns the cloned array buffer.
- */
-function cloneArrayBuffer(arrayBuffer) {
-  var result = new arrayBuffer.constructor(arrayBuffer.byteLength);
-  new Uint8Array(result).set(new Uint8Array(arrayBuffer));
-  return result;
-}
-
-module.exports = cloneArrayBuffer;
-
-
-/***/ }),
-/* 84 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseGetTag = __webpack_require__(10),
-    getPrototype = __webpack_require__(81),
-    isObjectLike = __webpack_require__(4);
-
-/** `Object#toString` result references. */
-var objectTag = '[object Object]';
-
-/** Used for built-in method references. */
-var funcProto = Function.prototype,
-    objectProto = Object.prototype;
-
-/** Used to resolve the decompiled source of functions. */
-var funcToString = funcProto.toString;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/** Used to infer the `Object` constructor. */
-var objectCtorString = funcToString.call(Object);
-
-/**
- * Checks if `value` is a plain object, that is, an object created by the
- * `Object` constructor or one with a `[[Prototype]]` of `null`.
- *
- * @static
- * @memberOf _
- * @since 0.8.0
- * @category Lang
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is a plain object, else `false`.
- * @example
- *
- * function Foo() {
- *   this.a = 1;
- * }
- *
- * _.isPlainObject(new Foo);
- * // => false
- *
- * _.isPlainObject([1, 2, 3]);
- * // => false
- *
- * _.isPlainObject({ 'x': 0, 'y': 0 });
- * // => true
- *
- * _.isPlainObject(Object.create(null));
- * // => true
- */
-function isPlainObject(value) {
-  if (!isObjectLike(value) || baseGetTag(value) != objectTag) {
-    return false;
-  }
-  var proto = getPrototype(value);
-  if (proto === null) {
-    return true;
-  }
-  var Ctor = hasOwnProperty.call(proto, 'constructor') && proto.constructor;
-  return typeof Ctor == 'function' && Ctor instanceof Ctor &&
-    funcToString.call(Ctor) == objectCtorString;
-}
-
-module.exports = isPlainObject;
-
-
-/***/ }),
-/* 85 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseRest = __webpack_require__(20),
-    eq = __webpack_require__(19),
-    isIterateeCall = __webpack_require__(140),
-    keysIn = __webpack_require__(39);
-
-/** Used for built-in method references. */
-var objectProto = Object.prototype;
-
-/** Used to check objects for own properties. */
-var hasOwnProperty = objectProto.hasOwnProperty;
-
-/**
- * Assigns own and inherited enumerable string keyed properties of source
- * objects to the destination object for all destination properties that
- * resolve to `undefined`. Source objects are applied from left to right.
- * Once a property is set, additional values of the same property are ignored.
- *
- * **Note:** This method mutates `object`.
- *
- * @static
- * @since 0.1.0
- * @memberOf _
- * @category Object
- * @param {Object} object The destination object.
- * @param {...Object} [sources] The source objects.
- * @returns {Object} Returns `object`.
- * @see _.defaultsDeep
- * @example
- *
- * _.defaults({ 'a': 1 }, { 'b': 2 }, { 'a': 3 });
- * // => { 'a': 1, 'b': 2 }
- */
-var defaults = baseRest(function(object, sources) {
-  object = Object(object);
-
-  var index = -1;
-  var length = sources.length;
-  var guard = length > 2 ? sources[2] : undefined;
-
-  if (guard && isIterateeCall(sources[0], sources[1], guard)) {
-    length = 1;
-  }
-
-  while (++index < length) {
-    var source = sources[index];
-    var props = keysIn(source);
-    var propsIndex = -1;
-    var propsLength = props.length;
-
-    while (++propsIndex < propsLength) {
-      var key = props[propsIndex];
-      var value = object[key];
-
-      if (value === undefined ||
-          (eq(value, objectProto[key]) && !hasOwnProperty.call(object, key))) {
-        object[key] = source[key];
-      }
-    }
-  }
-
-  return object;
-});
-
-module.exports = defaults;
-
-
-/***/ }),
-/* 86 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseMerge = __webpack_require__(446),
-    createAssigner = __webpack_require__(449);
-
-/**
- * This method is like `_.assign` except that it recursively merges own and
- * inherited enumerable string keyed properties of source objects into the
- * destination object. Source properties that resolve to `undefined` are
- * skipped if a destination value exists. Array and plain object properties
- * are merged recursively. Other objects and value types are overridden by
- * assignment. Source objects are applied from left to right. Subsequent
- * sources overwrite property assignments of previous sources.
- *
- * **Note:** This method mutates `object`.
- *
- * @static
- * @memberOf _
- * @since 0.5.0
- * @category Object
- * @param {Object} object The destination object.
- * @param {...Object} [sources] The source objects.
- * @returns {Object} Returns `object`.
- * @example
- *
- * var object = {
- *   'a': [{ 'b': 2 }, { 'd': 4 }]
- * };
- *
- * var other = {
- *   'a': [{ 'c': 3 }, { 'e': 5 }]
- * };
- *
- * _.merge(object, other);
- * // => { 'a': [{ 'b': 2, 'c': 3 }, { 'd': 4, 'e': 5 }] }
- */
-var merge = createAssigner(function(object, source, srcIndex) {
-  baseMerge(object, source, srcIndex);
-});
-
-module.exports = merge;
-
-
-/***/ }),
-/* 87 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseSetData = __webpack_require__(145),
-    createBind = __webpack_require__(464),
-    createCurry = __webpack_require__(465),
-    createHybrid = __webpack_require__(147),
-    createPartial = __webpack_require__(477),
-    getData = __webpack_require__(151),
-    mergeData = __webpack_require__(478),
-    setData = __webpack_require__(153),
-    setWrapToString = __webpack_require__(154),
-    toInteger = __webpack_require__(40);
-
-/** Error message constants. */
-var FUNC_ERROR_TEXT = 'Expected a function';
-
-/** Used to compose bitmasks for function metadata. */
-var WRAP_BIND_FLAG = 1,
-    WRAP_BIND_KEY_FLAG = 2,
-    WRAP_CURRY_FLAG = 8,
-    WRAP_CURRY_RIGHT_FLAG = 16,
-    WRAP_PARTIAL_FLAG = 32,
-    WRAP_PARTIAL_RIGHT_FLAG = 64;
-
-/* Built-in method references for those with the same name as other `lodash` methods. */
-var nativeMax = Math.max;
-
-/**
- * Creates a function that either curries or invokes `func` with optional
- * `this` binding and partially applied arguments.
- *
- * @private
- * @param {Function|string} func The function or method name to wrap.
- * @param {number} bitmask The bitmask flags.
- *    1 - `_.bind`
- *    2 - `_.bindKey`
- *    4 - `_.curry` or `_.curryRight` of a bound function
- *    8 - `_.curry`
- *   16 - `_.curryRight`
- *   32 - `_.partial`
- *   64 - `_.partialRight`
- *  128 - `_.rearg`
- *  256 - `_.ary`
- *  512 - `_.flip`
- * @param {*} [thisArg] The `this` binding of `func`.
- * @param {Array} [partials] The arguments to be partially applied.
- * @param {Array} [holders] The `partials` placeholder indexes.
- * @param {Array} [argPos] The argument positions of the new function.
- * @param {number} [ary] The arity cap of `func`.
- * @param {number} [arity] The arity of `func`.
- * @returns {Function} Returns the new wrapped function.
- */
-function createWrap(func, bitmask, thisArg, partials, holders, argPos, ary, arity) {
-  var isBindKey = bitmask & WRAP_BIND_KEY_FLAG;
-  if (!isBindKey && typeof func != 'function') {
-    throw new TypeError(FUNC_ERROR_TEXT);
-  }
-  var length = partials ? partials.length : 0;
-  if (!length) {
-    bitmask &= ~(WRAP_PARTIAL_FLAG | WRAP_PARTIAL_RIGHT_FLAG);
-    partials = holders = undefined;
-  }
-  ary = ary === undefined ? ary : nativeMax(toInteger(ary), 0);
-  arity = arity === undefined ? arity : toInteger(arity);
-  length -= holders ? holders.length : 0;
-
-  if (bitmask & WRAP_PARTIAL_RIGHT_FLAG) {
-    var partialsRight = partials,
-        holdersRight = holders;
-
-    partials = holders = undefined;
-  }
-  var data = isBindKey ? undefined : getData(func);
-
-  var newData = [
-    func, bitmask, thisArg, partials, holders, partialsRight, holdersRight,
-    argPos, ary, arity
-  ];
-
-  if (data) {
-    mergeData(newData, data);
-  }
-  func = newData[0];
-  bitmask = newData[1];
-  thisArg = newData[2];
-  partials = newData[3];
-  holders = newData[4];
-  arity = newData[9] = newData[9] === undefined
-    ? (isBindKey ? 0 : func.length)
-    : nativeMax(newData[9] - length, 0);
-
-  if (!arity && bitmask & (WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG)) {
-    bitmask &= ~(WRAP_CURRY_FLAG | WRAP_CURRY_RIGHT_FLAG);
-  }
-  if (!bitmask || bitmask == WRAP_BIND_FLAG) {
-    var result = createBind(func, bitmask, thisArg);
-  } else if (bitmask == WRAP_CURRY_FLAG || bitmask == WRAP_CURRY_RIGHT_FLAG) {
-    result = createCurry(func, bitmask, arity);
-  } else if ((bitmask == WRAP_PARTIAL_FLAG || bitmask == (WRAP_BIND_FLAG | WRAP_PARTIAL_FLAG)) && !holders.length) {
-    result = createPartial(func, bitmask, thisArg, partials);
-  } else {
-    result = createHybrid.apply(undefined, newData);
-  }
-  var setter = data ? baseSetData : setData;
-  return setWrapToString(setter(result, newData), func, bitmask);
-}
-
-module.exports = createWrap;
-
-
-/***/ }),
-/* 88 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var baseCreate = __webpack_require__(59),
-    baseLodash = __webpack_require__(89);
-
-/** Used as references for the maximum length and index of an array. */
-var MAX_ARRAY_LENGTH = 4294967295;
-
-/**
- * Creates a lazy wrapper object which wraps `value` to enable lazy evaluation.
- *
- * @private
- * @constructor
- * @param {*} value The value to wrap.
- */
-function LazyWrapper(value) {
-  this.__wrapped__ = value;
-  this.__actions__ = [];
-  this.__dir__ = 1;
-  this.__filtered__ = false;
-  this.__iteratees__ = [];
-  this.__takeCount__ = MAX_ARRAY_LENGTH;
-  this.__views__ = [];
-}
-
-// Ensure `LazyWrapper` is an instance of `baseLodash`.
-LazyWrapper.prototype = baseCreate(baseLodash.prototype);
-LazyWrapper.prototype.constructor = LazyWrapper;
-
-module.exports = LazyWrapper;
-
-
-/***/ }),
-/* 89 */
-/***/ (function(module, exports) {
-
-/**
- * The function whose prototype chain sequence wrappers inherit from.
- *
- * @private
- */
-function baseLodash() {
-  // No operation performed.
-}
-
-module.exports = baseLodash;
-
-
-/***/ }),
-/* 90 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var has = Object.prototype.hasOwnProperty;
-
-var hexTable = (function () {
-    var array = [];
-    for (var i = 0; i < 256; ++i) {
-        array.push('%' + ((i < 16 ? '0' : '') + i.toString(16)).toUpperCase());
-    }
-
-    return array;
-}());
-
-var compactQueue = function compactQueue(queue) {
-    var obj;
-
-    while (queue.length) {
-        var item = queue.pop();
-        obj = item.obj[item.prop];
-
-        if (Array.isArray(obj)) {
-            var compacted = [];
-
-            for (var j = 0; j < obj.length; ++j) {
-                if (typeof obj[j] !== 'undefined') {
-                    compacted.push(obj[j]);
-                }
-            }
-
-            item.obj[item.prop] = compacted;
-        }
-    }
-
-    return obj;
-};
-
-var arrayToObject = function arrayToObject(source, options) {
-    var obj = options && options.plainObjects ? Object.create(null) : {};
-    for (var i = 0; i < source.length; ++i) {
-        if (typeof source[i] !== 'undefined') {
-            obj[i] = source[i];
-        }
-    }
-
-    return obj;
-};
-
-var merge = function merge(target, source, options) {
-    if (!source) {
-        return target;
-    }
-
-    if (typeof source !== 'object') {
-        if (Array.isArray(target)) {
-            target.push(source);
-        } else if (typeof target === 'object') {
-            if (options.plainObjects || options.allowPrototypes || !has.call(Object.prototype, source)) {
-                target[source] = true;
-            }
-        } else {
-            return [target, source];
-        }
-
-        return target;
-    }
-
-    if (typeof target !== 'object') {
-        return [target].concat(source);
-    }
-
-    var mergeTarget = target;
-    if (Array.isArray(target) && !Array.isArray(source)) {
-        mergeTarget = arrayToObject(target, options);
-    }
-
-    if (Array.isArray(target) && Array.isArray(source)) {
-        source.forEach(function (item, i) {
-            if (has.call(target, i)) {
-                if (target[i] && typeof target[i] === 'object') {
-                    target[i] = merge(target[i], item, options);
-                } else {
-                    target.push(item);
-                }
-            } else {
-                target[i] = item;
-            }
-        });
-        return target;
-    }
-
-    return Object.keys(source).reduce(function (acc, key) {
-        var value = source[key];
-
-        if (has.call(acc, key)) {
-            acc[key] = merge(acc[key], value, options);
-        } else {
-            acc[key] = value;
-        }
-        return acc;
-    }, mergeTarget);
-};
-
-var assign = function assignSingleSource(target, source) {
-    return Object.keys(source).reduce(function (acc, key) {
-        acc[key] = source[key];
-        return acc;
-    }, target);
-};
-
-var decode = function (str) {
-    try {
-        return decodeURIComponent(str.replace(/\+/g, ' '));
-    } catch (e) {
-        return str;
-    }
-};
-
-var encode = function encode(str) {
-    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
-    // It has been adapted here for stricter adherence to RFC 3986
-    if (str.length === 0) {
-        return str;
-    }
-
-    var string = typeof str === 'string' ? str : String(str);
-
-    var out = '';
-    for (var i = 0; i < string.length; ++i) {
-        var c = string.charCodeAt(i);
-
-        if (
-            c === 0x2D // -
-            || c === 0x2E // .
-            || c === 0x5F // _
-            || c === 0x7E // ~
-            || (c >= 0x30 && c <= 0x39) // 0-9
-            || (c >= 0x41 && c <= 0x5A) // a-z
-            || (c >= 0x61 && c <= 0x7A) // A-Z
-        ) {
-            out += string.charAt(i);
-            continue;
-        }
-
-        if (c < 0x80) {
-            out = out + hexTable[c];
-            continue;
-        }
-
-        if (c < 0x800) {
-            out = out + (hexTable[0xC0 | (c >> 6)] + hexTable[0x80 | (c & 0x3F)]);
-            continue;
-        }
-
-        if (c < 0xD800 || c >= 0xE000) {
-            out = out + (hexTable[0xE0 | (c >> 12)] + hexTable[0x80 | ((c >> 6) & 0x3F)] + hexTable[0x80 | (c & 0x3F)]);
-            continue;
-        }
-
-        i += 1;
-        c = 0x10000 + (((c & 0x3FF) << 10) | (string.charCodeAt(i) & 0x3FF));
-        out += hexTable[0xF0 | (c >> 18)]
-            + hexTable[0x80 | ((c >> 12) & 0x3F)]
-            + hexTable[0x80 | ((c >> 6) & 0x3F)]
-            + hexTable[0x80 | (c & 0x3F)];
-    }
-
-    return out;
-};
-
-var compact = function compact(value) {
-    var queue = [{ obj: { o: value }, prop: 'o' }];
-    var refs = [];
-
-    for (var i = 0; i < queue.length; ++i) {
-        var item = queue[i];
-        var obj = item.obj[item.prop];
-
-        var keys = Object.keys(obj);
-        for (var j = 0; j < keys.length; ++j) {
-            var key = keys[j];
-            var val = obj[key];
-            if (typeof val === 'object' && val !== null && refs.indexOf(val) === -1) {
-                queue.push({ obj: obj, prop: key });
-                refs.push(val);
-            }
-        }
-    }
-
-    return compactQueue(queue);
-};
-
-var isRegExp = function isRegExp(obj) {
-    return Object.prototype.toString.call(obj) === '[object RegExp]';
-};
-
-var isBuffer = function isBuffer(obj) {
-    if (obj === null || typeof obj === 'undefined') {
-        return false;
-    }
-
-    return !!(obj.constructor && obj.constructor.isBuffer && obj.constructor.isBuffer(obj));
-};
-
-module.exports = {
-    arrayToObject: arrayToObject,
-    assign: assign,
-    compact: compact,
-    decode: decode,
-    encode: encode,
-    isBuffer: isBuffer,
-    isRegExp: isRegExp,
-    merge: merge
-};
-
-
-/***/ }),
-/* 91 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function(global) {/**!
- * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.14.3
- * @license
- * Copyright (c) 2016 Federico Zivolo and contributors
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
-var isBrowser = typeof window !== 'undefined' && typeof document !== 'undefined';
-
-var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
-var timeoutDuration = 0;
-for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
-  if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
-    timeoutDuration = 1;
-    break;
-  }
-}
-
-function microtaskDebounce(fn) {
-  var called = false;
-  return function () {
-    if (called) {
-      return;
-    }
-    called = true;
-    window.Promise.resolve().then(function () {
-      called = false;
-      fn();
-    });
-  };
-}
-
-function taskDebounce(fn) {
-  var scheduled = false;
-  return function () {
-    if (!scheduled) {
-      scheduled = true;
-      setTimeout(function () {
-        scheduled = false;
-        fn();
-      }, timeoutDuration);
-    }
-  };
-}
-
-var supportsMicroTasks = isBrowser && window.Promise;
-
-/**
-* Create a debounced version of a method, that's asynchronously deferred
-* but called in the minimum time possible.
-*
-* @method
-* @memberof Popper.Utils
-* @argument {Function} fn
-* @returns {Function}
-*/
-var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
-
-/**
- * Check if the given variable is a function
- * @method
- * @memberof Popper.Utils
- * @argument {Any} functionToCheck - variable to check
- * @returns {Boolean} answer to: is a function?
- */
-function isFunction(functionToCheck) {
-  var getType = {};
-  return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
-}
-
-/**
- * Get CSS computed property of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Eement} element
- * @argument {String} property
- */
-function getStyleComputedProperty(element, property) {
-  if (element.nodeType !== 1) {
-    return [];
-  }
-  // NOTE: 1 DOM access here
-  var css = getComputedStyle(element, null);
-  return property ? css[property] : css;
-}
-
-/**
- * Returns the parentNode or the host of the element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} parent
- */
-function getParentNode(element) {
-  if (element.nodeName === 'HTML') {
-    return element;
-  }
-  return element.parentNode || element.host;
-}
-
-/**
- * Returns the scrolling parent of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} scroll parent
- */
-function getScrollParent(element) {
-  // Return body, `getScroll` will take care to get the correct `scrollTop` from it
-  if (!element) {
-    return document.body;
-  }
-
-  switch (element.nodeName) {
-    case 'HTML':
-    case 'BODY':
-      return element.ownerDocument.body;
-    case '#document':
-      return element.body;
-  }
-
-  // Firefox want us to check `-x` and `-y` variations as well
-
-  var _getStyleComputedProp = getStyleComputedProperty(element),
-      overflow = _getStyleComputedProp.overflow,
-      overflowX = _getStyleComputedProp.overflowX,
-      overflowY = _getStyleComputedProp.overflowY;
-
-  if (/(auto|scroll|overlay)/.test(overflow + overflowY + overflowX)) {
-    return element;
-  }
-
-  return getScrollParent(getParentNode(element));
-}
-
-var isIE11 = isBrowser && !!(window.MSInputMethodContext && document.documentMode);
-var isIE10 = isBrowser && /MSIE 10/.test(navigator.userAgent);
-
-/**
- * Determines if the browser is Internet Explorer
- * @method
- * @memberof Popper.Utils
- * @param {Number} version to check
- * @returns {Boolean} isIE
- */
-function isIE(version) {
-  if (version === 11) {
-    return isIE11;
-  }
-  if (version === 10) {
-    return isIE10;
-  }
-  return isIE11 || isIE10;
-}
-
-/**
- * Returns the offset parent of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} offset parent
- */
-function getOffsetParent(element) {
-  if (!element) {
-    return document.documentElement;
-  }
-
-  var noOffsetParent = isIE(10) ? document.body : null;
-
-  // NOTE: 1 DOM access here
-  var offsetParent = element.offsetParent;
-  // Skip hidden elements which don't have an offsetParent
-  while (offsetParent === noOffsetParent && element.nextElementSibling) {
-    offsetParent = (element = element.nextElementSibling).offsetParent;
-  }
-
-  var nodeName = offsetParent && offsetParent.nodeName;
-
-  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
-    return element ? element.ownerDocument.documentElement : document.documentElement;
-  }
-
-  // .offsetParent will return the closest TD or TABLE in case
-  // no offsetParent is present, I hate this job...
-  if (['TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
-    return getOffsetParent(offsetParent);
-  }
-
-  return offsetParent;
-}
-
-function isOffsetContainer(element) {
-  var nodeName = element.nodeName;
-
-  if (nodeName === 'BODY') {
-    return false;
-  }
-  return nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element;
-}
-
-/**
- * Finds the root node (document, shadowDOM root) of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} node
- * @returns {Element} root node
- */
-function getRoot(node) {
-  if (node.parentNode !== null) {
-    return getRoot(node.parentNode);
-  }
-
-  return node;
-}
-
-/**
- * Finds the offset parent common to the two provided nodes
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element1
- * @argument {Element} element2
- * @returns {Element} common offset parent
- */
-function findCommonOffsetParent(element1, element2) {
-  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
-  if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
-    return document.documentElement;
-  }
-
-  // Here we make sure to give as "start" the element that comes first in the DOM
-  var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
-  var start = order ? element1 : element2;
-  var end = order ? element2 : element1;
-
-  // Get common ancestor container
-  var range = document.createRange();
-  range.setStart(start, 0);
-  range.setEnd(end, 0);
-  var commonAncestorContainer = range.commonAncestorContainer;
-
-  // Both nodes are inside #document
-
-  if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
-    if (isOffsetContainer(commonAncestorContainer)) {
-      return commonAncestorContainer;
-    }
-
-    return getOffsetParent(commonAncestorContainer);
-  }
-
-  // one of the nodes is inside shadowDOM, find which one
-  var element1root = getRoot(element1);
-  if (element1root.host) {
-    return findCommonOffsetParent(element1root.host, element2);
-  } else {
-    return findCommonOffsetParent(element1, getRoot(element2).host);
-  }
-}
-
-/**
- * Gets the scroll value of the given element in the given side (top and left)
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @argument {String} side `top` or `left`
- * @returns {number} amount of scrolled pixels
- */
-function getScroll(element) {
-  var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'top';
-
-  var upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
-  var nodeName = element.nodeName;
-
-  if (nodeName === 'BODY' || nodeName === 'HTML') {
-    var html = element.ownerDocument.documentElement;
-    var scrollingElement = element.ownerDocument.scrollingElement || html;
-    return scrollingElement[upperSide];
-  }
-
-  return element[upperSide];
-}
-
-/*
- * Sum or subtract the element scroll values (left and top) from a given rect object
- * @method
- * @memberof Popper.Utils
- * @param {Object} rect - Rect object you want to change
- * @param {HTMLElement} element - The element from the function reads the scroll values
- * @param {Boolean} subtract - set to true if you want to subtract the scroll values
- * @return {Object} rect - The modifier rect object
- */
-function includeScroll(rect, element) {
-  var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var scrollTop = getScroll(element, 'top');
-  var scrollLeft = getScroll(element, 'left');
-  var modifier = subtract ? -1 : 1;
-  rect.top += scrollTop * modifier;
-  rect.bottom += scrollTop * modifier;
-  rect.left += scrollLeft * modifier;
-  rect.right += scrollLeft * modifier;
-  return rect;
-}
-
-/*
- * Helper to detect borders of a given element
- * @method
- * @memberof Popper.Utils
- * @param {CSSStyleDeclaration} styles
- * Result of `getStyleComputedProperty` on the given element
- * @param {String} axis - `x` or `y`
- * @return {number} borders - The borders size of the given axis
- */
-
-function getBordersSize(styles, axis) {
-  var sideA = axis === 'x' ? 'Left' : 'Top';
-  var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
-
-  return parseFloat(styles['border' + sideA + 'Width'], 10) + parseFloat(styles['border' + sideB + 'Width'], 10);
-}
-
-function getSize(axis, body, html, computedStyle) {
-  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE(10) ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
-}
-
-function getWindowSizes() {
-  var body = document.body;
-  var html = document.documentElement;
-  var computedStyle = isIE(10) && getComputedStyle(html);
-
-  return {
-    height: getSize('Height', body, html, computedStyle),
-    width: getSize('Width', body, html, computedStyle)
-  };
-}
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-
-
-
-
-var defineProperty = function (obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-};
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-/**
- * Given element offsets, generate an output similar to getBoundingClientRect
- * @method
- * @memberof Popper.Utils
- * @argument {Object} offsets
- * @returns {Object} ClientRect like output
- */
-function getClientRect(offsets) {
-  return _extends({}, offsets, {
-    right: offsets.left + offsets.width,
-    bottom: offsets.top + offsets.height
-  });
-}
-
-/**
- * Get bounding client rect of given element
- * @method
- * @memberof Popper.Utils
- * @param {HTMLElement} element
- * @return {Object} client rect
- */
-function getBoundingClientRect(element) {
-  var rect = {};
-
-  // IE10 10 FIX: Please, don't ask, the element isn't
-  // considered in DOM in some circumstances...
-  // This isn't reproducible in IE10 compatibility mode of IE11
-  try {
-    if (isIE(10)) {
-      rect = element.getBoundingClientRect();
-      var scrollTop = getScroll(element, 'top');
-      var scrollLeft = getScroll(element, 'left');
-      rect.top += scrollTop;
-      rect.left += scrollLeft;
-      rect.bottom += scrollTop;
-      rect.right += scrollLeft;
-    } else {
-      rect = element.getBoundingClientRect();
-    }
-  } catch (e) {}
-
-  var result = {
-    left: rect.left,
-    top: rect.top,
-    width: rect.right - rect.left,
-    height: rect.bottom - rect.top
-  };
-
-  // subtract scrollbar size from sizes
-  var sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
-  var width = sizes.width || element.clientWidth || result.right - result.left;
-  var height = sizes.height || element.clientHeight || result.bottom - result.top;
-
-  var horizScrollbar = element.offsetWidth - width;
-  var vertScrollbar = element.offsetHeight - height;
-
-  // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
-  // we make this check conditional for performance reasons
-  if (horizScrollbar || vertScrollbar) {
-    var styles = getStyleComputedProperty(element);
-    horizScrollbar -= getBordersSize(styles, 'x');
-    vertScrollbar -= getBordersSize(styles, 'y');
-
-    result.width -= horizScrollbar;
-    result.height -= vertScrollbar;
-  }
-
-  return getClientRect(result);
-}
-
-function getOffsetRectRelativeToArbitraryNode(children, parent) {
-  var fixedPosition = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var isIE10 = isIE(10);
-  var isHTML = parent.nodeName === 'HTML';
-  var childrenRect = getBoundingClientRect(children);
-  var parentRect = getBoundingClientRect(parent);
-  var scrollParent = getScrollParent(children);
-
-  var styles = getStyleComputedProperty(parent);
-  var borderTopWidth = parseFloat(styles.borderTopWidth, 10);
-  var borderLeftWidth = parseFloat(styles.borderLeftWidth, 10);
-
-  // In cases where the parent is fixed, we must ignore negative scroll in offset calc
-  if (fixedPosition && parent.nodeName === 'HTML') {
-    parentRect.top = Math.max(parentRect.top, 0);
-    parentRect.left = Math.max(parentRect.left, 0);
-  }
-  var offsets = getClientRect({
-    top: childrenRect.top - parentRect.top - borderTopWidth,
-    left: childrenRect.left - parentRect.left - borderLeftWidth,
-    width: childrenRect.width,
-    height: childrenRect.height
-  });
-  offsets.marginTop = 0;
-  offsets.marginLeft = 0;
-
-  // Subtract margins of documentElement in case it's being used as parent
-  // we do this only on HTML because it's the only element that behaves
-  // differently when margins are applied to it. The margins are included in
-  // the box of the documentElement, in the other cases not.
-  if (!isIE10 && isHTML) {
-    var marginTop = parseFloat(styles.marginTop, 10);
-    var marginLeft = parseFloat(styles.marginLeft, 10);
-
-    offsets.top -= borderTopWidth - marginTop;
-    offsets.bottom -= borderTopWidth - marginTop;
-    offsets.left -= borderLeftWidth - marginLeft;
-    offsets.right -= borderLeftWidth - marginLeft;
-
-    // Attach marginTop and marginLeft because in some circumstances we may need them
-    offsets.marginTop = marginTop;
-    offsets.marginLeft = marginLeft;
-  }
-
-  if (isIE10 && !fixedPosition ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
-    offsets = includeScroll(offsets, parent);
-  }
-
-  return offsets;
-}
-
-function getViewportOffsetRectRelativeToArtbitraryNode(element) {
-  var excludeScroll = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var html = element.ownerDocument.documentElement;
-  var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
-  var width = Math.max(html.clientWidth, window.innerWidth || 0);
-  var height = Math.max(html.clientHeight, window.innerHeight || 0);
-
-  var scrollTop = !excludeScroll ? getScroll(html) : 0;
-  var scrollLeft = !excludeScroll ? getScroll(html, 'left') : 0;
-
-  var offset = {
-    top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
-    left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
-    width: width,
-    height: height
-  };
-
-  return getClientRect(offset);
-}
-
-/**
- * Check if the given element is fixed or is inside a fixed parent
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @argument {Element} customContainer
- * @returns {Boolean} answer to "isFixed?"
- */
-function isFixed(element) {
-  var nodeName = element.nodeName;
-  if (nodeName === 'BODY' || nodeName === 'HTML') {
-    return false;
-  }
-  if (getStyleComputedProperty(element, 'position') === 'fixed') {
-    return true;
-  }
-  return isFixed(getParentNode(element));
-}
-
-/**
- * Finds the first parent of an element that has a transformed property defined
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} first transformed parent or documentElement
- */
-
-function getFixedPositionOffsetParent(element) {
-  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
-  if (!element || !element.parentElement || isIE()) {
-    return document.documentElement;
-  }
-  var el = element.parentElement;
-  while (el && getStyleComputedProperty(el, 'transform') === 'none') {
-    el = el.parentElement;
-  }
-  return el || document.documentElement;
-}
-
-/**
- * Computed the boundaries limits and return them
- * @method
- * @memberof Popper.Utils
- * @param {HTMLElement} popper
- * @param {HTMLElement} reference
- * @param {number} padding
- * @param {HTMLElement} boundariesElement - Element used to define the boundaries
- * @param {Boolean} fixedPosition - Is in fixed position mode
- * @returns {Object} Coordinates of the boundaries
- */
-function getBoundaries(popper, reference, padding, boundariesElement) {
-  var fixedPosition = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-
-  // NOTE: 1 DOM access here
-
-  var boundaries = { top: 0, left: 0 };
-  var offsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
-
-  // Handle viewport case
-  if (boundariesElement === 'viewport') {
-    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent, fixedPosition);
-  } else {
-    // Handle other cases based on DOM element used as boundaries
-    var boundariesNode = void 0;
-    if (boundariesElement === 'scrollParent') {
-      boundariesNode = getScrollParent(getParentNode(reference));
-      if (boundariesNode.nodeName === 'BODY') {
-        boundariesNode = popper.ownerDocument.documentElement;
-      }
-    } else if (boundariesElement === 'window') {
-      boundariesNode = popper.ownerDocument.documentElement;
-    } else {
-      boundariesNode = boundariesElement;
-    }
-
-    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent, fixedPosition);
-
-    // In case of HTML, we need a different computation
-    if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
-      var _getWindowSizes = getWindowSizes(),
-          height = _getWindowSizes.height,
-          width = _getWindowSizes.width;
-
-      boundaries.top += offsets.top - offsets.marginTop;
-      boundaries.bottom = height + offsets.top;
-      boundaries.left += offsets.left - offsets.marginLeft;
-      boundaries.right = width + offsets.left;
-    } else {
-      // for all the other DOM elements, this one is good
-      boundaries = offsets;
-    }
-  }
-
-  // Add paddings
-  boundaries.left += padding;
-  boundaries.top += padding;
-  boundaries.right -= padding;
-  boundaries.bottom -= padding;
-
-  return boundaries;
-}
-
-function getArea(_ref) {
-  var width = _ref.width,
-      height = _ref.height;
-
-  return width * height;
-}
-
-/**
- * Utility used to transform the `auto` placement to the placement with more
- * available space.
- * @method
- * @memberof Popper.Utils
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
-  var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
-
-  if (placement.indexOf('auto') === -1) {
-    return placement;
-  }
-
-  var boundaries = getBoundaries(popper, reference, padding, boundariesElement);
-
-  var rects = {
-    top: {
-      width: boundaries.width,
-      height: refRect.top - boundaries.top
-    },
-    right: {
-      width: boundaries.right - refRect.right,
-      height: boundaries.height
-    },
-    bottom: {
-      width: boundaries.width,
-      height: boundaries.bottom - refRect.bottom
-    },
-    left: {
-      width: refRect.left - boundaries.left,
-      height: boundaries.height
-    }
-  };
-
-  var sortedAreas = Object.keys(rects).map(function (key) {
-    return _extends({
-      key: key
-    }, rects[key], {
-      area: getArea(rects[key])
-    });
-  }).sort(function (a, b) {
-    return b.area - a.area;
-  });
-
-  var filteredAreas = sortedAreas.filter(function (_ref2) {
-    var width = _ref2.width,
-        height = _ref2.height;
-    return width >= popper.clientWidth && height >= popper.clientHeight;
-  });
-
-  var computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].key : sortedAreas[0].key;
-
-  var variation = placement.split('-')[1];
-
-  return computedPlacement + (variation ? '-' + variation : '');
-}
-
-/**
- * Get offsets to the reference element
- * @method
- * @memberof Popper.Utils
- * @param {Object} state
- * @param {Element} popper - the popper element
- * @param {Element} reference - the reference element (the popper will be relative to this)
- * @param {Element} fixedPosition - is in fixed position mode
- * @returns {Object} An object containing the offsets which will be applied to the popper
- */
-function getReferenceOffsets(state, popper, reference) {
-  var fixedPosition = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : null;
-
-  var commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
-  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
-}
-
-/**
- * Get the outer sizes of the given element (offset size + margins)
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Object} object containing width and height properties
- */
-function getOuterSizes(element) {
-  var styles = getComputedStyle(element);
-  var x = parseFloat(styles.marginTop) + parseFloat(styles.marginBottom);
-  var y = parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
-  var result = {
-    width: element.offsetWidth + y,
-    height: element.offsetHeight + x
-  };
-  return result;
-}
-
-/**
- * Get the opposite placement of the given one
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement
- * @returns {String} flipped placement
- */
-function getOppositePlacement(placement) {
-  var hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
-  return placement.replace(/left|right|bottom|top/g, function (matched) {
-    return hash[matched];
-  });
-}
-
-/**
- * Get offsets to the popper
- * @method
- * @memberof Popper.Utils
- * @param {Object} position - CSS position the Popper will get applied
- * @param {HTMLElement} popper - the popper element
- * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
- * @param {String} placement - one of the valid placement options
- * @returns {Object} popperOffsets - An object containing the offsets which will be applied to the popper
- */
-function getPopperOffsets(popper, referenceOffsets, placement) {
-  placement = placement.split('-')[0];
-
-  // Get popper node sizes
-  var popperRect = getOuterSizes(popper);
-
-  // Add position, width and height to our offsets object
-  var popperOffsets = {
-    width: popperRect.width,
-    height: popperRect.height
-  };
-
-  // depending by the popper placement we have to compute its offsets slightly differently
-  var isHoriz = ['right', 'left'].indexOf(placement) !== -1;
-  var mainSide = isHoriz ? 'top' : 'left';
-  var secondarySide = isHoriz ? 'left' : 'top';
-  var measurement = isHoriz ? 'height' : 'width';
-  var secondaryMeasurement = !isHoriz ? 'height' : 'width';
-
-  popperOffsets[mainSide] = referenceOffsets[mainSide] + referenceOffsets[measurement] / 2 - popperRect[measurement] / 2;
-  if (placement === secondarySide) {
-    popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
-  } else {
-    popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
-  }
-
-  return popperOffsets;
-}
-
-/**
- * Mimics the `find` method of Array
- * @method
- * @memberof Popper.Utils
- * @argument {Array} arr
- * @argument prop
- * @argument value
- * @returns index or -1
- */
-function find(arr, check) {
-  // use native find if supported
-  if (Array.prototype.find) {
-    return arr.find(check);
-  }
-
-  // use `filter` to obtain the same behavior of `find`
-  return arr.filter(check)[0];
-}
-
-/**
- * Return the index of the matching object
- * @method
- * @memberof Popper.Utils
- * @argument {Array} arr
- * @argument prop
- * @argument value
- * @returns index or -1
- */
-function findIndex(arr, prop, value) {
-  // use native findIndex if supported
-  if (Array.prototype.findIndex) {
-    return arr.findIndex(function (cur) {
-      return cur[prop] === value;
-    });
-  }
-
-  // use `find` + `indexOf` if `findIndex` isn't supported
-  var match = find(arr, function (obj) {
-    return obj[prop] === value;
-  });
-  return arr.indexOf(match);
-}
-
-/**
- * Loop trough the list of modifiers and run them in order,
- * each of them will then edit the data object.
- * @method
- * @memberof Popper.Utils
- * @param {dataObject} data
- * @param {Array} modifiers
- * @param {String} ends - Optional modifier name used as stopper
- * @returns {dataObject}
- */
-function runModifiers(modifiers, data, ends) {
-  var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, 'name', ends));
-
-  modifiersToRun.forEach(function (modifier) {
-    if (modifier['function']) {
-      // eslint-disable-line dot-notation
-      console.warn('`modifier.function` is deprecated, use `modifier.fn`!');
-    }
-    var fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
-    if (modifier.enabled && isFunction(fn)) {
-      // Add properties to offsets to make them a complete clientRect object
-      // we do this before each modifier to make sure the previous one doesn't
-      // mess with these values
-      data.offsets.popper = getClientRect(data.offsets.popper);
-      data.offsets.reference = getClientRect(data.offsets.reference);
-
-      data = fn(data, modifier);
-    }
-  });
-
-  return data;
-}
-
-/**
- * Updates the position of the popper, computing the new offsets and applying
- * the new style.<br />
- * Prefer `scheduleUpdate` over `update` because of performance reasons.
- * @method
- * @memberof Popper
- */
-function update() {
-  // if popper is destroyed, don't perform any further update
-  if (this.state.isDestroyed) {
-    return;
-  }
-
-  var data = {
-    instance: this,
-    styles: {},
-    arrowStyles: {},
-    attributes: {},
-    flipped: false,
-    offsets: {}
-  };
-
-  // compute reference element offsets
-  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference, this.options.positionFixed);
-
-  // compute auto placement, store placement inside the data object,
-  // modifiers will be able to edit `placement` if needed
-  // and refer to originalPlacement to know the original value
-  data.placement = computeAutoPlacement(this.options.placement, data.offsets.reference, this.popper, this.reference, this.options.modifiers.flip.boundariesElement, this.options.modifiers.flip.padding);
-
-  // store the computed placement inside `originalPlacement`
-  data.originalPlacement = data.placement;
-
-  data.positionFixed = this.options.positionFixed;
-
-  // compute the popper offsets
-  data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
-
-  data.offsets.popper.position = this.options.positionFixed ? 'fixed' : 'absolute';
-
-  // run the modifiers
-  data = runModifiers(this.modifiers, data);
-
-  // the first `update` will call `onCreate` callback
-  // the other ones will call `onUpdate` callback
-  if (!this.state.isCreated) {
-    this.state.isCreated = true;
-    this.options.onCreate(data);
-  } else {
-    this.options.onUpdate(data);
-  }
-}
-
-/**
- * Helper used to know if the given modifier is enabled.
- * @method
- * @memberof Popper.Utils
- * @returns {Boolean}
- */
-function isModifierEnabled(modifiers, modifierName) {
-  return modifiers.some(function (_ref) {
-    var name = _ref.name,
-        enabled = _ref.enabled;
-    return enabled && name === modifierName;
-  });
-}
-
-/**
- * Get the prefixed supported property name
- * @method
- * @memberof Popper.Utils
- * @argument {String} property (camelCase)
- * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
- */
-function getSupportedPropertyName(property) {
-  var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];
-  var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
-
-  for (var i = 0; i < prefixes.length; i++) {
-    var prefix = prefixes[i];
-    var toCheck = prefix ? '' + prefix + upperProp : property;
-    if (typeof document.body.style[toCheck] !== 'undefined') {
-      return toCheck;
-    }
-  }
-  return null;
-}
-
-/**
- * Destroy the popper
- * @method
- * @memberof Popper
- */
-function destroy() {
-  this.state.isDestroyed = true;
-
-  // touch DOM only if `applyStyle` modifier is enabled
-  if (isModifierEnabled(this.modifiers, 'applyStyle')) {
-    this.popper.removeAttribute('x-placement');
-    this.popper.style.position = '';
-    this.popper.style.top = '';
-    this.popper.style.left = '';
-    this.popper.style.right = '';
-    this.popper.style.bottom = '';
-    this.popper.style.willChange = '';
-    this.popper.style[getSupportedPropertyName('transform')] = '';
-  }
-
-  this.disableEventListeners();
-
-  // remove the popper if user explicity asked for the deletion on destroy
-  // do not use `remove` because IE11 doesn't support it
-  if (this.options.removeOnDestroy) {
-    this.popper.parentNode.removeChild(this.popper);
-  }
-  return this;
-}
-
-/**
- * Get the window associated with the element
- * @argument {Element} element
- * @returns {Window}
- */
-function getWindow(element) {
-  var ownerDocument = element.ownerDocument;
-  return ownerDocument ? ownerDocument.defaultView : window;
-}
-
-function attachToScrollParents(scrollParent, event, callback, scrollParents) {
-  var isBody = scrollParent.nodeName === 'BODY';
-  var target = isBody ? scrollParent.ownerDocument.defaultView : scrollParent;
-  target.addEventListener(event, callback, { passive: true });
-
-  if (!isBody) {
-    attachToScrollParents(getScrollParent(target.parentNode), event, callback, scrollParents);
-  }
-  scrollParents.push(target);
-}
-
-/**
- * Setup needed event listeners used to update the popper position
- * @method
- * @memberof Popper.Utils
- * @private
- */
-function setupEventListeners(reference, options, state, updateBound) {
-  // Resize event listener on window
-  state.updateBound = updateBound;
-  getWindow(reference).addEventListener('resize', state.updateBound, { passive: true });
-
-  // Scroll event listener on scroll parents
-  var scrollElement = getScrollParent(reference);
-  attachToScrollParents(scrollElement, 'scroll', state.updateBound, state.scrollParents);
-  state.scrollElement = scrollElement;
-  state.eventsEnabled = true;
-
-  return state;
-}
-
-/**
- * It will add resize/scroll events and start recalculating
- * position of the popper element when they are triggered.
- * @method
- * @memberof Popper
- */
-function enableEventListeners() {
-  if (!this.state.eventsEnabled) {
-    this.state = setupEventListeners(this.reference, this.options, this.state, this.scheduleUpdate);
-  }
-}
-
-/**
- * Remove event listeners used to update the popper position
- * @method
- * @memberof Popper.Utils
- * @private
- */
-function removeEventListeners(reference, state) {
-  // Remove resize event listener on window
-  getWindow(reference).removeEventListener('resize', state.updateBound);
-
-  // Remove scroll event listener on scroll parents
-  state.scrollParents.forEach(function (target) {
-    target.removeEventListener('scroll', state.updateBound);
-  });
-
-  // Reset state
-  state.updateBound = null;
-  state.scrollParents = [];
-  state.scrollElement = null;
-  state.eventsEnabled = false;
-  return state;
-}
-
-/**
- * It will remove resize/scroll events and won't recalculate popper position
- * when they are triggered. It also won't trigger onUpdate callback anymore,
- * unless you call `update` method manually.
- * @method
- * @memberof Popper
- */
-function disableEventListeners() {
-  if (this.state.eventsEnabled) {
-    cancelAnimationFrame(this.scheduleUpdate);
-    this.state = removeEventListeners(this.reference, this.state);
-  }
-}
-
-/**
- * Tells if a given input is a number
- * @method
- * @memberof Popper.Utils
- * @param {*} input to check
- * @return {Boolean}
- */
-function isNumeric(n) {
-  return n !== '' && !isNaN(parseFloat(n)) && isFinite(n);
-}
-
-/**
- * Set the style to the given popper
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element - Element to apply the style to
- * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
- */
-function setStyles(element, styles) {
-  Object.keys(styles).forEach(function (prop) {
-    var unit = '';
-    // add unit if the value is numeric and is one of the following
-    if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 && isNumeric(styles[prop])) {
-      unit = 'px';
-    }
-    element.style[prop] = styles[prop] + unit;
-  });
-}
-
-/**
- * Set the attributes to the given popper
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element - Element to apply the attributes to
- * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
- */
-function setAttributes(element, attributes) {
-  Object.keys(attributes).forEach(function (prop) {
-    var value = attributes[prop];
-    if (value !== false) {
-      element.setAttribute(prop, attributes[prop]);
-    } else {
-      element.removeAttribute(prop);
-    }
-  });
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} data.styles - List of style properties - values to apply to popper element
- * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The same data object
- */
-function applyStyle(data) {
-  // any property present in `data.styles` will be applied to the popper,
-  // in this way we can make the 3rd party modifiers add custom styles to it
-  // Be aware, modifiers could override the properties defined in the previous
-  // lines of this modifier!
-  setStyles(data.instance.popper, data.styles);
-
-  // any property present in `data.attributes` will be applied to the popper,
-  // they will be set as HTML attributes of the element
-  setAttributes(data.instance.popper, data.attributes);
-
-  // if arrowElement is defined and arrowStyles has some properties
-  if (data.arrowElement && Object.keys(data.arrowStyles).length) {
-    setStyles(data.arrowElement, data.arrowStyles);
-  }
-
-  return data;
-}
-
-/**
- * Set the x-placement attribute before everything else because it could be used
- * to add margins to the popper margins needs to be calculated to get the
- * correct popper offsets.
- * @method
- * @memberof Popper.modifiers
- * @param {HTMLElement} reference - The reference element used to position the popper
- * @param {HTMLElement} popper - The HTML element used as popper
- * @param {Object} options - Popper.js options
- */
-function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
-  // compute reference element offsets
-  var referenceOffsets = getReferenceOffsets(state, popper, reference, options.positionFixed);
-
-  // compute auto placement, store placement inside the data object,
-  // modifiers will be able to edit `placement` if needed
-  // and refer to originalPlacement to know the original value
-  var placement = computeAutoPlacement(options.placement, referenceOffsets, popper, reference, options.modifiers.flip.boundariesElement, options.modifiers.flip.padding);
-
-  popper.setAttribute('x-placement', placement);
-
-  // Apply `position` to popper before anything else because
-  // without the position applied we can't guarantee correct computations
-  setStyles(popper, { position: options.positionFixed ? 'fixed' : 'absolute' });
-
-  return options;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function computeStyle(data, options) {
-  var x = options.x,
-      y = options.y;
-  var popper = data.offsets.popper;
-
-  // Remove this legacy support in Popper.js v2
-
-  var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
-    return modifier.name === 'applyStyle';
-  }).gpuAcceleration;
-  if (legacyGpuAccelerationOption !== undefined) {
-    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
-  }
-  var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
-
-  var offsetParent = getOffsetParent(data.instance.popper);
-  var offsetParentRect = getBoundingClientRect(offsetParent);
-
-  // Styles
-  var styles = {
-    position: popper.position
-  };
-
-  // Avoid blurry text by using full pixel integers.
-  // For pixel-perfect positioning, top/bottom prefers rounded
-  // values, while left/right prefers floored values.
-  var offsets = {
-    left: Math.floor(popper.left),
-    top: Math.round(popper.top),
-    bottom: Math.round(popper.bottom),
-    right: Math.floor(popper.right)
-  };
-
-  var sideA = x === 'bottom' ? 'top' : 'bottom';
-  var sideB = y === 'right' ? 'left' : 'right';
-
-  // if gpuAcceleration is set to `true` and transform is supported,
-  //  we use `translate3d` to apply the position to the popper we
-  // automatically use the supported prefixed version if needed
-  var prefixedProperty = getSupportedPropertyName('transform');
-
-  // now, let's make a step back and look at this code closely (wtf?)
-  // If the content of the popper grows once it's been positioned, it
-  // may happen that the popper gets misplaced because of the new content
-  // overflowing its reference element
-  // To avoid this problem, we provide two options (x and y), which allow
-  // the consumer to define the offset origin.
-  // If we position a popper on top of a reference element, we can set
-  // `x` to `top` to make the popper grow towards its top instead of
-  // its bottom.
-  var left = void 0,
-      top = void 0;
-  if (sideA === 'bottom') {
-    top = -offsetParentRect.height + offsets.bottom;
-  } else {
-    top = offsets.top;
-  }
-  if (sideB === 'right') {
-    left = -offsetParentRect.width + offsets.right;
-  } else {
-    left = offsets.left;
-  }
-  if (gpuAcceleration && prefixedProperty) {
-    styles[prefixedProperty] = 'translate3d(' + left + 'px, ' + top + 'px, 0)';
-    styles[sideA] = 0;
-    styles[sideB] = 0;
-    styles.willChange = 'transform';
-  } else {
-    // othwerise, we use the standard `top`, `left`, `bottom` and `right` properties
-    var invertTop = sideA === 'bottom' ? -1 : 1;
-    var invertLeft = sideB === 'right' ? -1 : 1;
-    styles[sideA] = top * invertTop;
-    styles[sideB] = left * invertLeft;
-    styles.willChange = sideA + ', ' + sideB;
-  }
-
-  // Attributes
-  var attributes = {
-    'x-placement': data.placement
-  };
-
-  // Update `data` attributes, styles and arrowStyles
-  data.attributes = _extends({}, attributes, data.attributes);
-  data.styles = _extends({}, styles, data.styles);
-  data.arrowStyles = _extends({}, data.offsets.arrow, data.arrowStyles);
-
-  return data;
-}
-
-/**
- * Helper used to know if the given modifier depends from another one.<br />
- * It checks if the needed modifier is listed and enabled.
- * @method
- * @memberof Popper.Utils
- * @param {Array} modifiers - list of modifiers
- * @param {String} requestingName - name of requesting modifier
- * @param {String} requestedName - name of requested modifier
- * @returns {Boolean}
- */
-function isModifierRequired(modifiers, requestingName, requestedName) {
-  var requesting = find(modifiers, function (_ref) {
-    var name = _ref.name;
-    return name === requestingName;
-  });
-
-  var isRequired = !!requesting && modifiers.some(function (modifier) {
-    return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
-  });
-
-  if (!isRequired) {
-    var _requesting = '`' + requestingName + '`';
-    var requested = '`' + requestedName + '`';
-    console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to include it before ' + _requesting + '!');
-  }
-  return isRequired;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function arrow(data, options) {
-  var _data$offsets$arrow;
-
-  // arrow depends on keepTogether in order to work
-  if (!isModifierRequired(data.instance.modifiers, 'arrow', 'keepTogether')) {
-    return data;
-  }
-
-  var arrowElement = options.element;
-
-  // if arrowElement is a string, suppose it's a CSS selector
-  if (typeof arrowElement === 'string') {
-    arrowElement = data.instance.popper.querySelector(arrowElement);
-
-    // if arrowElement is not found, don't run the modifier
-    if (!arrowElement) {
-      return data;
-    }
-  } else {
-    // if the arrowElement isn't a query selector we must check that the
-    // provided DOM node is child of its popper node
-    if (!data.instance.popper.contains(arrowElement)) {
-      console.warn('WARNING: `arrow.element` must be child of its popper element!');
-      return data;
-    }
-  }
-
-  var placement = data.placement.split('-')[0];
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var isVertical = ['left', 'right'].indexOf(placement) !== -1;
-
-  var len = isVertical ? 'height' : 'width';
-  var sideCapitalized = isVertical ? 'Top' : 'Left';
-  var side = sideCapitalized.toLowerCase();
-  var altSide = isVertical ? 'left' : 'top';
-  var opSide = isVertical ? 'bottom' : 'right';
-  var arrowElementSize = getOuterSizes(arrowElement)[len];
-
-  //
-  // extends keepTogether behavior making sure the popper and its
-  // reference have enough pixels in conjuction
-  //
-
-  // top/left side
-  if (reference[opSide] - arrowElementSize < popper[side]) {
-    data.offsets.popper[side] -= popper[side] - (reference[opSide] - arrowElementSize);
-  }
-  // bottom/right side
-  if (reference[side] + arrowElementSize > popper[opSide]) {
-    data.offsets.popper[side] += reference[side] + arrowElementSize - popper[opSide];
-  }
-  data.offsets.popper = getClientRect(data.offsets.popper);
-
-  // compute center of the popper
-  var center = reference[side] + reference[len] / 2 - arrowElementSize / 2;
-
-  // Compute the sideValue using the updated popper offsets
-  // take popper margin in account because we don't have this info available
-  var css = getStyleComputedProperty(data.instance.popper);
-  var popperMarginSide = parseFloat(css['margin' + sideCapitalized], 10);
-  var popperBorderSide = parseFloat(css['border' + sideCapitalized + 'Width'], 10);
-  var sideValue = center - data.offsets.popper[side] - popperMarginSide - popperBorderSide;
-
-  // prevent arrowElement from being placed not contiguously to its popper
-  sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
-
-  data.arrowElement = arrowElement;
-  data.offsets.arrow = (_data$offsets$arrow = {}, defineProperty(_data$offsets$arrow, side, Math.round(sideValue)), defineProperty(_data$offsets$arrow, altSide, ''), _data$offsets$arrow);
-
-  return data;
-}
-
-/**
- * Get the opposite placement variation of the given one
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement variation
- * @returns {String} flipped placement variation
- */
-function getOppositeVariation(variation) {
-  if (variation === 'end') {
-    return 'start';
-  } else if (variation === 'start') {
-    return 'end';
-  }
-  return variation;
-}
-
-/**
- * List of accepted placements to use as values of the `placement` option.<br />
- * Valid placements are:
- * - `auto`
- * - `top`
- * - `right`
- * - `bottom`
- * - `left`
- *
- * Each placement can have a variation from this list:
- * - `-start`
- * - `-end`
- *
- * Variations are interpreted easily if you think of them as the left to right
- * written languages. Horizontally (`top` and `bottom`), `start` is left and `end`
- * is right.<br />
- * Vertically (`left` and `right`), `start` is top and `end` is bottom.
- *
- * Some valid examples are:
- * - `top-end` (on top of reference, right aligned)
- * - `right-start` (on right of reference, top aligned)
- * - `bottom` (on bottom, centered)
- * - `auto-right` (on the side with more space available, alignment depends by placement)
- *
- * @static
- * @type {Array}
- * @enum {String}
- * @readonly
- * @method placements
- * @memberof Popper
- */
-var placements = ['auto-start', 'auto', 'auto-end', 'top-start', 'top', 'top-end', 'right-start', 'right', 'right-end', 'bottom-end', 'bottom', 'bottom-start', 'left-end', 'left', 'left-start'];
-
-// Get rid of `auto` `auto-start` and `auto-end`
-var validPlacements = placements.slice(3);
-
-/**
- * Given an initial placement, returns all the subsequent placements
- * clockwise (or counter-clockwise).
- *
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement - A valid placement (it accepts variations)
- * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
- * @returns {Array} placements including their variations
- */
-function clockwise(placement) {
-  var counter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var index = validPlacements.indexOf(placement);
-  var arr = validPlacements.slice(index + 1).concat(validPlacements.slice(0, index));
-  return counter ? arr.reverse() : arr;
-}
-
-var BEHAVIORS = {
-  FLIP: 'flip',
-  CLOCKWISE: 'clockwise',
-  COUNTERCLOCKWISE: 'counterclockwise'
-};
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function flip(data, options) {
-  // if `inner` modifier is enabled, we can't use the `flip` modifier
-  if (isModifierEnabled(data.instance.modifiers, 'inner')) {
-    return data;
-  }
-
-  if (data.flipped && data.placement === data.originalPlacement) {
-    // seems like flip is trying to loop, probably there's not enough space on any of the flippable sides
-    return data;
-  }
-
-  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement, data.positionFixed);
-
-  var placement = data.placement.split('-')[0];
-  var placementOpposite = getOppositePlacement(placement);
-  var variation = data.placement.split('-')[1] || '';
-
-  var flipOrder = [];
-
-  switch (options.behavior) {
-    case BEHAVIORS.FLIP:
-      flipOrder = [placement, placementOpposite];
-      break;
-    case BEHAVIORS.CLOCKWISE:
-      flipOrder = clockwise(placement);
-      break;
-    case BEHAVIORS.COUNTERCLOCKWISE:
-      flipOrder = clockwise(placement, true);
-      break;
-    default:
-      flipOrder = options.behavior;
-  }
-
-  flipOrder.forEach(function (step, index) {
-    if (placement !== step || flipOrder.length === index + 1) {
-      return data;
-    }
-
-    placement = data.placement.split('-')[0];
-    placementOpposite = getOppositePlacement(placement);
-
-    var popperOffsets = data.offsets.popper;
-    var refOffsets = data.offsets.reference;
-
-    // using floor because the reference offsets may contain decimals we are not going to consider here
-    var floor = Math.floor;
-    var overlapsRef = placement === 'left' && floor(popperOffsets.right) > floor(refOffsets.left) || placement === 'right' && floor(popperOffsets.left) < floor(refOffsets.right) || placement === 'top' && floor(popperOffsets.bottom) > floor(refOffsets.top) || placement === 'bottom' && floor(popperOffsets.top) < floor(refOffsets.bottom);
-
-    var overflowsLeft = floor(popperOffsets.left) < floor(boundaries.left);
-    var overflowsRight = floor(popperOffsets.right) > floor(boundaries.right);
-    var overflowsTop = floor(popperOffsets.top) < floor(boundaries.top);
-    var overflowsBottom = floor(popperOffsets.bottom) > floor(boundaries.bottom);
-
-    var overflowsBoundaries = placement === 'left' && overflowsLeft || placement === 'right' && overflowsRight || placement === 'top' && overflowsTop || placement === 'bottom' && overflowsBottom;
-
-    // flip the variation if required
-    var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
-    var flippedVariation = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
-
-    if (overlapsRef || overflowsBoundaries || flippedVariation) {
-      // this boolean to detect any flip loop
-      data.flipped = true;
-
-      if (overlapsRef || overflowsBoundaries) {
-        placement = flipOrder[index + 1];
-      }
-
-      if (flippedVariation) {
-        variation = getOppositeVariation(variation);
-      }
-
-      data.placement = placement + (variation ? '-' + variation : '');
-
-      // this object contains `position`, we want to preserve it along with
-      // any additional property we may add in the future
-      data.offsets.popper = _extends({}, data.offsets.popper, getPopperOffsets(data.instance.popper, data.offsets.reference, data.placement));
-
-      data = runModifiers(data.instance.modifiers, data, 'flip');
-    }
-  });
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function keepTogether(data) {
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var placement = data.placement.split('-')[0];
-  var floor = Math.floor;
-  var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
-  var side = isVertical ? 'right' : 'bottom';
-  var opSide = isVertical ? 'left' : 'top';
-  var measurement = isVertical ? 'width' : 'height';
-
-  if (popper[side] < floor(reference[opSide])) {
-    data.offsets.popper[opSide] = floor(reference[opSide]) - popper[measurement];
-  }
-  if (popper[opSide] > floor(reference[side])) {
-    data.offsets.popper[opSide] = floor(reference[side]);
-  }
-
-  return data;
-}
-
-/**
- * Converts a string containing value + unit into a px value number
- * @function
- * @memberof {modifiers~offset}
- * @private
- * @argument {String} str - Value + unit string
- * @argument {String} measurement - `height` or `width`
- * @argument {Object} popperOffsets
- * @argument {Object} referenceOffsets
- * @returns {Number|String}
- * Value in pixels, or original string if no values were extracted
- */
-function toValue(str, measurement, popperOffsets, referenceOffsets) {
-  // separate value from unit
-  var split = str.match(/((?:\-|\+)?\d*\.?\d*)(.*)/);
-  var value = +split[1];
-  var unit = split[2];
-
-  // If it's not a number it's an operator, I guess
-  if (!value) {
-    return str;
-  }
-
-  if (unit.indexOf('%') === 0) {
-    var element = void 0;
-    switch (unit) {
-      case '%p':
-        element = popperOffsets;
-        break;
-      case '%':
-      case '%r':
-      default:
-        element = referenceOffsets;
-    }
-
-    var rect = getClientRect(element);
-    return rect[measurement] / 100 * value;
-  } else if (unit === 'vh' || unit === 'vw') {
-    // if is a vh or vw, we calculate the size based on the viewport
-    var size = void 0;
-    if (unit === 'vh') {
-      size = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    } else {
-      size = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    }
-    return size / 100 * value;
-  } else {
-    // if is an explicit pixel unit, we get rid of the unit and keep the value
-    // if is an implicit unit, it's px, and we return just the value
-    return value;
-  }
-}
-
-/**
- * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
- * @function
- * @memberof {modifiers~offset}
- * @private
- * @argument {String} offset
- * @argument {Object} popperOffsets
- * @argument {Object} referenceOffsets
- * @argument {String} basePlacement
- * @returns {Array} a two cells array with x and y offsets in numbers
- */
-function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
-  var offsets = [0, 0];
-
-  // Use height if placement is left or right and index is 0 otherwise use width
-  // in this way the first offset will use an axis and the second one
-  // will use the other one
-  var useHeight = ['right', 'left'].indexOf(basePlacement) !== -1;
-
-  // Split the offset string to obtain a list of values and operands
-  // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
-  var fragments = offset.split(/(\+|\-)/).map(function (frag) {
-    return frag.trim();
-  });
-
-  // Detect if the offset string contains a pair of values or a single one
-  // they could be separated by comma or space
-  var divider = fragments.indexOf(find(fragments, function (frag) {
-    return frag.search(/,|\s/) !== -1;
-  }));
-
-  if (fragments[divider] && fragments[divider].indexOf(',') === -1) {
-    console.warn('Offsets separated by white space(s) are deprecated, use a comma (,) instead.');
-  }
-
-  // If divider is found, we divide the list of values and operands to divide
-  // them by ofset X and Y.
-  var splitRegex = /\s*,\s*|\s+/;
-  var ops = divider !== -1 ? [fragments.slice(0, divider).concat([fragments[divider].split(splitRegex)[0]]), [fragments[divider].split(splitRegex)[1]].concat(fragments.slice(divider + 1))] : [fragments];
-
-  // Convert the values with units to absolute pixels to allow our computations
-  ops = ops.map(function (op, index) {
-    // Most of the units rely on the orientation of the popper
-    var measurement = (index === 1 ? !useHeight : useHeight) ? 'height' : 'width';
-    var mergeWithPrevious = false;
-    return op
-    // This aggregates any `+` or `-` sign that aren't considered operators
-    // e.g.: 10 + +5 => [10, +, +5]
-    .reduce(function (a, b) {
-      if (a[a.length - 1] === '' && ['+', '-'].indexOf(b) !== -1) {
-        a[a.length - 1] = b;
-        mergeWithPrevious = true;
-        return a;
-      } else if (mergeWithPrevious) {
-        a[a.length - 1] += b;
-        mergeWithPrevious = false;
-        return a;
-      } else {
-        return a.concat(b);
-      }
-    }, [])
-    // Here we convert the string values into number values (in px)
-    .map(function (str) {
-      return toValue(str, measurement, popperOffsets, referenceOffsets);
-    });
-  });
-
-  // Loop trough the offsets arrays and execute the operations
-  ops.forEach(function (op, index) {
-    op.forEach(function (frag, index2) {
-      if (isNumeric(frag)) {
-        offsets[index] += frag * (op[index2 - 1] === '-' ? -1 : 1);
-      }
-    });
-  });
-  return offsets;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @argument {Number|String} options.offset=0
- * The offset value as described in the modifier description
- * @returns {Object} The data object, properly modified
- */
-function offset(data, _ref) {
-  var offset = _ref.offset;
-  var placement = data.placement,
-      _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var basePlacement = placement.split('-')[0];
-
-  var offsets = void 0;
-  if (isNumeric(+offset)) {
-    offsets = [+offset, 0];
-  } else {
-    offsets = parseOffset(offset, popper, reference, basePlacement);
-  }
-
-  if (basePlacement === 'left') {
-    popper.top += offsets[0];
-    popper.left -= offsets[1];
-  } else if (basePlacement === 'right') {
-    popper.top += offsets[0];
-    popper.left += offsets[1];
-  } else if (basePlacement === 'top') {
-    popper.left += offsets[0];
-    popper.top -= offsets[1];
-  } else if (basePlacement === 'bottom') {
-    popper.left += offsets[0];
-    popper.top += offsets[1];
-  }
-
-  data.popper = popper;
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function preventOverflow(data, options) {
-  var boundariesElement = options.boundariesElement || getOffsetParent(data.instance.popper);
-
-  // If offsetParent is the reference element, we really want to
-  // go one step up and use the next offsetParent as reference to
-  // avoid to make this modifier completely useless and look like broken
-  if (data.instance.reference === boundariesElement) {
-    boundariesElement = getOffsetParent(boundariesElement);
-  }
-
-  // NOTE: DOM access here
-  // resets the popper's position so that the document size can be calculated excluding
-  // the size of the popper element itself
-  var transformProp = getSupportedPropertyName('transform');
-  var popperStyles = data.instance.popper.style; // assignment to help minification
-  var top = popperStyles.top,
-      left = popperStyles.left,
-      transform = popperStyles[transformProp];
-
-  popperStyles.top = '';
-  popperStyles.left = '';
-  popperStyles[transformProp] = '';
-
-  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement, data.positionFixed);
-
-  // NOTE: DOM access here
-  // restores the original style properties after the offsets have been computed
-  popperStyles.top = top;
-  popperStyles.left = left;
-  popperStyles[transformProp] = transform;
-
-  options.boundaries = boundaries;
-
-  var order = options.priority;
-  var popper = data.offsets.popper;
-
-  var check = {
-    primary: function primary(placement) {
-      var value = popper[placement];
-      if (popper[placement] < boundaries[placement] && !options.escapeWithReference) {
-        value = Math.max(popper[placement], boundaries[placement]);
-      }
-      return defineProperty({}, placement, value);
-    },
-    secondary: function secondary(placement) {
-      var mainSide = placement === 'right' ? 'left' : 'top';
-      var value = popper[mainSide];
-      if (popper[placement] > boundaries[placement] && !options.escapeWithReference) {
-        value = Math.min(popper[mainSide], boundaries[placement] - (placement === 'right' ? popper.width : popper.height));
-      }
-      return defineProperty({}, mainSide, value);
-    }
-  };
-
-  order.forEach(function (placement) {
-    var side = ['left', 'top'].indexOf(placement) !== -1 ? 'primary' : 'secondary';
-    popper = _extends({}, popper, check[side](placement));
-  });
-
-  data.offsets.popper = popper;
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function shift(data) {
-  var placement = data.placement;
-  var basePlacement = placement.split('-')[0];
-  var shiftvariation = placement.split('-')[1];
-
-  // if shift shiftvariation is specified, run the modifier
-  if (shiftvariation) {
-    var _data$offsets = data.offsets,
-        reference = _data$offsets.reference,
-        popper = _data$offsets.popper;
-
-    var isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
-    var side = isVertical ? 'left' : 'top';
-    var measurement = isVertical ? 'width' : 'height';
-
-    var shiftOffsets = {
-      start: defineProperty({}, side, reference[side]),
-      end: defineProperty({}, side, reference[side] + reference[measurement] - popper[measurement])
-    };
-
-    data.offsets.popper = _extends({}, popper, shiftOffsets[shiftvariation]);
-  }
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function hide(data) {
-  if (!isModifierRequired(data.instance.modifiers, 'hide', 'preventOverflow')) {
-    return data;
-  }
-
-  var refRect = data.offsets.reference;
-  var bound = find(data.instance.modifiers, function (modifier) {
-    return modifier.name === 'preventOverflow';
-  }).boundaries;
-
-  if (refRect.bottom < bound.top || refRect.left > bound.right || refRect.top > bound.bottom || refRect.right < bound.left) {
-    // Avoid unnecessary DOM access if visibility hasn't changed
-    if (data.hide === true) {
-      return data;
-    }
-
-    data.hide = true;
-    data.attributes['x-out-of-boundaries'] = '';
-  } else {
-    // Avoid unnecessary DOM access if visibility hasn't changed
-    if (data.hide === false) {
-      return data;
-    }
-
-    data.hide = false;
-    data.attributes['x-out-of-boundaries'] = false;
-  }
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function inner(data) {
-  var placement = data.placement;
-  var basePlacement = placement.split('-')[0];
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var isHoriz = ['left', 'right'].indexOf(basePlacement) !== -1;
-
-  var subtractLength = ['top', 'left'].indexOf(basePlacement) === -1;
-
-  popper[isHoriz ? 'left' : 'top'] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? 'width' : 'height'] : 0);
-
-  data.placement = getOppositePlacement(placement);
-  data.offsets.popper = getClientRect(popper);
-
-  return data;
-}
-
-/**
- * Modifier function, each modifier can have a function of this type assigned
- * to its `fn` property.<br />
- * These functions will be called on each update, this means that you must
- * make sure they are performant enough to avoid performance bottlenecks.
- *
- * @function ModifierFn
- * @argument {dataObject} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {dataObject} The data object, properly modified
- */
-
-/**
- * Modifiers are plugins used to alter the behavior of your poppers.<br />
- * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
- * needed by the library.
- *
- * Usually you don't want to override the `order`, `fn` and `onLoad` props.
- * All the other properties are configurations that could be tweaked.
- * @namespace modifiers
- */
-var modifiers = {
-  /**
-   * Modifier used to shift the popper on the start or end of its reference
-   * element.<br />
-   * It will read the variation of the `placement` property.<br />
-   * It can be one either `-end` or `-start`.
-   * @memberof modifiers
-   * @inner
-   */
-  shift: {
-    /** @prop {number} order=100 - Index used to define the order of execution */
-    order: 100,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: shift
-  },
-
-  /**
-   * The `offset` modifier can shift your popper on both its axis.
-   *
-   * It accepts the following units:
-   * - `px` or unitless, interpreted as pixels
-   * - `%` or `%r`, percentage relative to the length of the reference element
-   * - `%p`, percentage relative to the length of the popper element
-   * - `vw`, CSS viewport width unit
-   * - `vh`, CSS viewport height unit
-   *
-   * For length is intended the main axis relative to the placement of the popper.<br />
-   * This means that if the placement is `top` or `bottom`, the length will be the
-   * `width`. In case of `left` or `right`, it will be the height.
-   *
-   * You can provide a single value (as `Number` or `String`), or a pair of values
-   * as `String` divided by a comma or one (or more) white spaces.<br />
-   * The latter is a deprecated method because it leads to confusion and will be
-   * removed in v2.<br />
-   * Additionally, it accepts additions and subtractions between different units.
-   * Note that multiplications and divisions aren't supported.
-   *
-   * Valid examples are:
-   * ```
-   * 10
-   * '10%'
-   * '10, 10'
-   * '10%, 10'
-   * '10 + 10%'
-   * '10 - 5vh + 3%'
-   * '-10px + 5vh, 5px - 6%'
-   * ```
-   * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
-   * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  offset: {
-    /** @prop {number} order=200 - Index used to define the order of execution */
-    order: 200,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: offset,
-    /** @prop {Number|String} offset=0
-     * The offset value as described in the modifier description
-     */
-    offset: 0
-  },
-
-  /**
-   * Modifier used to prevent the popper from being positioned outside the boundary.
-   *
-   * An scenario exists where the reference itself is not within the boundaries.<br />
-   * We can say it has "escaped the boundaries" — or just "escaped".<br />
-   * In this case we need to decide whether the popper should either:
-   *
-   * - detach from the reference and remain "trapped" in the boundaries, or
-   * - if it should ignore the boundary and "escape with its reference"
-   *
-   * When `escapeWithReference` is set to`true` and reference is completely
-   * outside its boundaries, the popper will overflow (or completely leave)
-   * the boundaries in order to remain attached to the edge of the reference.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  preventOverflow: {
-    /** @prop {number} order=300 - Index used to define the order of execution */
-    order: 300,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: preventOverflow,
-    /**
-     * @prop {Array} [priority=['left','right','top','bottom']]
-     * Popper will try to prevent overflow following these priorities by default,
-     * then, it could overflow on the left and on top of the `boundariesElement`
-     */
-    priority: ['left', 'right', 'top', 'bottom'],
-    /**
-     * @prop {number} padding=5
-     * Amount of pixel used to define a minimum distance between the boundaries
-     * and the popper this makes sure the popper has always a little padding
-     * between the edges of its container
-     */
-    padding: 5,
-    /**
-     * @prop {String|HTMLElement} boundariesElement='scrollParent'
-     * Boundaries used by the modifier, can be `scrollParent`, `window`,
-     * `viewport` or any DOM element.
-     */
-    boundariesElement: 'scrollParent'
-  },
-
-  /**
-   * Modifier used to make sure the reference and its popper stay near eachothers
-   * without leaving any gap between the two. Expecially useful when the arrow is
-   * enabled and you want to assure it to point to its reference element.
-   * It cares only about the first axis, you can still have poppers with margin
-   * between the popper and its reference element.
-   * @memberof modifiers
-   * @inner
-   */
-  keepTogether: {
-    /** @prop {number} order=400 - Index used to define the order of execution */
-    order: 400,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: keepTogether
-  },
-
-  /**
-   * This modifier is used to move the `arrowElement` of the popper to make
-   * sure it is positioned between the reference element and its popper element.
-   * It will read the outer size of the `arrowElement` node to detect how many
-   * pixels of conjuction are needed.
-   *
-   * It has no effect if no `arrowElement` is provided.
-   * @memberof modifiers
-   * @inner
-   */
-  arrow: {
-    /** @prop {number} order=500 - Index used to define the order of execution */
-    order: 500,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: arrow,
-    /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */
-    element: '[x-arrow]'
-  },
-
-  /**
-   * Modifier used to flip the popper's placement when it starts to overlap its
-   * reference element.
-   *
-   * Requires the `preventOverflow` modifier before it in order to work.
-   *
-   * **NOTE:** this modifier will interrupt the current update cycle and will
-   * restart it if it detects the need to flip the placement.
-   * @memberof modifiers
-   * @inner
-   */
-  flip: {
-    /** @prop {number} order=600 - Index used to define the order of execution */
-    order: 600,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: flip,
-    /**
-     * @prop {String|Array} behavior='flip'
-     * The behavior used to change the popper's placement. It can be one of
-     * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
-     * placements (with optional variations).
-     */
-    behavior: 'flip',
-    /**
-     * @prop {number} padding=5
-     * The popper will flip if it hits the edges of the `boundariesElement`
-     */
-    padding: 5,
-    /**
-     * @prop {String|HTMLElement} boundariesElement='viewport'
-     * The element which will define the boundaries of the popper position,
-     * the popper will never be placed outside of the defined boundaries
-     * (except if keepTogether is enabled)
-     */
-    boundariesElement: 'viewport'
-  },
-
-  /**
-   * Modifier used to make the popper flow toward the inner of the reference element.
-   * By default, when this modifier is disabled, the popper will be placed outside
-   * the reference element.
-   * @memberof modifiers
-   * @inner
-   */
-  inner: {
-    /** @prop {number} order=700 - Index used to define the order of execution */
-    order: 700,
-    /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */
-    enabled: false,
-    /** @prop {ModifierFn} */
-    fn: inner
-  },
-
-  /**
-   * Modifier used to hide the popper when its reference element is outside of the
-   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
-   * be used to hide with a CSS selector the popper when its reference is
-   * out of boundaries.
-   *
-   * Requires the `preventOverflow` modifier before it in order to work.
-   * @memberof modifiers
-   * @inner
-   */
-  hide: {
-    /** @prop {number} order=800 - Index used to define the order of execution */
-    order: 800,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: hide
-  },
-
-  /**
-   * Computes the style that will be applied to the popper element to gets
-   * properly positioned.
-   *
-   * Note that this modifier will not touch the DOM, it just prepares the styles
-   * so that `applyStyle` modifier can apply it. This separation is useful
-   * in case you need to replace `applyStyle` with a custom implementation.
-   *
-   * This modifier has `850` as `order` value to maintain backward compatibility
-   * with previous versions of Popper.js. Expect the modifiers ordering method
-   * to change in future major versions of the library.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  computeStyle: {
-    /** @prop {number} order=850 - Index used to define the order of execution */
-    order: 850,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: computeStyle,
-    /**
-     * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
-     */
-    gpuAcceleration: true,
-    /**
-     * @prop {string} [x='bottom']
-     * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
-     * Change this if your popper should grow in a direction different from `bottom`
-     */
-    x: 'bottom',
-    /**
-     * @prop {string} [x='left']
-     * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
-     * Change this if your popper should grow in a direction different from `right`
-     */
-    y: 'right'
-  },
-
-  /**
-   * Applies the computed styles to the popper element.
-   *
-   * All the DOM manipulations are limited to this modifier. This is useful in case
-   * you want to integrate Popper.js inside a framework or view library and you
-   * want to delegate all the DOM manipulations to it.
-   *
-   * Note that if you disable this modifier, you must make sure the popper element
-   * has its position set to `absolute` before Popper.js can do its work!
-   *
-   * Just disable this modifier and define you own to achieve the desired effect.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  applyStyle: {
-    /** @prop {number} order=900 - Index used to define the order of execution */
-    order: 900,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: applyStyle,
-    /** @prop {Function} */
-    onLoad: applyStyleOnLoad,
-    /**
-     * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
-     * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
-     */
-    gpuAcceleration: undefined
-  }
-};
-
-/**
- * The `dataObject` is an object containing all the informations used by Popper.js
- * this object get passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
- * @name dataObject
- * @property {Object} data.instance The Popper.js instance
- * @property {String} data.placement Placement applied to popper
- * @property {String} data.originalPlacement Placement originally defined on init
- * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
- * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper.
- * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
- * @property {Object} data.styles Any CSS property defined here will be applied to the popper, it expects the JavaScript nomenclature (eg. `marginBottom`)
- * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow, it expects the JavaScript nomenclature (eg. `marginBottom`)
- * @property {Object} data.boundaries Offsets of the popper boundaries
- * @property {Object} data.offsets The measurements of popper, reference and arrow elements.
- * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
- * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
- * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
- */
-
-/**
- * Default options provided to Popper.js constructor.<br />
- * These can be overriden using the `options` argument of Popper.js.<br />
- * To override an option, simply pass as 3rd argument an object with the same
- * structure of this object, example:
- * ```
- * new Popper(ref, pop, {
- *   modifiers: {
- *     preventOverflow: { enabled: false }
- *   }
- * })
- * ```
- * @type {Object}
- * @static
- * @memberof Popper
- */
-var Defaults = {
-  /**
-   * Popper's placement
-   * @prop {Popper.placements} placement='bottom'
-   */
-  placement: 'bottom',
-
-  /**
-   * Set this to true if you want popper to position it self in 'fixed' mode
-   * @prop {Boolean} positionFixed=false
-   */
-  positionFixed: false,
-
-  /**
-   * Whether events (resize, scroll) are initially enabled
-   * @prop {Boolean} eventsEnabled=true
-   */
-  eventsEnabled: true,
-
-  /**
-   * Set to true if you want to automatically remove the popper when
-   * you call the `destroy` method.
-   * @prop {Boolean} removeOnDestroy=false
-   */
-  removeOnDestroy: false,
-
-  /**
-   * Callback called when the popper is created.<br />
-   * By default, is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
-   * @prop {onCreate}
-   */
-  onCreate: function onCreate() {},
-
-  /**
-   * Callback called when the popper is updated, this callback is not called
-   * on the initialization/creation of the popper, but only on subsequent
-   * updates.<br />
-   * By default, is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
-   * @prop {onUpdate}
-   */
-  onUpdate: function onUpdate() {},
-
-  /**
-   * List of modifiers used to modify the offsets before they are applied to the popper.
-   * They provide most of the functionalities of Popper.js
-   * @prop {modifiers}
-   */
-  modifiers: modifiers
-};
-
-/**
- * @callback onCreate
- * @param {dataObject} data
- */
-
-/**
- * @callback onUpdate
- * @param {dataObject} data
- */
-
-// Utils
-// Methods
-var Popper = function () {
-  /**
-   * Create a new Popper.js instance
-   * @class Popper
-   * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
-   * @param {HTMLElement} popper - The HTML element used as popper.
-   * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
-   * @return {Object} instance - The generated Popper.js instance
-   */
-  function Popper(reference, popper) {
-    var _this = this;
-
-    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-    classCallCheck(this, Popper);
-
-    this.scheduleUpdate = function () {
-      return requestAnimationFrame(_this.update);
-    };
-
-    // make update() debounced, so that it only runs at most once-per-tick
-    this.update = debounce(this.update.bind(this));
-
-    // with {} we create a new object with the options inside it
-    this.options = _extends({}, Popper.Defaults, options);
-
-    // init state
-    this.state = {
-      isDestroyed: false,
-      isCreated: false,
-      scrollParents: []
-    };
-
-    // get reference and popper elements (allow jQuery wrappers)
-    this.reference = reference && reference.jquery ? reference[0] : reference;
-    this.popper = popper && popper.jquery ? popper[0] : popper;
-
-    // Deep merge modifiers options
-    this.options.modifiers = {};
-    Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function (name) {
-      _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
-    });
-
-    // Refactoring modifiers' list (Object => Array)
-    this.modifiers = Object.keys(this.options.modifiers).map(function (name) {
-      return _extends({
-        name: name
-      }, _this.options.modifiers[name]);
-    })
-    // sort the modifiers by order
-    .sort(function (a, b) {
-      return a.order - b.order;
-    });
-
-    // modifiers have the ability to execute arbitrary code when Popper.js get inited
-    // such code is executed in the same order of its modifier
-    // they could add new properties to their options configuration
-    // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
-    this.modifiers.forEach(function (modifierOptions) {
-      if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) {
-        modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
-      }
-    });
-
-    // fire the first update to position the popper in the right place
-    this.update();
-
-    var eventsEnabled = this.options.eventsEnabled;
-    if (eventsEnabled) {
-      // setup event listeners, they will take care of update the position in specific situations
-      this.enableEventListeners();
-    }
-
-    this.state.eventsEnabled = eventsEnabled;
-  }
-
-  // We can't use class properties because they don't get listed in the
-  // class prototype and break stuff like Sinon stubs
-
-
-  createClass(Popper, [{
-    key: 'update',
-    value: function update$$1() {
-      return update.call(this);
-    }
-  }, {
-    key: 'destroy',
-    value: function destroy$$1() {
-      return destroy.call(this);
-    }
-  }, {
-    key: 'enableEventListeners',
-    value: function enableEventListeners$$1() {
-      return enableEventListeners.call(this);
-    }
-  }, {
-    key: 'disableEventListeners',
-    value: function disableEventListeners$$1() {
-      return disableEventListeners.call(this);
-    }
-
-    /**
-     * Schedule an update, it will run on the next UI update available
-     * @method scheduleUpdate
-     * @memberof Popper
-     */
-
-
-    /**
-     * Collection of utilities useful when writing custom modifiers.
-     * Starting from version 1.7, this method is available only if you
-     * include `popper-utils.js` before `popper.js`.
-     *
-     * **DEPRECATION**: This way to access PopperUtils is deprecated
-     * and will be removed in v2! Use the PopperUtils module directly instead.
-     * Due to the high instability of the methods contained in Utils, we can't
-     * guarantee them to follow semver. Use them at your own risk!
-     * @static
-     * @private
-     * @type {Object}
-     * @deprecated since version 1.8
-     * @member Utils
-     * @memberof Popper
-     */
-
-  }]);
-  return Popper;
-}();
-
-/**
- * The `referenceObject` is an object that provides an interface compatible with Popper.js
- * and lets you use it as replacement of a real DOM node.<br />
- * You can use this method to position a popper relatively to a set of coordinates
- * in case you don't have a DOM node to use as reference.
- *
- * ```
- * new Popper(referenceObject, popperNode);
- * ```
- *
- * NB: This feature isn't supported in Internet Explorer 10
- * @name referenceObject
- * @property {Function} data.getBoundingClientRect
- * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
- * @property {number} data.clientWidth
- * An ES6 getter that will return the width of the virtual reference element.
- * @property {number} data.clientHeight
- * An ES6 getter that will return the height of the virtual reference element.
- */
-
-
-Popper.Utils = (typeof window !== 'undefined' ? window : global).PopperUtils;
-Popper.placements = placements;
-Popper.Defaults = Defaults;
-
-/* harmony default export */ __webpack_exports__["default"] = (Popper);
-//# sourceMappingURL=popper.js.map
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(6)))
-
-/***/ }),
-/* 92 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23227,7 +23537,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 93 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23238,7 +23548,7 @@ var settle = __webpack_require__(301);
 var buildURL = __webpack_require__(303);
 var parseHeaders = __webpack_require__(304);
 var isURLSameOrigin = __webpack_require__(305);
-var createError = __webpack_require__(94);
+var createError = __webpack_require__(96);
 var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(306);
 
 module.exports = function xhrAdapter(config) {
@@ -23414,7 +23724,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 94 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23439,7 +23749,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 95 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23451,7 +23761,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 96 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23477,12 +23787,12 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 97 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = buildSearchMethod;
 
-var errors = __webpack_require__(45);
+var errors = __webpack_require__(44);
 
 /**
  * Creates a search method to be used in clients
@@ -23550,7 +23860,7 @@ function buildSearchMethod(queryParam, url) {
 
 
 /***/ }),
-/* 98 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function omit(obj, test) {
@@ -23570,7 +23880,7 @@ module.exports = function omit(obj, test) {
 
 
 /***/ }),
-/* 99 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseTimes = __webpack_require__(344),
@@ -23578,7 +23888,7 @@ var baseTimes = __webpack_require__(344),
     isArray = __webpack_require__(1),
     isBuffer = __webpack_require__(30),
     isIndex = __webpack_require__(31),
-    isTypedArray = __webpack_require__(49);
+    isTypedArray = __webpack_require__(48);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -23625,7 +23935,7 @@ module.exports = arrayLikeKeys;
 
 
 /***/ }),
-/* 100 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -23636,10 +23946,10 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 101 */
+/* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPrototype = __webpack_require__(50),
+var isPrototype = __webpack_require__(49),
     nativeKeys = __webpack_require__(350);
 
 /** Used for built-in method references. */
@@ -23672,7 +23982,7 @@ module.exports = baseKeys;
 
 
 /***/ }),
-/* 102 */
+/* 104 */
 /***/ (function(module, exports) {
 
 /**
@@ -23693,10 +24003,10 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 103 */
+/* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(68),
+var MapCache = __webpack_require__(67),
     setCacheAdd = __webpack_require__(374),
     setCacheHas = __webpack_require__(375);
 
@@ -23726,7 +24036,7 @@ module.exports = SetCache;
 
 
 /***/ }),
-/* 104 */
+/* 106 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -23758,7 +24068,7 @@ module.exports = toSource;
 
 
 /***/ }),
-/* 105 */
+/* 107 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIndexOf = __webpack_require__(33);
@@ -23781,7 +24091,7 @@ module.exports = arrayIncludes;
 
 
 /***/ }),
-/* 106 */
+/* 108 */
 /***/ (function(module, exports) {
 
 /**
@@ -23811,7 +24121,7 @@ module.exports = baseFindIndex;
 
 
 /***/ }),
-/* 107 */
+/* 109 */
 /***/ (function(module, exports) {
 
 /**
@@ -23830,10 +24140,10 @@ module.exports = cacheHas;
 
 
 /***/ }),
-/* 108 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var apply = __webpack_require__(70);
+var apply = __webpack_require__(69);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMax = Math.max;
@@ -23872,7 +24182,7 @@ module.exports = overRest;
 
 
 /***/ }),
-/* 109 */
+/* 111 */
 /***/ (function(module, exports) {
 
 /**
@@ -23904,7 +24214,7 @@ module.exports = constant;
 
 
 /***/ }),
-/* 110 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(13);
@@ -23921,7 +24231,7 @@ module.exports = defineProperty;
 
 
 /***/ }),
-/* 111 */
+/* 113 */
 /***/ (function(module, exports) {
 
 /** Used to detect hot functions by number of calls within a span of milliseconds. */
@@ -23964,7 +24274,7 @@ module.exports = shortOut;
 
 
 /***/ }),
-/* 112 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(9),
@@ -24003,7 +24313,7 @@ module.exports = isArrayLikeObject;
 
 
 /***/ }),
-/* 113 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var createBaseFor = __webpack_require__(382);
@@ -24025,7 +24335,7 @@ module.exports = baseFor;
 
 
 /***/ }),
-/* 114 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var identity = __webpack_require__(14);
@@ -24045,7 +24355,7 @@ module.exports = castFunction;
 
 
 /***/ }),
-/* 115 */
+/* 117 */
 /***/ (function(module, exports) {
 
 /**
@@ -24076,12 +24386,12 @@ module.exports = arrayFilter;
 
 
 /***/ }),
-/* 116 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(103),
+var SetCache = __webpack_require__(105),
     arraySome = __webpack_require__(393),
-    cacheHas = __webpack_require__(107);
+    cacheHas = __webpack_require__(109);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -24165,7 +24475,7 @@ module.exports = equalArrays;
 
 
 /***/ }),
-/* 117 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var root = __webpack_require__(2);
@@ -24177,11 +24487,11 @@ module.exports = Uint8Array;
 
 
 /***/ }),
-/* 118 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetAllKeys = __webpack_require__(119),
-    getSymbols = __webpack_require__(76),
+var baseGetAllKeys = __webpack_require__(121),
+    getSymbols = __webpack_require__(75),
     keys = __webpack_require__(8);
 
 /**
@@ -24199,10 +24509,10 @@ module.exports = getAllKeys;
 
 
 /***/ }),
-/* 119 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(75),
+var arrayPush = __webpack_require__(74),
     isArray = __webpack_require__(1);
 
 /**
@@ -24225,7 +24535,7 @@ module.exports = baseGetAllKeys;
 
 
 /***/ }),
-/* 120 */
+/* 122 */
 /***/ (function(module, exports) {
 
 /**
@@ -24254,7 +24564,7 @@ module.exports = stubArray;
 
 
 /***/ }),
-/* 121 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(13),
@@ -24267,7 +24577,7 @@ module.exports = WeakMap;
 
 
 /***/ }),
-/* 122 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(5);
@@ -24288,7 +24598,7 @@ module.exports = isStrictComparable;
 
 
 /***/ }),
-/* 123 */
+/* 125 */
 /***/ (function(module, exports) {
 
 /**
@@ -24314,10 +24624,10 @@ module.exports = matchesStrictComparable;
 
 
 /***/ }),
-/* 124 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(57);
+var baseGet = __webpack_require__(56);
 
 /**
  * Gets the value at `path` of `object`. If the resolved value is
@@ -24353,7 +24663,7 @@ module.exports = get;
 
 
 /***/ }),
-/* 125 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseHasIn = __webpack_require__(406),
@@ -24393,10 +24703,10 @@ module.exports = hasIn;
 
 
 /***/ }),
-/* 126 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(55),
+var baseEach = __webpack_require__(54),
     isArrayLike = __webpack_require__(9);
 
 /**
@@ -24421,7 +24731,7 @@ module.exports = baseMap;
 
 
 /***/ }),
-/* 127 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(11),
@@ -24430,8 +24740,8 @@ var arrayMap = __webpack_require__(11),
     castPath = __webpack_require__(22),
     copyObject = __webpack_require__(24),
     customOmitClone = __webpack_require__(431),
-    flatRest = __webpack_require__(134),
-    getAllKeysIn = __webpack_require__(82);
+    flatRest = __webpack_require__(136),
+    getAllKeysIn = __webpack_require__(81);
 
 /** Used to compose bitmasks for cloning. */
 var CLONE_DEEP_FLAG = 1,
@@ -24484,7 +24794,7 @@ module.exports = omit;
 
 
 /***/ }),
-/* 128 */
+/* 130 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(2);
@@ -24526,13 +24836,13 @@ module.exports = cloneBuffer;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(27)(module)))
 
 /***/ }),
-/* 129 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(75),
-    getPrototype = __webpack_require__(81),
-    getSymbols = __webpack_require__(76),
-    stubArray = __webpack_require__(120);
+var arrayPush = __webpack_require__(74),
+    getPrototype = __webpack_require__(80),
+    getSymbols = __webpack_require__(75),
+    stubArray = __webpack_require__(122);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeGetSymbols = Object.getOwnPropertySymbols;
@@ -24557,10 +24867,10 @@ module.exports = getSymbolsIn;
 
 
 /***/ }),
-/* 130 */
+/* 132 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(83);
+var cloneArrayBuffer = __webpack_require__(82);
 
 /**
  * Creates a clone of `typedArray`.
@@ -24579,12 +24889,12 @@ module.exports = cloneTypedArray;
 
 
 /***/ }),
-/* 131 */
+/* 133 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseCreate = __webpack_require__(59),
-    getPrototype = __webpack_require__(81),
-    isPrototype = __webpack_require__(50);
+var baseCreate = __webpack_require__(58),
+    getPrototype = __webpack_require__(80),
+    isPrototype = __webpack_require__(49);
 
 /**
  * Initializes an object clone.
@@ -24603,7 +24913,7 @@ module.exports = initCloneObject;
 
 
 /***/ }),
-/* 132 */
+/* 134 */
 /***/ (function(module, exports) {
 
 /**
@@ -24629,7 +24939,7 @@ module.exports = last;
 
 
 /***/ }),
-/* 133 */
+/* 135 */
 /***/ (function(module, exports) {
 
 /**
@@ -24666,12 +24976,12 @@ module.exports = baseSlice;
 
 
 /***/ }),
-/* 134 */
+/* 136 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var flatten = __webpack_require__(135),
-    overRest = __webpack_require__(108),
-    setToString = __webpack_require__(71);
+var flatten = __webpack_require__(137),
+    overRest = __webpack_require__(110),
+    setToString = __webpack_require__(70);
 
 /**
  * A specialized version of `baseRest` which flattens the rest array.
@@ -24688,7 +24998,7 @@ module.exports = flatRest;
 
 
 /***/ }),
-/* 135 */
+/* 137 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseFlatten = __webpack_require__(432);
@@ -24716,7 +25026,7 @@ module.exports = flatten;
 
 
 /***/ }),
-/* 136 */
+/* 138 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(10),
@@ -24760,7 +25070,7 @@ module.exports = isNumber;
 
 
 /***/ }),
-/* 137 */
+/* 139 */
 /***/ (function(module, exports) {
 
 /**
@@ -24788,10 +25098,10 @@ module.exports = isUndefined;
 
 
 /***/ }),
-/* 138 */
+/* 140 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseFindIndex = __webpack_require__(106),
+var baseFindIndex = __webpack_require__(108),
     baseIteratee = __webpack_require__(7),
     toInteger = __webpack_require__(40);
 
@@ -24849,15 +25159,15 @@ module.exports = findIndex;
 
 
 /***/ }),
-/* 139 */
+/* 141 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseToString = __webpack_require__(79),
+var baseToString = __webpack_require__(78),
     castSlice = __webpack_require__(439),
     charsEndIndex = __webpack_require__(440),
     charsStartIndex = __webpack_require__(441),
     stringToArray = __webpack_require__(442),
-    toString = __webpack_require__(78);
+    toString = __webpack_require__(77);
 
 /** Used to match leading and trailing whitespace. */
 var reTrim = /^\s+|\s+$/g;
@@ -24904,7 +25214,7 @@ module.exports = trim;
 
 
 /***/ }),
-/* 140 */
+/* 142 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var eq = __webpack_require__(19),
@@ -24940,7 +25250,7 @@ module.exports = isIterateeCall;
 
 
 /***/ }),
-/* 141 */
+/* 143 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseAssignValue = __webpack_require__(38),
@@ -24966,7 +25276,7 @@ module.exports = assignMergeValue;
 
 
 /***/ }),
-/* 142 */
+/* 144 */
 /***/ (function(module, exports) {
 
 /**
@@ -24987,7 +25297,7 @@ module.exports = safeGet;
 
 
 /***/ }),
-/* 143 */
+/* 145 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24995,25 +25305,25 @@ module.exports = safeGet;
 
 var forEach = __webpack_require__(21);
 var compact = __webpack_require__(453);
-var indexOf = __webpack_require__(60);
-var findIndex = __webpack_require__(138);
-var get = __webpack_require__(124);
+var indexOf = __webpack_require__(59);
+var findIndex = __webpack_require__(140);
+var get = __webpack_require__(126);
 
 var sumBy = __webpack_require__(454);
-var find = __webpack_require__(61);
+var find = __webpack_require__(60);
 var includes = __webpack_require__(456);
 var map = __webpack_require__(12);
-var orderBy = __webpack_require__(144);
+var orderBy = __webpack_require__(146);
 
-var defaults = __webpack_require__(85);
-var merge = __webpack_require__(86);
+var defaults = __webpack_require__(84);
+var merge = __webpack_require__(85);
 
 var isFunction = __webpack_require__(18);
 
 var partial = __webpack_require__(463);
 var partialRight = __webpack_require__(479);
 
-var formatSort = __webpack_require__(155);
+var formatSort = __webpack_require__(157);
 
 var generateHierarchicalTree = __webpack_require__(482);
 
@@ -25776,7 +26086,7 @@ module.exports = SearchResults;
 
 
 /***/ }),
-/* 144 */
+/* 146 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseOrderBy = __webpack_require__(459),
@@ -25829,11 +26139,11 @@ module.exports = orderBy;
 
 
 /***/ }),
-/* 145 */
+/* 147 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var identity = __webpack_require__(14),
-    metaMap = __webpack_require__(146);
+    metaMap = __webpack_require__(148);
 
 /**
  * The base implementation of `setData` without support for hot loop shorting.
@@ -25852,10 +26162,10 @@ module.exports = baseSetData;
 
 
 /***/ }),
-/* 146 */
+/* 148 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var WeakMap = __webpack_require__(121);
+var WeakMap = __webpack_require__(123);
 
 /** Used to store function metadata. */
 var metaMap = WeakMap && new WeakMap;
@@ -25864,14 +26174,14 @@ module.exports = metaMap;
 
 
 /***/ }),
-/* 147 */
+/* 149 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var composeArgs = __webpack_require__(148),
-    composeArgsRight = __webpack_require__(149),
+var composeArgs = __webpack_require__(150),
+    composeArgsRight = __webpack_require__(151),
     countHolders = __webpack_require__(466),
-    createCtor = __webpack_require__(62),
-    createRecurry = __webpack_require__(150),
+    createCtor = __webpack_require__(61),
+    createRecurry = __webpack_require__(152),
     getHolder = __webpack_require__(43),
     reorder = __webpack_require__(476),
     replaceHolders = __webpack_require__(25),
@@ -25962,7 +26272,7 @@ module.exports = createHybrid;
 
 
 /***/ }),
-/* 148 */
+/* 150 */
 /***/ (function(module, exports) {
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
@@ -26007,7 +26317,7 @@ module.exports = composeArgs;
 
 
 /***/ }),
-/* 149 */
+/* 151 */
 /***/ (function(module, exports) {
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
@@ -26054,12 +26364,12 @@ module.exports = composeArgsRight;
 
 
 /***/ }),
-/* 150 */
+/* 152 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var isLaziable = __webpack_require__(467),
-    setData = __webpack_require__(153),
-    setWrapToString = __webpack_require__(154);
+    setData = __webpack_require__(155),
+    setWrapToString = __webpack_require__(156);
 
 /** Used to compose bitmasks for function metadata. */
 var WRAP_BIND_FLAG = 1,
@@ -26116,10 +26426,10 @@ module.exports = createRecurry;
 
 
 /***/ }),
-/* 151 */
+/* 153 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var metaMap = __webpack_require__(146),
+var metaMap = __webpack_require__(148),
     noop = __webpack_require__(468);
 
 /**
@@ -26137,11 +26447,11 @@ module.exports = getData;
 
 
 /***/ }),
-/* 152 */
+/* 154 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseCreate = __webpack_require__(59),
-    baseLodash = __webpack_require__(89);
+var baseCreate = __webpack_require__(58),
+    baseLodash = __webpack_require__(88);
 
 /**
  * The base constructor for creating `lodash` wrapper objects.
@@ -26165,11 +26475,11 @@ module.exports = LodashWrapper;
 
 
 /***/ }),
-/* 153 */
+/* 155 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSetData = __webpack_require__(145),
-    shortOut = __webpack_require__(111);
+var baseSetData = __webpack_require__(147),
+    shortOut = __webpack_require__(113);
 
 /**
  * Sets metadata for `func`.
@@ -26191,12 +26501,12 @@ module.exports = setData;
 
 
 /***/ }),
-/* 154 */
+/* 156 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var getWrapDetails = __webpack_require__(473),
     insertWrapDetails = __webpack_require__(474),
-    setToString = __webpack_require__(71),
+    setToString = __webpack_require__(70),
     updateWrapDetails = __webpack_require__(475);
 
 /**
@@ -26218,14 +26528,14 @@ module.exports = setWrapToString;
 
 
 /***/ }),
-/* 155 */
+/* 157 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var reduce = __webpack_require__(37);
-var find = __webpack_require__(61);
+var find = __webpack_require__(60);
 var startsWith = __webpack_require__(480);
 
 /**
@@ -26252,10 +26562,10 @@ module.exports = function formatSort(sortBy, defaults) {
 
 
 /***/ }),
-/* 156 */
+/* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(57),
+var baseGet = __webpack_require__(56),
     baseSet = __webpack_require__(484),
     castPath = __webpack_require__(22);
 
@@ -26288,7 +26598,7 @@ module.exports = basePickBy;
 
 
 /***/ }),
-/* 157 */
+/* 159 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {// Copyright Joyent, Inc. and other Node contributors.
@@ -26860,7 +27170,7 @@ exports.log = function() {
  *     prototype.
  * @param {function} superCtor Constructor function to inherit prototype from.
  */
-exports.inherits = __webpack_require__(64);
+exports.inherits = __webpack_require__(63);
 
 exports._extend = function(origin, add) {
   // Don't do anything if add isn't an object
@@ -26881,7 +27191,7 @@ function hasOwnProperty(obj, prop) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6), __webpack_require__(28)))
 
 /***/ }),
-/* 158 */
+/* 160 */
 /***/ (function(module, exports) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -27189,7 +27499,7 @@ function isUndefined(arg) {
 
 
 /***/ }),
-/* 159 */
+/* 161 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27202,7 +27512,7 @@ function isUndefined(arg) {
  */
 
 var shortener = __webpack_require__(488);
-var SearchParameters = __webpack_require__(65);
+var SearchParameters = __webpack_require__(64);
 
 var qs = __webpack_require__(491);
 
@@ -27213,11 +27523,11 @@ var map = __webpack_require__(12);
 var mapKeys = __webpack_require__(497);
 var mapValues = __webpack_require__(498);
 var isString = __webpack_require__(42);
-var isPlainObject = __webpack_require__(84);
+var isPlainObject = __webpack_require__(83);
 var isEmpty = __webpack_require__(41);
-var invert = __webpack_require__(160);
+var invert = __webpack_require__(162);
 
-var encode = __webpack_require__(90).encode;
+var encode = __webpack_require__(89).encode;
 
 function recursiveEncode(input) {
   if (isPlainObject(input)) {
@@ -27366,10 +27676,10 @@ exports.getQueryStringFromState = function(state, options) {
 
 
 /***/ }),
-/* 160 */
+/* 162 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var constant = __webpack_require__(109),
+var constant = __webpack_require__(111),
     createInverter = __webpack_require__(489),
     identity = __webpack_require__(14);
 
@@ -27414,7 +27724,7 @@ module.exports = invert;
 
 
 /***/ }),
-/* 161 */
+/* 163 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27439,7 +27749,7 @@ module.exports = {
 
 
 /***/ }),
-/* 162 */
+/* 164 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27449,7 +27759,7 @@ module.exports = '2.26.1';
 
 
 /***/ }),
-/* 163 */
+/* 165 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -27461,7 +27771,7 @@ var normalizeComponent = __webpack_require__(26)
 /* script */
 var __vue_script__ = __webpack_require__(503)
 /* template */
-var __vue_template__ = __webpack_require__(519)
+var __vue_template__ = __webpack_require__(517)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -27497,316 +27807,6 @@ if (false) {(function () {
 })()}
 
 module.exports = Component.exports
-
-
-/***/ }),
-/* 164 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 165 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-  Modified by Evan You @yyx990803
-*/
-
-var hasDocument = typeof document !== 'undefined'
-
-if (typeof DEBUG !== 'undefined' && DEBUG) {
-  if (!hasDocument) {
-    throw new Error(
-    'vue-style-loader cannot be used in a non-browser environment. ' +
-    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
-  ) }
-}
-
-var listToStyles = __webpack_require__(502)
-
-/*
-type StyleObject = {
-  id: number;
-  parts: Array<StyleObjectPart>
-}
-
-type StyleObjectPart = {
-  css: string;
-  media: string;
-  sourceMap: ?string
-}
-*/
-
-var stylesInDom = {/*
-  [id: number]: {
-    id: number,
-    refs: number,
-    parts: Array<(obj?: StyleObjectPart) => void>
-  }
-*/}
-
-var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
-var singletonElement = null
-var singletonCounter = 0
-var isProduction = false
-var noop = function () {}
-var options = null
-var ssrIdKey = 'data-vue-ssr-id'
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-// tags it will allow on a page
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
-
-module.exports = function (parentId, list, _isProduction, _options) {
-  isProduction = _isProduction
-
-  options = _options || {}
-
-  var styles = listToStyles(parentId, list)
-  addStylesToDom(styles)
-
-  return function update (newList) {
-    var mayRemove = []
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i]
-      var domStyle = stylesInDom[item.id]
-      domStyle.refs--
-      mayRemove.push(domStyle)
-    }
-    if (newList) {
-      styles = listToStyles(parentId, newList)
-      addStylesToDom(styles)
-    } else {
-      styles = []
-    }
-    for (var i = 0; i < mayRemove.length; i++) {
-      var domStyle = mayRemove[i]
-      if (domStyle.refs === 0) {
-        for (var j = 0; j < domStyle.parts.length; j++) {
-          domStyle.parts[j]()
-        }
-        delete stylesInDom[domStyle.id]
-      }
-    }
-  }
-}
-
-function addStylesToDom (styles /* Array<StyleObject> */) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i]
-    var domStyle = stylesInDom[item.id]
-    if (domStyle) {
-      domStyle.refs++
-      for (var j = 0; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j])
-      }
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j]))
-      }
-      if (domStyle.parts.length > item.parts.length) {
-        domStyle.parts.length = item.parts.length
-      }
-    } else {
-      var parts = []
-      for (var j = 0; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j]))
-      }
-      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
-    }
-  }
-}
-
-function createStyleElement () {
-  var styleElement = document.createElement('style')
-  styleElement.type = 'text/css'
-  head.appendChild(styleElement)
-  return styleElement
-}
-
-function addStyle (obj /* StyleObjectPart */) {
-  var update, remove
-  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
-
-  if (styleElement) {
-    if (isProduction) {
-      // has SSR styles and in production mode.
-      // simply do nothing.
-      return noop
-    } else {
-      // has SSR styles but in dev mode.
-      // for some reason Chrome can't handle source map in server-rendered
-      // style tags - source maps in <style> only works if the style tag is
-      // created and inserted dynamically. So we remove the server rendered
-      // styles and inject new ones.
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  if (isOldIE) {
-    // use singleton mode for IE9.
-    var styleIndex = singletonCounter++
-    styleElement = singletonElement || (singletonElement = createStyleElement())
-    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
-    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
-  } else {
-    // use multi-style-tag mode in all other cases
-    styleElement = createStyleElement()
-    update = applyToTag.bind(null, styleElement)
-    remove = function () {
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  update(obj)
-
-  return function updateStyle (newObj /* StyleObjectPart */) {
-    if (newObj) {
-      if (newObj.css === obj.css &&
-          newObj.media === obj.media &&
-          newObj.sourceMap === obj.sourceMap) {
-        return
-      }
-      update(obj = newObj)
-    } else {
-      remove()
-    }
-  }
-}
-
-var replaceText = (function () {
-  var textStore = []
-
-  return function (index, replacement) {
-    textStore[index] = replacement
-    return textStore.filter(Boolean).join('\n')
-  }
-})()
-
-function applyToSingletonTag (styleElement, index, remove, obj) {
-  var css = remove ? '' : obj.css
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = replaceText(index, css)
-  } else {
-    var cssNode = document.createTextNode(css)
-    var childNodes = styleElement.childNodes
-    if (childNodes[index]) styleElement.removeChild(childNodes[index])
-    if (childNodes.length) {
-      styleElement.insertBefore(cssNode, childNodes[index])
-    } else {
-      styleElement.appendChild(cssNode)
-    }
-  }
-}
-
-function applyToTag (styleElement, obj) {
-  var css = obj.css
-  var media = obj.media
-  var sourceMap = obj.sourceMap
-
-  if (media) {
-    styleElement.setAttribute('media', media)
-  }
-  if (options.ssrId) {
-    styleElement.setAttribute(ssrIdKey, obj.id)
-  }
-
-  if (sourceMap) {
-    // https://developer.chrome.com/devtools/docs/javascript-debugging
-    // this makes source maps inside style tags work properly in Chrome
-    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
-    // http://stackoverflow.com/a/26603875
-    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
-  }
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild)
-    }
-    styleElement.appendChild(document.createTextNode(css))
-  }
-}
 
 
 /***/ }),
@@ -39784,11 +39784,11 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_instantsearch__["a" /* default */]);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('replies', __webpack_require__(163));
+Vue.component('replies', __webpack_require__(165));
 Vue.component('reply', __webpack_require__(166));
 Vue.component('favorite', __webpack_require__(167));
-Vue.component('ThreadView', __webpack_require__(520));
-Vue.component('HeaderNotification', __webpack_require__(523));
+Vue.component('ThreadView', __webpack_require__(518));
+Vue.component('HeaderNotification', __webpack_require__(521));
 
 Vue.component('html-textarea', {
   template: '<div contenteditable="true" @input="updateHTML"></div>',
@@ -39817,7 +39817,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_echo__);
 
 window._ = __webpack_require__(294);
-window.Popper = __webpack_require__(91).default;
+window.Popper = __webpack_require__(92).default;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -39826,7 +39826,7 @@ window.Popper = __webpack_require__(91).default;
  */
 
 try {
-    window.$ = window.jQuery = __webpack_require__(44);
+    window.$ = window.jQuery = __webpack_require__(93);
 
     __webpack_require__(295);
 } catch (e) {}
@@ -56996,7 +56996,7 @@ window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(44), __webpack_require__(91)) :
+   true ? factory(exports, __webpack_require__(93), __webpack_require__(92)) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (factory((global.bootstrap = {}),global.jQuery,global.Popper));
 }(this, (function (exports,$,Popper) { 'use strict';
@@ -60933,9 +60933,9 @@ module.exports = __webpack_require__(297);
 
 
 var utils = __webpack_require__(3);
-var bind = __webpack_require__(92);
+var bind = __webpack_require__(94);
 var Axios = __webpack_require__(299);
-var defaults = __webpack_require__(63);
+var defaults = __webpack_require__(62);
 
 /**
  * Create an instance of Axios
@@ -60968,9 +60968,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(96);
+axios.Cancel = __webpack_require__(98);
 axios.CancelToken = __webpack_require__(313);
-axios.isCancel = __webpack_require__(95);
+axios.isCancel = __webpack_require__(97);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -61018,7 +61018,7 @@ function isSlowBuffer (obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(63);
+var defaults = __webpack_require__(62);
 var utils = __webpack_require__(3);
 var InterceptorManager = __webpack_require__(308);
 var dispatchRequest = __webpack_require__(309);
@@ -61123,7 +61123,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(94);
+var createError = __webpack_require__(96);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -61556,8 +61556,8 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(3);
 var transformData = __webpack_require__(310);
-var isCancel = __webpack_require__(95);
-var defaults = __webpack_require__(63);
+var isCancel = __webpack_require__(97);
+var defaults = __webpack_require__(62);
 var isAbsoluteURL = __webpack_require__(311);
 var combineURLs = __webpack_require__(312);
 
@@ -61716,7 +61716,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(96);
+var Cancel = __webpack_require__(98);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -83936,7 +83936,7 @@ module.exports = createAlgoliasearch(AlgoliaSearchCore, '(lite) ');
 
 module.exports = AlgoliaSearchCore;
 
-var errors = __webpack_require__(45);
+var errors = __webpack_require__(44);
 var exitPromise = __webpack_require__(324);
 var IndexCore = __webpack_require__(325);
 var store = __webpack_require__(331);
@@ -83974,11 +83974,11 @@ var RESET_APP_DATA_TIMER =
  *           If you provide them, you will less benefit from our HA implementation
  */
 function AlgoliaSearchCore(applicationID, apiKey, opts) {
-  var debug = __webpack_require__(48)('algoliasearch');
+  var debug = __webpack_require__(47)('algoliasearch');
 
   var clone = __webpack_require__(16);
-  var isArray = __webpack_require__(46);
-  var map = __webpack_require__(47);
+  var isArray = __webpack_require__(45);
+  var map = __webpack_require__(46);
 
   var usage = 'Usage: algoliasearch(applicationID, apiKey, opts)';
 
@@ -84118,7 +84118,7 @@ AlgoliaSearchCore.prototype.addAlgoliaAgent = function(algoliaAgent) {
 AlgoliaSearchCore.prototype._jsonRequest = function(initialOpts) {
   this._checkAppIdData();
 
-  var requestDebug = __webpack_require__(48)('algoliasearch:' + initialOpts.url);
+  var requestDebug = __webpack_require__(47)('algoliasearch:' + initialOpts.url);
 
 
   var body;
@@ -84551,8 +84551,8 @@ AlgoliaSearchCore.prototype._computeRequestHeaders = function(options) {
  * @return {Promise|undefined} Returns a promise if no callback given
  */
 AlgoliaSearchCore.prototype.search = function(queries, opts, callback) {
-  var isArray = __webpack_require__(46);
-  var map = __webpack_require__(47);
+  var isArray = __webpack_require__(45);
+  var map = __webpack_require__(46);
 
   var usage = 'Usage: client.search(arrayOfQueries[, callback])';
 
@@ -84634,8 +84634,8 @@ AlgoliaSearchCore.prototype.search = function(queries, opts, callback) {
 * Pagination is not supported. The page and hitsPerPage parameters will be ignored.
 */
 AlgoliaSearchCore.prototype.searchForFacetValues = function(queries) {
-  var isArray = __webpack_require__(46);
-  var map = __webpack_require__(47);
+  var isArray = __webpack_require__(45);
+  var map = __webpack_require__(46);
 
   var usage = 'Usage: client.searchForFacetValues([{indexName, params: {facetName, facetQuery, ...params}}, ...queries])'; // eslint-disable-line max-len
 
@@ -84656,7 +84656,7 @@ AlgoliaSearchCore.prototype.searchForFacetValues = function(queries) {
     }
 
     var clone = __webpack_require__(16);
-    var omit = __webpack_require__(98);
+    var omit = __webpack_require__(100);
 
     var indexName = query.indexName;
     var params = query.params;
@@ -84919,7 +84919,7 @@ module.exports = function exitPromise(fn, _setTimeout) {
 /* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var buildSearchMethod = __webpack_require__(97);
+var buildSearchMethod = __webpack_require__(99);
 var deprecate = __webpack_require__(326);
 var deprecatedMessage = __webpack_require__(327);
 
@@ -85169,7 +85169,7 @@ IndexCore.prototype.browseFrom = function(cursor, callback) {
 */
 IndexCore.prototype.searchForFacetValues = function(params, callback) {
   var clone = __webpack_require__(16);
-  var omit = __webpack_require__(98);
+  var omit = __webpack_require__(100);
   var usage = 'Usage: index.searchForFacetValues({facetName, facetQuery, ...params}[, callback])';
 
   if (params.facetName === undefined || params.facetQuery === undefined) {
@@ -85258,8 +85258,8 @@ IndexCore.prototype.getObject = function(objectID, attrs, callback) {
 * @param objectIDs the array of unique identifier of objects to retrieve
 */
 IndexCore.prototype.getObjects = function(objectIDs, attributesToRetrieve, callback) {
-  var isArray = __webpack_require__(46);
-  var map = __webpack_require__(47);
+  var isArray = __webpack_require__(45);
+  var map = __webpack_require__(46);
 
   var usage = 'Usage: index.getObjects(arrayOfObjectIDs[, callback])';
 
@@ -85539,7 +85539,7 @@ module.exports = function isArguments(value) {
 /* 331 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {var debug = __webpack_require__(48)('algoliasearch:src/hostIndexState.js');
+/* WEBPACK VAR INJECTION */(function(global) {var debug = __webpack_require__(47)('algoliasearch:src/hostIndexState.js');
 var localStorageNamespace = 'algoliasearch-client-js';
 
 var store;
@@ -86008,8 +86008,8 @@ var Promise = global.Promise || __webpack_require__(336).Promise;
 // Browser implementation of the Algolia Search JavaScript client,
 // using XMLHttpRequest, XDomainRequest and JSONP as fallback
 module.exports = function createAlgoliasearch(AlgoliaSearch, uaSuffix) {
-  var inherits = __webpack_require__(64);
-  var errors = __webpack_require__(45);
+  var inherits = __webpack_require__(63);
+  var errors = __webpack_require__(44);
   var inlineHeaders = __webpack_require__(337);
   var jsonpRequest = __webpack_require__(339);
   var places = __webpack_require__(340);
@@ -86036,7 +86036,7 @@ module.exports = function createAlgoliasearch(AlgoliaSearch, uaSuffix) {
   // we expose into window no matter how we are used, this will allow
   // us to easily debug any website running algolia
   global.__algolia = {
-    debug: __webpack_require__(48),
+    debug: __webpack_require__(47),
     algoliasearch: algoliasearch
   };
 
@@ -87563,7 +87563,7 @@ var objectKeys = Object.keys || function (obj) {
 
 module.exports = jsonpRequest;
 
-var errors = __webpack_require__(45);
+var errors = __webpack_require__(44);
 
 var JSONPCounter = 0;
 
@@ -87693,7 +87693,7 @@ function jsonpRequest(url, opts, cb) {
 
 module.exports = createPlacesClient;
 
-var buildSearchMethod = __webpack_require__(97);
+var buildSearchMethod = __webpack_require__(99);
 
 function createPlacesClient(algoliasearch) {
   return function places(appID, apiKey, opts) {
@@ -87749,8 +87749,8 @@ module.exports = '3.29.0';
 
 var AlgoliaSearchHelper = __webpack_require__(343);
 
-var SearchParameters = __webpack_require__(65);
-var SearchResults = __webpack_require__(143);
+var SearchParameters = __webpack_require__(64);
+var SearchResults = __webpack_require__(145);
 
 /**
  * The algoliasearchHelper module is the function that will let its
@@ -87791,7 +87791,7 @@ function algoliasearchHelper(client, index, opts) {
  * @member module:algoliasearchHelper.version
  * @type {number}
  */
-algoliasearchHelper.version = __webpack_require__(162);
+algoliasearchHelper.version = __webpack_require__(164);
 
 /**
  * Constructor for the Helper.
@@ -87821,7 +87821,7 @@ algoliasearchHelper.SearchResults = SearchResults;
  * @type {object} {@link url}
  *
  */
-algoliasearchHelper.url = __webpack_require__(159);
+algoliasearchHelper.url = __webpack_require__(161);
 
 module.exports = algoliasearchHelper;
 
@@ -87833,21 +87833,21 @@ module.exports = algoliasearchHelper;
 "use strict";
 
 
-var SearchParameters = __webpack_require__(65);
-var SearchResults = __webpack_require__(143);
+var SearchParameters = __webpack_require__(64);
+var SearchResults = __webpack_require__(145);
 var DerivedHelper = __webpack_require__(485);
 var requestBuilder = __webpack_require__(487);
 
-var util = __webpack_require__(157);
-var events = __webpack_require__(158);
+var util = __webpack_require__(159);
+var events = __webpack_require__(160);
 
-var flatten = __webpack_require__(135);
+var flatten = __webpack_require__(137);
 var forEach = __webpack_require__(21);
 var isEmpty = __webpack_require__(41);
 var map = __webpack_require__(12);
 
-var url = __webpack_require__(159);
-var version = __webpack_require__(162);
+var url = __webpack_require__(161);
+var version = __webpack_require__(164);
 
 /**
  * Event triggered when a parameter is set or updated
@@ -89405,7 +89405,7 @@ module.exports = stubFalse;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(10),
-    isLength = __webpack_require__(66),
+    isLength = __webpack_require__(65),
     isObjectLike = __webpack_require__(4);
 
 /** `Object#toString` result references. */
@@ -89470,7 +89470,7 @@ module.exports = baseIsTypedArray;
 /* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(102);
+var overArg = __webpack_require__(104);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeKeys = overArg(Object.keys, Object);
@@ -89518,12 +89518,12 @@ module.exports = intersection;
 /* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var SetCache = __webpack_require__(103),
-    arrayIncludes = __webpack_require__(105),
+var SetCache = __webpack_require__(105),
+    arrayIncludes = __webpack_require__(107),
     arrayIncludesWith = __webpack_require__(378),
     arrayMap = __webpack_require__(11),
     baseUnary = __webpack_require__(32),
-    cacheHas = __webpack_require__(107);
+    cacheHas = __webpack_require__(109);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
 var nativeMin = Math.min;
@@ -89599,8 +89599,8 @@ module.exports = baseIntersection;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Hash = __webpack_require__(354),
-    ListCache = __webpack_require__(52),
-    Map = __webpack_require__(69);
+    ListCache = __webpack_require__(51),
+    Map = __webpack_require__(68);
 
 /**
  * Removes all key-value entries from the map.
@@ -89663,7 +89663,7 @@ module.exports = Hash;
 /* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(51);
+var nativeCreate = __webpack_require__(50);
 
 /**
  * Removes all key-value entries from the hash.
@@ -89687,7 +89687,7 @@ module.exports = hashClear;
 var isFunction = __webpack_require__(18),
     isMasked = __webpack_require__(357),
     isObject = __webpack_require__(5),
-    toSource = __webpack_require__(104);
+    toSource = __webpack_require__(106);
 
 /**
  * Used to match `RegExp`
@@ -89817,7 +89817,7 @@ module.exports = hashDelete;
 /* 361 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(51);
+var nativeCreate = __webpack_require__(50);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -89853,7 +89853,7 @@ module.exports = hashGet;
 /* 362 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(51);
+var nativeCreate = __webpack_require__(50);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -89882,7 +89882,7 @@ module.exports = hashHas;
 /* 363 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var nativeCreate = __webpack_require__(51);
+var nativeCreate = __webpack_require__(50);
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -89930,7 +89930,7 @@ module.exports = listCacheClear;
 /* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(53);
+var assocIndexOf = __webpack_require__(52);
 
 /** Used for built-in method references. */
 var arrayProto = Array.prototype;
@@ -89971,7 +89971,7 @@ module.exports = listCacheDelete;
 /* 366 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(53);
+var assocIndexOf = __webpack_require__(52);
 
 /**
  * Gets the list cache value for `key`.
@@ -89996,7 +89996,7 @@ module.exports = listCacheGet;
 /* 367 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(53);
+var assocIndexOf = __webpack_require__(52);
 
 /**
  * Checks if a list cache value for `key` exists.
@@ -90018,7 +90018,7 @@ module.exports = listCacheHas;
 /* 368 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assocIndexOf = __webpack_require__(53);
+var assocIndexOf = __webpack_require__(52);
 
 /**
  * Sets the list cache `key` to `value`.
@@ -90050,7 +90050,7 @@ module.exports = listCacheSet;
 /* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(54);
+var getMapData = __webpack_require__(53);
 
 /**
  * Removes `key` and its value from the map.
@@ -90095,7 +90095,7 @@ module.exports = isKeyable;
 /* 371 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(54);
+var getMapData = __webpack_require__(53);
 
 /**
  * Gets the map value for `key`.
@@ -90117,7 +90117,7 @@ module.exports = mapCacheGet;
 /* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(54);
+var getMapData = __webpack_require__(53);
 
 /**
  * Checks if a map value for `key` exists.
@@ -90139,7 +90139,7 @@ module.exports = mapCacheHas;
 /* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getMapData = __webpack_require__(54);
+var getMapData = __webpack_require__(53);
 
 /**
  * Sets the map `key` to `value`.
@@ -90287,8 +90287,8 @@ module.exports = arrayIncludesWith;
 /* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var constant = __webpack_require__(109),
-    defineProperty = __webpack_require__(110),
+var constant = __webpack_require__(111),
+    defineProperty = __webpack_require__(112),
     identity = __webpack_require__(14);
 
 /**
@@ -90315,7 +90315,7 @@ module.exports = baseSetToString;
 /* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isArrayLikeObject = __webpack_require__(112);
+var isArrayLikeObject = __webpack_require__(114);
 
 /**
  * Casts `value` to an empty array if it's not an array like object.
@@ -90336,7 +90336,7 @@ module.exports = castArrayLikeObject;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseForOwn = __webpack_require__(34),
-    castFunction = __webpack_require__(114);
+    castFunction = __webpack_require__(116);
 
 /**
  * Iterates over own enumerable string keyed properties of an object and
@@ -90446,7 +90446,7 @@ module.exports = createBaseEach;
 /* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseEach = __webpack_require__(55);
+var baseEach = __webpack_require__(54);
 
 /**
  * The base implementation of `_.filter` without support for iteratee shorthands.
@@ -90475,7 +90475,7 @@ module.exports = baseFilter;
 
 var baseIsMatch = __webpack_require__(386),
     getMatchData = __webpack_require__(401),
-    matchesStrictComparable = __webpack_require__(123);
+    matchesStrictComparable = __webpack_require__(125);
 
 /**
  * The base implementation of `_.matches` which doesn't clone `source`.
@@ -90501,8 +90501,8 @@ module.exports = baseMatches;
 /* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(56),
-    baseIsEqual = __webpack_require__(74);
+var Stack = __webpack_require__(55),
+    baseIsEqual = __webpack_require__(73);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1,
@@ -90569,7 +90569,7 @@ module.exports = baseIsMatch;
 /* 387 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(52);
+var ListCache = __webpack_require__(51);
 
 /**
  * Removes all key-value entries from the stack.
@@ -90654,9 +90654,9 @@ module.exports = stackHas;
 /* 391 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ListCache = __webpack_require__(52),
-    Map = __webpack_require__(69),
-    MapCache = __webpack_require__(68);
+var ListCache = __webpack_require__(51),
+    Map = __webpack_require__(68),
+    MapCache = __webpack_require__(67);
 
 /** Used as the size to enable large array optimizations. */
 var LARGE_ARRAY_SIZE = 200;
@@ -90694,14 +90694,14 @@ module.exports = stackSet;
 /* 392 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(56),
-    equalArrays = __webpack_require__(116),
+var Stack = __webpack_require__(55),
+    equalArrays = __webpack_require__(118),
     equalByTag = __webpack_require__(394),
     equalObjects = __webpack_require__(397),
     getTag = __webpack_require__(35),
     isArray = __webpack_require__(1),
     isBuffer = __webpack_require__(30),
-    isTypedArray = __webpack_require__(49);
+    isTypedArray = __webpack_require__(48);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -90813,9 +90813,9 @@ module.exports = arraySome;
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(17),
-    Uint8Array = __webpack_require__(117),
+    Uint8Array = __webpack_require__(119),
     eq = __webpack_require__(19),
-    equalArrays = __webpack_require__(116),
+    equalArrays = __webpack_require__(118),
     mapToArray = __webpack_require__(395),
     setToArray = __webpack_require__(396);
 
@@ -90978,7 +90978,7 @@ module.exports = setToArray;
 /* 397 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var getAllKeys = __webpack_require__(118);
+var getAllKeys = __webpack_require__(120);
 
 /** Used to compose bitmasks for value comparisons. */
 var COMPARE_PARTIAL_FLAG = 1;
@@ -91112,7 +91112,7 @@ module.exports = Set;
 /* 401 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isStrictComparable = __webpack_require__(122),
+var isStrictComparable = __webpack_require__(124),
     keys = __webpack_require__(8);
 
 /**
@@ -91142,12 +91142,12 @@ module.exports = getMatchData;
 /* 402 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(74),
-    get = __webpack_require__(124),
-    hasIn = __webpack_require__(125),
-    isKey = __webpack_require__(77),
-    isStrictComparable = __webpack_require__(122),
-    matchesStrictComparable = __webpack_require__(123),
+var baseIsEqual = __webpack_require__(73),
+    get = __webpack_require__(126),
+    hasIn = __webpack_require__(127),
+    isKey = __webpack_require__(76),
+    isStrictComparable = __webpack_require__(124),
+    matchesStrictComparable = __webpack_require__(125),
     toKey = __webpack_require__(23);
 
 /** Used to compose bitmasks for value comparisons. */
@@ -91246,7 +91246,7 @@ module.exports = memoizeCapped;
 /* 405 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var MapCache = __webpack_require__(68);
+var MapCache = __webpack_require__(67);
 
 /** Error message constants. */
 var FUNC_ERROR_TEXT = 'Expected a function';
@@ -91348,7 +91348,7 @@ var castPath = __webpack_require__(22),
     isArguments = __webpack_require__(29),
     isArray = __webpack_require__(1),
     isIndex = __webpack_require__(31),
-    isLength = __webpack_require__(66),
+    isLength = __webpack_require__(65),
     toKey = __webpack_require__(23);
 
 /**
@@ -91391,7 +91391,7 @@ module.exports = hasPath;
 
 var baseProperty = __webpack_require__(409),
     basePropertyDeep = __webpack_require__(410),
-    isKey = __webpack_require__(77),
+    isKey = __webpack_require__(76),
     toKey = __webpack_require__(23);
 
 /**
@@ -91447,7 +91447,7 @@ module.exports = baseProperty;
 /* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(57);
+var baseGet = __webpack_require__(56);
 
 /**
  * A specialized version of `baseProperty` which supports deep paths.
@@ -91530,21 +91530,21 @@ module.exports = baseReduce;
 /* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(56),
-    arrayEach = __webpack_require__(72),
-    assignValue = __webpack_require__(80),
+var Stack = __webpack_require__(55),
+    arrayEach = __webpack_require__(71),
+    assignValue = __webpack_require__(79),
     baseAssign = __webpack_require__(414),
     baseAssignIn = __webpack_require__(415),
-    cloneBuffer = __webpack_require__(128),
-    copyArray = __webpack_require__(58),
+    cloneBuffer = __webpack_require__(130),
+    copyArray = __webpack_require__(57),
     copySymbols = __webpack_require__(418),
     copySymbolsIn = __webpack_require__(419),
-    getAllKeys = __webpack_require__(118),
-    getAllKeysIn = __webpack_require__(82),
+    getAllKeys = __webpack_require__(120),
+    getAllKeysIn = __webpack_require__(81),
     getTag = __webpack_require__(35),
     initCloneArray = __webpack_require__(420),
     initCloneByTag = __webpack_require__(421),
-    initCloneObject = __webpack_require__(131),
+    initCloneObject = __webpack_require__(133),
     isArray = __webpack_require__(1),
     isBuffer = __webpack_require__(30),
     isMap = __webpack_require__(425),
@@ -91754,7 +91754,7 @@ module.exports = baseAssignIn;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isObject = __webpack_require__(5),
-    isPrototype = __webpack_require__(50),
+    isPrototype = __webpack_require__(49),
     nativeKeysIn = __webpack_require__(417);
 
 /** Used for built-in method references. */
@@ -91819,7 +91819,7 @@ module.exports = nativeKeysIn;
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(24),
-    getSymbols = __webpack_require__(76);
+    getSymbols = __webpack_require__(75);
 
 /**
  * Copies own symbols of `source` to `object`.
@@ -91841,7 +91841,7 @@ module.exports = copySymbols;
 /***/ (function(module, exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(24),
-    getSymbolsIn = __webpack_require__(129);
+    getSymbolsIn = __webpack_require__(131);
 
 /**
  * Copies own and inherited symbols of `source` to `object`.
@@ -91894,11 +91894,11 @@ module.exports = initCloneArray;
 /* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(83),
+var cloneArrayBuffer = __webpack_require__(82),
     cloneDataView = __webpack_require__(422),
     cloneRegExp = __webpack_require__(423),
     cloneSymbol = __webpack_require__(424),
-    cloneTypedArray = __webpack_require__(130);
+    cloneTypedArray = __webpack_require__(132);
 
 /** `Object#toString` result references. */
 var boolTag = '[object Boolean]',
@@ -91977,7 +91977,7 @@ module.exports = initCloneByTag;
 /* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var cloneArrayBuffer = __webpack_require__(83);
+var cloneArrayBuffer = __webpack_require__(82);
 
 /**
  * Creates a clone of `dataView`.
@@ -92048,7 +92048,7 @@ module.exports = cloneSymbol;
 
 var baseIsMap = __webpack_require__(426),
     baseUnary = __webpack_require__(32),
-    nodeUtil = __webpack_require__(67);
+    nodeUtil = __webpack_require__(66);
 
 /* Node.js helper references. */
 var nodeIsMap = nodeUtil && nodeUtil.isMap;
@@ -92105,7 +92105,7 @@ module.exports = baseIsMap;
 
 var baseIsSet = __webpack_require__(428),
     baseUnary = __webpack_require__(32),
-    nodeUtil = __webpack_require__(67);
+    nodeUtil = __webpack_require__(66);
 
 /* Node.js helper references. */
 var nodeIsSet = nodeUtil && nodeUtil.isSet;
@@ -92161,7 +92161,7 @@ module.exports = baseIsSet;
 /***/ (function(module, exports, __webpack_require__) {
 
 var castPath = __webpack_require__(22),
-    last = __webpack_require__(132),
+    last = __webpack_require__(134),
     parent = __webpack_require__(430),
     toKey = __webpack_require__(23);
 
@@ -92186,8 +92186,8 @@ module.exports = baseUnset;
 /* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGet = __webpack_require__(57),
-    baseSlice = __webpack_require__(133);
+var baseGet = __webpack_require__(56),
+    baseSlice = __webpack_require__(135);
 
 /**
  * Gets the parent value at `path` of `object`.
@@ -92208,7 +92208,7 @@ module.exports = parent;
 /* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isPlainObject = __webpack_require__(84);
+var isPlainObject = __webpack_require__(83);
 
 /**
  * Used by `_.omit` to customize its `_.cloneDeep` use to only clone plain
@@ -92230,7 +92230,7 @@ module.exports = customOmitClone;
 /* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayPush = __webpack_require__(75),
+var arrayPush = __webpack_require__(74),
     isFlattenable = __webpack_require__(433);
 
 /**
@@ -92420,7 +92420,7 @@ module.exports = toNumber;
 /* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isNumber = __webpack_require__(136);
+var isNumber = __webpack_require__(138);
 
 /**
  * Checks if `value` is `NaN`.
@@ -92464,7 +92464,7 @@ module.exports = isNaN;
 /* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseIsEqual = __webpack_require__(74);
+var baseIsEqual = __webpack_require__(73);
 
 /**
  * Performs a deep comparison between two values to determine if they are
@@ -92536,7 +92536,7 @@ module.exports = createFind;
 /* 439 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseSlice = __webpack_require__(133);
+var baseSlice = __webpack_require__(135);
 
 /**
  * Casts `array` to a slice if it's needed.
@@ -92731,13 +92731,13 @@ module.exports = unicodeToArray;
 /* 446 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Stack = __webpack_require__(56),
-    assignMergeValue = __webpack_require__(141),
-    baseFor = __webpack_require__(113),
+var Stack = __webpack_require__(55),
+    assignMergeValue = __webpack_require__(143),
+    baseFor = __webpack_require__(115),
     baseMergeDeep = __webpack_require__(447),
     isObject = __webpack_require__(5),
     keysIn = __webpack_require__(39),
-    safeGet = __webpack_require__(142);
+    safeGet = __webpack_require__(144);
 
 /**
  * The base implementation of `_.merge` without support for multiple sources.
@@ -92779,20 +92779,20 @@ module.exports = baseMerge;
 /* 447 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignMergeValue = __webpack_require__(141),
-    cloneBuffer = __webpack_require__(128),
-    cloneTypedArray = __webpack_require__(130),
-    copyArray = __webpack_require__(58),
-    initCloneObject = __webpack_require__(131),
+var assignMergeValue = __webpack_require__(143),
+    cloneBuffer = __webpack_require__(130),
+    cloneTypedArray = __webpack_require__(132),
+    copyArray = __webpack_require__(57),
+    initCloneObject = __webpack_require__(133),
     isArguments = __webpack_require__(29),
     isArray = __webpack_require__(1),
-    isArrayLikeObject = __webpack_require__(112),
+    isArrayLikeObject = __webpack_require__(114),
     isBuffer = __webpack_require__(30),
     isFunction = __webpack_require__(18),
     isObject = __webpack_require__(5),
-    isPlainObject = __webpack_require__(84),
-    isTypedArray = __webpack_require__(49),
-    safeGet = __webpack_require__(142),
+    isPlainObject = __webpack_require__(83),
+    isTypedArray = __webpack_require__(48),
+    safeGet = __webpack_require__(144),
     toPlainObject = __webpack_require__(448);
 
 /**
@@ -92918,7 +92918,7 @@ module.exports = toPlainObject;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(20),
-    isIterateeCall = __webpack_require__(140);
+    isIterateeCall = __webpack_require__(142);
 
 /**
  * Creates a function like `_.assign`.
@@ -92964,7 +92964,7 @@ module.exports = createAssigner;
 
 
 var map = __webpack_require__(12);
-var isNumber = __webpack_require__(136);
+var isNumber = __webpack_require__(138);
 var isString = __webpack_require__(42);
 function valToNumber(v) {
   if (isNumber(v)) {
@@ -92989,10 +92989,10 @@ module.exports = valToNumber;
 
 
 var forEach = __webpack_require__(21);
-var filter = __webpack_require__(73);
+var filter = __webpack_require__(72);
 var map = __webpack_require__(12);
 var isEmpty = __webpack_require__(41);
-var indexOf = __webpack_require__(60);
+var indexOf = __webpack_require__(59);
 
 function filterState(state, filters) {
   var partialState = {};
@@ -93074,15 +93074,15 @@ module.exports = filterState;
  * @typedef {Object.<string, SearchParameters.refinementList.Refinements>} SearchParameters.refinementList.RefinementList
  */
 
-var isUndefined = __webpack_require__(137);
+var isUndefined = __webpack_require__(139);
 var isString = __webpack_require__(42);
 var isFunction = __webpack_require__(18);
 var isEmpty = __webpack_require__(41);
-var defaults = __webpack_require__(85);
+var defaults = __webpack_require__(84);
 
 var reduce = __webpack_require__(37);
-var filter = __webpack_require__(73);
-var omit = __webpack_require__(127);
+var filter = __webpack_require__(72);
+var omit = __webpack_require__(129);
 
 var lib = {
   /**
@@ -93194,7 +93194,7 @@ var lib = {
    * @return {boolean}
    */
   isRefined: function isRefined(refinementList, attribute, refinementValue) {
-    var indexOf = __webpack_require__(60);
+    var indexOf = __webpack_require__(59);
 
     var containsRefinements = !!refinementList[attribute] &&
       refinementList[attribute].length > 0;
@@ -93448,7 +93448,7 @@ module.exports = baseValues;
 
 var arrayMap = __webpack_require__(11),
     baseIteratee = __webpack_require__(7),
-    baseMap = __webpack_require__(126),
+    baseMap = __webpack_require__(128),
     baseSortBy = __webpack_require__(460),
     baseUnary = __webpack_require__(32),
     compareMultiple = __webpack_require__(461),
@@ -93611,7 +93611,7 @@ module.exports = compareAscending;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(20),
-    createWrap = __webpack_require__(87),
+    createWrap = __webpack_require__(86),
     getHolder = __webpack_require__(43),
     replaceHolders = __webpack_require__(25);
 
@@ -93666,7 +93666,7 @@ module.exports = partial;
 /* 464 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var createCtor = __webpack_require__(62),
+var createCtor = __webpack_require__(61),
     root = __webpack_require__(2);
 
 /** Used to compose bitmasks for function metadata. */
@@ -93700,10 +93700,10 @@ module.exports = createBind;
 /* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var apply = __webpack_require__(70),
-    createCtor = __webpack_require__(62),
-    createHybrid = __webpack_require__(147),
-    createRecurry = __webpack_require__(150),
+var apply = __webpack_require__(69),
+    createCtor = __webpack_require__(61),
+    createHybrid = __webpack_require__(149),
+    createRecurry = __webpack_require__(152),
     getHolder = __webpack_require__(43),
     replaceHolders = __webpack_require__(25),
     root = __webpack_require__(2);
@@ -93779,8 +93779,8 @@ module.exports = countHolders;
 /* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var LazyWrapper = __webpack_require__(88),
-    getData = __webpack_require__(151),
+var LazyWrapper = __webpack_require__(87),
+    getData = __webpack_require__(153),
     getFuncName = __webpack_require__(469),
     lodash = __webpack_require__(471);
 
@@ -93883,9 +93883,9 @@ module.exports = realNames;
 /* 471 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var LazyWrapper = __webpack_require__(88),
-    LodashWrapper = __webpack_require__(152),
-    baseLodash = __webpack_require__(89),
+var LazyWrapper = __webpack_require__(87),
+    LodashWrapper = __webpack_require__(154),
+    baseLodash = __webpack_require__(88),
     isArray = __webpack_require__(1),
     isObjectLike = __webpack_require__(4),
     wrapperClone = __webpack_require__(472);
@@ -94036,9 +94036,9 @@ module.exports = lodash;
 /* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var LazyWrapper = __webpack_require__(88),
-    LodashWrapper = __webpack_require__(152),
-    copyArray = __webpack_require__(58);
+var LazyWrapper = __webpack_require__(87),
+    LodashWrapper = __webpack_require__(154),
+    copyArray = __webpack_require__(57);
 
 /**
  * Creates a clone of `wrapper`.
@@ -94117,8 +94117,8 @@ module.exports = insertWrapDetails;
 /* 475 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var arrayEach = __webpack_require__(72),
-    arrayIncludes = __webpack_require__(105);
+var arrayEach = __webpack_require__(71),
+    arrayIncludes = __webpack_require__(107);
 
 /** Used to compose bitmasks for function metadata. */
 var WRAP_BIND_FLAG = 1,
@@ -94169,7 +94169,7 @@ module.exports = updateWrapDetails;
 /* 476 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var copyArray = __webpack_require__(58),
+var copyArray = __webpack_require__(57),
     isIndex = __webpack_require__(31);
 
 /* Built-in method references for those with the same name as other `lodash` methods. */
@@ -94204,8 +94204,8 @@ module.exports = reorder;
 /* 477 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var apply = __webpack_require__(70),
-    createCtor = __webpack_require__(62),
+var apply = __webpack_require__(69),
+    createCtor = __webpack_require__(61),
     root = __webpack_require__(2);
 
 /** Used to compose bitmasks for function metadata. */
@@ -94253,8 +94253,8 @@ module.exports = createPartial;
 /* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var composeArgs = __webpack_require__(148),
-    composeArgsRight = __webpack_require__(149),
+var composeArgs = __webpack_require__(150),
+    composeArgsRight = __webpack_require__(151),
     replaceHolders = __webpack_require__(25);
 
 /** Used as the internal argument placeholder. */
@@ -94350,7 +94350,7 @@ module.exports = mergeData;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(20),
-    createWrap = __webpack_require__(87),
+    createWrap = __webpack_require__(86),
     getHolder = __webpack_require__(43),
     replaceHolders = __webpack_require__(25);
 
@@ -94405,9 +94405,9 @@ module.exports = partialRight;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseClamp = __webpack_require__(481),
-    baseToString = __webpack_require__(79),
+    baseToString = __webpack_require__(78),
     toInteger = __webpack_require__(40),
-    toString = __webpack_require__(78);
+    toString = __webpack_require__(77);
 
 /**
  * Checks if `string` starts with the given target string.
@@ -94482,15 +94482,15 @@ module.exports = baseClamp;
 
 module.exports = generateTrees;
 
-var last = __webpack_require__(132);
+var last = __webpack_require__(134);
 var map = __webpack_require__(12);
 var reduce = __webpack_require__(37);
-var orderBy = __webpack_require__(144);
-var trim = __webpack_require__(139);
-var find = __webpack_require__(61);
+var orderBy = __webpack_require__(146);
+var trim = __webpack_require__(141);
+var find = __webpack_require__(60);
 var pickBy = __webpack_require__(483);
 
-var prepareHierarchicalFacetSortBy = __webpack_require__(155);
+var prepareHierarchicalFacetSortBy = __webpack_require__(157);
 
 function generateTrees(state) {
   return function generate(hierarchicalFacetResult, hierarchicalFacetIndex) {
@@ -94611,8 +94611,8 @@ function formatHierarchicalFacetValue(hierarchicalSeparator, currentRefinement) 
 
 var arrayMap = __webpack_require__(11),
     baseIteratee = __webpack_require__(7),
-    basePickBy = __webpack_require__(156),
-    getAllKeysIn = __webpack_require__(82);
+    basePickBy = __webpack_require__(158),
+    getAllKeysIn = __webpack_require__(81);
 
 /**
  * Creates an object composed of the `object` properties `predicate` returns
@@ -94652,7 +94652,7 @@ module.exports = pickBy;
 /* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var assignValue = __webpack_require__(80),
+var assignValue = __webpack_require__(79),
     castPath = __webpack_require__(22),
     isIndex = __webpack_require__(31),
     isObject = __webpack_require__(5),
@@ -94707,8 +94707,8 @@ module.exports = baseSet;
 
 "use strict";
 
-var util = __webpack_require__(157);
-var events = __webpack_require__(158);
+var util = __webpack_require__(159);
+var events = __webpack_require__(160);
 
 /**
  * A DerivedHelper is a way to create sub requests to
@@ -94766,7 +94766,7 @@ module.exports = function isBuffer(arg) {
 var forEach = __webpack_require__(21);
 var map = __webpack_require__(12);
 var reduce = __webpack_require__(37);
-var merge = __webpack_require__(86);
+var merge = __webpack_require__(85);
 
 var requestBuilder = {
   /**
@@ -95080,7 +95080,7 @@ module.exports = requestBuilder;
 "use strict";
 
 
-var invert = __webpack_require__(160);
+var invert = __webpack_require__(162);
 var keys = __webpack_require__(8);
 
 var keys2Short = {
@@ -95224,7 +95224,7 @@ module.exports = baseInverter;
 
 var stringify = __webpack_require__(492);
 var parse = __webpack_require__(493);
-var formats = __webpack_require__(161);
+var formats = __webpack_require__(163);
 
 module.exports = {
     formats: formats,
@@ -95240,8 +95240,8 @@ module.exports = {
 "use strict";
 
 
-var utils = __webpack_require__(90);
-var formats = __webpack_require__(161);
+var utils = __webpack_require__(89);
+var formats = __webpack_require__(163);
 
 var arrayPrefixGenerators = {
     brackets: function brackets(prefix) { // eslint-disable-line func-name-matching
@@ -95457,7 +95457,7 @@ module.exports = function (object, opts) {
 "use strict";
 
 
-var utils = __webpack_require__(90);
+var utils = __webpack_require__(89);
 
 var has = Object.prototype.hasOwnProperty;
 
@@ -95636,7 +95636,7 @@ module.exports = function (str, opts) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(20),
-    createWrap = __webpack_require__(87),
+    createWrap = __webpack_require__(86),
     getHolder = __webpack_require__(43),
     replaceHolders = __webpack_require__(25);
 
@@ -95699,7 +95699,7 @@ module.exports = bind;
 /***/ (function(module, exports, __webpack_require__) {
 
 var basePick = __webpack_require__(496),
-    flatRest = __webpack_require__(134);
+    flatRest = __webpack_require__(136);
 
 /**
  * Creates an object composed of the picked `object` properties.
@@ -95729,8 +95729,8 @@ module.exports = pick;
 /* 496 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var basePickBy = __webpack_require__(156),
-    hasIn = __webpack_require__(125);
+var basePickBy = __webpack_require__(158),
+    hasIn = __webpack_require__(127);
 
 /**
  * The base implementation of `_.pick` without support for individual
@@ -95937,7 +95937,7 @@ var content = __webpack_require__(501);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(165)("24573e7e", content, false, {});
+var update = __webpack_require__(91)("24573e7e", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -95956,7 +95956,7 @@ if(false) {
 /* 501 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(164)(false);
+exports = module.exports = __webpack_require__(90)(false);
 // imports
 
 
@@ -96009,7 +96009,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Reply___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Reply__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_NewReply__ = __webpack_require__(509);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_NewReply___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_NewReply__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_simple_spinner__ = __webpack_require__(518);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_simple_spinner__ = __webpack_require__(516);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_simple_spinner___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_simple_spinner__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -96203,6 +96203,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     ago: function ago() {
       return __WEBPACK_IMPORTED_MODULE_1_moment___default()(this.data.created_at).fromNow();
+    },
+    replyId: function replyId() {
+      return '#reply-' + this.id;
+    },
+    avatar: function avatar() {
+      return window.App.baseUrl + '/' + this.data.owner.profile.avatar;
     }
   },
   methods: {
@@ -96657,7 +96663,7 @@ var render = function() {
   return _c("li", { staticClass: "comment" }, [
     _c(
       "div",
-      { staticClass: "comment-body clearfix", attrs: { id: "'reply-' + id" } },
+      { staticClass: "comment-body clearfix", attrs: { id: _vm.replyId } },
       [
         _c("div", { staticClass: "avatar" }, [
           _c(
@@ -96669,7 +96675,7 @@ var render = function() {
                 "original-title": _vm.data.owner.name
               }
             },
-            [_c("img", { attrs: { alt: "" } })]
+            [_c("img", { attrs: { alt: "", src: _vm.avatar } })]
           )
         ]),
         _vm._v(" "),
@@ -96811,7 +96817,7 @@ var normalizeComponent = __webpack_require__(26)
 /* script */
 var __vue_script__ = __webpack_require__(512)
 /* template */
-var __vue_template__ = __webpack_require__(517)
+var __vue_template__ = __webpack_require__(515)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -96860,7 +96866,7 @@ var content = __webpack_require__(511);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(165)("386641e0", content, false, {});
+var update = __webpack_require__(91)("386641e0", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
@@ -96879,7 +96885,7 @@ if(false) {
 /* 511 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(164)(false);
+exports = module.exports = __webpack_require__(90)(false);
 // imports
 
 
@@ -96895,12 +96901,8 @@ exports.push([module.i, "\n#app[data-v-261802be] {\r\n  font-family: 'Avenir', H
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery_caret__ = __webpack_require__(513);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery_caret___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery_caret__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_at_js__ = __webpack_require__(514);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_at_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_at_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_at_dist_vue_at_textarea__ = __webpack_require__(515);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_at_dist_vue_at_textarea___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_at_dist_vue_at_textarea__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_at_dist_vue_at_textarea__ = __webpack_require__(513);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_at_dist_vue_at_textarea___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_at_dist_vue_at_textarea__);
 //
 //
 //
@@ -96934,12 +96936,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-
-
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    components: { AtTa: __WEBPACK_IMPORTED_MODULE_2_vue_at_dist_vue_at_textarea___default.a },
+    components: { AtTa: __WEBPACK_IMPORTED_MODULE_0_vue_at_dist_vue_at_textarea___default.a },
     data: function data() {
         return {
             'message': '',
@@ -96955,6 +96956,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             return window.App.signedIn;
         }
     },
+    mounted: function mounted() {
+        this.getUser();
+    },
+
     // mounted() {
     //     $('#comment').atwho({
     //             at: "@",
@@ -96974,14 +96979,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         addReply: function addReply() {
             var _this = this;
 
-            axios.post(this.endpoint, { 'message': this.message }).then(function (res) {
-                _this.message = '';
-                toastr.success('Your reply has been posted !');
-                _this.$emit('added', res.data);
-            });
+            if (this.message != '') {
+                axios.post(this.endpoint, { 'message': this.message }).then(function (res) {
+                    _this.message = '';
+                    toastr.success('Your reply has been posted !');
+                    _this.$emit('added', res.data);
+                });
+            }
         },
         test1: function test1() {
             console.log('ok');
+        },
+        getUser: function getUser() {
+            var _this2 = this;
+
+            axios.get('/users').then(function (res) {
+                _this2.members = res.data;
+            });
         }
     }
 });
@@ -96990,1676 +97004,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 513 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory) {
-  if (true) {
-    // AMD. Register as an anonymous module.
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(44)], __WEBPACK_AMD_DEFINE_RESULT__ = (function ($) {
-      return (root.returnExportsGlobal = factory($));
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like enviroments that support module.exports,
-    // like Node.
-    module.exports = factory(require("jquery"));
-  } else {
-    factory(jQuery);
-  }
-}(this, function ($) {
-
-/*
-  Implement Github like autocomplete mentions
-  http://ichord.github.com/At.js
-
-  Copyright (c) 2013 chord.luo@gmail.com
-  Licensed under the MIT license.
-*/
-
-/*
-本插件操作 textarea 或者 input 内的插入符
-只实现了获得插入符在文本框中的位置，我设置
-插入符的位置.
-*/
-
-"use strict";
-var EditableCaret, InputCaret, Mirror, Utils, discoveryIframeOf, methods, oDocument, oFrame, oWindow, pluginName, setContextBy;
-
-pluginName = 'caret';
-
-EditableCaret = (function() {
-  function EditableCaret($inputor) {
-    this.$inputor = $inputor;
-    this.domInputor = this.$inputor[0];
-  }
-
-  EditableCaret.prototype.setPos = function(pos) {
-    var fn, found, offset, sel;
-    if (sel = oWindow.getSelection()) {
-      offset = 0;
-      found = false;
-      (fn = function(pos, parent) {
-        var node, range, _i, _len, _ref, _results;
-        _ref = parent.childNodes;
-        _results = [];
-        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-          node = _ref[_i];
-          if (found) {
-            break;
-          }
-          if (node.nodeType === 3) {
-            if (offset + node.length >= pos) {
-              found = true;
-              range = oDocument.createRange();
-              range.setStart(node, pos - offset);
-              sel.removeAllRanges();
-              sel.addRange(range);
-              break;
-            } else {
-              _results.push(offset += node.length);
-            }
-          } else {
-            _results.push(fn(pos, node));
-          }
-        }
-        return _results;
-      })(pos, this.domInputor);
-    }
-    return this.domInputor;
-  };
-
-  EditableCaret.prototype.getIEPosition = function() {
-    return this.getPosition();
-  };
-
-  EditableCaret.prototype.getPosition = function() {
-    var inputor_offset, offset;
-    offset = this.getOffset();
-    inputor_offset = this.$inputor.offset();
-    offset.left -= inputor_offset.left;
-    offset.top -= inputor_offset.top;
-    return offset;
-  };
-
-  EditableCaret.prototype.getOldIEPos = function() {
-    var preCaretTextRange, textRange;
-    textRange = oDocument.selection.createRange();
-    preCaretTextRange = oDocument.body.createTextRange();
-    preCaretTextRange.moveToElementText(this.domInputor);
-    preCaretTextRange.setEndPoint("EndToEnd", textRange);
-    return preCaretTextRange.text.length;
-  };
-
-  EditableCaret.prototype.getPos = function() {
-    var clonedRange, pos, range;
-    if (range = this.range()) {
-      clonedRange = range.cloneRange();
-      clonedRange.selectNodeContents(this.domInputor);
-      clonedRange.setEnd(range.endContainer, range.endOffset);
-      pos = clonedRange.toString().length;
-      clonedRange.detach();
-      return pos;
-    } else if (oDocument.selection) {
-      return this.getOldIEPos();
-    }
-  };
-
-  EditableCaret.prototype.getOldIEOffset = function() {
-    var range, rect;
-    range = oDocument.selection.createRange().duplicate();
-    range.moveStart("character", -1);
-    rect = range.getBoundingClientRect();
-    return {
-      height: rect.bottom - rect.top,
-      left: rect.left,
-      top: rect.top
-    };
-  };
-
-  EditableCaret.prototype.getOffset = function(pos) {
-    var clonedRange, offset, range, rect, shadowCaret;
-    if (oWindow.getSelection && (range = this.range())) {
-      if (range.endOffset - 1 > 0 && range.endContainer !== this.domInputor) {
-        clonedRange = range.cloneRange();
-        clonedRange.setStart(range.endContainer, range.endOffset - 1);
-        clonedRange.setEnd(range.endContainer, range.endOffset);
-        rect = clonedRange.getBoundingClientRect();
-        offset = {
-          height: rect.height,
-          left: rect.left + rect.width,
-          top: rect.top
-        };
-        clonedRange.detach();
-      }
-      if (!offset || (offset != null ? offset.height : void 0) === 0) {
-        clonedRange = range.cloneRange();
-        shadowCaret = $(oDocument.createTextNode("|"));
-        clonedRange.insertNode(shadowCaret[0]);
-        clonedRange.selectNode(shadowCaret[0]);
-        rect = clonedRange.getBoundingClientRect();
-        offset = {
-          height: rect.height,
-          left: rect.left,
-          top: rect.top
-        };
-        shadowCaret.remove();
-        clonedRange.detach();
-      }
-    } else if (oDocument.selection) {
-      offset = this.getOldIEOffset();
-    }
-    if (offset) {
-      offset.top += $(oWindow).scrollTop();
-      offset.left += $(oWindow).scrollLeft();
-    }
-    return offset;
-  };
-
-  EditableCaret.prototype.range = function() {
-    var sel;
-    if (!oWindow.getSelection) {
-      return;
-    }
-    sel = oWindow.getSelection();
-    if (sel.rangeCount > 0) {
-      return sel.getRangeAt(0);
-    } else {
-      return null;
-    }
-  };
-
-  return EditableCaret;
-
-})();
-
-InputCaret = (function() {
-  function InputCaret($inputor) {
-    this.$inputor = $inputor;
-    this.domInputor = this.$inputor[0];
-  }
-
-  InputCaret.prototype.getIEPos = function() {
-    var endRange, inputor, len, normalizedValue, pos, range, textInputRange;
-    inputor = this.domInputor;
-    range = oDocument.selection.createRange();
-    pos = 0;
-    if (range && range.parentElement() === inputor) {
-      normalizedValue = inputor.value.replace(/\r\n/g, "\n");
-      len = normalizedValue.length;
-      textInputRange = inputor.createTextRange();
-      textInputRange.moveToBookmark(range.getBookmark());
-      endRange = inputor.createTextRange();
-      endRange.collapse(false);
-      if (textInputRange.compareEndPoints("StartToEnd", endRange) > -1) {
-        pos = len;
-      } else {
-        pos = -textInputRange.moveStart("character", -len);
-      }
-    }
-    return pos;
-  };
-
-  InputCaret.prototype.getPos = function() {
-    if (oDocument.selection) {
-      return this.getIEPos();
-    } else {
-      return this.domInputor.selectionStart;
-    }
-  };
-
-  InputCaret.prototype.setPos = function(pos) {
-    var inputor, range;
-    inputor = this.domInputor;
-    if (oDocument.selection) {
-      range = inputor.createTextRange();
-      range.move("character", pos);
-      range.select();
-    } else if (inputor.setSelectionRange) {
-      inputor.setSelectionRange(pos, pos);
-    }
-    return inputor;
-  };
-
-  InputCaret.prototype.getIEOffset = function(pos) {
-    var h, textRange, x, y;
-    textRange = this.domInputor.createTextRange();
-    pos || (pos = this.getPos());
-    textRange.move('character', pos);
-    x = textRange.boundingLeft;
-    y = textRange.boundingTop;
-    h = textRange.boundingHeight;
-    return {
-      left: x,
-      top: y,
-      height: h
-    };
-  };
-
-  InputCaret.prototype.getOffset = function(pos) {
-    var $inputor, offset, position;
-    $inputor = this.$inputor;
-    if (oDocument.selection) {
-      offset = this.getIEOffset(pos);
-      offset.top += $(oWindow).scrollTop() + $inputor.scrollTop();
-      offset.left += $(oWindow).scrollLeft() + $inputor.scrollLeft();
-      return offset;
-    } else {
-      offset = $inputor.offset();
-      position = this.getPosition(pos);
-      return offset = {
-        left: offset.left + position.left - $inputor.scrollLeft(),
-        top: offset.top + position.top - $inputor.scrollTop(),
-        height: position.height
-      };
-    }
-  };
-
-  InputCaret.prototype.getPosition = function(pos) {
-    var $inputor, at_rect, end_range, format, html, mirror, start_range;
-    $inputor = this.$inputor;
-    format = function(value) {
-      value = value.replace(/<|>|`|"|&/g, '?').replace(/\r\n|\r|\n/g, "<br/>");
-      if (/firefox/i.test(navigator.userAgent)) {
-        value = value.replace(/\s/g, '&nbsp;');
-      }
-      return value;
-    };
-    if (pos === void 0) {
-      pos = this.getPos();
-    }
-    start_range = $inputor.val().slice(0, pos);
-    end_range = $inputor.val().slice(pos);
-    html = "<span style='position: relative; display: inline;'>" + format(start_range) + "</span>";
-    html += "<span id='caret' style='position: relative; display: inline;'>|</span>";
-    html += "<span style='position: relative; display: inline;'>" + format(end_range) + "</span>";
-    mirror = new Mirror($inputor);
-    return at_rect = mirror.create(html).rect();
-  };
-
-  InputCaret.prototype.getIEPosition = function(pos) {
-    var h, inputorOffset, offset, x, y;
-    offset = this.getIEOffset(pos);
-    inputorOffset = this.$inputor.offset();
-    x = offset.left - inputorOffset.left;
-    y = offset.top - inputorOffset.top;
-    h = offset.height;
-    return {
-      left: x,
-      top: y,
-      height: h
-    };
-  };
-
-  return InputCaret;
-
-})();
-
-Mirror = (function() {
-  Mirror.prototype.css_attr = ["borderBottomWidth", "borderLeftWidth", "borderRightWidth", "borderTopStyle", "borderRightStyle", "borderBottomStyle", "borderLeftStyle", "borderTopWidth", "boxSizing", "fontFamily", "fontSize", "fontWeight", "height", "letterSpacing", "lineHeight", "marginBottom", "marginLeft", "marginRight", "marginTop", "outlineWidth", "overflow", "overflowX", "overflowY", "paddingBottom", "paddingLeft", "paddingRight", "paddingTop", "textAlign", "textOverflow", "textTransform", "whiteSpace", "wordBreak", "wordWrap"];
-
-  function Mirror($inputor) {
-    this.$inputor = $inputor;
-  }
-
-  Mirror.prototype.mirrorCss = function() {
-    var css,
-      _this = this;
-    css = {
-      position: 'absolute',
-      left: -9999,
-      top: 0,
-      zIndex: -20000
-    };
-    if (this.$inputor.prop('tagName') === 'TEXTAREA') {
-      this.css_attr.push('width');
-    }
-    $.each(this.css_attr, function(i, p) {
-      return css[p] = _this.$inputor.css(p);
-    });
-    return css;
-  };
-
-  Mirror.prototype.create = function(html) {
-    this.$mirror = $('<div></div>');
-    this.$mirror.css(this.mirrorCss());
-    this.$mirror.html(html);
-    this.$inputor.after(this.$mirror);
-    return this;
-  };
-
-  Mirror.prototype.rect = function() {
-    var $flag, pos, rect;
-    $flag = this.$mirror.find("#caret");
-    pos = $flag.position();
-    rect = {
-      left: pos.left,
-      top: pos.top,
-      height: $flag.height()
-    };
-    this.$mirror.remove();
-    return rect;
-  };
-
-  return Mirror;
-
-})();
-
-Utils = {
-  contentEditable: function($inputor) {
-    return !!($inputor[0].contentEditable && $inputor[0].contentEditable === 'true');
-  }
-};
-
-methods = {
-  pos: function(pos) {
-    if (pos || pos === 0) {
-      return this.setPos(pos);
-    } else {
-      return this.getPos();
-    }
-  },
-  position: function(pos) {
-    if (oDocument.selection) {
-      return this.getIEPosition(pos);
-    } else {
-      return this.getPosition(pos);
-    }
-  },
-  offset: function(pos) {
-    var offset;
-    offset = this.getOffset(pos);
-    return offset;
-  }
-};
-
-oDocument = null;
-
-oWindow = null;
-
-oFrame = null;
-
-setContextBy = function(settings) {
-  var iframe;
-  if (iframe = settings != null ? settings.iframe : void 0) {
-    oFrame = iframe;
-    oWindow = iframe.contentWindow;
-    return oDocument = iframe.contentDocument || oWindow.document;
-  } else {
-    oFrame = void 0;
-    oWindow = window;
-    return oDocument = document;
-  }
-};
-
-discoveryIframeOf = function($dom) {
-  var error;
-  oDocument = $dom[0].ownerDocument;
-  oWindow = oDocument.defaultView || oDocument.parentWindow;
-  try {
-    return oFrame = oWindow.frameElement;
-  } catch (_error) {
-    error = _error;
-  }
-};
-
-$.fn.caret = function(method, value, settings) {
-  var caret;
-  if (methods[method]) {
-    if ($.isPlainObject(value)) {
-      setContextBy(value);
-      value = void 0;
-    } else {
-      setContextBy(settings);
-    }
-    caret = Utils.contentEditable(this) ? new EditableCaret(this) : new InputCaret(this);
-    return methods[method].apply(caret, [value]);
-  } else {
-    return $.error("Method " + method + " does not exist on jQuery.caret");
-  }
-};
-
-$.fn.caret.EditableCaret = EditableCaret;
-
-$.fn.caret.InputCaret = InputCaret;
-
-$.fn.caret.Utils = Utils;
-
-$.fn.caret.apis = methods;
-
-
-}));
-
-
-/***/ }),
-/* 514 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
- * at.js - 1.5.4
- * Copyright (c) 2018 chord.luo <chord.luo@gmail.com>;
- * Homepage: http://ichord.github.com/At.js
- * License: MIT
- */
-(function (root, factory) {
-  if (true) {
-    // AMD. Register as an anonymous module unless amdModuleId is set
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(44)], __WEBPACK_AMD_DEFINE_RESULT__ = (function (a0) {
-      return (factory(a0));
-    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-  } else if (typeof exports === 'object') {
-    // Node. Does not work with strict CommonJS, but
-    // only CommonJS-like environments that support module.exports,
-    // like Node.
-    module.exports = factory(require("jquery"));
-  } else {
-    factory(jQuery);
-  }
-}(this, function ($) {
-var DEFAULT_CALLBACKS, KEY_CODE;
-
-KEY_CODE = {
-  ESC: 27,
-  TAB: 9,
-  ENTER: 13,
-  CTRL: 17,
-  A: 65,
-  P: 80,
-  N: 78,
-  LEFT: 37,
-  UP: 38,
-  RIGHT: 39,
-  DOWN: 40,
-  BACKSPACE: 8,
-  SPACE: 32
-};
-
-DEFAULT_CALLBACKS = {
-  beforeSave: function(data) {
-    return Controller.arrayToDefaultHash(data);
-  },
-  matcher: function(flag, subtext, should_startWithSpace, acceptSpaceBar) {
-    var _a, _y, match, regexp, space;
-    flag = flag.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
-    if (should_startWithSpace) {
-      flag = '(?:^|\\s)' + flag;
-    }
-    _a = decodeURI("%C3%80");
-    _y = decodeURI("%C3%BF");
-    space = acceptSpaceBar ? "\ " : "";
-    regexp = new RegExp(flag + "([A-Za-z" + _a + "-" + _y + "0-9_" + space + "\'\.\+\-]*)$|" + flag + "([^\\x00-\\xff]*)$", 'gi');
-    match = regexp.exec(subtext);
-    if (match) {
-      return match[2] || match[1];
-    } else {
-      return null;
-    }
-  },
-  filter: function(query, data, searchKey) {
-    var _results, i, item, len;
-    _results = [];
-    for (i = 0, len = data.length; i < len; i++) {
-      item = data[i];
-      if (~new String(item[searchKey]).toLowerCase().indexOf(query.toLowerCase())) {
-        _results.push(item);
-      }
-    }
-    return _results;
-  },
-  remoteFilter: null,
-  sorter: function(query, items, searchKey) {
-    var _results, i, item, len;
-    if (!query) {
-      return items;
-    }
-    _results = [];
-    for (i = 0, len = items.length; i < len; i++) {
-      item = items[i];
-      item.atwho_order = new String(item[searchKey]).toLowerCase().indexOf(query.toLowerCase());
-      if (item.atwho_order > -1) {
-        _results.push(item);
-      }
-    }
-    return _results.sort(function(a, b) {
-      return a.atwho_order - b.atwho_order;
-    });
-  },
-  tplEval: function(tpl, map) {
-    var error, error1, template;
-    template = tpl;
-    try {
-      if (typeof tpl !== 'string') {
-        template = tpl(map);
-      }
-      return template.replace(/\$\{([^\}]*)\}/g, function(tag, key, pos) {
-        return map[key];
-      });
-    } catch (error1) {
-      error = error1;
-      return "";
-    }
-  },
-  highlighter: function(li, query) {
-    var regexp;
-    if (!query) {
-      return li;
-    }
-    regexp = new RegExp(">\\s*([^\<]*?)(" + query.replace("+", "\\+") + ")([^\<]*)\\s*<", 'ig');
-    return li.replace(regexp, function(str, $1, $2, $3) {
-      return '> ' + $1 + '<strong>' + $2 + '</strong>' + $3 + ' <';
-    });
-  },
-  beforeInsert: function(value, $li, e) {
-    return value;
-  },
-  beforeReposition: function(offset) {
-    return offset;
-  },
-  afterMatchFailed: function(at, el) {}
-};
-
-var App;
-
-App = (function() {
-  function App(inputor) {
-    this.currentFlag = null;
-    this.controllers = {};
-    this.aliasMaps = {};
-    this.$inputor = $(inputor);
-    this.setupRootElement();
-    this.listen();
-  }
-
-  App.prototype.createContainer = function(doc) {
-    var ref;
-    if ((ref = this.$el) != null) {
-      ref.remove();
-    }
-    return $(doc.body).append(this.$el = $("<div class='atwho-container'></div>"));
-  };
-
-  App.prototype.setupRootElement = function(iframe, asRoot) {
-    var error, error1;
-    if (asRoot == null) {
-      asRoot = false;
-    }
-    if (iframe) {
-      this.window = iframe.contentWindow;
-      this.document = iframe.contentDocument || this.window.document;
-      this.iframe = iframe;
-    } else {
-      this.document = this.$inputor[0].ownerDocument;
-      this.window = this.document.defaultView || this.document.parentWindow;
-      try {
-        this.iframe = this.window.frameElement;
-      } catch (error1) {
-        error = error1;
-        this.iframe = null;
-        if ($.fn.atwho.debug) {
-          throw new Error("iframe auto-discovery is failed.\nPlease use `setIframe` to set the target iframe manually.\n" + error);
-        }
-      }
-    }
-    return this.createContainer((this.iframeAsRoot = asRoot) ? this.document : document);
-  };
-
-  App.prototype.controller = function(at) {
-    var c, current, currentFlag, ref;
-    if (this.aliasMaps[at]) {
-      current = this.controllers[this.aliasMaps[at]];
-    } else {
-      ref = this.controllers;
-      for (currentFlag in ref) {
-        c = ref[currentFlag];
-        if (currentFlag === at) {
-          current = c;
-          break;
-        }
-      }
-    }
-    if (current) {
-      return current;
-    } else {
-      return this.controllers[this.currentFlag];
-    }
-  };
-
-  App.prototype.setContextFor = function(at) {
-    this.currentFlag = at;
-    return this;
-  };
-
-  App.prototype.reg = function(flag, setting) {
-    var base, controller;
-    controller = (base = this.controllers)[flag] || (base[flag] = this.$inputor.is('[contentEditable]') ? new EditableController(this, flag) : new TextareaController(this, flag));
-    if (setting.alias) {
-      this.aliasMaps[setting.alias] = flag;
-    }
-    controller.init(setting);
-    return this;
-  };
-
-  App.prototype.listen = function() {
-    return this.$inputor.on('compositionstart', (function(_this) {
-      return function(e) {
-        var ref;
-        if ((ref = _this.controller()) != null) {
-          ref.view.hide();
-        }
-        _this.isComposing = true;
-        return null;
-      };
-    })(this)).on('compositionend', (function(_this) {
-      return function(e) {
-        _this.isComposing = false;
-        setTimeout(function(e) {
-          return _this.dispatch(e);
-        });
-        return null;
-      };
-    })(this)).on('keyup.atwhoInner', (function(_this) {
-      return function(e) {
-        return _this.onKeyup(e);
-      };
-    })(this)).on('keydown.atwhoInner', (function(_this) {
-      return function(e) {
-        return _this.onKeydown(e);
-      };
-    })(this)).on('blur.atwhoInner', (function(_this) {
-      return function(e) {
-        var c;
-        if (c = _this.controller()) {
-          c.expectedQueryCBId = null;
-          return c.view.hide(e, c.getOpt("displayTimeout"));
-        }
-      };
-    })(this)).on('click.atwhoInner', (function(_this) {
-      return function(e) {
-        return _this.dispatch(e);
-      };
-    })(this)).on('scroll.atwhoInner', (function(_this) {
-      return function() {
-        var lastScrollTop;
-        lastScrollTop = _this.$inputor.scrollTop();
-        return function(e) {
-          var currentScrollTop, ref;
-          currentScrollTop = e.target.scrollTop;
-          if (lastScrollTop !== currentScrollTop) {
-            if ((ref = _this.controller()) != null) {
-              ref.view.hide(e);
-            }
-          }
-          lastScrollTop = currentScrollTop;
-          return true;
-        };
-      };
-    })(this)());
-  };
-
-  App.prototype.shutdown = function() {
-    var _, c, ref;
-    ref = this.controllers;
-    for (_ in ref) {
-      c = ref[_];
-      c.destroy();
-      delete this.controllers[_];
-    }
-    this.$inputor.off('.atwhoInner');
-    return this.$el.remove();
-  };
-
-  App.prototype.dispatch = function(e) {
-    var _, c, ref, results;
-    if (void 0 === e) {
-      return;
-    }
-    ref = this.controllers;
-    results = [];
-    for (_ in ref) {
-      c = ref[_];
-      results.push(c.lookUp(e));
-    }
-    return results;
-  };
-
-  App.prototype.onKeyup = function(e) {
-    var ref;
-    switch (e.keyCode) {
-      case KEY_CODE.ESC:
-        e.preventDefault();
-        if ((ref = this.controller()) != null) {
-          ref.view.hide();
-        }
-        break;
-      case KEY_CODE.DOWN:
-      case KEY_CODE.UP:
-      case KEY_CODE.CTRL:
-      case KEY_CODE.ENTER:
-        $.noop();
-        break;
-      case KEY_CODE.P:
-      case KEY_CODE.N:
-        if (!e.ctrlKey) {
-          this.dispatch(e);
-        }
-        break;
-      default:
-        this.dispatch(e);
-    }
-  };
-
-  App.prototype.onKeydown = function(e) {
-    var ref, view;
-    view = (ref = this.controller()) != null ? ref.view : void 0;
-    if (!(view && view.visible())) {
-      return;
-    }
-    switch (e.keyCode) {
-      case KEY_CODE.ESC:
-        e.preventDefault();
-        view.hide(e);
-        break;
-      case KEY_CODE.UP:
-        e.preventDefault();
-        view.prev();
-        break;
-      case KEY_CODE.DOWN:
-        e.preventDefault();
-        view.next();
-        break;
-      case KEY_CODE.P:
-        if (!e.ctrlKey) {
-          return;
-        }
-        e.preventDefault();
-        view.prev();
-        break;
-      case KEY_CODE.N:
-        if (!e.ctrlKey) {
-          return;
-        }
-        e.preventDefault();
-        view.next();
-        break;
-      case KEY_CODE.TAB:
-      case KEY_CODE.ENTER:
-      case KEY_CODE.SPACE:
-        if (!view.visible()) {
-          return;
-        }
-        if (!this.controller().getOpt('spaceSelectsMatch') && e.keyCode === KEY_CODE.SPACE) {
-          return;
-        }
-        if (!this.controller().getOpt('tabSelectsMatch') && e.keyCode === KEY_CODE.TAB) {
-          return;
-        }
-        if (view.highlighted()) {
-          e.preventDefault();
-          view.choose(e);
-        } else {
-          view.hide(e);
-        }
-        break;
-      default:
-        $.noop();
-    }
-  };
-
-  return App;
-
-})();
-
-var Controller,
-  slice = [].slice;
-
-Controller = (function() {
-  Controller.prototype.uid = function() {
-    return (Math.random().toString(16) + "000000000").substr(2, 8) + (new Date().getTime());
-  };
-
-  function Controller(app, at1) {
-    this.app = app;
-    this.at = at1;
-    this.$inputor = this.app.$inputor;
-    this.id = this.$inputor[0].id || this.uid();
-    this.expectedQueryCBId = null;
-    this.setting = null;
-    this.query = null;
-    this.pos = 0;
-    this.range = null;
-    if ((this.$el = $("#atwho-ground-" + this.id, this.app.$el)).length === 0) {
-      this.app.$el.append(this.$el = $("<div id='atwho-ground-" + this.id + "'></div>"));
-    }
-    this.model = new Model(this);
-    this.view = new View(this);
-  }
-
-  Controller.prototype.init = function(setting) {
-    this.setting = $.extend({}, this.setting || $.fn.atwho["default"], setting);
-    this.view.init();
-    return this.model.reload(this.setting.data);
-  };
-
-  Controller.prototype.destroy = function() {
-    this.trigger('beforeDestroy');
-    this.model.destroy();
-    this.view.destroy();
-    return this.$el.remove();
-  };
-
-  Controller.prototype.callDefault = function() {
-    var args, error, error1, funcName;
-    funcName = arguments[0], args = 2 <= arguments.length ? slice.call(arguments, 1) : [];
-    try {
-      return DEFAULT_CALLBACKS[funcName].apply(this, args);
-    } catch (error1) {
-      error = error1;
-      return $.error(error + " Or maybe At.js doesn't have function " + funcName);
-    }
-  };
-
-  Controller.prototype.trigger = function(name, data) {
-    var alias, eventName;
-    if (data == null) {
-      data = [];
-    }
-    data.push(this);
-    alias = this.getOpt('alias');
-    eventName = alias ? name + "-" + alias + ".atwho" : name + ".atwho";
-    return this.$inputor.trigger(eventName, data);
-  };
-
-  Controller.prototype.callbacks = function(funcName) {
-    return this.getOpt("callbacks")[funcName] || DEFAULT_CALLBACKS[funcName];
-  };
-
-  Controller.prototype.getOpt = function(at, default_value) {
-    var e, error1;
-    try {
-      return this.setting[at];
-    } catch (error1) {
-      e = error1;
-      return null;
-    }
-  };
-
-  Controller.prototype.insertContentFor = function($li) {
-    var data, tpl;
-    tpl = this.getOpt('insertTpl');
-    data = $.extend({}, $li.data('item-data'), {
-      'atwho-at': this.at
-    });
-    return this.callbacks("tplEval").call(this, tpl, data, "onInsert");
-  };
-
-  Controller.prototype.renderView = function(data) {
-    var searchKey;
-    searchKey = this.getOpt("searchKey");
-    data = this.callbacks("sorter").call(this, this.query.text, data.slice(0, 1001), searchKey);
-    return this.view.render(data.slice(0, this.getOpt('limit')));
-  };
-
-  Controller.arrayToDefaultHash = function(data) {
-    var i, item, len, results;
-    if (!$.isArray(data)) {
-      return data;
-    }
-    results = [];
-    for (i = 0, len = data.length; i < len; i++) {
-      item = data[i];
-      if ($.isPlainObject(item)) {
-        results.push(item);
-      } else {
-        results.push({
-          name: item
-        });
-      }
-    }
-    return results;
-  };
-
-  Controller.prototype.lookUp = function(e) {
-    var query, wait;
-    if (e && e.type === 'click' && !this.getOpt('lookUpOnClick')) {
-      return;
-    }
-    if (this.getOpt('suspendOnComposing') && this.app.isComposing) {
-      return;
-    }
-    query = this.catchQuery(e);
-    if (!query) {
-      this.expectedQueryCBId = null;
-      return query;
-    }
-    this.app.setContextFor(this.at);
-    if (wait = this.getOpt('delay')) {
-      this._delayLookUp(query, wait);
-    } else {
-      this._lookUp(query);
-    }
-    return query;
-  };
-
-  Controller.prototype._delayLookUp = function(query, wait) {
-    var now, remaining;
-    now = Date.now ? Date.now() : new Date().getTime();
-    this.previousCallTime || (this.previousCallTime = now);
-    remaining = wait - (now - this.previousCallTime);
-    if ((0 < remaining && remaining < wait)) {
-      this.previousCallTime = now;
-      this._stopDelayedCall();
-      return this.delayedCallTimeout = setTimeout((function(_this) {
-        return function() {
-          _this.previousCallTime = 0;
-          _this.delayedCallTimeout = null;
-          return _this._lookUp(query);
-        };
-      })(this), wait);
-    } else {
-      this._stopDelayedCall();
-      if (this.previousCallTime !== now) {
-        this.previousCallTime = 0;
-      }
-      return this._lookUp(query);
-    }
-  };
-
-  Controller.prototype._stopDelayedCall = function() {
-    if (this.delayedCallTimeout) {
-      clearTimeout(this.delayedCallTimeout);
-      return this.delayedCallTimeout = null;
-    }
-  };
-
-  Controller.prototype._generateQueryCBId = function() {
-    return {};
-  };
-
-  Controller.prototype._lookUp = function(query) {
-    var _callback;
-    _callback = function(queryCBId, data) {
-      if (queryCBId !== this.expectedQueryCBId) {
-        return;
-      }
-      if (data && data.length > 0) {
-        return this.renderView(this.constructor.arrayToDefaultHash(data));
-      } else {
-        return this.view.hide();
-      }
-    };
-    this.expectedQueryCBId = this._generateQueryCBId();
-    return this.model.query(query.text, $.proxy(_callback, this, this.expectedQueryCBId));
-  };
-
-  return Controller;
-
-})();
-
-var TextareaController,
-  extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-  hasProp = {}.hasOwnProperty;
-
-TextareaController = (function(superClass) {
-  extend(TextareaController, superClass);
-
-  function TextareaController() {
-    return TextareaController.__super__.constructor.apply(this, arguments);
-  }
-
-  TextareaController.prototype.catchQuery = function() {
-    var caretPos, content, end, isString, query, start, subtext;
-    content = this.$inputor.val();
-    caretPos = this.$inputor.caret('pos', {
-      iframe: this.app.iframe
-    });
-    subtext = content.slice(0, caretPos);
-    query = this.callbacks("matcher").call(this, this.at, subtext, this.getOpt('startWithSpace'), this.getOpt("acceptSpaceBar"));
-    isString = typeof query === 'string';
-    if (isString && query.length < this.getOpt('minLen', 0)) {
-      return;
-    }
-    if (isString && query.length <= this.getOpt('maxLen', 20)) {
-      start = caretPos - query.length;
-      end = start + query.length;
-      this.pos = start;
-      query = {
-        'text': query,
-        'headPos': start,
-        'endPos': end
-      };
-      this.trigger("matched", [this.at, query.text]);
-    } else {
-      query = null;
-      this.view.hide();
-    }
-    return this.query = query;
-  };
-
-  TextareaController.prototype.rect = function() {
-    var c, iframeOffset, scaleBottom;
-    if (!(c = this.$inputor.caret('offset', this.pos - 1, {
-      iframe: this.app.iframe
-    }))) {
-      return;
-    }
-    if (this.app.iframe && !this.app.iframeAsRoot) {
-      iframeOffset = $(this.app.iframe).offset();
-      c.left += iframeOffset.left;
-      c.top += iframeOffset.top;
-    }
-    scaleBottom = this.app.document.selection ? 0 : 2;
-    return {
-      left: c.left,
-      top: c.top,
-      bottom: c.top + c.height + scaleBottom
-    };
-  };
-
-  TextareaController.prototype.insert = function(content, $li) {
-    var $inputor, source, startStr, suffix, text;
-    $inputor = this.$inputor;
-    source = $inputor.val();
-    startStr = source.slice(0, Math.max(this.query.headPos - this.at.length, 0));
-    suffix = (suffix = this.getOpt('suffix')) === "" ? suffix : suffix || " ";
-    content += suffix;
-    text = "" + startStr + content + (source.slice(this.query['endPos'] || 0));
-    $inputor.val(text);
-    $inputor.caret('pos', startStr.length + content.length, {
-      iframe: this.app.iframe
-    });
-    if (!$inputor.is(':focus')) {
-      $inputor.focus();
-    }
-    return $inputor.change();
-  };
-
-  return TextareaController;
-
-})(Controller);
-
-var EditableController,
-  extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
-  hasProp = {}.hasOwnProperty;
-
-EditableController = (function(superClass) {
-  extend(EditableController, superClass);
-
-  function EditableController() {
-    return EditableController.__super__.constructor.apply(this, arguments);
-  }
-
-  EditableController.prototype._getRange = function() {
-    var sel;
-    sel = this.app.window.getSelection();
-    if (sel.rangeCount > 0) {
-      return sel.getRangeAt(0);
-    }
-  };
-
-  EditableController.prototype._setRange = function(position, node, range) {
-    if (range == null) {
-      range = this._getRange();
-    }
-    if (!(range && node)) {
-      return;
-    }
-    node = $(node)[0];
-    if (position === 'after') {
-      range.setEndAfter(node);
-      range.setStartAfter(node);
-    } else {
-      range.setEndBefore(node);
-      range.setStartBefore(node);
-    }
-    range.collapse(false);
-    return this._clearRange(range);
-  };
-
-  EditableController.prototype._clearRange = function(range) {
-    var sel;
-    if (range == null) {
-      range = this._getRange();
-    }
-    sel = this.app.window.getSelection();
-    if (this.ctrl_a_pressed == null) {
-      sel.removeAllRanges();
-      return sel.addRange(range);
-    }
-  };
-
-  EditableController.prototype._movingEvent = function(e) {
-    var ref;
-    return e.type === 'click' || ((ref = e.which) === KEY_CODE.RIGHT || ref === KEY_CODE.LEFT || ref === KEY_CODE.UP || ref === KEY_CODE.DOWN);
-  };
-
-  EditableController.prototype._unwrap = function(node) {
-    var next;
-    node = $(node).unwrap().get(0);
-    if ((next = node.nextSibling) && next.nodeValue) {
-      node.nodeValue += next.nodeValue;
-      $(next).remove();
-    }
-    return node;
-  };
-
-  EditableController.prototype.catchQuery = function(e) {
-    var $inserted, $query, _range, index, inserted, isString, lastNode, matched, offset, query, query_content, range;
-    if (!(range = this._getRange())) {
-      return;
-    }
-    if (!range.collapsed) {
-      return;
-    }
-    if (e.which === KEY_CODE.ENTER) {
-      ($query = $(range.startContainer).closest('.atwho-query')).contents().unwrap();
-      if ($query.is(':empty')) {
-        $query.remove();
-      }
-      ($query = $(".atwho-query", this.app.document)).text($query.text()).contents().last().unwrap();
-      this._clearRange();
-      return;
-    }
-    if (/firefox/i.test(navigator.userAgent)) {
-      if ($(range.startContainer).is(this.$inputor)) {
-        this._clearRange();
-        return;
-      }
-      if (e.which === KEY_CODE.BACKSPACE && range.startContainer.nodeType === document.ELEMENT_NODE && (offset = range.startOffset - 1) >= 0) {
-        _range = range.cloneRange();
-        _range.setStart(range.startContainer, offset);
-        if ($(_range.cloneContents()).contents().last().is('.atwho-inserted')) {
-          inserted = $(range.startContainer).contents().get(offset);
-          this._setRange('after', $(inserted).contents().last());
-        }
-      } else if (e.which === KEY_CODE.LEFT && range.startContainer.nodeType === document.TEXT_NODE) {
-        $inserted = $(range.startContainer.previousSibling);
-        if ($inserted.is('.atwho-inserted') && range.startOffset === 0) {
-          this._setRange('after', $inserted.contents().last());
-        }
-      }
-    }
-    $(range.startContainer).closest('.atwho-inserted').addClass('atwho-query').siblings().removeClass('atwho-query');
-    if (($query = $(".atwho-query", this.app.document)).length > 0 && $query.is(':empty') && $query.text().length === 0) {
-      $query.remove();
-    }
-    if (!this._movingEvent(e)) {
-      $query.removeClass('atwho-inserted');
-    }
-    if ($query.length > 0) {
-      switch (e.which) {
-        case KEY_CODE.LEFT:
-          this._setRange('before', $query.get(0), range);
-          $query.removeClass('atwho-query');
-          return;
-        case KEY_CODE.RIGHT:
-          this._setRange('after', $query.get(0).nextSibling, range);
-          $query.removeClass('atwho-query');
-          return;
-      }
-    }
-    if ($query.length > 0 && (query_content = $query.attr('data-atwho-at-query'))) {
-      $query.empty().html(query_content).attr('data-atwho-at-query', null);
-      this._setRange('after', $query.get(0), range);
-    }
-    _range = range.cloneRange();
-    _range.setStart(range.startContainer, 0);
-    matched = this.callbacks("matcher").call(this, this.at, _range.toString(), this.getOpt('startWithSpace'), this.getOpt("acceptSpaceBar"));
-    isString = typeof matched === 'string';
-    if ($query.length === 0 && isString && (index = range.startOffset - this.at.length - matched.length) >= 0) {
-      range.setStart(range.startContainer, index);
-      $query = $('<span/>', this.app.document).attr(this.getOpt("editableAtwhoQueryAttrs")).addClass('atwho-query');
-      range.surroundContents($query.get(0));
-      lastNode = $query.contents().last().get(0);
-      if (lastNode) {
-        if (/firefox/i.test(navigator.userAgent)) {
-          range.setStart(lastNode, lastNode.length);
-          range.setEnd(lastNode, lastNode.length);
-          this._clearRange(range);
-        } else {
-          this._setRange('after', lastNode, range);
-        }
-      }
-    }
-    if (isString && matched.length < this.getOpt('minLen', 0)) {
-      return;
-    }
-    if (isString && matched.length <= this.getOpt('maxLen', 20)) {
-      query = {
-        text: matched,
-        el: $query
-      };
-      this.trigger("matched", [this.at, query.text]);
-      return this.query = query;
-    } else {
-      this.view.hide();
-      this.query = {
-        el: $query
-      };
-      if ($query.text().indexOf(this.at) >= 0) {
-        if (this._movingEvent(e) && $query.hasClass('atwho-inserted')) {
-          $query.removeClass('atwho-query');
-        } else if (false !== this.callbacks('afterMatchFailed').call(this, this.at, $query)) {
-          this._setRange("after", this._unwrap($query.text($query.text()).contents().first()));
-        }
-      }
-      return null;
-    }
-  };
-
-  EditableController.prototype.rect = function() {
-    var $iframe, iframeOffset, rect;
-    rect = this.query.el.offset();
-    if (!(rect && this.query.el[0].getClientRects().length)) {
-      return;
-    }
-    if (this.app.iframe && !this.app.iframeAsRoot) {
-      iframeOffset = ($iframe = $(this.app.iframe)).offset();
-      rect.left += iframeOffset.left - this.$inputor.scrollLeft();
-      rect.top += iframeOffset.top - this.$inputor.scrollTop();
-    }
-    rect.bottom = rect.top + this.query.el.height();
-    return rect;
-  };
-
-  EditableController.prototype.insert = function(content, $li) {
-    var data, overrides, range, suffix, suffixNode;
-    if (!this.$inputor.is(':focus')) {
-      this.$inputor.focus();
-    }
-    overrides = this.getOpt('functionOverrides');
-    if (overrides.insert) {
-      return overrides.insert.call(this, content, $li);
-    }
-    suffix = (suffix = this.getOpt('suffix')) === "" ? suffix : suffix || "\u00A0";
-    data = $li.data('item-data');
-    this.query.el.removeClass('atwho-query').addClass('atwho-inserted').html(content).attr('data-atwho-at-query', "" + data['atwho-at'] + this.query.text).attr('contenteditable', "false");
-    if (range = this._getRange()) {
-      if (this.query.el.length) {
-        range.setEndAfter(this.query.el[0]);
-      }
-      range.collapse(false);
-      range.insertNode(suffixNode = this.app.document.createTextNode("" + suffix));
-      this._setRange('after', suffixNode, range);
-    }
-    if (!this.$inputor.is(':focus')) {
-      this.$inputor.focus();
-    }
-    return this.$inputor.change();
-  };
-
-  return EditableController;
-
-})(Controller);
-
-var Model;
-
-Model = (function() {
-  function Model(context) {
-    this.context = context;
-    this.at = this.context.at;
-    this.storage = this.context.$inputor;
-  }
-
-  Model.prototype.destroy = function() {
-    return this.storage.data(this.at, null);
-  };
-
-  Model.prototype.saved = function() {
-    return this.fetch() > 0;
-  };
-
-  Model.prototype.query = function(query, callback) {
-    var _remoteFilter, data, searchKey;
-    data = this.fetch();
-    searchKey = this.context.getOpt("searchKey");
-    data = this.context.callbacks('filter').call(this.context, query, data, searchKey) || [];
-    _remoteFilter = this.context.callbacks('remoteFilter');
-    if (data.length > 0 || (!_remoteFilter && data.length === 0)) {
-      return callback(data);
-    } else {
-      return _remoteFilter.call(this.context, query, callback);
-    }
-  };
-
-  Model.prototype.fetch = function() {
-    return this.storage.data(this.at) || [];
-  };
-
-  Model.prototype.save = function(data) {
-    return this.storage.data(this.at, this.context.callbacks("beforeSave").call(this.context, data || []));
-  };
-
-  Model.prototype.load = function(data) {
-    if (!(this.saved() || !data)) {
-      return this._load(data);
-    }
-  };
-
-  Model.prototype.reload = function(data) {
-    return this._load(data);
-  };
-
-  Model.prototype._load = function(data) {
-    if (typeof data === "string") {
-      return $.ajax(data, {
-        dataType: "json"
-      }).done((function(_this) {
-        return function(data) {
-          return _this.save(data);
-        };
-      })(this));
-    } else {
-      return this.save(data);
-    }
-  };
-
-  return Model;
-
-})();
-
-var View;
-
-View = (function() {
-  function View(context) {
-    this.context = context;
-    this.$el = $("<div class='atwho-view'><ul class='atwho-view-ul'></ul></div>");
-    this.$elUl = this.$el.children();
-    this.timeoutID = null;
-    this.context.$el.append(this.$el);
-    this.bindEvent();
-  }
-
-  View.prototype.init = function() {
-    var header_tpl, id;
-    id = this.context.getOpt("alias") || this.context.at.charCodeAt(0);
-    header_tpl = this.context.getOpt("headerTpl");
-    if (header_tpl && this.$el.children().length === 1) {
-      this.$el.prepend(header_tpl);
-    }
-    return this.$el.attr({
-      'id': "at-view-" + id
-    });
-  };
-
-  View.prototype.destroy = function() {
-    return this.$el.remove();
-  };
-
-  View.prototype.bindEvent = function() {
-    var $menu, lastCoordX, lastCoordY;
-    $menu = this.$el.find('ul');
-    lastCoordX = 0;
-    lastCoordY = 0;
-    return $menu.on('mousemove.atwho-view', 'li', (function(_this) {
-      return function(e) {
-        var $cur;
-        if (lastCoordX === e.clientX && lastCoordY === e.clientY) {
-          return;
-        }
-        lastCoordX = e.clientX;
-        lastCoordY = e.clientY;
-        $cur = $(e.currentTarget);
-        if ($cur.hasClass('cur')) {
-          return;
-        }
-        $menu.find('.cur').removeClass('cur');
-        return $cur.addClass('cur');
-      };
-    })(this)).on('click.atwho-view', 'li', (function(_this) {
-      return function(e) {
-        $menu.find('.cur').removeClass('cur');
-        $(e.currentTarget).addClass('cur');
-        _this.choose(e);
-        return e.preventDefault();
-      };
-    })(this));
-  };
-
-  View.prototype.visible = function() {
-    return $.expr.filters.visible(this.$el[0]);
-  };
-
-  View.prototype.highlighted = function() {
-    return this.$el.find(".cur").length > 0;
-  };
-
-  View.prototype.choose = function(e) {
-    var $li, content;
-    if (($li = this.$el.find(".cur")).length) {
-      content = this.context.insertContentFor($li);
-      this.context._stopDelayedCall();
-      this.context.insert(this.context.callbacks("beforeInsert").call(this.context, content, $li, e), $li);
-      this.context.trigger("inserted", [$li, e]);
-      this.hide(e);
-    }
-    if (this.context.getOpt("hideWithoutSuffix")) {
-      return this.stopShowing = true;
-    }
-  };
-
-  View.prototype.reposition = function(rect) {
-    var _window, offset, overflowOffset, ref;
-    _window = this.context.app.iframeAsRoot ? this.context.app.window : window;
-    if (rect.bottom + this.$el.height() - $(_window).scrollTop() > $(_window).height()) {
-      rect.bottom = rect.top - this.$el.height();
-    }
-    if (rect.left > (overflowOffset = $(_window).width() - this.$el.width() - 5)) {
-      rect.left = overflowOffset;
-    }
-    offset = {
-      left: rect.left,
-      top: rect.bottom
-    };
-    if ((ref = this.context.callbacks("beforeReposition")) != null) {
-      ref.call(this.context, offset);
-    }
-    this.$el.offset(offset);
-    return this.context.trigger("reposition", [offset]);
-  };
-
-  View.prototype.next = function() {
-    var cur, next, nextEl, offset;
-    cur = this.$el.find('.cur').removeClass('cur');
-    next = cur.next();
-    if (!next.length) {
-      next = this.$el.find('li:first');
-    }
-    next.addClass('cur');
-    nextEl = next[0];
-    offset = nextEl.offsetTop + nextEl.offsetHeight + (nextEl.nextSibling ? nextEl.nextSibling.offsetHeight : 0);
-    return this.scrollTop(Math.max(0, offset - this.$el.height()));
-  };
-
-  View.prototype.prev = function() {
-    var cur, offset, prev, prevEl;
-    cur = this.$el.find('.cur').removeClass('cur');
-    prev = cur.prev();
-    if (!prev.length) {
-      prev = this.$el.find('li:last');
-    }
-    prev.addClass('cur');
-    prevEl = prev[0];
-    offset = prevEl.offsetTop + prevEl.offsetHeight + (prevEl.nextSibling ? prevEl.nextSibling.offsetHeight : 0);
-    return this.scrollTop(Math.max(0, offset - this.$el.height()));
-  };
-
-  View.prototype.scrollTop = function(scrollTop) {
-    var scrollDuration;
-    scrollDuration = this.context.getOpt('scrollDuration');
-    if (scrollDuration) {
-      return this.$elUl.animate({
-        scrollTop: scrollTop
-      }, scrollDuration);
-    } else {
-      return this.$elUl.scrollTop(scrollTop);
-    }
-  };
-
-  View.prototype.show = function() {
-    var rect;
-    if (this.stopShowing) {
-      this.stopShowing = false;
-      return;
-    }
-    if (!this.visible()) {
-      this.$el.show();
-      this.$el.scrollTop(0);
-      this.context.trigger('shown');
-    }
-    if (rect = this.context.rect()) {
-      return this.reposition(rect);
-    }
-  };
-
-  View.prototype.hide = function(e, time) {
-    var callback;
-    if (!this.visible()) {
-      return;
-    }
-    if (isNaN(time)) {
-      this.$el.hide();
-      return this.context.trigger('hidden', [e]);
-    } else {
-      callback = (function(_this) {
-        return function() {
-          return _this.hide();
-        };
-      })(this);
-      clearTimeout(this.timeoutID);
-      return this.timeoutID = setTimeout(callback, time);
-    }
-  };
-
-  View.prototype.render = function(list) {
-    var $li, $ul, i, item, len, li, tpl;
-    if (!($.isArray(list) && list.length > 0)) {
-      this.hide();
-      return;
-    }
-    this.$el.find('ul').empty();
-    $ul = this.$el.find('ul');
-    tpl = this.context.getOpt('displayTpl');
-    for (i = 0, len = list.length; i < len; i++) {
-      item = list[i];
-      item = $.extend({}, item, {
-        'atwho-at': this.context.at
-      });
-      li = this.context.callbacks("tplEval").call(this.context, tpl, item, "onDisplay");
-      $li = $(this.context.callbacks("highlighter").call(this.context, li, this.context.query.text));
-      $li.data("item-data", item);
-      $ul.append($li);
-    }
-    this.show();
-    if (this.context.getOpt('highlightFirst')) {
-      return $ul.find("li:first").addClass("cur");
-    }
-  };
-
-  return View;
-
-})();
-
-var Api;
-
-Api = {
-  load: function(at, data) {
-    var c;
-    if (c = this.controller(at)) {
-      return c.model.load(data);
-    }
-  },
-  isSelecting: function() {
-    var ref;
-    return !!((ref = this.controller()) != null ? ref.view.visible() : void 0);
-  },
-  hide: function() {
-    var ref;
-    return (ref = this.controller()) != null ? ref.view.hide() : void 0;
-  },
-  reposition: function() {
-    var c;
-    if (c = this.controller()) {
-      return c.view.reposition(c.rect());
-    }
-  },
-  setIframe: function(iframe, asRoot) {
-    this.setupRootElement(iframe, asRoot);
-    return null;
-  },
-  run: function() {
-    return this.dispatch();
-  },
-  destroy: function() {
-    this.shutdown();
-    return this.$inputor.data('atwho', null);
-  }
-};
-
-$.fn.atwho = function(method) {
-  var _args, result;
-  _args = arguments;
-  result = null;
-  this.filter('textarea, input, [contenteditable=""], [contenteditable=true]').each(function() {
-    var $this, app;
-    if (!(app = ($this = $(this)).data("atwho"))) {
-      $this.data('atwho', (app = new App(this)));
-    }
-    if (typeof method === 'object' || !method) {
-      return app.reg(method.at, method);
-    } else if (Api[method] && app) {
-      return result = Api[method].apply(app, Array.prototype.slice.call(_args, 1));
-    } else {
-      return $.error("Method " + method + " does not exist on jQuery.atwho");
-    }
-  });
-  if (result != null) {
-    return result;
-  } else {
-    return this;
-  }
-};
-
-$.fn.atwho["default"] = {
-  at: void 0,
-  alias: void 0,
-  data: null,
-  displayTpl: "<li>${name}</li>",
-  insertTpl: "${atwho-at}${name}",
-  headerTpl: null,
-  callbacks: DEFAULT_CALLBACKS,
-  functionOverrides: {},
-  searchKey: "name",
-  suffix: void 0,
-  hideWithoutSuffix: false,
-  startWithSpace: true,
-  acceptSpaceBar: false,
-  highlightFirst: true,
-  limit: 5,
-  maxLen: 20,
-  minLen: 0,
-  displayTimeout: 300,
-  delay: null,
-  spaceSelectsMatch: false,
-  tabSelectsMatch: true,
-  editableAtwhoQueryAttrs: {},
-  scrollDuration: 150,
-  suspendOnComposing: true,
-  lookUpOnClick: true
-};
-
-$.fn.atwho.debug = false;
-
-}));
-
-
-/***/ }),
-/* 515 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports=function(t){var e={};function n(i){if(e[i])return e[i].exports;var o=e[i]={i:i,l:!1,exports:{}};return t[i].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.i=function(t){return t},n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:i})},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=11)}([function(t,e){t.exports=function(t,e,n,i){var o,r=t=t||{},a=typeof t.default;"object"!==a&&"function"!==a||(o=t,r=t.default);var s="function"==typeof r?r.options:r;if(e&&(s.render=e.render,s.staticRenderFns=e.staticRenderFns),n&&(s._scopeId=n),i){var l=s.computed||(s.computed={});Object.keys(i).forEach(function(t){var e=i[t];l[t]=function(){return e}})}return{esModule:o,exports:r,options:s}}},function(t,e,n){"use strict";function i(){var t=window.getSelection();if(t&&t.rangeCount>0)return t.getRangeAt(0)}e.f=function(t,e){if(t.scrollIntoViewIfNeeded)t.scrollIntoViewIfNeeded(!1);else{var n=t.offsetTop-e.scrollTop;(n<0||n>e.offsetHeight-t.offsetHeight)&&((e=e||t.parentElement).scrollTop=t.offsetTop)}},e.e=function(t){var e=window.getSelection();e&&(e.removeAllRanges(),e.addRange(t))},e.d=i,e.a=function(t,e){return e.map(function(e){return{at:e,index:t.lastIndexOf(e)}}).reduce(function(t,e){return t.index>e.index?t:e})},e.b=function(t,e){e=e||window;var n={top:t.offsetTop,left:t.offsetLeft},i=t.offsetParent;for(;null!=i&&i!=e;)n.left+=i.offsetLeft,n.top+=i.offsetTop,i=i.offsetParent;return n},e.g=function(t,e){do{if(e(t))return t}while(t=t&&t.parentNode)},e.c=function(){var t=i();if(t){var e=t.cloneRange();return e.collapse(!0),e.setStart(e.endContainer,0),e}}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(1),o=n(6),r=n.n(o),a=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var i in n)Object.prototype.hasOwnProperty.call(n,i)&&(t[i]=n[i])}return t};e.default={name:"At",mixins:[r.a],props:{value:{type:String,default:null},at:{type:String,default:null},ats:{type:Array,default:function(){return["@"]}},suffix:{type:String,default:" "},loop:{type:Boolean,default:!0},allowSpaces:{type:Boolean,default:!0},avoidEmail:{type:Boolean,default:!0},hoverSelect:{type:Boolean,default:!0},members:{type:Array,default:function(){return[]}},nameKey:{type:String,default:""},filterMatch:{type:Function,default:function(t,e,n){return t.toLowerCase().indexOf(e.toLowerCase())>-1}},deleteMatch:{type:Function,default:function(t,e,n){return e===t+n}},scrollRef:{type:String,default:""}},data:function(){return{bindsValue:null!=this.value,hasComposition:!1,atwho:null}},computed:{atItems:function(){return this.at?[this.at]:this.ats},style:function(){if(this.atwho){var t=this.atwho,e=(t.list,t.cur,t.x),o=t.y,r=this.$refs.wrap;if(r){var a=n.i(i.b)(r),s=this.scrollRef?document.querySelector(this.scrollRef).scrollLeft:0,l=this.scrollRef?document.querySelector(this.scrollRef).scrollTop:0;return{left:e+s+window.pageXOffset-a.left+"px",top:o+l+window.pageYOffset-a.top+"px"}}}return null}},watch:{"atwho.cur":function(t){var e=this;null!=t&&this.$nextTick(function(){e.scrollToCur()})},members:function(){this.handleInput(!0)},value:function(t,e){this.bindsValue&&this.handleValueUpdate(t)}},mounted:function(){this.bindsValue&&this.handleValueUpdate(this.value)},methods:{itemName:function(t){var e=this.nameKey;return e?t[e]:t},isCur:function(t){return t===this.atwho.cur},handleValueUpdate:function(t){var e=this.$el.querySelector("[contenteditable]");t!==e.innerHTML&&(e.innerHTML=t)},handleItemHover:function(t){this.hoverSelect&&this.selectByMouse(t)},handleItemClick:function(t){this.selectByMouse(t),this.insertItem()},handleDelete:function(t){var e=n.i(i.c)();if(e){var o=this.atItems,r=this.members,a=this.suffix,s=this.deleteMatch,l=this.itemName,u=e.toString(),c=n.i(i.a)(u,o),f=c.at,h=c.index;if(h>-1){var d=u.slice(h+f.length);if(r.some(function(t){var e=l(t);return s(e,d,a)})){t.preventDefault(),t.stopPropagation();var p=n.i(i.d)();p&&(p.setStart(p.endContainer,h),p.deleteContents(),n.i(i.e)(p),this.handleInput())}}}},handleKeyDown:function(t){var e=this;if(this.atwho){if(38===t.keyCode||40===t.keyCode)return void(t.metaKey||t.ctrlKey||(t.preventDefault(),t.stopPropagation(),this.selectByKeyboard(t)));if(13===t.keyCode)return this.insertItem(),t.preventDefault(),void t.stopPropagation();if(27===t.keyCode)return void this.closePanel()}(t.keyCode>=48&&t.keyCode<=90||8===t.keyCode)&&setTimeout(function(){e.handleInput()},50),8===t.keyCode&&this.handleDelete(t)},handleCompositionStart:function(){this.hasComposition=!0},handleCompositionEnd:function(){this.hasComposition=!1,this.handleInput()},handleInput:function(t){if(!this.hasComposition){var e=this.$el.querySelector("[contenteditable]");this.$emit("input",e.innerHTML);var o=n.i(i.c)();if(o){var r=this.atItems,a=this.avoidEmail,s=this.allowSpaces,l=!0,u=o.toString(),c=n.i(i.a)(u,r),f=c.at,h=c.index;h<0&&(l=!1);var d=u[h-1],p=u.slice(h+f.length,u.length);if(a&&/^[a-z0-9]$/i.test(d)&&(l=!1),!s&&/\s/.test(p)&&(l=!1),/^\s/.test(p)&&(l=!1),l){var v=this.members,m=this.filterMatch,w=this.itemName;!t&&p.length>0&&this.$emit("at",p);var x=v.filter(function(t){var e=w(t);return m(e,p,f)});x.length?this.openPanel(x,o,h,f):this.closePanel()}else this.closePanel()}}},closePanel:function(){this.atwho&&(this.atwho=null)},openPanel:function(t,e,n,i){var o=this,r=function(){var r=e.cloneRange();r.setStart(r.endContainer,n+i.length);var a=r.getClientRects()[0];o.atwho={range:e,offset:n,list:t,x:a.left,y:a.top-4,cur:0}};this.atwho?r():setTimeout(r,10)},scrollToCur:function(){var t=this.$refs.cur[0],e=t.parentElement.parentElement;n.i(i.f)(t,e)},selectByMouse:function(t){var e=+n.i(i.g)(t.target,function(t){return t.getAttribute("data-index")}).getAttribute("data-index");this.atwho=a({},this.atwho,{cur:e})},selectByKeyboard:function(t){var e=38===t.keyCode?-1:1,n=this.atwho,i=n.cur,o=n.list,r=this.loop?(i+e+o.length)%o.length:Math.max(0,Math.min(i+e,o.length-1));this.atwho=a({},this.atwho,{cur:r})},insertText:function(t,e){e.deleteContents();var o=e.endContainer;if(o.nodeType===Node.TEXT_NODE){var r=e.endOffset;o.data=o.data.slice(0,r)+t+o.data.slice(r),e.setEnd(o,r+t.length)}else{var a=document.createTextNode(t);e.insertNode(a),e.setEndAfter(a)}e.collapse(!1),n.i(i.e)(e)},insertItem:function(){var t=this.atwho,e=t.range,o=(t.offset,t.list),r=t.cur,a=this.suffix,s=this.atItems,l=this.itemName,u=e.cloneRange(),c=e.toString(),f=n.i(i.a)(c,s),h=f.at,d=f.index+h.length;u.setStart(u.endContainer,d),n.i(i.e)(u),n.i(i.e)(u);var p=l(o[r])+a;this.insertText(p,u),this.handleInput()}}}},function(t,e,n){(t.exports=n(4)()).push([t.i,".atwho-view{color:#000;border-radius:3px;box-shadow:0 0 5px rgba(0,0,0,.1);min-width:120px;z-index:11110!important}.atwho-ul{list-style:none}.atwho-li{display:block}.atwho-view{border-radius:6px;box-shadow:0 0 10px 0 hsla(211,9%,44%,.5)}.atwho-ul{max-height:135px;padding:0;margin:0}.atwho-li{box-sizing:border-box;height:27px;padding:0 12px;white-space:nowrap;display:flex;align-items:center}.atwho-li span{overflow:hidden;text-overflow:ellipsis}.atwho-cur{background:#5bb8ff;color:#fff}.atwho-wrap{position:relative}.atwho-panel{position:absolute}.atwho-inner{position:relative}.atwho-view{position:absolute;bottom:0;left:-.8em;cursor:default;background-color:hsla(0,0%,100%,.94);min-width:140px;max-width:180px;max-height:200px;overflow-y:auto}.atwho-view::-webkit-scrollbar{width:11px;height:11px}.atwho-view::-webkit-scrollbar-track{background-color:#f5f5f5}.atwho-view::-webkit-scrollbar-thumb{min-height:36px;border:2px solid transparent;border-top:3px solid transparent;border-bottom:3px solid transparent;background-clip:padding-box;border-radius:7px;background-color:#c4c4c4}",""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var n=this[e];n[2]?t.push("@media "+n[2]+"{"+n[1]+"}"):t.push(n[1])}return t.join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var i={},o=0;o<this.length;o++){var r=this[o][0];"number"==typeof r&&(i[r]=!0)}for(o=0;o<e.length;o++){var a=e[o];"number"==typeof a[0]&&i[a[0]]||(n&&!a[2]?a[2]=n:n&&(a[2]="("+a[2]+") and ("+n+")"),t.push(a))}},t}},function(t,e,n){var i=n(0)(n(2),null,null,null);t.exports=i.exports},function(t,e,n){n(9);var i=n(0)(null,n(7),null,null);t.exports=i.exports},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{ref:"wrap",staticClass:"atwho-wrap",on:{compositionstart:t.handleCompositionStart,compositionend:t.handleCompositionEnd,input:function(e){t.handleInput()},keydown:t.handleKeyDown}},[t.atwho?n("div",{staticClass:"atwho-panel",style:t.style},[n("div",{staticClass:"atwho-inner"},[n("div",{staticClass:"atwho-view"},[n("ul",{staticClass:"atwho-ul"},t._l(t.atwho.list,function(e,i){return n("li",{ref:t.isCur(i)&&"cur",refInFor:!0,staticClass:"atwho-li",class:t.isCur(i)&&"atwho-cur",attrs:{"data-index":i},on:{mouseenter:t.handleItemHover,click:t.handleItemClick}},[t._t("item",[n("span",{domProps:{textContent:t._s(t.itemName(e))}})],{item:e})],2)}))])])]):t._e(),t._v(" "),t._t("default")],2)},staticRenderFns:[]}},function(t,e){var n={},i=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}},o=i(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),r=i(function(){return document.head||document.getElementsByTagName("head")[0]}),a=null,s=0,l=[];function u(t,e){for(var i=0;i<t.length;i++){var o=t[i],r=n[o.id];if(r){r.refs++;for(var a=0;a<r.parts.length;a++)r.parts[a](o.parts[a]);for(;a<o.parts.length;a++)r.parts.push(h(o.parts[a],e))}else{var s=[];for(a=0;a<o.parts.length;a++)s.push(h(o.parts[a],e));n[o.id]={id:o.id,refs:1,parts:s}}}}function c(t){for(var e=[],n={},i=0;i<t.length;i++){var o=t[i],r=o[0],a={css:o[1],media:o[2],sourceMap:o[3]};n[r]?n[r].parts.push(a):e.push(n[r]={id:r,parts:[a]})}return e}function f(t){var e=document.createElement("style");return e.type="text/css",function(t,e){var n=r(),i=l[l.length-1];if("top"===t.insertAt)i?i.nextSibling?n.insertBefore(e,i.nextSibling):n.appendChild(e):n.insertBefore(e,n.firstChild),l.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(e)}}(t,e),e}function h(t,e){var n,i,o;if(e.singleton){var r=s++;n=a||(a=f(e)),i=v.bind(null,n,r,!1),o=v.bind(null,n,r,!0)}else n=f(e),i=function(t,e){var n=e.css,i=e.media,o=e.sourceMap;i&&t.setAttribute("media",i);o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */");if(t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}.bind(null,n),o=function(){!function(t){t.parentNode.removeChild(t);var e=l.indexOf(t);e>=0&&l.splice(e,1)}(n)};return i(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;i(t=e)}else o()}}t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");void 0===(e=e||{}).singleton&&(e.singleton=o()),void 0===e.insertAt&&(e.insertAt="bottom");var i=c(t);return u(i,e),function(t){for(var o=[],r=0;r<i.length;r++){var a=i[r];(s=n[a.id]).refs--,o.push(s)}t&&u(c(t),e);for(r=0;r<o.length;r++){var s;if(0===(s=o[r]).refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete n[s.id]}}}};var d,p=(d=[],function(t,e){return d[t]=e,d.filter(Boolean).join("\n")});function v(t,e,n,i){var o=n?"":i.css;if(t.styleSheet)t.styleSheet.cssText=p(e,o);else{var r=document.createTextNode(o),a=t.childNodes;a[e]&&t.removeChild(a[e]),a.length?t.insertBefore(r,a[e]):t.appendChild(r)}}},function(t,e,n){var i=n(3);"string"==typeof i&&(i=[[t.i,i,""]]);n(8)(i,{});i.locals&&(t.exports=i.locals)},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(5),o=n.n(i),r=n(12),a=n.n(r),s=n(1);e.default={extends:o.a,name:"AtTextarea",computed:{style:function(){if(this.atwho){var t=this.atwho,e=(t.list,t.cur,t.x),n=t.y,i=this.$refs.wrap,o=this.$el.querySelector("textarea");if(i)return{left:e+o.offsetLeft-o.scrollLeft+"px",top:n+o.offsetTop-o.scrollTop+"px"}}return null}},methods:{handleValueUpdate:function(t){var e=this.$el.querySelector("textarea");t!==e.value&&(e.value=t)},handleDelete:function(t){var e=this.$el.querySelector("textarea"),i=e.value.slice(0,e.selectionEnd);if(i){var o=this.atItems,r=this.members,a=this.suffix,l=this.deleteMatch,u=this.itemName,c=n.i(s.a)(i,o),f=c.at,h=c.index;if(h>-1){var d=i.slice(h+f.length);r.some(function(t){var e=u(t);return l(e,d,a)})&&(e.value=e.value.slice(0,h)+e.value.slice(e.selectionEnd-1),e.selectionStart=h+1,e.selectionEnd=h+1,this.handleInput())}}},handleInput:function(t){if(!this.hasComposition){var e=this.$el.querySelector("textarea");this.$emit("input",e.value);var i=e.value.slice(0,e.selectionEnd);if(i){var o=this.atItems,r=this.avoidEmail,a=this.allowSpaces,l=!0,u=n.i(s.a)(i,o),c=u.at,f=u.index;f<0&&(l=!1);var h=i[f-1],d=i.slice(f+c.length,i.length);if(r&&/^[a-z0-9]$/i.test(h)&&(l=!1),!a&&/\s/.test(d)&&(l=!1),/^\s/.test(d)&&(l=!1),l){var p=this.members,v=this.filterMatch,m=this.itemName;t||this.$emit("at",d);var w=p.filter(function(t){var e=m(t);return v(e,d,c)});w.length?this.openPanel(w,d,f,c,t):this.closePanel()}else this.closePanel()}}},openPanel:function(t,e,n,i){var o=this,r=function(){var r=o.$el.querySelector("textarea"),s=n+i.length,l=a()(r,s);o.atwho={chunk:e,offset:n,list:t,atEnd:s,x:l.left,y:l.top-4,cur:0}};this.atwho?r():setTimeout(r,10)},insertText:function(t,e){var n=e.selectionStart,i=e.selectionEnd;e.value=e.value.slice(0,n)+t+e.value.slice(i);var o=n+t.length;e.selectionStart=o,e.selectionEnd=o},insertItem:function(){var t=this.atwho,e=(t.chunk,t.offset,t.list),i=t.cur,o=t.atEnd,r=this.suffix,a=this.atItems,l=this.itemName,u=this.$el.querySelector("textarea"),c=u.value.slice(0,o),f=n.i(s.a)(c,a),h=f.at,d=f.index+h.length;u.selectionStart=d,u.focus();var p=l(e[i])+r;this.insertText(p,u),this.handleInput()}}}},function(t,e,n){var i=n(0)(n(10),null,null,null);t.exports=i.exports},function(t,e){t.exports=__webpack_require__(516)}]);
+module.exports=function(t){var e={};function n(i){if(e[i])return e[i].exports;var o=e[i]={i:i,l:!1,exports:{}};return t[i].call(o.exports,o,o.exports,n),o.l=!0,o.exports}return n.m=t,n.c=e,n.i=function(t){return t},n.d=function(t,e,i){n.o(t,e)||Object.defineProperty(t,e,{configurable:!1,enumerable:!0,get:i})},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=11)}([function(t,e){t.exports=function(t,e,n,i){var o,r=t=t||{},a=typeof t.default;"object"!==a&&"function"!==a||(o=t,r=t.default);var s="function"==typeof r?r.options:r;if(e&&(s.render=e.render,s.staticRenderFns=e.staticRenderFns),n&&(s._scopeId=n),i){var l=s.computed||(s.computed={});Object.keys(i).forEach(function(t){var e=i[t];l[t]=function(){return e}})}return{esModule:o,exports:r,options:s}}},function(t,e,n){"use strict";function i(){var t=window.getSelection();if(t&&t.rangeCount>0)return t.getRangeAt(0)}e.f=function(t,e){if(t.scrollIntoViewIfNeeded)t.scrollIntoViewIfNeeded(!1);else{var n=t.offsetTop-e.scrollTop;(n<0||n>e.offsetHeight-t.offsetHeight)&&((e=e||t.parentElement).scrollTop=t.offsetTop)}},e.e=function(t){var e=window.getSelection();e&&(e.removeAllRanges(),e.addRange(t))},e.d=i,e.a=function(t,e){return e.map(function(e){return{at:e,index:t.lastIndexOf(e)}}).reduce(function(t,e){return t.index>e.index?t:e})},e.b=function(t,e){e=e||window;var n={top:t.offsetTop,left:t.offsetLeft},i=t.offsetParent;for(;null!=i&&i!=e;)n.left+=i.offsetLeft,n.top+=i.offsetTop,i=i.offsetParent;return n},e.g=function(t,e){do{if(e(t))return t}while(t=t&&t.parentNode)},e.c=function(){var t=i();if(t){var e=t.cloneRange();return e.collapse(!0),e.setStart(e.endContainer,0),e}}},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(1),o=n(6),r=n.n(o),a=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var i in n)Object.prototype.hasOwnProperty.call(n,i)&&(t[i]=n[i])}return t};e.default={name:"At",mixins:[r.a],props:{value:{type:String,default:null},at:{type:String,default:null},ats:{type:Array,default:function(){return["@"]}},suffix:{type:String,default:" "},loop:{type:Boolean,default:!0},allowSpaces:{type:Boolean,default:!0},avoidEmail:{type:Boolean,default:!0},hoverSelect:{type:Boolean,default:!0},members:{type:Array,default:function(){return[]}},nameKey:{type:String,default:""},filterMatch:{type:Function,default:function(t,e,n){return t.toLowerCase().indexOf(e.toLowerCase())>-1}},deleteMatch:{type:Function,default:function(t,e,n){return e===t+n}},scrollRef:{type:String,default:""}},data:function(){return{bindsValue:null!=this.value,hasComposition:!1,atwho:null}},computed:{atItems:function(){return this.at?[this.at]:this.ats},style:function(){if(this.atwho){var t=this.atwho,e=(t.list,t.cur,t.x),o=t.y,r=this.$refs.wrap;if(r){var a=n.i(i.b)(r),s=this.scrollRef?document.querySelector(this.scrollRef).scrollLeft:0,l=this.scrollRef?document.querySelector(this.scrollRef).scrollTop:0;return{left:e+s+window.pageXOffset-a.left+"px",top:o+l+window.pageYOffset-a.top+"px"}}}return null}},watch:{"atwho.cur":function(t){var e=this;null!=t&&this.$nextTick(function(){e.scrollToCur()})},members:function(){this.handleInput(!0)},value:function(t,e){this.bindsValue&&this.handleValueUpdate(t)}},mounted:function(){this.bindsValue&&this.handleValueUpdate(this.value)},methods:{itemName:function(t){var e=this.nameKey;return e?t[e]:t},isCur:function(t){return t===this.atwho.cur},handleValueUpdate:function(t){var e=this.$el.querySelector("[contenteditable]");t!==e.innerHTML&&(e.innerHTML=t)},handleItemHover:function(t){this.hoverSelect&&this.selectByMouse(t)},handleItemClick:function(t){this.selectByMouse(t),this.insertItem()},handleDelete:function(t){var e=n.i(i.c)();if(e){var o=this.atItems,r=this.members,a=this.suffix,s=this.deleteMatch,l=this.itemName,u=e.toString(),c=n.i(i.a)(u,o),f=c.at,h=c.index;if(h>-1){var d=u.slice(h+f.length);if(r.some(function(t){var e=l(t);return s(e,d,a)})){t.preventDefault(),t.stopPropagation();var p=n.i(i.d)();p&&(p.setStart(p.endContainer,h),p.deleteContents(),n.i(i.e)(p),this.handleInput())}}}},handleKeyDown:function(t){var e=this;if(this.atwho){if(38===t.keyCode||40===t.keyCode)return void(t.metaKey||t.ctrlKey||(t.preventDefault(),t.stopPropagation(),this.selectByKeyboard(t)));if(13===t.keyCode)return this.insertItem(),t.preventDefault(),void t.stopPropagation();if(27===t.keyCode)return void this.closePanel()}(t.keyCode>=48&&t.keyCode<=90||8===t.keyCode)&&setTimeout(function(){e.handleInput()},50),8===t.keyCode&&this.handleDelete(t)},handleCompositionStart:function(){this.hasComposition=!0},handleCompositionEnd:function(){this.hasComposition=!1,this.handleInput()},handleInput:function(t){if(!this.hasComposition){var e=this.$el.querySelector("[contenteditable]");this.$emit("input",e.innerHTML);var o=n.i(i.c)();if(o){var r=this.atItems,a=this.avoidEmail,s=this.allowSpaces,l=!0,u=o.toString(),c=n.i(i.a)(u,r),f=c.at,h=c.index;h<0&&(l=!1);var d=u[h-1],p=u.slice(h+f.length,u.length);if(a&&/^[a-z0-9]$/i.test(d)&&(l=!1),!s&&/\s/.test(p)&&(l=!1),/^\s/.test(p)&&(l=!1),l){var v=this.members,m=this.filterMatch,w=this.itemName;!t&&p.length>0&&this.$emit("at",p);var x=v.filter(function(t){var e=w(t);return m(e,p,f)});x.length?this.openPanel(x,o,h,f):this.closePanel()}else this.closePanel()}}},closePanel:function(){this.atwho&&(this.atwho=null)},openPanel:function(t,e,n,i){var o=this,r=function(){var r=e.cloneRange();r.setStart(r.endContainer,n+i.length);var a=r.getClientRects()[0];o.atwho={range:e,offset:n,list:t,x:a.left,y:a.top-4,cur:0}};this.atwho?r():setTimeout(r,10)},scrollToCur:function(){var t=this.$refs.cur[0],e=t.parentElement.parentElement;n.i(i.f)(t,e)},selectByMouse:function(t){var e=+n.i(i.g)(t.target,function(t){return t.getAttribute("data-index")}).getAttribute("data-index");this.atwho=a({},this.atwho,{cur:e})},selectByKeyboard:function(t){var e=38===t.keyCode?-1:1,n=this.atwho,i=n.cur,o=n.list,r=this.loop?(i+e+o.length)%o.length:Math.max(0,Math.min(i+e,o.length-1));this.atwho=a({},this.atwho,{cur:r})},insertText:function(t,e){e.deleteContents();var o=e.endContainer;if(o.nodeType===Node.TEXT_NODE){var r=e.endOffset;o.data=o.data.slice(0,r)+t+o.data.slice(r),e.setEnd(o,r+t.length)}else{var a=document.createTextNode(t);e.insertNode(a),e.setEndAfter(a)}e.collapse(!1),n.i(i.e)(e)},insertItem:function(){var t=this.atwho,e=t.range,o=(t.offset,t.list),r=t.cur,a=this.suffix,s=this.atItems,l=this.itemName,u=e.cloneRange(),c=e.toString(),f=n.i(i.a)(c,s),h=f.at,d=f.index+h.length;u.setStart(u.endContainer,d),n.i(i.e)(u),n.i(i.e)(u);var p=l(o[r])+a;this.insertText(p,u),this.handleInput()}}}},function(t,e,n){(t.exports=n(4)()).push([t.i,".atwho-view{color:#000;border-radius:3px;box-shadow:0 0 5px rgba(0,0,0,.1);min-width:120px;z-index:11110!important}.atwho-ul{list-style:none}.atwho-li{display:block}.atwho-view{border-radius:6px;box-shadow:0 0 10px 0 hsla(211,9%,44%,.5)}.atwho-ul{max-height:135px;padding:0;margin:0}.atwho-li{box-sizing:border-box;height:27px;padding:0 12px;white-space:nowrap;display:flex;align-items:center}.atwho-li span{overflow:hidden;text-overflow:ellipsis}.atwho-cur{background:#5bb8ff;color:#fff}.atwho-wrap{position:relative}.atwho-panel{position:absolute}.atwho-inner{position:relative}.atwho-view{position:absolute;bottom:0;left:-.8em;cursor:default;background-color:hsla(0,0%,100%,.94);min-width:140px;max-width:180px;max-height:200px;overflow-y:auto}.atwho-view::-webkit-scrollbar{width:11px;height:11px}.atwho-view::-webkit-scrollbar-track{background-color:#f5f5f5}.atwho-view::-webkit-scrollbar-thumb{min-height:36px;border:2px solid transparent;border-top:3px solid transparent;border-bottom:3px solid transparent;background-clip:padding-box;border-radius:7px;background-color:#c4c4c4}",""])},function(t,e){t.exports=function(){var t=[];return t.toString=function(){for(var t=[],e=0;e<this.length;e++){var n=this[e];n[2]?t.push("@media "+n[2]+"{"+n[1]+"}"):t.push(n[1])}return t.join("")},t.i=function(e,n){"string"==typeof e&&(e=[[null,e,""]]);for(var i={},o=0;o<this.length;o++){var r=this[o][0];"number"==typeof r&&(i[r]=!0)}for(o=0;o<e.length;o++){var a=e[o];"number"==typeof a[0]&&i[a[0]]||(n&&!a[2]?a[2]=n:n&&(a[2]="("+a[2]+") and ("+n+")"),t.push(a))}},t}},function(t,e,n){var i=n(0)(n(2),null,null,null);t.exports=i.exports},function(t,e,n){n(9);var i=n(0)(null,n(7),null,null);t.exports=i.exports},function(t,e){t.exports={render:function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{ref:"wrap",staticClass:"atwho-wrap",on:{compositionstart:t.handleCompositionStart,compositionend:t.handleCompositionEnd,input:function(e){t.handleInput()},keydown:t.handleKeyDown}},[t.atwho?n("div",{staticClass:"atwho-panel",style:t.style},[n("div",{staticClass:"atwho-inner"},[n("div",{staticClass:"atwho-view"},[n("ul",{staticClass:"atwho-ul"},t._l(t.atwho.list,function(e,i){return n("li",{ref:t.isCur(i)&&"cur",refInFor:!0,staticClass:"atwho-li",class:t.isCur(i)&&"atwho-cur",attrs:{"data-index":i},on:{mouseenter:t.handleItemHover,click:t.handleItemClick}},[t._t("item",[n("span",{domProps:{textContent:t._s(t.itemName(e))}})],{item:e})],2)}))])])]):t._e(),t._v(" "),t._t("default")],2)},staticRenderFns:[]}},function(t,e){var n={},i=function(t){var e;return function(){return void 0===e&&(e=t.apply(this,arguments)),e}},o=i(function(){return/msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase())}),r=i(function(){return document.head||document.getElementsByTagName("head")[0]}),a=null,s=0,l=[];function u(t,e){for(var i=0;i<t.length;i++){var o=t[i],r=n[o.id];if(r){r.refs++;for(var a=0;a<r.parts.length;a++)r.parts[a](o.parts[a]);for(;a<o.parts.length;a++)r.parts.push(h(o.parts[a],e))}else{var s=[];for(a=0;a<o.parts.length;a++)s.push(h(o.parts[a],e));n[o.id]={id:o.id,refs:1,parts:s}}}}function c(t){for(var e=[],n={},i=0;i<t.length;i++){var o=t[i],r=o[0],a={css:o[1],media:o[2],sourceMap:o[3]};n[r]?n[r].parts.push(a):e.push(n[r]={id:r,parts:[a]})}return e}function f(t){var e=document.createElement("style");return e.type="text/css",function(t,e){var n=r(),i=l[l.length-1];if("top"===t.insertAt)i?i.nextSibling?n.insertBefore(e,i.nextSibling):n.appendChild(e):n.insertBefore(e,n.firstChild),l.push(e);else{if("bottom"!==t.insertAt)throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(e)}}(t,e),e}function h(t,e){var n,i,o;if(e.singleton){var r=s++;n=a||(a=f(e)),i=v.bind(null,n,r,!1),o=v.bind(null,n,r,!0)}else n=f(e),i=function(t,e){var n=e.css,i=e.media,o=e.sourceMap;i&&t.setAttribute("media",i);o&&(n+="\n/*# sourceURL="+o.sources[0]+" */",n+="\n/*# sourceMappingURL=data:application/json;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(o))))+" */");if(t.styleSheet)t.styleSheet.cssText=n;else{for(;t.firstChild;)t.removeChild(t.firstChild);t.appendChild(document.createTextNode(n))}}.bind(null,n),o=function(){!function(t){t.parentNode.removeChild(t);var e=l.indexOf(t);e>=0&&l.splice(e,1)}(n)};return i(t),function(e){if(e){if(e.css===t.css&&e.media===t.media&&e.sourceMap===t.sourceMap)return;i(t=e)}else o()}}t.exports=function(t,e){if("undefined"!=typeof DEBUG&&DEBUG&&"object"!=typeof document)throw new Error("The style-loader cannot be used in a non-browser environment");void 0===(e=e||{}).singleton&&(e.singleton=o()),void 0===e.insertAt&&(e.insertAt="bottom");var i=c(t);return u(i,e),function(t){for(var o=[],r=0;r<i.length;r++){var a=i[r];(s=n[a.id]).refs--,o.push(s)}t&&u(c(t),e);for(r=0;r<o.length;r++){var s;if(0===(s=o[r]).refs){for(var l=0;l<s.parts.length;l++)s.parts[l]();delete n[s.id]}}}};var d,p=(d=[],function(t,e){return d[t]=e,d.filter(Boolean).join("\n")});function v(t,e,n,i){var o=n?"":i.css;if(t.styleSheet)t.styleSheet.cssText=p(e,o);else{var r=document.createTextNode(o),a=t.childNodes;a[e]&&t.removeChild(a[e]),a.length?t.insertBefore(r,a[e]):t.appendChild(r)}}},function(t,e,n){var i=n(3);"string"==typeof i&&(i=[[t.i,i,""]]);n(8)(i,{});i.locals&&(t.exports=i.locals)},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var i=n(5),o=n.n(i),r=n(12),a=n.n(r),s=n(1);e.default={extends:o.a,name:"AtTextarea",computed:{style:function(){if(this.atwho){var t=this.atwho,e=(t.list,t.cur,t.x),n=t.y,i=this.$refs.wrap,o=this.$el.querySelector("textarea");if(i)return{left:e+o.offsetLeft-o.scrollLeft+"px",top:n+o.offsetTop-o.scrollTop+"px"}}return null}},methods:{handleValueUpdate:function(t){var e=this.$el.querySelector("textarea");t!==e.value&&(e.value=t)},handleDelete:function(t){var e=this.$el.querySelector("textarea"),i=e.value.slice(0,e.selectionEnd);if(i){var o=this.atItems,r=this.members,a=this.suffix,l=this.deleteMatch,u=this.itemName,c=n.i(s.a)(i,o),f=c.at,h=c.index;if(h>-1){var d=i.slice(h+f.length);r.some(function(t){var e=u(t);return l(e,d,a)})&&(e.value=e.value.slice(0,h)+e.value.slice(e.selectionEnd-1),e.selectionStart=h+1,e.selectionEnd=h+1,this.handleInput())}}},handleInput:function(t){if(!this.hasComposition){var e=this.$el.querySelector("textarea");this.$emit("input",e.value);var i=e.value.slice(0,e.selectionEnd);if(i){var o=this.atItems,r=this.avoidEmail,a=this.allowSpaces,l=!0,u=n.i(s.a)(i,o),c=u.at,f=u.index;f<0&&(l=!1);var h=i[f-1],d=i.slice(f+c.length,i.length);if(r&&/^[a-z0-9]$/i.test(h)&&(l=!1),!a&&/\s/.test(d)&&(l=!1),/^\s/.test(d)&&(l=!1),l){var p=this.members,v=this.filterMatch,m=this.itemName;t||this.$emit("at",d);var w=p.filter(function(t){var e=m(t);return v(e,d,c)});w.length?this.openPanel(w,d,f,c,t):this.closePanel()}else this.closePanel()}}},openPanel:function(t,e,n,i){var o=this,r=function(){var r=o.$el.querySelector("textarea"),s=n+i.length,l=a()(r,s);o.atwho={chunk:e,offset:n,list:t,atEnd:s,x:l.left,y:l.top-4,cur:0}};this.atwho?r():setTimeout(r,10)},insertText:function(t,e){var n=e.selectionStart,i=e.selectionEnd;e.value=e.value.slice(0,n)+t+e.value.slice(i);var o=n+t.length;e.selectionStart=o,e.selectionEnd=o},insertItem:function(){var t=this.atwho,e=(t.chunk,t.offset,t.list),i=t.cur,o=t.atEnd,r=this.suffix,a=this.atItems,l=this.itemName,u=this.$el.querySelector("textarea"),c=u.value.slice(0,o),f=n.i(s.a)(c,a),h=f.at,d=f.index+h.length;u.selectionStart=d,u.focus();var p=l(e[i])+r;this.insertText(p,u),this.handleInput()}}}},function(t,e,n){var i=n(0)(n(10),null,null,null);t.exports=i.exports},function(t,e){t.exports=__webpack_require__(514)}]);
 //# sourceMappingURL=vue-at-textarea.js.map
 
 /***/ }),
-/* 516 */
+/* 514 */
 /***/ (function(module, exports) {
 
 /* jshint browser: true */
@@ -98803,7 +97152,7 @@ if (typeof module != 'undefined' && typeof module.exports != 'undefined') {
 
 
 /***/ }),
-/* 517 */
+/* 515 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -98874,7 +97223,8 @@ var render = function() {
                               cols: "58",
                               rows: "8",
                               id: "comment",
-                              "aria-required": "true"
+                              "aria-required": "true",
+                              required: ""
                             }
                           })
                         ]
@@ -98936,7 +97286,7 @@ if (false) {
 }
 
 /***/ }),
-/* 518 */
+/* 516 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -99624,7 +97974,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
 });
 
 /***/ }),
-/* 519 */
+/* 517 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -99710,15 +98060,15 @@ if (false) {
 }
 
 /***/ }),
-/* 520 */
+/* 518 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(26)
 /* script */
-var __vue_script__ = __webpack_require__(521)
+var __vue_script__ = __webpack_require__(519)
 /* template */
-var __vue_template__ = __webpack_require__(522)
+var __vue_template__ = __webpack_require__(520)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -99757,12 +98107,12 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 521 */
+/* 519 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Replies__ = __webpack_require__(163);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Replies__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Replies___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Replies__);
 //
 //
@@ -99777,7 +98127,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 522 */
+/* 520 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -99797,7 +98147,7 @@ if (false) {
 }
 
 /***/ }),
-/* 523 */
+/* 521 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
@@ -99805,7 +98155,7 @@ var normalizeComponent = __webpack_require__(26)
 /* script */
 var __vue_script__ = __webpack_require__(524)
 /* template */
-var __vue_template__ = __webpack_require__(525)
+var __vue_template__ = __webpack_require__(530)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -99844,11 +98194,15 @@ module.exports = Component.exports
 
 
 /***/ }),
+/* 522 */,
+/* 523 */,
 /* 524 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_moment__);
 //
 //
 //
@@ -99878,6 +98232,60 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -99886,6 +98294,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
+    filters: {
+        moment: function moment(date) {
+            return __WEBPACK_IMPORTED_MODULE_0_moment___default()(date).fromNow();
+        }
+    },
     computed: {
         notiCount: function notiCount() {
             return this.notifications.length;
@@ -99903,12 +98316,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         show: function show() {
             $("#notificationContainer").fadeToggle(300);
             // $("#notification_count").fadeOut("slow");
+        },
+        markAsRead: function markAsRead(notification) {
+            window.location.href = notification.data.link;
+            axios.delete('/profile/' + window.App.user.name + '/notifications/' + notification.id);
         }
     }
 });
 
 /***/ }),
-/* 525 */
+/* 525 */,
+/* 526 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -99917,25 +98344,25 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", [
     _c("div", { staticClass: "navbar" }, [
-      _c("div", { staticClass: "button" }, [
-        _c(
-          "a",
-          {
-            attrs: { href: "#", id: "notificationLink" },
-            on: {
-              click: function($event) {
-                $event.preventDefault()
-                return _vm.show($event)
-              }
+      _c(
+        "div",
+        {
+          staticClass: "button",
+          on: {
+            click: function($event) {
+              $event.preventDefault()
+              return _vm.show($event)
             }
-          },
-          [_c("i", { staticClass: "fa fa-globe" })]
-        ),
-        _vm._v(" "),
-        _c("span", { staticClass: "button__badge" }, [
-          _vm._v(_vm._s(_vm.notiCount))
-        ])
-      ])
+          }
+        },
+        [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("span", { staticClass: "button__badge" }, [
+            _vm._v(_vm._s(_vm.notiCount))
+          ])
+        ]
+      )
     ]),
     _vm._v(" "),
     _c("div", { attrs: { id: "notificationContainer" } }, [
@@ -99947,31 +98374,154 @@ var render = function() {
         "div",
         { staticClass: "notifications", attrs: { id: "notificationsBody" } },
         _vm._l(_vm.notifications, function(notification, index) {
-          return _c("div", { staticClass: "content" }, [
-            _c("a", { attrs: { href: notification.data.link } }, [
-              _c("img", {
-                attrs: {
-                  src: "https://randomuser.me/api/portraits/men/8.jpg",
-                  width: "50px",
-                  height: "50px",
-                  alt: "profpic"
-                }
-              }),
-              _vm._v(
-                "\r\n                    " +
-                  _vm._s(notification.data.message) +
-                  "\r\n                "
-              )
-            ])
+          return _c("div", { key: index, attrs: { id: "DIV_1" } }, [
+            _c("div", { attrs: { id: "DIV_2" } }, [
+              _c("div", { attrs: { id: "DIV_4" } }, [
+                _c("div", { attrs: { id: "DIV_5" } }, [
+                  _c("img", {
+                    staticClass: "IMG_6",
+                    attrs: { alt: "", src: notification.data.avatar }
+                  })
+                ]),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "DIV_7" } }, [
+                  _c("div", { attrs: { id: "DIV_8" } }, [
+                    _c("div", { attrs: { id: "DIV_9" } }, [
+                      _vm._m(1, true),
+                      _vm._v(" "),
+                      _c("div", { attrs: { id: "DIV_12" } }, [
+                        _c("div", { attrs: { id: "DIV_13" } }, [
+                          _c("div", { attrs: { id: "DIV_14" } }, [
+                            _c(
+                              "span",
+                              {
+                                attrs: { id: "SPAN_15" },
+                                on: {
+                                  click: function($event) {
+                                    $event.preventDefault()
+                                    _vm.markAsRead(notification)
+                                  }
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                                    " +
+                                    _vm._s(notification.data.message) +
+                                    "\n                                                "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("div", { attrs: { id: "DIV_20" } }, [
+                              _vm._m(2, true),
+                              _vm._v(" "),
+                              _c("div", { attrs: { id: "DIV_23" } }, [
+                                _c("div", { attrs: { id: "DIV_24" } }, [
+                                  _vm._m(3, true),
+                                  _vm._v(" "),
+                                  _c("div", { attrs: { id: "DIV_27" } }, [
+                                    _c(
+                                      "abbr",
+                                      {
+                                        attrs: {
+                                          title:
+                                            "Thứ Bảy, 28 Tháng 7, 2018 lúc 09:29",
+                                          id: "ABBR_28"
+                                        }
+                                      },
+                                      [
+                                        _c(
+                                          "span",
+                                          { attrs: { id: "SPAN_29" } },
+                                          [
+                                            _vm._v(
+                                              _vm._s(
+                                                _vm._f("moment")(
+                                                  notification.created_at
+                                                )
+                                              )
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
+                                  ])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(4, true)
           ])
         })
       ),
       _vm._v(" "),
-      _vm._m(0)
+      _vm._m(5)
     ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { attrs: { href: "#", id: "notificationLink" } }, [
+      _c("i", { staticClass: "fa fa-globe" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "DIV_10" } }, [
+      _c("span", { attrs: { id: "SPAN_11" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "DIV_21" } }, [
+      _c("img", {
+        attrs: {
+          src: "https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/yI-vSS6j2ZC.png",
+          alt: "",
+          id: "IMG_22"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "DIV_25" } }, [
+      _c("span", { attrs: { id: "SPAN_26" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { attrs: { id: "UL_30" } }, [
+      _c("li", { attrs: { id: "LI_31" } }, [
+        _c("div", { attrs: { id: "DIV_32" } })
+      ]),
+      _vm._v(" "),
+      _c("li", { attrs: { id: "LI_33" } }, [
+        _c("div", { attrs: { id: "DIV_34" } }, [
+          _c("a", { attrs: { href: "#", id: "A_35" } })
+        ])
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -99989,12 +98539,6 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-1d02b862", module.exports)
   }
 }
-
-/***/ }),
-/* 526 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -13,10 +13,11 @@
                             <span v-text="s.item.name"></span>
                         </template>
                         <textarea
-                            cols="58" 
+                            cols="58"
                             rows="8"
                             id="comment"
-                            aria-required="true" 
+                            aria-required="true"
+                            required
                             >
                             </textarea>
                     </at-ta>
@@ -26,14 +27,12 @@
                 <input name="submit" @click.prevent="addReply" type="submit" id="submit" value="Post your answer" class="button small color">
             </p>
         </form>
-        
+
     </div>
 </div>
 
 </template>
 <script>
-import 'jquery.caret';
-import 'at.js';
 import AtTa from 'vue-at/dist/vue-at-textarea'
 export default {
     components: { AtTa },
@@ -51,6 +50,9 @@ export default {
             return window.App.signedIn;
         },
     },
+    mounted() {
+        this.getUser()
+    },
     // mounted() {
     //     $('#comment').atwho({
     //             at: "@",
@@ -61,22 +63,30 @@ export default {
     //                     $.getJSON("/user/search", {q: query}, function(data) {
     //                         console.log(data);
     //                     });
-                        
+
     //                 }
     //             }
     //         })
     // },
     methods: {
         addReply() {
-            axios.post(this.endpoint, {'message' : this.message})
-            .then(res => {
-                this.message = ''
-                toastr.success('Your reply has been posted !');
-                this.$emit('added', res.data);
-            })
+            if(this.message != '')
+            {
+                axios.post(this.endpoint, {'message' : this.message})
+                .then(res => {
+                    this.message = ''
+                    toastr.success('Your reply has been posted !');
+                    this.$emit('added', res.data);
+                })
+            }
         },
         test1() {
             console.log('ok');
+        },
+        getUser() {
+            axios.get('/users').then(res => {
+              this.members = res.data
+            })
         }
     }
 }

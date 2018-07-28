@@ -16,7 +16,7 @@
                                         <i class="icon-user"></i>
                                     </p>
                                     <p class="login-password">
-                                        <input name="password" type="password" value="{{ old('email') ?? 'Password' }}" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}">
+                                        <input name="password" type="password" value="{{ old('password') ?? 'Password' }}" onfocus="if (this.value == 'Password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Password';}">
                                         <i class="icon-lock"></i>
                                         <a href="index_no_box.html#">Forget</a>
                                     </p>

@@ -36,7 +36,7 @@ class ReplyController extends Controller
             'user_id' => auth()->id()
         ]);
         if (request()->expectsJson()) {
-            return $reply->load('owner');
+            return $reply->load('owner.profile');
         }
     }
 

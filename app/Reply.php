@@ -21,7 +21,7 @@ class Reply extends Model
     {
         parent::boot();
         static::addGlobalScope('owner', function ($builder) {
-            $builder->with('owner');
+            $builder->with('owner.profile');
         });
         static::addGlobalScope('favorites', function ($builder) {
             $builder->with('favorites');

@@ -6,9 +6,8 @@
 
 	<!-- Basic Page Needs -->
 	<meta charset="utf-8">
-	<title>Ask me – Responsive Questions and Answers Template</title>
-	<meta name="description" content="Ask me Responsive Questions and Answers Template">
-	<meta name="author" content="2code.info">
+	<title>Ask me</title>
+	<meta name="description" content="Ask me">
 	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	<!-- Mobile Specific Metas -->
@@ -35,7 +34,8 @@
   <script>
     window.App = @json([
       'user' => auth()->user(),
-      'signedIn' => auth()->check()
+      'signedIn' => auth()->check(),
+      'baseUrl' => config('app.url')
     ])
   </script>
 </head>
