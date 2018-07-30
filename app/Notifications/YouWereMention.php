@@ -46,7 +46,7 @@ class YouWereMention extends Notification
         return [
             'message' => $this->reply->owner->name . ' mentioned you in ' . $this->reply->thread->title,
             'link' => $this->reply->path(),
-            'avatar' => asset($this->reply->owner->profile->avatar)
+            'avatar' => asset($this->reply->owner->avatar)
         ];
     }
 }

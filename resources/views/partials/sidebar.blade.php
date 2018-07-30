@@ -123,14 +123,10 @@
 
     <div class="widget widget_tag_cloud">
         <h3 class="widget_title">Tags</h3>
-        <a href="index_no_box.html#">projects</a>
-        <a href="index_no_box.html#">Portfolio</a>
-        <a href="index_no_box.html#">Wordpress</a>
-        <a href="index_no_box.html#">Html</a>
-        <a href="index_no_box.html#">Css</a>
-        <a href="index_no_box.html#">jQuery</a>
-        <a href="index_no_box.html#">2code</a>
-        <a href="index_no_box.html#">vbegy</a>
+        @foreach($allTags as $tag)
+            <a href="{{ route('tags.index', $tag) }}">{{ $tag }}</a>
+        @endforeach
+
     </div>
 
     <div class="widget">

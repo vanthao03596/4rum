@@ -24,9 +24,9 @@
                                 <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                 <span class="question-favorite"><i class="icon-star"></i>5</span>
                             </div>
-                            <span class="question-category"><a href="index_no_box.html#"><i class="icon-folder-close"></i>{{ $thread->channel->name }}</a></span>
+                            <span class="question-category"><a href="{{ $thread->channel->path() }}"><i class="icon-folder-close"></i>{{ $thread->channel->name }}</a></span>
                         <span class="question-date"><i class="icon-time"></i>{{ $thread->created_at}}</span>
-                            <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $thread->replies_count }} Answer</a></span>
+                            <span class="question-comment"><a href="#"><i class="icon-comment"></i>{{ $thread->replies_count }} Answer</a></span>
                             <span class="question-view"><i class="icon-user"></i>70 views</span>
                             <div class="clearfix"></div>
                         </div>

@@ -20,8 +20,6 @@
         "vue": "^2.5.7"
     },
     "dependencies": {
-        "at.js": "^1.5.4",
-        "jquery.caret": "^0.3.1",
         "laravel-echo": "^1.4.0",
         "moment": "^2.22.2",
         "pusher-js": "^4.2.2",

@@ -44,8 +44,18 @@ Route::get('/profile/{user}/questions', 'ProfileController@show')->name('profile
 Route::get('/profile/{user}/answers', 'ProfileController@show')->name('profile.answers');
 Route::get('/profile/{user}/favorites', 'ProfileController@show')->name('profile.favorites');
 Route::get('/profile/{user}/histories', 'ProfileController@show')->name('profile.histories');
+
+Route::get('/profile/{user}/edit', 'ProfileController@edit')->name('profile.edit');
+Route::put('/profile/{user}', 'ProfileController@update')->name('profile.update');
+// Notification
+
 Route::get('/profile/{user}/notifications', 'UserNotificationController@index');
 Route::delete('/profile/{user}/notifications/{notification}', 'UserNotificationController@destroy');
+
+// Tag
+
+Route::get('/tags/{tag}', 'TagController@index')->name('tags.index');
+
 //User
 
 Route::get('/user/search', 'UserController@search');
@@ -54,3 +64,7 @@ Route::get('/users', 'UserController@getUser');
 Auth::routes();
 
 Route::view('/abc', 'welcome');
+
+Route::get('/123', function(){
+    return '<img src="' . Storage::url('public/avatars/1532842752.jpeg') . '">';
+});

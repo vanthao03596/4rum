@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UpdateProfileRequest;
 use App\Thread;
 use App\User;
 use Illuminate\Http\Request;
@@ -25,7 +26,7 @@ class ProfileController extends Controller
             'questionsCount' => $questions->count(),
             'answersCount' => $answers->count(),
             'totalPoint' => $totalPoint,
-            'user' => $user
+            'user' => $user->load('profile')
         ];
         if (\Request::segment(3) == 'questions') {
             $with['questions'] = $questions->paginate(5);
@@ -54,5 +55,32 @@ class ProfileController extends Controller
             ];
         }
         return view('profiles.show')->with($with);
+    }
+
+    public function edit(User $user)
+    {
+        $profile = $user->profile;
+        $this->authorize('view', $profile);
+        $user = $user->load('profile');
+        return view('profiles.edit-profile')->with('user', $user);
+    }
+
+    public function update(User $user, UpdateProfileRequest $request)
+    {
+        $profile = $user->profile;
+        $this->authorize('update', $profile);
+        $data = $request->all();
+
+        if ($request->hasFile('avatar')) {
+            $filename =  time() . '.' . $request->avatar->extension();
+            $path = $request->file('avatar')->storeAs(
+                'public/avatars', $filename
+            );
+            $data['avatar'] = 'avatars/' . $filename;
+        } else {
+            unset($data['avatar']);
+        }
+        $profile->update($data);
+        return back()->with('status', 'Your Profile update successfully !');
     }
 }

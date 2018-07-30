@@ -19,14 +19,14 @@ class UserController extends Controller
 
     public function getUser()
     {
-        return  User::with('profile')
-                    ->where('id', '!=', auth()->id())
+        return  User::where('id', '!=', auth()->id())
                     ->get()
                     ->map(function($user){
                         return [
                             'name' => $user->name,
-                            'avatar' => asset($user->profile->avatar)
+                            'avatar' => $user->avatar
                         ];
                     });
+
     }
 }

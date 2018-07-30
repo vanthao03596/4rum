@@ -1,6 +1,3 @@
-
-
-
 @if($errors->any())
     <div class="alert-message error">
         <i class="icon-flag"></i>

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreThreadRequest extends FormRequest
+class UpdateProfileRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -13,7 +13,7 @@ class StoreThreadRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+       return true;
     }
 
     /**
@@ -24,10 +24,6 @@ class StoreThreadRequest extends FormRequest
     public function rules()
     {
         return [
-            'tags' => 'required',
-            'title' => 'required',
-            'body' => 'required',
-            'channel_id' => 'required|exists:channels,id',
         ];
     }
 }

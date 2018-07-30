@@ -10,7 +10,7 @@
                 <li>
                     <a href="{{ route('profile.show', Auth::user()->name) }}"><i class="icon-user"></i>{{ Auth::user()->name }}</a>
                 </li>
-                <li><a href=""><i class="icon-wrench"></i>Setting</a></li>
+                <li><a href="{{ route('profile.edit', Auth::user()->name) }}"><i class="icon-wrench"></i>Setting</a></li>
                 <li>
                     <a href="{{ route('logout' )}}" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">

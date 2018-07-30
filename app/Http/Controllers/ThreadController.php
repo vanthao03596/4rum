@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Filters\ThreadFilter;
 use App\Http\Requests\StoreThreadRequest;
 use App\Thread;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class ThreadController extends Controller
@@ -50,9 +51,16 @@ class ThreadController extends Controller
      */
     public function store(StoreThreadRequest $request)
     {
+        $tags = explode(',', $request->tags);
+        foreach ($tags as $tag ) {
+            $tagId[] = Tag::firstOrCreate([
+                'name' => $tag
+            ])->id;
+        }
         $data = $request->all();
         $data['user_id'] = auth()->id();
         $thread = Thread::create($data);
+        $thread->tags()->attach($tagId);
         return redirect($thread->path());
     }
 
@@ -69,6 +77,7 @@ class ThreadController extends Controller
         $next = $thread->next();
         $previous = $thread->previous();
         $related = $thread->related();
+        $thread = $thread->load('tags');
         return view('threads.show', compact('thread', 'comments', 'next', 'previous', 'related'));
     }
 
@@ -105,7 +114,8 @@ class ThreadController extends Controller
     {
         $this->authorize('delete', $thread);
         $thread->delete();
-        return route('threads.index');
+        session()->flash('success', 'Your question have been deleted !');
+        return redirect()->route('threads.index');
     }
 
     /**

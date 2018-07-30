@@ -13,10 +13,11 @@ class User extends Authenticatable
     protected static function boot()
     {
         static::created(function($user){
-            $avartaPath = 'avatar/'. uniqid(). '.jpg';
-            Avatar::create($user->name)->save(public_path($avartaPath), 100);
+            $fileName = uniqid(). '.jpg';
+            $avartaPath = 'app/public/avatars/' . $fileName;
+            Avatar::create($user->name)->save(storage_path($avartaPath), 100);
             $user->profile()->create([
-                'avatar' => $avartaPath
+                'avatar' => 'avatars/' . $fileName
             ]);
         });
     }
@@ -67,5 +68,9 @@ class User extends Authenticatable
     public function getRouteKeyName()
     {
         return 'name';
+    }
+
+    public function getAvatarAttribute(){
+        return asset('storage/' . $this->profile->avatar);
     }
 }

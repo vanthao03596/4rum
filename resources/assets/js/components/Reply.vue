@@ -67,7 +67,7 @@ export default {
       return '#reply-' + this.id
     },
     avatar() {
-      return window.App.baseUrl + '/' + this.data.owner.profile.avatar
+      return window.App.baseUrl + '/storage/' + this.data.owner.profile.avatar
     }
   },
   methods: {

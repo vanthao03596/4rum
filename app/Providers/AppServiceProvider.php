@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use App\Channel;
+use App\Tag;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,7 +19,10 @@ class AppServiceProvider extends ServiceProvider
             $channels = \Cache::rememberForever('channels', function () {
                 return Channel::all();
             });
-            $view->with('channels', $channels);
+            $view->with(['channels' => $channels]);
+        });
+        view()->composer('partials.sidebar', function($view) {
+            $view->with('allTags', Tag::pluck('name'));
         });
     }
 

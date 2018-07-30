@@ -1,6 +1,11 @@
 <div class="share-tags page-content">
     <div class="question-tags"><i class="icon-tags"></i>
-        <a href="single_question.html#">wordpress</a>, <a href="single_question.html#">question</a>, <a href="single_question.html#">developer</a>
+        @if(count($thread->tags) > 0)
+            @foreach($thread->tags as $tag)
+                <a href="{{ route('tags.index', $tag->name) }}">{{ $tag->name }}</a>,
+            @endforeach
+        @endif
+
     </div>
     <div class="share-inside-warp">
         <ul>
