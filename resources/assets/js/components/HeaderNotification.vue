@@ -82,7 +82,32 @@
 
 <script>
 import moment from 'moment'
+    
     export default {
+        mounted() {
+            Echo.private('App.User.' + window.App.user.id)
+                .notification((notification) => {
+                    toastr.options = {
+                        "closeButton": false,
+                        "debug": true,
+                        "newestOnTop": true,
+                        "progressBar": false,
+                        "positionClass": "toast-bottom-right",
+                        "preventDuplicates": false,
+                        "onclick": null,
+                        "showDuration": "300",
+                        "hideDuration": "1000",
+                        "timeOut": "5000",
+                        "extendedTimeOut": "1000",
+                        "showEasing": "swing",
+                        "hideEasing": "linear",
+                        "showMethod": "fadeIn",
+                        "hideMethod": "fadeOut"
+                        }
+                    toastr.info('<a href="' + notification.data.link + '" target="_blank">' + notification.data.message + '</a>')
+                    this.notifications.push(notification);
+                })
+        },
         data() {
             return {
                 notifications: false
@@ -105,6 +130,7 @@ import moment from 'moment'
         },
         methods: {
             show() {
+                this.notiCount = 0;
                 $("#notificationContainer").fadeToggle(300);
                 // $("#notification_count").fadeOut("slow");
             },

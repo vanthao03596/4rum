@@ -8,6 +8,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use App\Reply;
 use App\Thread;
+use Illuminate\Notifications\Messages\BroadcastMessage;
 
 class YouWereMention extends Notification
 {
@@ -33,7 +34,7 @@ class YouWereMention extends Notification
      */
     public function via($notifiable)
     {
-        return ['database'];
+        return ['database', 'broadcast'];
     }
     /**
      * Get the array representation of the notification.
@@ -48,5 +49,15 @@ class YouWereMention extends Notification
             'link' => $this->reply->path(),
             'avatar' => asset($this->reply->owner->avatar)
         ];
+    }
+    public function toBroadcast($notifiable)
+    {
+        return new BroadcastMessage([
+            'data' => [
+                'message' => $this->reply->owner->name . ' mentioned you in ' . $this->reply->thread->title,
+                'link' => $this->reply->path(),
+                'avatar' => asset($this->reply->owner->avatar)
+            ]
+        ]);
     }
 }

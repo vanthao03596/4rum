@@ -140,10 +140,19 @@ class Thread extends Model
         return 'slug';
     }
 
+    public function hasUpdatedFor($user)
+    {
+        $key = sprintf("users.%s.visits.%s", auth()->id(), $this->id);
+
+        return $this->updated_at > cache($key);
+    }
+
     public function toSearchableArray()
     {
         return $this->toArray() + ['path' => $this->path()];
     }
+
+
 
 
 }

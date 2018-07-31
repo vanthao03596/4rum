@@ -41,13 +41,19 @@ class ProfileController extends Controller
             $with['histories'] = 'abc';
         }
         if (\Request::segment(3) == '') {
-            $questionToday = Thread::whereDate('created_at', Carbon::today())->where('user_id', auth()->id())->count();
-            $answerToday = Reply::whereDate('created_at', Carbon::today())->where('user_id', auth()->id())->count();
-            $questionMonth = Thread::whereBetween('created_at', [Carbon::today()->startOfMonth(), Carbon::today()])->where('user_id', auth()->id())->count();
-            $answerMonth = Reply::whereBetween('created_at', [Carbon::today()->startOfMonth(), Carbon::today()])->where('user_id', auth()->id())->count();
+            $questionToday = Thread::whereDate('created_at', Carbon::today())
+                            ->where('user_id', auth()->id())
+                            ->count();
+            $answerToday = Reply::whereDate('created_at', Carbon::today())->where('user_id', auth()->id())
+                            ->count();
+            $questionMonth = Thread::whereBetween('created_at', [Carbon::today()->startOfMonth(), Carbon::today()->endOfMonth()])
+                                    ->where('user_id', auth()->id())
+                                    ->count();
+            $answerMonth = Reply::whereBetween('created_at', [Carbon::today()->startOfMonth(), Carbon::today()->endOfMonth()])->where('user_id', auth()->id())
+                                    ->count();
             $with['table'] = [
                 'questionToday' => $questionToday,
-                'answerToday' => $questionMonth,
+                'answerToday' => $answerToday,
                 'questionMonth' => $questionMonth,
                 'answerMonth' => $answerMonth,
                 'totalQuestion' => $questions->count(),

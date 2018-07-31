@@ -43,9 +43,10 @@ $factory->define(App\Channel::class, function ($faker) {
 });
 
 $factory->define(App\Thread::class, function ($faker) {
-    $users = User::all();
     return [
-        'user_id' => $faker->randomElement($users->pluck('id')->toArray()),
+        'user_id' =>  function () {
+            return factory('App\User')->create()->id;
+        },
         'channel_id' => function () {
             return factory('App\Channel')->create()->id;
         },

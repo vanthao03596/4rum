@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Filters\ThreadFilter;
 use App\Http\Requests\StoreThreadRequest;
-use App\Thread;
 use App\Tag;
+use App\Thread;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class ThreadController extends Controller
@@ -73,6 +74,10 @@ class ThreadController extends Controller
      */
     public function show($channelId, Thread $thread)
     {
+        if (auth()->check()) {
+            auth()->user()->read($thread);
+        }
+
         $comments = $this->getComment($thread);
         $next = $thread->next();
         $previous = $thread->previous();

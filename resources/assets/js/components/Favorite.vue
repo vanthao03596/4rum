@@ -2,9 +2,9 @@
 <div>
     <div class="comment-vote">
         <ul class="single-question-vote" style="width:70px">
-            <li>
+            <!-- <li>
                 <a href="/" class="single-question-vote-down" title="Dislike"><i class="icon-thumbs-down"></i></a>
-            </li>
+            </li> -->
             <li v-if="signedIn">
                 <a href="#" :class="classes" @click.prevent="toogle" title="Like">
                     <i class="icon-thumbs-up"></i>

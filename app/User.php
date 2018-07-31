@@ -2,9 +2,10 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 use Avatar;
+use Carbon\Carbon;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -12,7 +13,7 @@ class User extends Authenticatable
 
     protected static function boot()
     {
-        static::created(function($user){
+        static::created(function ($user) {
             $fileName = uniqid(). '.jpg';
             $avartaPath = 'app/public/avatars/' . $fileName;
             Avatar::create($user->name)->save(storage_path($avartaPath), 100);
@@ -70,7 +71,18 @@ class User extends Authenticatable
         return 'name';
     }
 
-    public function getAvatarAttribute(){
+    public function visitedThreadCacheKey($thread)
+    {
+        return sprintf("users.%s.visits.%s", $this->id, $thread->id);
+    }
+
+    public function read($thread)
+    {
+        cache()->forever($this->visitedThreadCacheKey($thread), Carbon::now());
+    }
+
+    public function getAvatarAttribute()
+    {
         return asset('storage/' . $this->profile->avatar);
     }
 }

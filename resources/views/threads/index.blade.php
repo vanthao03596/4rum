@@ -17,12 +17,18 @@
                             @foreach($recent_question as $rq)
                                 <article class="question question-type-normal">
                                     <h2>
-                                    <a href="{{ url($rq->path()) }}">{{ $rq->title }}</a>
+                                        <a href="{{ url($rq->path()) }}">
+                                            @if ($rq->hasUpdatedFor(auth()->user()))
+                                                <strong>{{ $rq->title }}</strong>
+                                            @else
+                                                {{ $rq->title }}
+                                            @endif
+                                        </a>
                                     </h2>
                                     <a class="question-report" href="index_no_box.html#">Report</a>
                                     <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
                                     <div class="question-author">
-                                        <a href="{{ route('profile.show', $rq->creator->name ) }}" original-title="ahmed" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($rq->creator->name)->toBase64() }}"></a>
+                                        <a href="{{ route('profile.show', $rq->creator->name ) }}" original-title="{{ $rq->creator->name }}" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($rq->creator->name)->toBase64() }}"></a>
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
@@ -49,12 +55,18 @@
                             @foreach($most_response as $ms)
                                 <article class="question question-type-normal">
                                     <h2>
-                                    <a href="{{ url($ms->path()) }}">{{ $ms->title }}</a>
+                                        <a href="{{ url($ms->path()) }}">
+                                            @if ($ms->hasUpdatedFor(auth()->user()))
+                                                <strong>{{ $ms->title }}</strong>
+                                            @else
+                                                {{ $ms->title }}
+                                            @endif
+                                        </a>
                                     </h2>
                                     <a class="question-report" href="index_no_box.html#">Report</a>
                                     <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
                                     <div class="question-author">
-                                        <a href="{{ route('profile.show', $ms->creator->name ) }}" original-title="ahmed" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($ms->creator->name)->toBase64() }}"></a>
+                                        <a href="{{ route('profile.show', $ms->creator->name ) }}" original-title="{{ $ms->creator->name }}" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($ms->creator->name)->toBase64() }}"></a>
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
@@ -81,12 +93,18 @@
                             @foreach($recently_answer as $ra)
                             <article class="question question-type-normal">
                                     <h2>
-                                    <a href="{{ url($ra->path()) }}">{{ $ra->title }}</a>
+                                        <a href="{{ url($ra->path()) }}">
+                                            @if ($ra->hasUpdatedFor(auth()->user()))
+                                                <strong>{{ $ra->title }}</strong>
+                                            @else
+                                                {{ $ra->title }}
+                                            @endif
+                                        </a>
                                     </h2>
                                     <a class="question-report" href="index_no_box.html#">Report</a>
                                     <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
                                     <div class="question-author">
-                                        <a href="{{ route('profile.show', $ra->creator->name ) }}" original-title="ahmed" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($ra->creator->name)->toBase64() }}"></a>
+                                        <a href="{{ route('profile.show', $ra->creator->name ) }}" original-title="{{ $ra->creator->name }}" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($ra->creator->name)->toBase64() }}"></a>
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
@@ -113,12 +131,18 @@
                             @foreach($no_answer as $na)
                             <article class="question question-type-normal">
                                     <h2>
-                                    <a href="{{ url($na->path()) }}">{{ $na->title }}</a>
+                                        <a href="{{ url($na->path()) }}">
+                                            @if ($na->hasUpdatedFor(auth()->user()))
+                                                <strong>{{ $na->title }}</strong>
+                                            @else
+                                                {{ $na->title }}
+                                            @endif
+                                        </a>
                                     </h2>
                                     <a class="question-report" href="index_no_box.html#">Report</a>
                                     <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
                                     <div class="question-author">
-                                        <a href="{{ route('profile.show', $na->creator->name ) }}" original-title="ahmed" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($na->creator->name)->toBase64() }}"></a>
+                                        <a href="{{ route('profile.show', $na->creator->name ) }}" original-title="{{ $na->creator->name }}" class="question-author-img tooltip-n"><span></span><img alt="" src="{{ Avatar::create($na->creator->name)->toBase64() }}"></a>
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>

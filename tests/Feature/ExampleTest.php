@@ -2,15 +2,22 @@
 
 namespace Tests\Feature;
 
-use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use App\Reply;
 use App\Thread;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\TestCase;
 
 class ExampleTest extends TestCase
 {
-    use DatabaseTransactions;
+    protected $thread;
+    public function setUp()
+    {
+        parent::setUp();
+        $this->thread = create('App\Thread');
+    }
+    use DatabaseTransactions, DatabaseMigrations;
     // use RefreshDatabase;
     // use RefreshDatabase;
     /**
@@ -41,16 +48,21 @@ class ExampleTest extends TestCase
     //     // 	'name' => 'test'
     //     // ]);
     // }
+    /** @test */
+    function a_thread_has_a_path()
+    {
+        $thread = create('App\Thread');
+        $this->assertEquals(
+            "/threads/{$thread->channel->slug}/{$thread->slug}", $thread->path()
+        );
+    }
+    /** @test */
     public function testRepliesCount()
     {
-        $thread = factory('App\Thread')->create();
-        $reply = factory('App\Reply')->create([
+        $thread = create('App\Thread');
+        $reply = create('App\Reply', [
             'thread_id' => $thread->id
         ]);
-        dd($thread->id, $reply->thread_id);
-        $this->assertEquals(1, $thread->replies_count);
-        // $this->assertDatabaseHas('channels', [
-        // 	'name' => 'test'
-        // ]);
+        $this->assertEquals(1, $thread->fresh()->replies_count);
     }
 }

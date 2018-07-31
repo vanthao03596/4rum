@@ -29,8 +29,13 @@
 import reply from './Reply';
 import NewReply from '../components/NewReply'
 import Spinner from 'vue-simple-spinner'
+import {scroller} from 'vue-scrollto/src/scrollTo'
 export default {
     props : ['initRepliesCount'],
+    async mounted() {
+        const firstScrollTo = scroller()
+        firstScrollTo(window.location.hash)
+    },
     data() {
         return {
             items : [],
@@ -41,8 +46,9 @@ export default {
             page: 1
         }
     },
-    created() {
-        this.fetch();
+    async created() {
+        await this.fetch();
+        
     },
     components: {
         Spinner
@@ -50,10 +56,11 @@ export default {
 
     methods: {
         fetch() {
-            setTimeout(() => {
+            // setTimeout(() => {
                 axios.get(this.url())
                 .then(this.refresh)
-            }, 1000)
+                
+            // }, 1000)
             
         },
         url() {
@@ -62,6 +69,7 @@ export default {
         refresh(respone) {
             this.setItem = respone.data
             this.items = this.setItem.data
+            
         },
         loadMore(){
             this.page++
@@ -84,6 +92,11 @@ export default {
         add(reply) {
             this.items.push(reply);
             this.repliesCount++
+        },
+        goto(id) {
+            var element = id;
+            var top = element.offsetTop;
+            window.scrollTo(0, top);
         }
     },
     computed: {
