@@ -1,87 +1,192 @@
-@extends('adminlte::page')
+@extends('adminlte::page') @section('title', 'Dashboard') @section('content_header')
+<div class="box-header">
+  {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.dashboard') }}
+</div>
+@stop @section('content')
+<div class="row">
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-aqua">
+        <i class="icon ion-compose"></i>
+      </span>
 
-@section('title', 'Dashboard')
-
-@section('content_header')
-    <div class="box-header">
-        {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.dashboard') }}
-   </div>
-@stop
-
-@section('content')
-    <div class="row">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">CPU Traffic</span>
-              <span class="info-box-number">90<small>%</small></span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Likes</span>
-              <span class="info-box-number" id="info-number">0</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-        <!-- fix for small devices only -->
-        <div class="clearfix visible-sm-block"></div>
-
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">Sales</span>
-              <span class="info-box-number">760</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">New Members</span>
-              <span class="info-box-number">2,000</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
+      <div class="info-box-content">
+        <span class="info-box-text">Questions</span>
+        <span class="info-box-number" id="thread">90</span>
       </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <!-- /.col -->
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-red">
+        <i class="icon ion-android-favorite-outline"></i>
+      </span>
 
-@stop
+      <div class="info-box-content">
+        <span class="info-box-text">Likes</span>
+        <span class="info-box-number" id="favorite">0</span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <!-- /.col -->
 
-@section('css')
-@stop
+  <!-- fix for small devices only -->
+  <div class="clearfix visible-sm-block"></div>
 
-@section('js')
-    <script src="{{ asset('js/countUp.js') }}"></script>
-    <script>
-        $( document ).ready(function() {
-            var c = new CountUp('info-number', 0, 41410, 0 , 2.5);
-            if (!c.error) {
-              c.start();
-            } else {
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-green">
+        <i class="fa fa-fw fa-commenting-o"></i>
+      </span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">Comments</span>
+        <span class="info-box-number" id="reply">760</span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <!-- /.col -->
+  <div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="info-box">
+      <span class="info-box-icon bg-yellow">
+        <i class="ion ion-ios-people-outline"></i>
+      </span>
+
+      <div class="info-box-content">
+        <span class="info-box-text">New Members</span>
+        <span class="info-box-number" id="user">2,000</span>
+      </div>
+      <!-- /.info-box-content -->
+    </div>
+    <!-- /.info-box -->
+  </div>
+  <!-- /.col -->
+
+
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">Question Chart</h3>
+
+        <div class="box-tools pull-right">
+          <button type="button" class="btn btn-box-tool" data-widget="collapse">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-box-tool" data-widget="remove">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="chart">
+          <canvas id="myQuestion" style="height:250px"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="box box-primary">
+      <div class="box-header with-border">
+        <h3 class="box-title">Reply Chart</h3>
+
+        <div class="box-tools pull-right">
+          <button type="button" class="btn btn-box-tool" data-widget="collapse">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-box-tool" data-widget="remove">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="box-body">
+        <div class="chart">
+          <canvas id="myReply" style="height:250px"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+@stop @section('css') @stop @section('js')
+<script src="{{ asset('js/countUp.js') }}"></script>
+<script>
+  $(document).ready(function () {
+    var thread = new CountUp('thread', 0, {{ $threadCount }}, 0, 2.5);
+    if (!thread.error) {
+      thread.start();
+    } else {}
+    var favorite = new CountUp('favorite', 0, {{$favoriteCount}}, 0, 2.5);
+    if (!favorite.error) {
+      favorite.start();
+    } else {}
+    var reply = new CountUp('reply', 0, {{$replyCount}}, 0, 2.5);
+    if (!reply.error) {
+      reply.start();
+    } else {}
+    var user = new CountUp('user', 0, {{$userCount}}, 0, 2.5);
+    if (!user.error) {
+      user.start();
+    } else {}
+
+    //chart
+    var ctx = document.getElementById("myQuestion").getContext('2d');
+    var reply = document.getElementById("myReply").getContext('2d');
+    var myQuestion = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: @json($threads->keys()),
+        datasets: [{
+          label: 'Question per Month',
+          borderColor: "#3e95cd",
+          backgroundColor: "#3e95cd",
+          fill: false,
+          data: @json($threads->values()),
+
+        }, ]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
             }
-        });
-    </script>
+          }]
+        }
+      }
+    });
+    var myReply = new Chart(reply, {
+      type: 'bar',
+      data: {
+        labels: @json($replies->keys()),
+        datasets: [{
+          label: 'Reply per Month',
+          borderColor: "#c45850",
+          backgroundColor: "#c45850",
+          fill: false,
+          data: @json($replies->values()),
+
+        }, ]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+  });
+</script>
 @stop

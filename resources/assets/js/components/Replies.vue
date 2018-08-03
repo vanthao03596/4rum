@@ -33,8 +33,11 @@ import {scroller} from 'vue-scrollto/src/scrollTo'
 export default {
     props : ['initRepliesCount'],
     mounted() {
-        const firstScrollTo = scroller()
-        firstScrollTo(window.location.hash)
+        if(window.location.hash) {
+            const firstScrollTo = scroller()
+            firstScrollTo(window.location.hash)
+        }
+
     },
     data() {
         return {
@@ -125,4 +128,3 @@ export default {
   opacity: 0;
 }
 </style>
-

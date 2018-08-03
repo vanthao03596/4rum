@@ -41,7 +41,7 @@ class Thread extends Model
         static::deleting(function ($thread) {
             $thread->replies->each->delete();
         });
-        static::created(function($thread) {
+        static::created(function ($thread) {
             $thread->slug = str_slug($thread->title);
             $thread->save();
         });
@@ -87,6 +87,11 @@ class Thread extends Model
         return ucfirst($value);
     }
 
+    public function getRepliesCountAttribute($value)
+    {
+        return number_format($value);
+    }
+
     public function addReply($reply)
     {
         $reply = $this->replies()->create($reply);
@@ -130,7 +135,7 @@ class Thread extends Model
     public function setSlugAttribute($value)
     {
         $slug = str_slug($value);
-        if(static::whereSlug($slug)->exists()) {
+        if (static::whereSlug($slug)->exists()) {
             $slug = "{$slug}-" . $this->id;
         }
         $this->attributes['slug'] = $slug;
@@ -152,8 +157,4 @@ class Thread extends Model
     {
         return $this->toArray() + ['path' => $this->path()];
     }
-
-
-
-
 }

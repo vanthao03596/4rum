@@ -21,7 +21,7 @@ class ThreadController extends Controller
     public function index()
     {
         if (request()->ajax()) {
-            return DataTables::of(Thread::query())
+            return DataTables::of(Thread::with('creator'))
                             ->addColumn('action', function ($thread) {
                                 return '<a href="#edit-'.$thread->id.'" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-lock"></i> Lock</a>'.
                                         '<a href="#lock-'.$thread->id.'" class="btn btn-xs btn-warning"><i class="glyphicon glyphicon-edit"></i> View</a>';
