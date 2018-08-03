@@ -1,10 +1,10 @@
 @extends('adminlte::page')
 
-@section('title', 'User')
+@section('title', 'Thread')
 
 @section('content_header')
 <div class="box-header">
-     {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.users.index') }}
+     {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.threads.index') }}
 </div>
 
 @stop

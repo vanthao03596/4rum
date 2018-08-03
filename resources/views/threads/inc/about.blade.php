@@ -4,6 +4,6 @@
     </div>
     <div class="author-bio">
         <h4>About {{ $thread->creator->name }}</h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra auctor neque. Nullam lobortis, sapien vitae lobortis tristique.
+        {{ $thread->creator->profile->about }}
     </div>
 </div>

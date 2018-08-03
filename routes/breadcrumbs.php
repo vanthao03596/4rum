@@ -54,3 +54,9 @@ Breadcrumbs::for('admin.users.index', function ($trail) {
     $trail->parent('admin.dashboard');
     $trail->push('User', route('admin.users.index'));
 });
+
+Breadcrumbs::for('admin.threads.index', function ($trail) {
+    $trail->parent('admin.dashboard');
+    $trail->push('Thread', route('admin.threads.index'));
+});
+

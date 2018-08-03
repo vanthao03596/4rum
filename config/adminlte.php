@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'skin' => 'red',
+    'skin' => 'blue',
 
     /*
     |--------------------------------------------------------------------------
@@ -119,6 +119,11 @@ return [
             'text' => 'Users',
             'url'  => 'admin/users',
             'icon' => 'user',
+        ],
+        [
+            'text' => 'Threads',
+            'url'  => 'admin/threads',
+            'icon' => 'pencil-square-o',
         ],
         [
             'text' => 'Change Password',

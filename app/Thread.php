@@ -21,22 +21,23 @@ class Thread extends Model
         'title',
         'body',
         'channel_id',
-        'replies_count'
+        'replies_count',
+        'view_count'
     ];
 
 
     protected static function boot()
     {
         parent::boot();
-        static::addGlobalScope('creator', function (Builder  $builder) {
-            $builder->with('creator');
-        });
-        static::addGlobalScope('channel', function (Builder  $builder) {
-            $builder->with('channel');
-        });
-        static::addGlobalScope('favorites_count', function (Builder  $builder) {
-            $builder->withCount('favorites');
-        });
+        // static::addGlobalScope('creator', function (Builder  $builder) {
+        //     $builder->with('creator');
+        // });
+        // static::addGlobalScope('channel', function (Builder  $builder) {
+        //     $builder->with('channel');
+        // });
+        // static::addGlobalScope('favorites_count', function (Builder  $builder) {
+        //     $builder->withCount('favorites');
+        // });
         static::deleting(function ($thread) {
             $thread->replies->each->delete();
         });
@@ -112,8 +113,8 @@ class Thread extends Model
 
     public function related()
     {
-        return Thread::withoutGlobalScopes()->where([
-            'channel_id' => $this->channel->id
+        return static::where([
+                'channel_id' => $this->channel->id
             ])
             ->where('id', '!=', $this->id)
             ->latest()

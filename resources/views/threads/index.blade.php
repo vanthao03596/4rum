@@ -40,7 +40,7 @@
                                         <span class="question-category"><a href="{{ $rq->channel->path() }}"><i class="icon-folder-close"></i>{{ $rq->channel->name }}</a></span>
                                     <span class="question-date"><i class="icon-time"></i>{{ $rq->created_at}}</span>
                                         <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $rq->replies_count }} Answer</a></span>
-                                        <span class="question-view"><i class="icon-user"></i>70 views</span>
+                                        <span class="question-view"><i class="icon-user"></i>{{ $rq->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
@@ -78,7 +78,7 @@
                                         <span class="question-category"><a href="{{ $ms->channel->path() }}"><i class="icon-folder-close"></i>{{ $ms->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $ms->created_at }}</span>
                                         <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $ms->replies_count }} Answer</a></span>
-                                        <span class="question-view"><i class="icon-user"></i>70 views</span>
+                                        <span class="question-view"><i class="icon-user"></i>{{ $ms->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
@@ -116,7 +116,7 @@
                                         <span class="question-category"><a href="{{ $ra->channel->path() }}"><i class="icon-folder-close"></i>{{ $ra->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $ra->created_at }}</span>
                                         <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $ra->replies_count }} Answer</a></span>
-                                        <span class="question-view"><i class="icon-user"></i>70 views</span>
+                                        <span class="question-view"><i class="icon-user"></i>{{ $ra->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
@@ -154,7 +154,7 @@
                                         <span class="question-category"><a href="{{ $na->channel->path() }}"><i class="icon-folder-close"></i>{{ $na->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $na->created_at }}</span>
                                         <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $na->replies_count }} Answer</a></span>
-                                        <span class="question-view"><i class="icon-user"></i>70 views</span>
+                                        <span class="question-view"><i class="icon-user"></i>{{ $na->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>

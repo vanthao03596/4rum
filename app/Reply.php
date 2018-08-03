@@ -20,12 +20,12 @@ class Reply extends Model
     protected static function boot()
     {
         parent::boot();
-        static::addGlobalScope('owner', function ($builder) {
-            $builder->with('owner.profile');
-        });
-        static::addGlobalScope('favorites', function ($builder) {
-            $builder->with('favorites');
-        });
+        // static::addGlobalScope('owner', function ($builder) {
+        //     $builder->with('owner.profile');
+        // });
+        // static::addGlobalScope('favorites', function ($builder) {
+        //     $builder->with('favorites');
+        // });
         static::created(function ($reply) {
             $reply->thread->increment('replies_count');
         });
@@ -58,12 +58,12 @@ class Reply extends Model
 
     public function mentionedUsers()
     {
-        preg_match_all('/@([\w\-]+)/', $this->message, $matches);
+        preg_match_all('/@([\w\-.]+)/', $this->message, $matches);
         return $matches[1];
     }
 
     public function setMessageAttribute($body)
     {
-        $this->attributes['message'] = preg_replace('/@([\w\-]+)/', '<a href="/profile/$1">$0</a>', $body);
+        $this->attributes['message'] = preg_replace('/@([\w\-.]+)/', '<a href="/profile/$1">$0</a>', $body);
     }
 }

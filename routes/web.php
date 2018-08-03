@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 // Thread
 Route::get('/', 'ThreadController@index')->name('threads.index');
-Route::get('/threads/{channel}/{thread}', 'ThreadController@show')->name('threads.show');
+Route::get('/threads/{channel}/{thread}', 'ThreadController@show')->name('threads.show')->middleware('filter');
 Route::get('/threads/create', 'ThreadController@create')->name('threads.create');
 Route::post('/threads', 'ThreadController@store')->name('threads.store');
 Route::delete('/threads/{channel}/{thread}', 'ThreadController@destroy')->name('threads.delete');
@@ -65,6 +65,4 @@ Auth::routes();
 
 Route::view('/abc', 'welcome');
 
-Route::get('/123', function(){
-    return '<img src="' . Storage::url('public/avatars/1532842752.jpeg') . '">';
-});
+Route::get('/123', 'Admin\ThreadController@test');

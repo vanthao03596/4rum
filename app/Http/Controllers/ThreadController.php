@@ -8,6 +8,7 @@ use App\Tag;
 use App\Thread;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Event;
 
 class ThreadController extends Controller
 {
@@ -22,15 +23,20 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        $recent_question = Thread::latest()->get();
+        $recent_question = Thread::with('creator', 'channel')->latest()->get();
+        $most_response = Thread::with('creator', 'channel')->orderBy('replies_count', 'desc')->get();
 
-        $most_response = Thread::orderBy('replies_count', 'desc')->get();
-
-        $recently_answer = Thread::join('replies', 'threads.id', '=', 'replies.thread_id')
-                ->latest('replies.created_at')
-                ->take(5)
-                ->get();
-        $no_answer = Thread::doesntHave('replies')->get();
+        // $recently_answer = Thread::join('replies', 'threads.id', '=', 'replies.thread_id')
+        //         ->join('channels', 'threads.channel_id', '=', 'channels.id')
+        //         ->latest('replies.created_at')
+        //         ->take(5)
+        //         ->get();
+        $recently_answer = Thread::with('creator', 'channel', 'latestReply')
+                                ->get()
+                                ->sortByDesc('latest_replies.created_at')
+                                ->values()
+                                ->all();
+        $no_answer = Thread::doesntHave('replies')->with('creator', 'channel')->get();
         return view('threads.index', compact('recent_question', 'most_response', 'recently_answer', 'no_answer'));
     }
 
@@ -77,12 +83,12 @@ class ThreadController extends Controller
         if (auth()->check()) {
             auth()->user()->read($thread);
         }
-
+        Event::fire('threads.view', $thread);
         $comments = $this->getComment($thread);
         $next = $thread->next();
         $previous = $thread->previous();
         $related = $thread->related();
-        $thread = $thread->load('tags');
+        $thread = $thread->load('tags','replies');
         return view('threads.show', compact('thread', 'comments', 'next', 'previous', 'related'));
     }
 

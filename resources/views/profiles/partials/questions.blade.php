@@ -15,7 +15,7 @@
                         <span class="question-date"><i class="icon-time"></i>{{ $thread->created_at }}</span>
                         <span class="question-comment"><a href="user_questions.html#"><i class="icon-comment"></i>{{ $thread->replies_count }} Answers</a></span>
                         <a class="question-reply" href="user_questions.html#"><i class="icon-reply"></i>Reply</a>
-                        <span class="question-view"><i class="icon-user"></i>70 views</span>
+                        <span class="question-view"><i class="icon-user"></i>{{ $thread->view_count }} views</span>
                     </div>
                 </div>
             </article>

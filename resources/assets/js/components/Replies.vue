@@ -32,7 +32,7 @@ import Spinner from 'vue-simple-spinner'
 import {scroller} from 'vue-scrollto/src/scrollTo'
 export default {
     props : ['initRepliesCount'],
-    async mounted() {
+    mounted() {
         const firstScrollTo = scroller()
         firstScrollTo(window.location.hash)
     },
@@ -48,7 +48,6 @@ export default {
     },
     async created() {
         await this.fetch();
-        
     },
     components: {
         Spinner
@@ -59,9 +58,9 @@ export default {
             // setTimeout(() => {
                 axios.get(this.url())
                 .then(this.refresh)
-                
+
             // }, 1000)
-            
+
         },
         url() {
             return window.location.pathname + '/replies?page=' + this.page;
@@ -69,7 +68,7 @@ export default {
         refresh(respone) {
             this.setItem = respone.data
             this.items = this.setItem.data
-            
+
         },
         loadMore(){
             this.page++
@@ -105,7 +104,7 @@ export default {
         },
         hasMore() {
             return this.next_url;
-        } 
+        }
     },
     watch: {
         setItem() {

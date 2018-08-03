@@ -20,7 +20,11 @@ class ReplyController extends Controller
         // $limit = 5;
         // $offset = $page * $limit;
         // return $thread->replies()->offset($offset)->take($limit)->get();
-        return $thread->replies()->orderBy('favorites_count', 'desc')->paginate(5);
+        return $thread
+                ->replies()
+                ->with('owner.profile')
+                ->orderBy('favorites_count', 'desc')
+                ->paginate(5);
     }
 
     /**
@@ -47,7 +51,7 @@ class ReplyController extends Controller
         if (request()->expectsJson()) {
             return response(['status' => 'Reply deleted']);
         }
-        // session()->flash('success', 'Your comment deleted successfully !');
+        session()->flash('success', 'Your comment deleted successfully !');
         return back();
     }
 
