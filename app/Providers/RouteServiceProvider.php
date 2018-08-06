@@ -78,6 +78,5 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('web')
              ->namespace($this->namespace)
              ->group(base_path('routes/admin.php'));
-        app()->setlocale(request()->segment(2));
     }
 }

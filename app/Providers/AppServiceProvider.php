@@ -19,7 +19,6 @@ class AppServiceProvider extends ServiceProvider
     {
         if(app()->environment() === 'production'){
             URL::forceScheme('https');
-            App::make('files')->link(storage_path('app/public'), public_path('storage'));
         }
 
         view()->composer(['*'], function ($view) {
