@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\Channel;
 use App\Tag;
 use URL;
+use App;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,7 +17,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        URL::forceScheme('https');
+        if(app()->environment() === 'production'){
+            URL::forceScheme('https');
+            App::make('files')->link(storage_path('app/public'), public_path('storage'));
+        }
+
         view()->composer(['*'], function ($view) {
             $channels = \Cache::rememberForever('channels', function () {
                 return Channel::all();
