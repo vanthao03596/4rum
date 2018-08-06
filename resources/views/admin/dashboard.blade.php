@@ -22,7 +22,7 @@
   <div class="col-md-3 col-sm-6 col-xs-12">
     <div class="info-box">
       <span class="info-box-icon bg-red">
-        <i class="icon ion-android-favorite-outline"></i>
+        <i class="fa fa-thumbs-o-up "></i>
       </span>
 
       <div class="info-box-content">
@@ -92,6 +92,48 @@
         </div>
       </div>
     </div>
+    <div class="box box-info">
+        <div class="box-header with-border">
+          <h3 class="box-title">Latest Questions</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="table-responsive">
+            <table class="table no-margin">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Title</th>
+                <th>View</th>
+                <th>Total Reply</th>
+              </tr>
+              </thead>
+              <tbody>
+              @foreach($latestQuestions as $question)
+                <tr>
+                  <td><a href="{{ $question->path() }}">{{ $question->id }}</a></td>
+                  <td>{{ $question->title }}</td>
+                  <td><span class="label label-success">{{ $question->view_count }}</span></td>
+                  <td><span class="label label-info">{{ $question->replies_count }}</span></td>
+                </tr>
+              @endforeach
+              </tbody>
+            </table>
+          </div>
+          <!-- /.table-responsive -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <a href="{{ route('admin.threads.index') }}" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+        </div>
+        <!-- /.box-footer -->
+    </div>
   </div>
   <div class="col-md-6">
     <div class="box box-primary">
@@ -113,11 +155,56 @@
         </div>
       </div>
     </div>
+    <div class="box box-info">
+        <div class="box-header with-border">
+          <h3 class="box-title">Latest Reply</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="table-responsive">
+            <table class="table no-margin">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>Message</th>
+                <th>Owner</th>
+                <th>Favorite</th>
+              </tr>
+              </thead>
+              <tbody>
+              @foreach($latestReplies as $reply)
+                <tr>
+                  <td><a href="{{ $reply->path() }}">{{ $reply->id }}</a></td>
+                  <td><a href="{{ $reply->path() }}" data-toggle="tooltip" title="{{ $reply->message }}">{{ $reply->short_message }}</a></td>
+                  <td><span class="label label-success">{{ $reply->owner->name }}</span></td>
+                  <td><span class="label label-info">{{ $reply->favorites->count() }}</span></td>
+                </tr>
+              @endforeach
+              </tbody>
+            </table>
+          </div>
+          <!-- /.table-responsive -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <a href="{{ url('/admin/replies') }}" class="btn btn-sm btn-default btn-flat pull-right">View All Reply</a>
+        </div>
+        <!-- /.box-footer -->
+    </div>
   </div>
 </div>
 
 
-@stop @section('css') @stop @section('js')
+@stop
+@section('css')
+@stop
+@section('js')
 <script src="{{ asset('js/countUp.js') }}"></script>
 <script>
   $(document).ready(function () {

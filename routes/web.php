@@ -60,6 +60,8 @@ Route::get('/tags/{tag}', 'TagController@index')->name('tags.index');
 
 Route::get('/user/search', 'UserController@search');
 Route::get('/users', 'UserController@getUser');
+
+
 // Auth
 Auth::routes();
 

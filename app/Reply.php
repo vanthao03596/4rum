@@ -56,6 +56,10 @@ class Reply extends Model
         return $this->thread->path() . "#reply-{$this->id}";
     }
 
+    public function getShortMessageAttribute() {
+        return substr($this->message, 1,40) . ' ...';
+    }
+
     public function mentionedUsers()
     {
         preg_match_all('/@([\w\-.]+)/', $this->message, $matches);
