@@ -5,6 +5,7 @@ use App\Favorite;
 use App\Reply;
 use App\Thread;
 use App\User;
+use App\Admin;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -22,7 +23,12 @@ class DatabaseSeeder extends Seeder
         Favorite::truncate();
         User::truncate();
         Reply::truncate();
-
+		Admin::create([
+			'name' => 'Phạm Thảo',
+			'email' => 'admin@test.com',
+			'password' => bcrypt('secret'),
+			'remember_token' => str_random(10)
+		]);
         $users = factory('App\User', 50)->create();
         $users = User::all();
         $threads = factory('App\Thread', 40)->create();
