@@ -69,12 +69,13 @@ Route::view('/abc', 'welcome');
 
 Route::get('/123', 'Admin\ThreadController@test');
 
-Route::get('storage/avatars/{filename}', function ($filename)
+Route::get('storage/{filename}', function ($filename)
 {
-    $path = storage_path('app/public/avatars/' . $filename);
+    $path = storage_path('app/public/' . $filename);
     if (!File::exists($path)) {
         abort(404);
     }
+    dd('ok');
 
     $file = File::get($path);
     $type = File::mimeType($path);

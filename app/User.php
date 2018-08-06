@@ -15,10 +15,10 @@ class User extends Authenticatable
     {
         static::created(function ($user) {
             $fileName = uniqid(). '.jpg';
-            $avartaPath = 'app/public/avatars/' . $fileName;
+            $avartaPath = 'app/public/' . $fileName;
             Avatar::create($user->name)->save(storage_path($avartaPath), 100);
             $user->profile()->create([
-                'avatar' => 'avatars/' . $fileName
+                'avatar' => $fileName
             ]);
         });
     }
