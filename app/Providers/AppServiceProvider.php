@@ -3,10 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use App\Channel;
-use App\Tag;
-use URL;
 use App;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,15 +19,8 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
-        view()->composer(['*'], function ($view) {
-            $channels = \Cache::rememberForever('channels', function () {
-                return Channel::all();
-            });
-            $view->with(['channels' => $channels]);
-        });
-        view()->composer('partials.sidebar', function($view) {
-            $view->with('allTags', Tag::pluck('name'));
-        });
+        View::composer('partials.header', 'App\Http\ViewComposers\HeaderComposer');
+        View::composer('partials.sidebar', 'App\Http\ViewComposers\SideBarComposer');
     }
 
     /**

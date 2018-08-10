@@ -4,16 +4,16 @@
             <div class="col-md-4">
                 <div class="widget widget_contact">
                     <h3 class="widget_title">Where We Are ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi adipiscing gravida odio, sit amet suscipit risus ultrices eu.</p>
+                    <p>{{ config('footer.about') }}</p>
                     <ul>
                         <li>
                             <span>Address :</span>
-                            Ask Me Network, 33 Street, syada Zeinab, Cairo, Egypt.
+                            {{ config('footer.address') }}
                         </li>
                         <li>
-                            <span>Support :</span>Support Telephone No : (+2)01111011110
+                            <span>Support :</span>Support Telephone No : {{ config('footer.phone') }}
                         </li>
-                        <li>Support Email Account : info@example.com</li>
+                        <li>Support Email Account : {{ config('footer.email') }}</li>
                     </ul>
                 </div>
             </div>
