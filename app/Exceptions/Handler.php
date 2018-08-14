@@ -80,26 +80,26 @@ class Handler extends ExceptionHandler
      * Override default method.
      * To have separate error page for admin and public area.
      */
-    protected function renderHttpException(HttpException $e)
-    {
-        $status = $e->getStatusCode();
-        if (view()->exists($this->getViewName($status))) {
-            return response()->view($this->getViewName($status), ['exception' => $e], $status, $e->getHeaders());
-        } else {
-            return $this->convertExceptionToResponse($e);
-        }
-    }
-    /**
-     * Determine what view to show based on route
-     *
-     * @param int $status
-     * @return string
-     */
-    protected function getViewName($status)
-    {
-        if (request()->is('admin/*')) {
-            return "errors.admin.{$status}";
-        }
-        return "errors.{$status}";
-    }
+    // protected function renderHttpException(HttpException $e)
+    // {
+    //     $status = $e->getStatusCode();
+    //     if (view()->exists($this->getViewName($status))) {
+    //         return response()->view($this->getViewName($status), ['exception' => $e], $status, $e->getHeaders());
+    //     } else {
+    //         return $this->convertExceptionToResponse($e);
+    //     }
+    // }
+    // /**
+    //  * Determine what view to show based on route
+    //  *
+    //  * @param int $status
+    //  * @return string
+    //  */
+    // protected function getViewName($status)
+    // {
+    //     if (request()->is('admin/*')) {
+    //         return "errors.admin.{$status}";
+    //     }
+    //     return "errors.{$status}";
+    // }
 }

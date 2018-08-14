@@ -1,4 +1,4 @@
-@extends('adminlte::page') @section('title', 'Dashboard') @section('content_header')
+@extends('adminlte::page') @section('title', trans('admin.dashboard')) @section('content_header')
 <div class="box-header">
   {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.dashboard') }}
 </div>

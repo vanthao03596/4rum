@@ -1,47 +1,31 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
-
-                                @if ($errors->has('email'))
-                                    <span class="invalid-feedback">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
+<section class="container main-content">
+    <div class="login">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="page-content">
+                    <h2>Lost Password<i class="icon-remove"></i></h2>
+                    <div class="form-style form-style-3">
+                        <p>Lost your password? Please enter your username and email address. You will receive a link to create a new password via email.</p>
+                        <form method="POST" action="{{ route('password.email') }}">
+                                @csrf
+                            <div class="form-inputs clearfix">
+                                <p>
+                                    <label class="required">E-Mail<span>*</span></label>
+                                    <input type="email" name="email" value="{{ old('email') }}">
+                                </p>
                             </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Send Password Reset Link') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                            <p class="form-submit">
+                                <input type="submit" value="Reset" class="button color small submit">
+                            </p>
+                        </form>
+                        <div class="clearfix"></div>
+                    </div>
+                </div><!-- End page-content -->
+            </div><!-- End col-md-6 -->
+        </div><!-- End row -->
+    </div><!-- End login -->
+</section><!-- End container -->
 @endsection

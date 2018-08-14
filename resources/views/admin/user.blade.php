@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'User')
+@section('title', trans('admin.users.index'))
 
 @section('content_header')
 <div class="box-header">

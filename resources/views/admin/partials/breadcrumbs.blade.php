@@ -6,14 +6,14 @@
                         @if($breadcrumb->title == 'Dashboard')
                             <i class="fa fa-dashboard"></i>
                         @endif
-                    {{ $breadcrumb->title }}</a>
+                    {{ trans('admin.' . strtolower($breadcrumb->title)) }}</a>
                 </li>
             @else
                 <li class="active">
                     @if($breadcrumb->title == 'Dashboard')
                         <i class="fa fa-dashboard"></i>
                     @endif
-                    {{ $breadcrumb->title }}
+                    {{ trans('admin.' . strtolower($breadcrumb->title)) }}
                 </li>
             @endif
         @endforeach

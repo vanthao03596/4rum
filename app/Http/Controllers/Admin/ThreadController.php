@@ -31,23 +31,24 @@ class ThreadController extends Controller
 
         $html = $this->builder->columns([
                     ['data' => 'id', 'name' => 'id', 'title' => 'Id'],
-                    ['data' => 'title', 'name' => 'title', 'title' => 'Title'],
-                    ['data' => 'creator.name', 'name' => 'creator', 'title' => 'Creator'],
-                    ['data' => 'replies_count', 'name' => 'replies_count', 'title' => 'Reply'],
-                    ['data' => 'created_at', 'name' => 'created_at', 'title' => 'Created At'],
-                    ['data' => 'updated_at', 'name' => 'updated_at', 'title' => 'Updated At'],
+                    ['data' => 'title', 'name' => 'title', 'title' => trans('admin.title')],
+                    ['data' => 'creator.name', 'name' => 'creator', 'title' => trans('admin.creator')],
+                    ['data' => 'replies_count', 'name' => 'replies_count', 'title' => trans('admin.reply')],
+                    ['data' => 'created_at', 'name' => 'created_at', 'title' => trans('admin.created_at')],
+                    ['data' => 'updated_at', 'name' => 'updated_at', 'title' => trans('admin.updated_at')],
                 ])
 
                 ->parameters([
                     'language' =>  [
-                        'processing' => '<div class="overlay"><i class="fa fa-refresh fa-spin"></i></div>'
+                        'processing' => '<div class="overlay"><i class="fa fa-refresh fa-spin"></i></div>',
+                        'url' =>  'https://cdn.datatables.net/plug-ins/1.10.19/i18n/' .config('datatables.locale.' . app()->getLocale() ) .'.json'
                     ],
                 ])
                 ->addAction([
                     'defaultContent' => '',
                     'data'           => 'action',
                     'name'           => 'action',
-                    'title'          => 'Action',
+                    'title'          => trans('admin.action'),
                     'render'         => null,
                     'orderable'      => false,
                     'searchable'     => false,

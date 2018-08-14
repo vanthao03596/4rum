@@ -21,16 +21,9 @@
                 <div class="widget">
                     <h3 class="widget_title">Quick Links</h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="ask_question.html">Ask Question</a></li>
-                        <li><a href="index_no_box.html#">About</a></li>
-                        <li><a href="cat_question.html">Questions</a></li>
-                        <li><a href="user_profile.html">Users</a></li>
-                        <li><a href="blog_1.html">Blog</a></li>
-                        <li><a href="right_sidebar.html">Pages</a></li>
-                        <li><a href="shortcodes.html">Shortcodes</a></li>
-                        <li><a href="contact_us.html">Contact Us</a></li>
-                        <li><a href="index_no_box.html#">FAQs</a></li>
+                        @foreach($channels as $channel)
+                            <li><a href="{{ $channel->path() }}">{{ $channel->name }}</a></li>
+                        @endforeach
                     </ul>
                 </div>
             </div>

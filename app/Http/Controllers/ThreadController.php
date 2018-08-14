@@ -68,6 +68,7 @@ class ThreadController extends Controller
         $data['user_id'] = auth()->id();
         $thread = Thread::create($data);
         $thread->tags()->attach($tagId);
+        session()->flash('status', 'Your Question created successfully !');
         return redirect($thread->path());
     }
 
@@ -125,7 +126,7 @@ class ThreadController extends Controller
     {
         $this->authorize('delete', $thread);
         $thread->delete();
-        session()->flash('success', 'Your question have been deleted !');
+        session()->flash('status', 'Your question have been deleted !');
         return redirect()->route('threads.index');
     }
 

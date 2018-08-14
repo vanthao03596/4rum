@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="comment-vote">
-        <ul class="single-question-vote" style="width:70px">
+        <ul class="single-question-vote">
             <!-- <li>
                 <a href="/" class="single-question-vote-down" title="Dislike"><i class="icon-thumbs-down"></i></a>
             </li> -->
@@ -36,7 +36,7 @@ export default {
         signedIn() {
             return window.App.signedIn;
         },
-        
+
 
     },
     methods: {

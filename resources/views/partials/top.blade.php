@@ -2,8 +2,8 @@
     <section class="container clearfix">
         <nav class="header-top-nav">
             <ul>
-                <li><a href="contact_us.html"><i class="icon-envelope"></i>Contact</a></li>
-                <li><a href="index_no_box.html#"><i class="icon-headphones"></i>Support</a></li>
+                <li><a href="{{ route('contact.index') }}"><i class="icon-envelope"></i>Contact</a></li>
+                <!-- <li><a href="index_no_box.html#"><i class="icon-headphones"></i>Support</a></li> -->
                 @guest
                 <li><a href="login.html" id="login-panel"><i class="icon-user"></i>Login Area</a></li>
                 @else

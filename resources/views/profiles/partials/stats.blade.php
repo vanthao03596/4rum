@@ -7,7 +7,7 @@
                     <li><i class="icon-question-sign"></i><a href="{{ route('profile.questions', $user->name)}}">Questions<span> ( <span>{{ $questionsCount }}</span> ) </span></a></li>
                     <li><i class="icon-comment"></i><a href="{{ route('profile.answers', $user->name) }}">Answers<span> ( <span>{{ $answersCount }}</span> ) </span></a></li>
                     <li><i class="icon-star"></i><a href="{{ route('profile.favorites', $user->name)}}">Favorite Questions<span> ( <span>{{ $favQuestionsCount }}</span> ) </span></a></li>
-                    <li><i class="icon-heart"></i><a href="{{ route('profile.histories', $user->name) }}">Points<span> ( <span>{{ $totalPoint }}</span> ) </span></a></li>
+                    <li><i class="icon-heart"></i><a href="{{ route('profile.histories', $user->name) }}">{{ str_plural('Points', $totalPoint) }}<span> ( <span>{{ $totalPoint }}</span> ) </span></a></li>
                     <li><i class="icon-asterisk"></i>Best Answers<span> ( <span>2</span> ) </span></li>
                 </ul>
             </div>

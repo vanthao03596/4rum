@@ -32,21 +32,21 @@
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
-                                    <p class="question-desc">{{ $rq->body }}.</p>
+                                    <!-- <p class="question-desc">{!! $rq->body !!}.</p> -->
                                         <div class="question-details">
                                             <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                             <span class="question-favorite"><i class="icon-star"></i>5</span>
                                         </div>
                                         <span class="question-category"><a href="{{ $rq->channel->path() }}"><i class="icon-folder-close"></i>{{ $rq->channel->name }}</a></span>
                                     <span class="question-date"><i class="icon-time"></i>{{ $rq->created_at}}</span>
-                                        <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $rq->replies_count }} Answer</a></span>
+                                        <span class="question-comment"><a href="#"><i class="icon-comment"></i>{{ $rq->replies_count }} Answer</a></span>
                                         <span class="question-view"><i class="icon-user"></i>{{ $rq->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
                             @endforeach
                         @endif
-                        <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>Load More Questions</a>
+                        <a href="{{ url('/threads?recent')}}" class="load-questions"><i class="icon-refresh"></i>View More Questions</a>
                     </div>
                 </div>
                 <div class="tab-inner-warp">
@@ -70,20 +70,20 @@
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
-                                        <p class="question-desc">{{ $ms->body}}.</p>
+                                        <!-- <p class="question-desc">{!! $ms->body !!}.</p> -->
                                         <div class="question-details">
                                             <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                             <span class="question-favorite"><i class="icon-star"></i>5</span>
                                         </div>
                                         <span class="question-category"><a href="{{ $ms->channel->path() }}"><i class="icon-folder-close"></i>{{ $ms->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $ms->created_at }}</span>
-                                        <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $ms->replies_count }} Answer</a></span>
+                                        <span class="question-comment"><a href="#"><i class="icon-comment"></i>{{ $ms->replies_count }} Answer</a></span>
                                         <span class="question-view"><i class="icon-user"></i>{{ $ms->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
                             @endforeach
-                        <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>Load More Questions</a>
+                        <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>View More Questions</a>
                         @endif
                     </div>
                 </div>
@@ -108,21 +108,21 @@
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
-                                        <p class="question-desc">{{ $ra->body}}.</p>
+                                        <!-- <p class="question-desc">{!! $ra->body !!}.</p> -->
                                         <div class="question-details">
                                             <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                             <span class="question-favorite"><i class="icon-star"></i>5</span>
                                         </div>
                                         <span class="question-category"><a href="{{ $ra->channel->path() }}"><i class="icon-folder-close"></i>{{ $ra->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $ra->created_at }}</span>
-                                        <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $ra->replies_count }} Answer</a></span>
+                                        <span class="question-comment"><a href="#"><i class="icon-comment"></i>{{ $ra->replies_count }} Answer</a></span>
                                         <span class="question-view"><i class="icon-user"></i>{{ $ra->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
                             @endforeach
                         @endif
-                        <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>Load More Questions</a>
+                        <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>View More Questions</a>
                     </div>
                 </div>
                 <div class="tab-inner-warp">
@@ -146,20 +146,20 @@
                                     </div>
                                     <div class="question-inner">
                                         <div class="clearfix"></div>
-                                        <p class="question-desc">{{ $na->body}}.</p>
+                                        <!-- <p class="question-desc">{!! $na->body !!}.</p> -->
                                         <div class="question-details">
                                             <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                             <span class="question-favorite"><i class="icon-star"></i>5</span>
                                         </div>
                                         <span class="question-category"><a href="{{ $na->channel->path() }}"><i class="icon-folder-close"></i>{{ $na->channel->name }}</a></span>
                                         <span class="question-date"><i class="icon-time"></i>{{ $na->created_at }}</span>
-                                        <span class="question-comment"><a href="index_no_box.html#"><i class="icon-comment"></i>{{ $na->replies_count }} Answer</a></span>
+                                        <span class="question-comment"><a href="#"><i class="icon-comment"></i>{{ $na->replies_count }} Answer</a></span>
                                         <span class="question-view"><i class="icon-user"></i>{{ $na->view_count }} views</span>
                                         <div class="clearfix"></div>
                                     </div>
                                 </article>
                             @endforeach
-                            <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>Load More Questions</a>
+                            <a href="index_no_box.html#" class="load-questions"><i class="icon-refresh"></i>View More Questions</a>
                         @endif
                     </div>
                 </div>

@@ -1,6 +1,10 @@
 <?php
 
 return [
+    'locale' => [
+        'vi' => 'Vietnamese',
+        'en' => 'English'
+    ],
     /*
      * DataTables search options.
      */

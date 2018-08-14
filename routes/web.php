@@ -61,7 +61,10 @@ Route::get('/tags/{tag}', 'TagController@index')->name('tags.index');
 Route::get('/user/search', 'UserController@search');
 Route::get('/users', 'UserController@getUser');
 
+//Contact
 
+Route::get('/contact', 'ContactController@index')->name('contact.index');
+Route::post('/contact', 'ContactController@store')->name('contact.store');
 // Auth
 Auth::routes();
 
@@ -75,8 +78,6 @@ Route::get('storage/{filename}', function ($filename)
     if (!File::exists($path)) {
         abort(404);
     }
-    dd('ok');
-
     $file = File::get($path);
     $type = File::mimeType($path);
 

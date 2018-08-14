@@ -19,4 +19,8 @@ return [
     'password_reset_message'      => 'Lấy lại mật khẩu',
     'reset_password'              => 'Lấy lại mật khẩu',
     'send_password_reset_link'    => 'Gửi link đổi mật khẩu',
+    'users'                       => 'Người dùng',
+    'threads'                     => 'Bài viết',
+    'contacts'                    => 'liên hệ',
+    'dashboard'                    => 'Trang chủ'
 ];

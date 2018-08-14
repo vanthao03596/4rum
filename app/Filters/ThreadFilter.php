@@ -7,7 +7,7 @@ use App\User;
 
 class ThreadFilter extends Filters
 {
-    protected $filters = ['by', 'popular'];
+    protected $filters = ['by', 'popular', 'unanswered', 'recent'];
 
     /**
      * @param $username
@@ -29,5 +29,10 @@ class ThreadFilter extends Filters
     public function unanswered()
     {
         return $this->builder->where('replies_count', 0);
+    }
+
+    public function recent()
+    {
+        return $this->builder->latest();
     }
 }

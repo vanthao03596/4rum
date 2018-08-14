@@ -10,7 +10,13 @@
                 @foreach($threads as $thread)
                     <article class="question question-type-normal">
                         <h2>
-                        <a href="{{ url($thread->path()) }}">{{ $thread->title }}</a>
+                        <a href="{{ url($thread->path()) }}">
+                            @if ($thread->hasUpdatedFor(auth()->user()))
+                                <strong>{{ $thread->title }}</strong>
+                            @else
+                                {{ $thread->title }}
+                            @endif
+                        </a>
                         </h2>
                         <a class="question-report" href="index_no_box.html#">Report</a>
                         <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
@@ -19,7 +25,7 @@
                         </div>
                         <div class="question-inner">
                             <div class="clearfix"></div>
-                        <p class="question-desc">{{ $thread->body }}.</p>
+                        <p class="question-desc">{!! $thread->body !!}.</p>
                             <div class="question-details">
                                 <span class="question-answered question-answered-done"><i class="icon-ok"></i>solved</span>
                                 <span class="question-favorite"><i class="icon-star"></i>5</span>

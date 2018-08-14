@@ -43,7 +43,7 @@
                                 @endif
 
                             </p>
-                            <p class="question_poll_p">
+                            <!-- <p class="question_poll_p">
                                 <label for="question_poll">Poll</label>
                                 <input type="checkbox" id="question_poll" value="1" name="question_poll">
                                 <span class="question_poll">This question is a poll ?</span>
@@ -67,7 +67,7 @@
                                 </ul>
                                 <script> var nextli = 2;</script>
                                 <div class="clearfix"></div>
-                            </div>
+                            </div> -->
 
                             <label>Attachment</label>
                             <div class="fileinputs">
@@ -82,7 +82,7 @@
                         <div id="form-textarea">
                             <p>
                                 <label class="required">Details<span>*</span></label>
-                            <textarea name="body" id="question-details" aria-required="true" cols="58" rows="8">{{ old('body') }}</textarea>
+                            <wysiwyg name="body"></wysiwyg>
                                 @if($errors->has('body'))
                                     <span class="form-description text-danger">{{ $errors->first('body')}}</span>
                                 @else

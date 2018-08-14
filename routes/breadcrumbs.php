@@ -50,13 +50,18 @@ Breadcrumbs::for('admin.dashboard', function ($trail) {
     $trail->push('Dashboard', route('admin.dashboard'));
 });
 
+Breadcrumbs::for('admin.contacts', function ($trail) {
+    $trail->parent('admin.dashboard');
+    $trail->push('Contacts', route('admin.contacts'));
+});
+
 Breadcrumbs::for('admin.users.index', function ($trail) {
     $trail->parent('admin.dashboard');
-    $trail->push('User', route('admin.users.index'));
+    $trail->push('Users', route('admin.users.index'));
 });
 
 Breadcrumbs::for('admin.threads.index', function ($trail) {
     $trail->parent('admin.dashboard');
-    $trail->push('Thread', route('admin.threads.index'));
+    $trail->push('Threads', route('admin.threads.index'));
 });
 

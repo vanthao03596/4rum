@@ -22,10 +22,10 @@
 	<!-- Responsive Style -->
     <link rel="stylesheet" href="{{ asset('ask-me/css/responsive.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/default.min.css') }}">
-    {{-- <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.atwho.css') }}"> --}}
+    <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/jquery.atwho.css') }}">  -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/trix.css')}}">
   <style type="text/css">
     [v-cloak] { display:none; }
   </style>
@@ -71,18 +71,18 @@
   <div id="app">
 	@include('partials.top')
     <!-- End header-top -->
-	@include('partials.header')
+  	@include('partials.header')
 
-	@yield('breadcrumbs')
+  	@yield('breadcrumbs')
 
-	@include('partials.status')
+  	@include('partials.status')
 
 
     @yield('content')
     <!-- End container -->
   </div>
 
-	@include('partials.footer')<!-- End footer-bottom -->
+	@render(\App\ViewComponents\FooterComponent::class)<!-- End footer-bottom -->
 </div><!-- End wrap -->
 
 <div class="go-up"><i class="icon-chevron-up"></i></div>
@@ -110,32 +110,14 @@
 <script src="{{ asset('js/toastr.js') }}"></script>
 <script src="{{ asset('js/highlight.min.js') }}"></script>
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script>
+    $(document).ready(function() {
+  $('pre').each(function(i, block) {
+    hljs.highlightBlock(block);
+  });
+});</script>
 
-<!-- <script type="text/javascript" >
-$(document).ready(function()
-{
-$("#notificationLink").click(function()
-{
-$("#notificationContainer").fadeToggle(300);
-  $("#notification_count").fadeOut("slow");
-  return false;
-});
-
-//Document Click hiding the popup
-$(document).click(function()
-{
-  $("#notificationContainer").hide();
-});
-
-//Popup on click
-$("#notificationContainer").click(function()
-{
-  return false;
-});
-});
-</script> -->
-@if(session()->get('success'))
+@if(session()->get('status'))
 <script type="text/javascript">
     toastr.options = {
       "closeButton": false,
@@ -154,7 +136,7 @@ $("#notificationContainer").click(function()
       "showMethod": "fadeIn",
       "hideMethod": "fadeOut"
     }
-    toastr.success('{{ session()->get('success' )}}', 'SYSTEM')
+    toastr.success('{{ session()->get('status' )}}', 'SYSTEM')
 </script>
 @endif
 @yield('js')

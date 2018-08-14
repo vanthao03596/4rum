@@ -10,6 +10,7 @@ class Reply extends Model
 {
     use Favoritable,RecordActivity;
 
+    const POINT = 5;
     protected $fillable = [
         'thread_id',
         'user_id',
@@ -28,9 +29,11 @@ class Reply extends Model
         // });
         static::created(function ($reply) {
             $reply->thread->increment('replies_count');
+            $reply->owner->increment('point', static::POINT);
         });
         static::deleted(function ($reply) {
             $reply->thread->decrement('replies_count');
+            $reply->owner->decrement('point', static::POINT);
         });
     }
 

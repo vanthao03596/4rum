@@ -6,10 +6,6 @@
                 @csrf
             <div class="form-inputs clearfix">
                 <p>
-                    <label class="required">Username<span>*</span></label>
-                    <input type="text">
-                </p>
-                <p>
                     <label class="required">E-Mail<span>*</span></label>
                     <input type="email" name="email" value="{{ old('email') }}">
                 </p>

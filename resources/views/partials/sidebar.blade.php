@@ -3,25 +3,24 @@
     <div class="widget widget_stats">
         <a href="{{ route('threads.create') }}" style="color:white;"class="button large blue-button">Ask now</a>
     </div>
-    @endauth
     <div class="widget widget_stats">
         <h3 class="widget_title">Stats</h3>
         <div class="ul_list ul_list-icon-ok">
             <ul>
             <li><i class="icon-question-sign"></i>
-                @auth
                 <a href="{{ url('/threads/?by=' . auth()->user()->name ) }}">Questions ( <span>
                          {{ auth()->user()->threads()->count() }}
                     </span> )</a></li>
-                @endauth
-                @auth
-                <li><i class="icon-comment"></i>Answers ( <span>
+                <li><a href="{{ route('profile.answers', auth()->user()->name) }}">
+                    <i class="icon-comment"></i>Answers ( <span>
                          {{ auth()->user()->replies()->count() }}
-                </span> )</li>
-                @endauth
+                    </span> )</a>
+                </li>
             </ul>
         </div>
     </div>
+    @endauth
+
 
     <div class="widget widget_social">
         <h3 class="widget_title">Find Us</h3>
@@ -69,27 +68,15 @@
     <div class="widget widget_highest_points">
         <h3 class="widget_title">Highest points</h3>
         <ul>
-            <li>
-                <div class="author-img">
-                    <a href="index_no_box.html#"><img width="60" height="60" src="{{ asset('images/admin.jpeg') }}" alt=""></a>
-                </div>
-                <h6><a href="index_no_box.html#">admin</a></h6>
-                <span class="comment">12 Points</span>
-            </li>
-            <li>
-                <div class="author-img">
-                    <a href="index_no_box.html#"><img width="60" height="60" src="{{ asset('images/avatar.png') }}" alt=""></a>
-                </div>
-                <h6><a href="index_no_box.html#">vbegy</a></h6>
-                <span class="comment">10 Points</span>
-            </li>
-            <li>
-                <div class="author-img">
-                    <a href="index_no_box.html#"><img width="60" height="60" src="{{ asset('images/avatar.png') }}" alt=""></a>
-                </div>
-                <h6><a href="index_no_box.html#">ahmed</a></h6>
-                <span class="comment">5 Points</span>
-            </li>
+            @foreach($topUsers as $user)
+                <li>
+                    <div class="author-img">
+                        <a href="{{ route('profile.show', $user->name) }}"><img width="60" height="60" src="{{ $user->avatar }}" alt="{{ $user->name }}"></a>
+                    </div>
+                    <h6><a href="{{ route('profile.show', $user->name) }}">{{ $user->name }}</a></h6>
+                    <span class="comment">{{ $user->point }} {{ str_plural('Points', $user->point) }}</span>
+                </li>
+            @endforeach
         </ul>
     </div>
 
@@ -104,16 +91,12 @@
     <div class="widget">
         <h3 class="widget_title">Recent Questions</h3>
         <ul class="related-posts">
-            <li class="related-item">
-                <h3><a href="index_no_box.html#">This is my first Question</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="clear"></div><span>Feb 22, 2014</span>
-            </li>
-            <li class="related-item">
-                <h3><a href="index_no_box.html#">This Is My Second Poll Question</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="clear"></div><span>Feb 22, 2014</span>
-            </li>
+            @foreach($latestQuestions as $question)
+                <li class="related-item">
+                    <h3><a href="{{ $question->path() }}">{{ $question->title }}</a></h3>
+                    <div class="clear"></div><span>{{ $question->created_at }}</span>
+                </li>
+            @endforeach
         </ul>
     </div>
 

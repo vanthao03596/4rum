@@ -110,20 +110,25 @@ return [
     'menu' => [
         'MAIN NAVIGATION',
         [
-            'text'        => 'Dashboard',
+            'text'        => 'dashboard',
             'url'         => 'admin',
             'icon'        => 'dashboard',
         ],
         'ACCOUNT SETTINGS',
         [
-            'text' => 'Users',
+            'text' => 'users',
             'url'  => 'admin/users',
             'icon' => 'user',
         ],
         [
-            'text' => 'Threads',
+            'text' => 'threads',
             'url'  => 'admin/threads',
             'icon' => 'pencil-square-o',
+        ],
+        [
+            'text' => 'contacts',
+            'url'  => 'admin/contacts',
+            'icon' => 'glyphicon glyphicon-envelope',
         ],
         [
             'text' => 'Change Password',

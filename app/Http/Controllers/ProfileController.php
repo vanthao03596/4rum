@@ -18,9 +18,9 @@ class ProfileController extends Controller
                     ->pluck('favorited_id')
                     ->toArray();
         $favorites = Thread::whereIn('id', $favId);
-        $questions = $user->threads()->withoutGlobalScopes(['creator']);
-        $answers = $user->replies()->withoutGlobalScopes();
-        $totalPoint = 100;
+        $questions = $user->threads();
+        $answers = $user->replies();
+        $totalPoint = $user->point;
         $with = [
             'favQuestionsCount' => $favorites->count(),
             'questionsCount' => $questions->count(),
@@ -35,7 +35,7 @@ class ProfileController extends Controller
             $with['favorites'] = $favorites->paginate(5);
         }
         if (\Request::segment(3) == 'answers') {
-            $with['answers'] = $answers->paginate(5);
+            $with['answers'] = $answers->withCount('favorites')->paginate(5);
         }
         if (\Request::segment(3) == 'histories') {
             $with['histories'] = 'abc';
@@ -80,9 +80,9 @@ class ProfileController extends Controller
         if ($request->hasFile('avatar')) {
             $filename =  time() . '.' . $request->avatar->extension();
             $path = $request->file('avatar')->storeAs(
-                'public/avatars', $filename
+                'public', $filename
             );
-            $data['avatar'] = 'avatars/' . $filename;
+            $data['avatar'] = $filename;
         } else {
             unset($data['avatar']);
         }

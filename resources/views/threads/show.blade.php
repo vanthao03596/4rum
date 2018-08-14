@@ -15,7 +15,7 @@
                 <div class="question-inner">
                     <div class="clearfix"></div>
                     <div class="question-desc">
-                                <p>{{ $thread->body }}</p>
+                                <p>{!! $thread->body !!}</p>
                         @can('delete', $thread)
                             <form action="{{ route('threads.delete', [$thread->channel->slug, $thread->slug]) }}" method="post">
                                 @csrf

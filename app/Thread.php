@@ -15,7 +15,7 @@ class Thread extends Model
     use Favoritable;
     use RecordActivity;
     // use Searchable;
-
+    const POINT = 10;
     protected $fillable = [
         'user_id',
         'title',
@@ -40,10 +40,12 @@ class Thread extends Model
         // });
         static::deleting(function ($thread) {
             $thread->replies->each->delete();
+            $thread->creator->decrement('point', static::POINT);
         });
         static::created(function ($thread) {
             $thread->slug = str_slug($thread->title);
             $thread->save();
+            $thread->creator->increment('point', static::POINT);
         });
     }
 
@@ -79,7 +81,7 @@ class Thread extends Model
 
     public function getCreatedAtAttribute($value)
     {
-        return Carbon::parse($value)->diffForHumans();
+        return Carbon::parse($value)->toFormattedDateString();
     }
 
     public function getTitleAttribute($value)
@@ -151,6 +153,11 @@ class Thread extends Model
         $key = sprintf("users.%s.visits.%s", auth()->id(), $this->id);
 
         return $this->updated_at > cache($key);
+    }
+
+    public function getShortBodyAttribute()
+    {
+        return substr($this->body, 0, 10 );
     }
 
     public function toSearchableArray()

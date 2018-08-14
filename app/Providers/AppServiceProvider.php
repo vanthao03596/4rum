@@ -2,9 +2,10 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use App;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -18,8 +19,11 @@ class AppServiceProvider extends ServiceProvider
         if(app()->environment() === 'production'){
             URL::forceScheme('https');
         }
+        \Blade::directive('render', function ($component) {
+            return "<?php echo (app($component))->toHtml(); ?>";
+        });
 
-        View::composer('partials.header', 'App\Http\ViewComposers\HeaderComposer');
+        View::composer(['partials.header', 'threads.create'], 'App\Http\ViewComposers\HeaderComposer');
         View::composer('partials.sidebar', 'App\Http\ViewComposers\SideBarComposer');
     }
 
