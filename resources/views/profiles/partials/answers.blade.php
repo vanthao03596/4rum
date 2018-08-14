@@ -10,10 +10,7 @@
                 <div class="question-content">
                     <div class="question-bottom">
                         <span class="question-favorite"><i class="icon-star"></i>{{ $answer->favorites_count }}</span>
-                        <span class="question-category"><a href="user_questions.html#"><i class="icon-folder-close"></i>wordpress</a></span>
                         <span class="question-date"><i class="icon-time"></i>{{ $answer->created_at }}</span>
-                        <span class="question-comment"><a href="user_questions.html#"><i class="icon-comment"></i>5 Answers</a></span>
-                        <span class="question-view"><i class="icon-user"></i>70 views</span>
                     </div>
                 </div>
             </article>

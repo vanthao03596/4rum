@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/font-awesome/css/font-awesome.min.css') }}">
     <!-- Ionicons -->
     <link rel="stylesheet" href="{{ asset('vendor/adminlte/vendor/Ionicons/css/ionicons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/toastr.min.css') }}">
 
     @if(config('adminlte.plugins.select2'))
         <!-- Select2 -->
@@ -62,7 +63,29 @@
     <!-- ChartJS -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
 @endif
-
+<script src="{{ asset('js/toastr.js') }}"></script>
+@if(session()->get('status'))
+<script type="text/javascript">
+    toastr.options = {
+      "closeButton": false,
+      "debug": false,
+      "newestOnTop": false,
+      "progressBar": false,
+      "positionClass": "toast-bottom-right",
+      "preventDuplicates": false,
+      "onclick": null,
+      "showDuration": "300",
+      "hideDuration": "1000",
+      "timeOut": "5000",
+      "extendedTimeOut": "1000",
+      "showEasing": "swing",
+      "hideEasing": "linear",
+      "showMethod": "fadeIn",
+      "hideMethod": "fadeOut"
+    }
+    toastr.success('{{ session()->get('status' )}}', '{{ trans('admin.system') }}')
+</script>
+@endif
 
 @yield('adminlte_js')
 

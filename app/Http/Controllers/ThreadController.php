@@ -16,6 +16,7 @@ class ThreadController extends Controller
     {
         $this->middleware('auth')->except(['index', 'show', 'getData']);
     }
+
     /**
      * Display a listing of the resource.
      *
@@ -23,20 +24,26 @@ class ThreadController extends Controller
      */
     public function index()
     {
-        $recent_question = Thread::with('creator', 'channel')->latest()->get();
-        $most_response = Thread::with('creator', 'channel')->orderBy('replies_count', 'desc')->get();
+        $recent_question = Thread::with('creator:id,name', 'channel:id,slug')
+            ->latest()
+            ->take(10)
+            ->get(['id', 'channel_id', 'user_id', 'title', 'slug', 'created_at', 'updated_at', 'view_count', 'locked', 'replies_count']);
+        $most_response = Thread::with('creator:id,name', 'channel:id,slug')
+            ->orderBy('replies_count', 'desc')
+            ->take(10)
+            ->get();
 
-        // $recently_answer = Thread::join('replies', 'threads.id', '=', 'replies.thread_id')
-        //         ->join('channels', 'threads.channel_id', '=', 'channels.id')
-        //         ->latest('replies.created_at')
-        //         ->take(5)
-        //         ->get();
-        $recently_answer = Thread::with('creator', 'channel', 'latestReply')
-                                ->get()
-                                ->sortByDesc('latest_replies.created_at')
-                                ->values()
-                                ->all();
-        $no_answer = Thread::doesntHave('replies')->with('creator', 'channel')->get();
+//         $recently_answer = Thread::join('replies', 'threads.id', '=', 'replies.thread_id')
+//                 ->with('channel:id,slug')
+//                 ->latest('replies.created_at')
+//                 ->take(10)
+//                 ->get();
+
+        $recently_answer = Thread::with('creator:id,name', 'channel:id,slug')
+            ->latest('updated_at')
+            ->take(10)
+            ->get();
+        $no_answer = Thread::doesntHave('replies')->with('creator:id,name', 'channel:id,slug')->take(10)->get();
         return view('threads.index', compact('recent_question', 'most_response', 'recently_answer', 'no_answer'));
     }
 
@@ -53,13 +60,13 @@ class ThreadController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreThreadRequest  $request
+     * @param  \App\Http\Requests\StoreThreadRequest $request
      * @return \Illuminate\Http\Response
      */
     public function store(StoreThreadRequest $request)
     {
         $tags = explode(',', $request->tags);
-        foreach ($tags as $tag ) {
+        foreach ($tags as $tag) {
             $tagId[] = Tag::firstOrCreate([
                 'name' => $tag
             ])->id;
@@ -85,18 +92,18 @@ class ThreadController extends Controller
             auth()->user()->read($thread);
         }
         Event::fire('threads.view', $thread);
-        $comments = $this->getComment($thread);
+        // $comments = $this->getComment($thread);
         $next = $thread->next();
         $previous = $thread->previous();
         $related = $thread->related();
-        $thread = $thread->load('tags','replies');
+        $thread = $thread->load('tags', 'channel');
         return view('threads.show', compact('thread', 'comments', 'next', 'previous', 'related'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -107,8 +114,8 @@ class ThreadController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -119,8 +126,10 @@ class ThreadController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param $channel
+     * @param Thread $thread
      * @return \Illuminate\Http\Response
+     * @throws \Illuminate\Auth\Access\AuthorizationException
      */
     public function destroy($channel, Thread $thread)
     {

@@ -2,7 +2,7 @@
 @section('content')
 @section('breadcrumbs', Breadcrumbs::render('thread', $thread))
 
-<thread-view inline-template>
+<thread-view inline-template locked="{{ $thread->locked }}">
 <section class="container main-content">
     <div class="row">
         <div class="col-md-9">
@@ -50,19 +50,19 @@
             @include('threads.inc.related')
             <!-- End related-posts -->
 
-            <replies :init-replies-count="{{ $thread->replies_count }}" >
+            <replies locked="{{ $thread->locked }}" :init-replies-count="{{ $thread->replies_count }}" >
 
             </replies>
                 {{-- @include('threads.inc.comments.comment_list', ['collection' => $comments['root']]) --}}
 
 
             <div class="post-next-prev clearfix">
-                @if($thread->previous())
+                @if($previous)
                 <p class="prev-post">
                     <a href="{{ $previous->path() }}"><i class="icon-double-angle-left"></i>&nbsp;Prev question</a>
                 </p>
                 @endif
-                @if($thread->next())
+                @if($next)
                 <p class="next-post">
                     <a href="{{ $next->path() }}">Next question&nbsp;<i class="icon-double-angle-right"></i></a>
                 </p>

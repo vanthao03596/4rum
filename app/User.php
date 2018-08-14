@@ -7,6 +7,18 @@ use Carbon\Carbon;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * App\User
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Favorite[] $favorites
+ * @property-read mixed $avatar
+ * @property-read mixed $name
+ * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
+ * @property-read \App\Profile $profile
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Reply[] $replies
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Thread[] $threads
+ * @mixin \Eloquent
+ */
 class User extends Authenticatable
 {
     use Notifiable;

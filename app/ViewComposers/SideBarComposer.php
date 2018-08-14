@@ -19,7 +19,7 @@ class SideBarComposer
     public function compose(View $view)
     {
         $view->with('allTags', Tag::pluck('name'))
-            ->with('topUsers', User::latest('point')->take(3)->get())
-            ->with('latestQuestions', Thread::latest()->take(3)->get());
+            ->with('topUsers', User::latest('point')->with('profile:avatar,user_id')->take(3)->get(['id','name', 'point']))
+            ->with('latestQuestions', Thread::latest('updated_at')->with('channel:id,slug')->take(3)->get(['id', 'channel_id', 'title', 'slug']));
     }
 }

@@ -22,5 +22,6 @@ return [
     'users'                       => 'Users',
     'threads'                     => 'Threads',
     'contacts'                    => 'Contacts',
-    'dashboard'                    => 'Dashboard'
+    'dashboard'                   => 'Dashboard',
+    'replies'                     => 'Replies',
 ];

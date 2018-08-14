@@ -5,6 +5,14 @@ namespace App;
 use App\Traits\RecordActivity;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Favorite
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Activity[] $activity
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $favorited
+ * @property-read \App\User $user
+ * @mixin \Eloquent
+ */
 class Favorite extends Model
 {
     use RecordActivity;

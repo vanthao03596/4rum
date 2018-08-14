@@ -4,6 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * App\Activity
+ *
+ * @property-read \Illuminate\Database\Eloquent\Model|\Eloquent $subject
+ * @mixin \Eloquent
+ */
 class Activity extends Model
 {
     protected $fillable = [

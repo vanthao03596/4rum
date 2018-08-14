@@ -11,7 +11,7 @@
       </span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Questions</span>
+        <span class="info-box-text">@lang('admin.threads')</span>
         <span class="info-box-number" id="thread">90</span>
       </div>
       <!-- /.info-box-content -->
@@ -26,7 +26,7 @@
       </span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Likes</span>
+        <span class="info-box-text">@lang('admin.like')</span>
         <span class="info-box-number" id="favorite">0</span>
       </div>
       <!-- /.info-box-content -->
@@ -45,7 +45,7 @@
       </span>
 
       <div class="info-box-content">
-        <span class="info-box-text">Comments</span>
+        <span class="info-box-text">@lang('admin.replies')</span>
         <span class="info-box-number" id="reply">760</span>
       </div>
       <!-- /.info-box-content -->
@@ -60,7 +60,7 @@
       </span>
 
       <div class="info-box-content">
-        <span class="info-box-text">New Members</span>
+        <span class="info-box-text">@lang('admin.new_member')</span>
         <span class="info-box-number" id="user">2,000</span>
       </div>
       <!-- /.info-box-content -->
@@ -75,7 +75,7 @@
   <div class="col-md-6">
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Question Chart</h3>
+        <h3 class="box-title">@lang('admin.question_chart')</h3>
 
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -94,7 +94,7 @@
     </div>
     <div class="box box-info">
         <div class="box-header with-border">
-          <h3 class="box-title">Latest Questions</h3>
+          <h3 class="box-title">@lang('admin.latest_question')</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -109,9 +109,9 @@
               <thead>
               <tr>
                 <th>ID</th>
-                <th>Title</th>
-                <th>View</th>
-                <th>Total Reply</th>
+                <th>@lang('admin.title')</th>
+                <th>@lang('admin.view_count')</th>
+                <th>@lang('admin.reply_count')</th>
               </tr>
               </thead>
               <tbody>
@@ -130,7 +130,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-          <a href="{{ route('admin.threads.index') }}" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+          <a href="{{ route('admin.threads.index') }}" class="btn btn-sm btn-default btn-flat pull-right">@lang('admin.view_all_question')</a>
         </div>
         <!-- /.box-footer -->
     </div>
@@ -138,7 +138,7 @@
   <div class="col-md-6">
     <div class="box box-primary">
       <div class="box-header with-border">
-        <h3 class="box-title">Reply Chart</h3>
+        <h3 class="box-title">@lang('admin.reply_chart')</h3>
 
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse">
@@ -157,7 +157,7 @@
     </div>
     <div class="box box-info">
         <div class="box-header with-border">
-          <h3 class="box-title">Latest Reply</h3>
+          <h3 class="box-title">@lang('admin.latest_reply')</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -172,9 +172,9 @@
               <thead>
               <tr>
                 <th>ID</th>
-                <th>Message</th>
-                <th>Owner</th>
-                <th>Favorite</th>
+                <th>@lang('admin.message')</th>
+                <th>@lang('admin.creator')</th>
+                <th>@lang('admin.favorite')</th>
               </tr>
               </thead>
               <tbody>
@@ -193,7 +193,7 @@
         </div>
         <!-- /.box-body -->
         <div class="box-footer clearfix">
-          <a href="{{ url('/admin/replies') }}" class="btn btn-sm btn-default btn-flat pull-right">View All Reply</a>
+          <a href="{{ url('/admin/replies') }}" class="btn btn-sm btn-default btn-flat pull-right">@lang('admin.view_all_reply')</a>
         </div>
         <!-- /.box-footer -->
     </div>

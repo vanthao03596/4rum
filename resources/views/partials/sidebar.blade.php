@@ -65,6 +65,7 @@
     </div>
 
 
+
     <div class="widget widget_highest_points">
         <h3 class="widget_title">Highest points</h3>
         <ul>

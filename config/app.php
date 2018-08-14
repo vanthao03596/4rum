@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'vi',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -212,6 +212,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        'LaravelLocalization' => Mcamara\LaravelLocalization\Facades\LaravelLocalization::class,
 
     ],
 

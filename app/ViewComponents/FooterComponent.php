@@ -11,8 +11,11 @@ class FooterComponent implements Htmlable
 
     public function toHtml()
     {
+        $channels = \Cache::rememberForever('channels', function () {
+                return Channel::take(5)->get();
+        });
         return View::make('partials.footer')
-            ->with('channels', Channel::take(5)->get())
+            ->with('channels', $channels)
             ->render();
     }
 }

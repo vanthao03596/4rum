@@ -18,8 +18,8 @@ class ProfileController extends Controller
                     ->pluck('favorited_id')
                     ->toArray();
         $favorites = Thread::whereIn('id', $favId);
-        $questions = $user->threads();
-        $answers = $user->replies();
+        $questions = $user->threads()->latest();
+        $answers = $user->replies()->latest();
         $totalPoint = $user->point;
         $with = [
             'favQuestionsCount' => $favorites->count(),

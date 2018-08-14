@@ -10,6 +10,25 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use App\Events\ThreadReceivedReply;
 
+/**
+ * App\Thread
+ *
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Activity[] $activity
+ * @property-read \App\Channel $channel
+ * @property-read \App\User $creator
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Favorite[] $favorites
+ * @property-read mixed $created_at
+ * @property-read mixed $favorite_count
+ * @property-read mixed $is_favorited
+ * @property-read mixed $replies_count
+ * @property-read mixed $title
+ * @property-read \App\Reply $latestReply
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Reply[] $replies
+ * @property-write mixed $slug
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Tag[] $tags
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Thread filter($filter)
+ * @mixin \Eloquent
+ */
 class Thread extends Model
 {
     use Favoritable;
@@ -18,11 +37,13 @@ class Thread extends Model
     const POINT = 10;
     protected $fillable = [
         'user_id',
+        'slug',
         'title',
         'body',
         'channel_id',
         'replies_count',
-        'view_count'
+        'view_count',
+        'locked'
     ];
 
 
@@ -66,7 +87,7 @@ class Thread extends Model
 
     public function replies()
     {
-        return $this->hasMany(Reply::class)->withCount('favorites');
+        return $this->hasMany(Reply::class)->latest()->withCount('favorites');
     }
     public static function getLatestReply()
     {
@@ -110,12 +131,20 @@ class Thread extends Model
 
     public function next()
     {
-        return Thread::withoutGlobalScopes()->where('id', '>', $this->id)->orderBy('id', 'asc')->first();
+        return static::select('title', 'slug', 'channel_id')
+                    ->where('id', '>', $this->id)
+                    ->with('channel:id,slug')
+                    ->orderBy('id', 'asc')
+                    ->first();
     }
 
     public function previous()
     {
-        return Thread::withoutGlobalScopes()->where('id', '<', $this->id)->orderBy('id', 'desc')->first();
+        return static::select('title', 'slug', 'channel_id')
+                    ->where('id', '<', $this->id)
+                    ->with('channel:id,slug')
+                    ->orderBy('id', 'desc')
+                    ->first();
     }
 
     public function related()
@@ -124,9 +153,10 @@ class Thread extends Model
                 'channel_id' => $this->channel->id
             ])
             ->where('id', '!=', $this->id)
+            ->with('channel:id,slug')
             ->latest()
             ->take(5)
-            ->get();
+            ->get(['title', 'slug', 'channel_id']);
     }
 
     public function scopeFilter($query, $filter)
@@ -155,9 +185,19 @@ class Thread extends Model
         return $this->updated_at > cache($key);
     }
 
-    public function getShortBodyAttribute()
+    public function lock()
     {
-        return substr($this->body, 0, 10 );
+        $this->update(['locked' => 1]);
+    }
+
+    public function unlock()
+    {
+        $this->update(['locked' => 0]);
+    }
+
+    public function isLocked()
+    {
+        return $this->locked == 1;
     }
 
     public function toSearchableArray()

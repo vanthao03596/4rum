@@ -22,5 +22,6 @@ return [
     'users'                       => 'Người dùng',
     'threads'                     => 'Bài viết',
     'contacts'                    => 'liên hệ',
-    'dashboard'                    => 'Trang chủ'
+    'dashboard'                   => 'Trang chủ',
+    'replies'                     => 'Bình luận',
 ];

@@ -29,7 +29,7 @@ class AdminController extends Controller
         $replies = Reply::selectRaw('DATE_FORMAT(created_at, "%M") as month, count(*) as total')->groupBy('month')->pluck('total', 'month');
         $favorites = Favorite::selectRaw('DATE_FORMAT(created_at, "%M") as month, count(*) as total')->groupBy('month')->pluck('total', 'month');
         $latestQuestions = Thread::latest('id')->with('channel')->take(10)->get();
-        $latestReplies = Reply::latest('id')->with('thread', 'owner')->take(10)->get();
+        $latestReplies = Reply::latest('id')->with('thread', 'owner', 'favorites')->take(10)->get();
         $userCount = User::count();
         $threadCount = Thread::count();
         $favoriteCount = Favorite::count();

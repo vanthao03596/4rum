@@ -19,7 +19,10 @@
         <vue-simple-spinner v-if="loading" size="medium"></vue-simple-spinner>
         <div v-else>Load More Reply</div>
     </a>
-    <new-reply @added="add"></new-reply>
+    <new-reply v-if="!isLocked" @added="add"></new-reply>
+    <div v-else id="respond" class="comment-respond page-content clearfix">
+        <div class="boxedtitle page-title"><h2 style="color:red; padding-left:310px">Question is locked !</h2></div>
+    </div>
 </div>
 
 
@@ -31,7 +34,7 @@ import NewReply from '../components/NewReply'
 import Spinner from 'vue-simple-spinner'
 import {scroller} from 'vue-scrollto/src/scrollTo'
 export default {
-    props : ['initRepliesCount'],
+    props : ['initRepliesCount', 'locked'],
     mounted() {
         if(window.location.hash) {
             const firstScrollTo = scroller()
@@ -107,6 +110,9 @@ export default {
         },
         hasMore() {
             return this.next_url;
+        },
+        isLocked() {
+            return this.locked == 1;
         }
     },
     watch: {

@@ -20,15 +20,21 @@ class UserController extends Controller
     public function index()
     {
         if (request()->ajax()) {
-            return DataTables::of(User::query())
+            return DataTables::of(User::with('profile')->select('users.*'))
+                            ->editColumn('profile.avatar', function($user) {
+                                 return '<img src="' . $user->avatar . '" alt="" class="direct-chat-img">';
+                            })
                             ->addColumn('action', function ($user) {
-                                return '<a href="#edit-'.$user->id.'" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-lock"></i> Lock</a>'.
-                                        '<a href="#lock-'.$user->id.'" class="btn btn-xs btn-warning"><i class="glyphicon glyphicon-edit"></i> View</a>';
-                            })->toJson();
+                                return '<a href="#edit-'.$user->id.'" class="btn btn-xs btn-danger"><i class="glyphicon glyphicon-lock"></i> ' .trans('admin.isLocked').'</a>'.
+                                        '<a href="#lock-'.$user->id.'" class="btn btn-xs btn-warning"><i class="glyphicon glyphicon-edit"></i>' .trans('admin.view').'</a>';
+                            })
+                            ->rawColumns(['profile.avatar', 'action'])
+                            ->toJson();
         }
 
         $html = $this->builder->columns([
                     ['data' => 'id', 'name' => 'id', 'title' => 'Id'],
+                    ['data' => 'profile.avatar', 'name' => 'profile.avatar', 'title' => trans('admin.avatar')],
                     ['data' => 'name', 'name' => 'name', 'title' => trans('admin.name')],
                     ['data' => 'email', 'name' => 'email', 'title' => trans('admin.email')],
                     ['data' => 'created_at', 'name' => 'created_at', 'title' => trans('admin.created_at')],

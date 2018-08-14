@@ -31,19 +31,30 @@ class DatabaseSeeder extends Seeder
 		]);
         $users = factory('App\User', 50)->create();
         $users = User::all();
-        $threads = factory('App\Thread', 40)->create();
-        $threads->each(function ($thread) {
-            factory('App\Reply', 30)->create([
+        $channels = factory('App\Channel', 5)->create()->each(function($channel) use($users){
+            $threads = factory('App\Thread', 20)->create([
+                'channel_id' => $channel->id,
+                'user_id' => $users->random()->id
+            ]);
+            $threads->each(function ($thread) {
+            factory('App\Reply', 20)->create([
                 'thread_id' => $thread->id,
             ]);
         });
-        $threads->each(function ($thread) use ($users) {
-            for ($i = 0; $i < mt_rand(10, 20); $i++) {
-                $thread->favorites()->create([
-                    'user_id' => $users->random()->id
-                ]);
-            }
         });
+        // $threads = factory('App\Thread', 40)->create();
+        // $threads->each(function ($thread) {
+        //     factory('App\Reply', 30)->create([
+        //         'thread_id' => $thread->id,
+        //     ]);
+        // });
+        // $threads->each(function ($thread) use ($users) {
+        //     for ($i = 0; $i < mt_rand(10, 20); $i++) {
+        //         $thread->favorites()->create([
+        //             'user_id' => $users->random()->id
+        //         ]);
+        //     }
+        // });
         Reply::all()->each(function ($comment) use ($users) {
             for ($i = 0; $i < mt_rand(10, 20); $i++) {
                 $comment->favorites()->create([

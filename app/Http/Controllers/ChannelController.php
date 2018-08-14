@@ -21,7 +21,7 @@ class ChannelController extends Controller
 	public function index(Channel $channel, ThreadFilter $filter)
 	{
 		$threads = $channel->threads()->filter($filter);
-		$threads = $threads->get();
+		$threads = $threads->with('channel', 'creator')->get();
 		return view('channels.index', compact('threads', 'channel'));
 	}
 

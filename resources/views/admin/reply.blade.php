@@ -1,10 +1,10 @@
 @extends('adminlte::page')
 
-@section('title', trans('admin.threads'))
+@section('title', trans('admin.replies'))
 
 @section('content_header')
 <div class="box-header">
-     {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.threads.index') }}
+     {{ Breadcrumbs::view('admin.partials.breadcrumbs', 'admin.replies') }}
 </div>
 
 @stop
@@ -22,13 +22,13 @@
 
 @section('js')
 <script>
-function lock(id){
+
+function deleteReply(id) {
     var rs = confirm('@lang('admin.sure')');
         if(rs) {
-            document.getElementById('lock-' + id).submit();
+            document.getElementById('delete-' + id).submit();
         }
     }
-
 </script>
 {!! $html->scripts() !!}
 

@@ -60,6 +60,11 @@ Breadcrumbs::for('admin.users.index', function ($trail) {
     $trail->push('Users', route('admin.users.index'));
 });
 
+Breadcrumbs::for('admin.replies', function ($trail) {
+    $trail->parent('admin.dashboard');
+    $trail->push('Replies', route('admin.replies'));
+});
+
 Breadcrumbs::for('admin.threads.index', function ($trail) {
     $trail->parent('admin.dashboard');
     $trail->push('Threads', route('admin.threads.index'));
