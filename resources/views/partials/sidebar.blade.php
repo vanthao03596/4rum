@@ -69,7 +69,7 @@
     <div class="widget widget_highest_points">
         <h3 class="widget_title">Highest points</h3>
         <ul>
-            @if($topUsers->count() > 0)
+            @if(count($topUsers) > 0)
                 @foreach($topUsers as $user)
                     <li>
                         <div class="author-img">
