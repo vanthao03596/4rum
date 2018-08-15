@@ -1,11 +1,12 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\User;
-use Illuminate\Http\Request;
 use App\Favorite;
-use App\Thread;
 use App\Reply;
+use App\Thread;
+use App\User;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
@@ -25,6 +26,11 @@ class AdminController extends Controller
      */
     public function index()
     {
+        $threadDay =  Reply::selectRaw('DATE(created_at) as date, count(*) as total')
+                        ->where('created_at', '>=', Carbon::now()->startOfMonth())
+                        ->groupBy('date')
+                        ->orderBy('date')
+                        ->pluck('total', 'date');
         $threads = Thread::selectRaw('DATE_FORMAT(created_at, "%M") as month, count(*) as total')->groupBy('month')->pluck('total', 'month');
         $replies = Reply::selectRaw('DATE_FORMAT(created_at, "%M") as month, count(*) as total')->groupBy('month')->pluck('total', 'month');
         $favorites = Favorite::selectRaw('DATE_FORMAT(created_at, "%M") as month, count(*) as total')->groupBy('month')->pluck('total', 'month');
@@ -42,7 +48,8 @@ class AdminController extends Controller
             'replies',
             'favorites',
             'latestQuestions',
-            'latestReplies'
+            'latestReplies',
+            'threadDay'
         ));
     }
 }

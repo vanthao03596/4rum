@@ -18,6 +18,8 @@ return [
     'reply_count' => 'Total Reply',
     'view_all_question' => 'View all Question',
     'view_all_reply' => 'View all Reply',
+    'question_this_month' => 'This Month',
+    'question_per_month' => 'Per Month',
     //table
     'name'           => 'Name',
     'email'          => 'Email',

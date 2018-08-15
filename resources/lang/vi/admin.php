@@ -18,6 +18,8 @@ return [
     'reply_count' => 'Lượt bình luận',
     'view_all_question' => 'Xem tất cả bài viết',
     'view_all_reply' => 'Xem tất cả bình luận',
+    'question_this_month' => 'Trong tháng',
+    'question_per_month' => 'Theo tháng',
 
     //table
     'name' => 'Tên',

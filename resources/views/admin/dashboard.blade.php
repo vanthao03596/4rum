@@ -72,70 +72,62 @@
 
 </div>
 <div class="row">
-  <div class="col-md-6">
-    <div class="box box-primary">
-      <div class="box-header with-border">
-        <h3 class="box-title">@lang('admin.question_chart')</h3>
+  <div class="col-md-12">
+    <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab_1" data-toggle="tab">@lang('admin.question_per_month')</a></li>
+              <li><a href="#tab_2" data-toggle="tab">@lang('admin.question_this_month')</a></li>
+              <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab_1">
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">@lang('admin.question_chart')</h3>
 
-        <div class="box-tools pull-right">
-          <button type="button" class="btn btn-box-tool" data-widget="collapse">
-            <i class="fa fa-minus"></i>
-          </button>
-          <button type="button" class="btn btn-box-tool" data-widget="remove">
-            <i class="fa fa-times"></i>
-          </button>
-        </div>
-      </div>
-      <div class="box-body">
-        <div class="chart">
-          <canvas id="myQuestion" style="height:250px"></canvas>
-        </div>
-      </div>
-    </div>
-    <div class="box box-info">
-        <div class="box-header with-border">
-          <h3 class="box-title">@lang('admin.latest_question')</h3>
+                    <div class="box-tools pull-right">
+                      <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                      <button type="button" class="btn btn-box-tool" data-widget="remove">
+                        <i class="fa fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="chart">
+                      <canvas id="myQuestion" style="height:250px"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.tab-pane -->
+              <div class="tab-pane" id="tab_2">
+                <div class="box box-primary">
+                  <div class="box-header with-border">
+                    <h3 class="box-title">@lang('admin.question_chart')</h3>
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                    <div class="box-tools pull-right">
+                      <button type="button" class="btn btn-box-tool" data-widget="collapse">
+                        <i class="fa fa-minus"></i>
+                      </button>
+                      <button type="button" class="btn btn-box-tool" data-widget="remove">
+                        <i class="fa fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="box-body">
+                    <div class="chart">
+                      <canvas id="myQuestionDay" style="height:250px"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.tab-pane -->
+            </div>
+            <!-- /.tab-content -->
           </div>
-        </div>
-        <!-- /.box-header -->
-        <div class="box-body">
-          <div class="table-responsive">
-            <table class="table no-margin">
-              <thead>
-              <tr>
-                <th>ID</th>
-                <th>@lang('admin.title')</th>
-                <th>@lang('admin.view_count')</th>
-                <th>@lang('admin.reply_count')</th>
-              </tr>
-              </thead>
-              <tbody>
-              @foreach($latestQuestions as $question)
-                <tr>
-                  <td><a href="{{ $question->path() }}">{{ $question->id }}</a></td>
-                  <td>{{ $question->title }}</td>
-                  <td><span class="label label-success">{{ $question->view_count }}</span></td>
-                  <td><span class="label label-info">{{ $question->replies_count }}</span></td>
-                </tr>
-              @endforeach
-              </tbody>
-            </table>
-          </div>
-          <!-- /.table-responsive -->
-        </div>
-        <!-- /.box-body -->
-        <div class="box-footer clearfix">
-          <a href="{{ route('admin.threads.index') }}" class="btn btn-sm btn-default btn-flat pull-right">@lang('admin.view_all_question')</a>
-        </div>
-        <!-- /.box-footer -->
-    </div>
-  </div>
-  <div class="col-md-6">
+
     <div class="box box-primary">
       <div class="box-header with-border">
         <h3 class="box-title">@lang('admin.reply_chart')</h3>
@@ -155,6 +147,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-md-6">
+
     <div class="box box-info">
         <div class="box-header with-border">
           <h3 class="box-title">@lang('admin.latest_reply')</h3>
@@ -197,6 +192,51 @@
         </div>
         <!-- /.box-footer -->
     </div>
+
+  </div>
+  <div class="col-md-6">
+      <div class="box box-info">
+        <div class="box-header with-border">
+          <h3 class="box-title">@lang('admin.latest_question')</h3>
+
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+          <div class="table-responsive">
+            <table class="table no-margin">
+              <thead>
+              <tr>
+                <th>ID</th>
+                <th>@lang('admin.title')</th>
+                <th>@lang('admin.view_count')</th>
+                <th>@lang('admin.reply_count')</th>
+              </tr>
+              </thead>
+              <tbody>
+              @foreach($latestQuestions as $question)
+                <tr>
+                  <td><a href="{{ $question->path() }}">{{ $question->id }}</a></td>
+                  <td>{{ $question->title }}</td>
+                  <td><span class="label label-success">{{ $question->view_count }}</span></td>
+                  <td><span class="label label-info">{{ $question->replies_count }}</span></td>
+                </tr>
+              @endforeach
+              </tbody>
+            </table>
+          </div>
+          <!-- /.table-responsive -->
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer clearfix">
+          <a href="{{ route('admin.threads.index') }}" class="btn btn-sm btn-default btn-flat pull-right">@lang('admin.view_all_question')</a>
+        </div>
+        <!-- /.box-footer -->
+    </div>
   </div>
 </div>
 
@@ -228,16 +268,40 @@
     //chart
     var ctx = document.getElementById("myQuestion").getContext('2d');
     var reply = document.getElementById("myReply").getContext('2d');
+    var questionDay = document.getElementById("myQuestionDay").getContext('2d');
     var myQuestion = new Chart(ctx, {
       type: 'line',
       data: {
         labels: @json($threads->keys()),
         datasets: [{
-          label: 'Question per Month',
+          label: '@lang('admin.question_per_month')',
           borderColor: "#3e95cd",
           backgroundColor: "#3e95cd",
           fill: false,
           data: @json($threads->values()),
+
+        }, ]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+    var myQuestionDay = new Chart(questionDay, {
+      type: 'line',
+      data: {
+        labels: @json($threadDay->keys()),
+        datasets: [{
+          label: '@lang('admin.question_this_month')',
+          borderColor: "#3e95cd",
+          backgroundColor: "#3e95cd",
+          fill: false,
+          data: @json($threadDay->values()),
 
         }, ]
       },

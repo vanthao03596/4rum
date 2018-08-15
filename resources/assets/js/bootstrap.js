@@ -47,11 +47,16 @@ window.swal = require('sweetalert2');
 
 import Echo from 'laravel-echo'
 
-window.Pusher = require('pusher-js');
+// window.Pusher = require('pusher-js');
 
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: '4feb05b793d9599a1894',
+//     cluster: 'ap1',
+//     encrypted: true
+// });
+window.io = require('socket.io-client');
 window.Echo = new Echo({
-    broadcaster: 'pusher',
-    key: '4feb05b793d9599a1894',
-    cluster: 'ap1',
-    encrypted: true
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':6001'
 });

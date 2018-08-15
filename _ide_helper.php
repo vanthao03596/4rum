@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.6.29 on 2018-08-14 10:02:21.
+ * Generated for Laravel 5.6.29 on 2018-08-15 12:48:03.
  *
  * This file should not be included in your code, only analyzed by your IDE!
  *
@@ -6817,6 +6817,46 @@ namespace Illuminate\Support\Facades {
          
     }
 
+    class Redis {
+        
+        /**
+         * Get a Redis connection by name.
+         *
+         * @param string|null $name
+         * @return \Illuminate\Redis\Connections\Connection 
+         * @static 
+         */ 
+        public static function connection($name = null)
+        {
+            return \Illuminate\Redis\RedisManager::connection($name);
+        }
+        
+        /**
+         * Resolve the given connection by name.
+         *
+         * @param string|null $name
+         * @return \Illuminate\Redis\Connections\Connection 
+         * @throws \InvalidArgumentException
+         * @static 
+         */ 
+        public static function resolve($name = null)
+        {
+            return \Illuminate\Redis\RedisManager::resolve($name);
+        }
+        
+        /**
+         * Return all of the created connections.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function connections()
+        {
+            return \Illuminate\Redis\RedisManager::connections();
+        }
+         
+    }
+
     class Request {
         
         /**
@@ -12654,6 +12694,862 @@ namespace Yajra\DataTables\Facades {
  
 }
 
+namespace Mcamara\LaravelLocalization\Facades { 
+
+    class LaravelLocalization {
+        
+        /**
+         * Set and return current locale.
+         *
+         * @param string $locale Locale to set the App to (optional)
+         * @return string Returns locale (if route has any) or null (if route does not have a locale)
+         * @static 
+         */ 
+        public static function setLocale($locale = null)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::setLocale($locale);
+        }
+        
+        /**
+         * Set and return supported locales.
+         *
+         * @param array $locales Locales that the App supports
+         * @static 
+         */ 
+        public static function setSupportedLocales($locales)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::setSupportedLocales($locales);
+        }
+        
+        /**
+         * Returns an URL adapted to $locale or current locale.
+         *
+         * @param string $url URL to adapt. If not passed, the current url would be taken.
+         * @param string|bool $locale Locale to adapt, false to remove locale
+         * @throws UnsupportedLocaleException
+         * @return string URL translated
+         * @static 
+         */ 
+        public static function localizeURL($url = null, $locale = null)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::localizeURL($url, $locale);
+        }
+        
+        /**
+         * Returns an URL adapted to $locale.
+         *
+         * @param string|bool $locale Locale to adapt, false to remove locale
+         * @param string|false $url URL to adapt in the current language. If not passed, the current url would be taken.
+         * @param array $attributes Attributes to add to the route, if empty, the system would try to extract them from the url.
+         * @param bool $forceDefaultLocation Force to show default location even hideDefaultLocaleInURL set as TRUE
+         * @throws SupportedLocalesNotDefined
+         * @throws UnsupportedLocaleException
+         * @return string|false URL translated, False if url does not exist
+         * @static 
+         */ 
+        public static function getLocalizedURL($locale = null, $url = null, $attributes = array(), $forceDefaultLocation = false)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getLocalizedURL($locale, $url, $attributes, $forceDefaultLocation);
+        }
+        
+        /**
+         * Returns an URL adapted to the route name and the locale given.
+         *
+         * @param string|bool $locale Locale to adapt
+         * @param string $transKeyName Translation key name of the url to adapt
+         * @param array $attributes Attributes for the route (only needed if transKeyName needs them)
+         * @param bool $forceDefaultLocation Force to show default location even hideDefaultLocaleInURL set as TRUE
+         * @throws SupportedLocalesNotDefined
+         * @throws UnsupportedLocaleException
+         * @return string|false URL translated
+         * @static 
+         */ 
+        public static function getURLFromRouteNameTranslated($locale, $transKeyName, $attributes = array(), $forceDefaultLocation = false)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getURLFromRouteNameTranslated($locale, $transKeyName, $attributes, $forceDefaultLocation);
+        }
+        
+        /**
+         * It returns an URL without locale (if it has it)
+         * Convenience function wrapping getLocalizedURL(false).
+         *
+         * @param string|false $url URL to clean, if false, current url would be taken
+         * @return string URL with no locale in path
+         * @static 
+         */ 
+        public static function getNonLocalizedURL($url = null)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getNonLocalizedURL($url);
+        }
+        
+        /**
+         * Returns default locale.
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getDefaultLocale()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getDefaultLocale();
+        }
+        
+        /**
+         * Return an array of all supported Locales.
+         *
+         * @throws SupportedLocalesNotDefined
+         * @return array 
+         * @static 
+         */ 
+        public static function getSupportedLocales()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getSupportedLocales();
+        }
+        
+        /**
+         * Return an array of all supported Locales but in the order the user
+         * has specified in the config file. Useful for the language selector.
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getLocalesOrder()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getLocalesOrder();
+        }
+        
+        /**
+         * Returns current locale name.
+         *
+         * @return string current locale name
+         * @static 
+         */ 
+        public static function getCurrentLocaleName()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleName();
+        }
+        
+        /**
+         * Returns current locale native name.
+         *
+         * @return string current locale native name
+         * @static 
+         */ 
+        public static function getCurrentLocaleNative()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleNative();
+        }
+        
+        /**
+         * Returns current locale direction.
+         *
+         * @return string current locale direction
+         * @static 
+         */ 
+        public static function getCurrentLocaleDirection()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleDirection();
+        }
+        
+        /**
+         * Returns current locale script.
+         *
+         * @return string current locale script
+         * @static 
+         */ 
+        public static function getCurrentLocaleScript()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleScript();
+        }
+        
+        /**
+         * Returns current language's native reading.
+         *
+         * @return string current language's native reading
+         * @static 
+         */ 
+        public static function getCurrentLocaleNativeReading()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleNativeReading();
+        }
+        
+        /**
+         * Returns current language.
+         *
+         * @return string current language
+         * @static 
+         */ 
+        public static function getCurrentLocale()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocale();
+        }
+        
+        /**
+         * Returns current regional.
+         *
+         * @return string current regional
+         * @static 
+         */ 
+        public static function getCurrentLocaleRegional()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getCurrentLocaleRegional();
+        }
+        
+        /**
+         * Returns supported languages language key.
+         *
+         * @return array keys of supported languages
+         * @static 
+         */ 
+        public static function getSupportedLanguagesKeys()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getSupportedLanguagesKeys();
+        }
+        
+        /**
+         * Check if Locale exists on the supported locales array.
+         *
+         * @param string|bool $locale string|bool Locale to be checked
+         * @throws SupportedLocalesNotDefined
+         * @return bool is the locale supported?
+         * @static 
+         */ 
+        public static function checkLocaleInSupportedLocales($locale)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::checkLocaleInSupportedLocales($locale);
+        }
+        
+        /**
+         * Set current route name.
+         *
+         * @param string $routeName current route name
+         * @static 
+         */ 
+        public static function setRouteName($routeName)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::setRouteName($routeName);
+        }
+        
+        /**
+         * Translate routes and save them to the translated routes array (used in the localize route filter).
+         *
+         * @param string $routeName Key of the translated string
+         * @return string Translated string
+         * @static 
+         */ 
+        public static function transRoute($routeName)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::transRoute($routeName);
+        }
+        
+        /**
+         * Returns the translation key for a given path.
+         *
+         * @param string $path Path to get the key translated
+         * @return string|false Key for translation, false if not exist
+         * @static 
+         */ 
+        public static function getRouteNameFromAPath($path)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getRouteNameFromAPath($path);
+        }
+        
+        /**
+         * Returns the config repository for this instance.
+         *
+         * @return \Mcamara\LaravelLocalization\Repository Configuration repository
+         * @static 
+         */ 
+        public static function getConfigRepository()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::getConfigRepository();
+        }
+        
+        /**
+         * Returns the translation key for a given path.
+         *
+         * @return bool Returns value of hideDefaultLocaleInURL in config.
+         * @static 
+         */ 
+        public static function hideDefaultLocaleInURL()
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::hideDefaultLocaleInURL();
+        }
+        
+        /**
+         * Create an url from the uri.
+         *
+         * @param string $uri Uri
+         * @return string Url for the given uri
+         * @static 
+         */ 
+        public static function createUrlFromUri($uri)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::createUrlFromUri($uri);
+        }
+        
+        /**
+         * Sets the base url for the site.
+         *
+         * @param string $url Base url for the site
+         * @static 
+         */ 
+        public static function setBaseUrl($url)
+        {
+            return \Mcamara\LaravelLocalization\LaravelLocalization::setBaseUrl($url);
+        }
+         
+    }
+ 
+}
+
+namespace Barryvdh\Debugbar { 
+
+    class Facade {
+        
+        /**
+         * Enable the Debugbar and boot, if not already booted.
+         *
+         * @static 
+         */ 
+        public static function enable()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::enable();
+        }
+        
+        /**
+         * Boot the debugbar (add collectors, renderer and listener)
+         *
+         * @static 
+         */ 
+        public static function boot()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::boot();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function shouldCollect($name, $default = false)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::shouldCollect($name, $default);
+        }
+        
+        /**
+         * Adds a data collector
+         *
+         * @param \Barryvdh\Debugbar\DataCollectorInterface $collector
+         * @throws DebugBarException
+         * @return $this 
+         * @static 
+         */ 
+        public static function addCollector($collector)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::addCollector($collector);
+        }
+        
+        /**
+         * Handle silenced errors
+         *
+         * @param $level
+         * @param $message
+         * @param string $file
+         * @param int $line
+         * @param array $context
+         * @throws \ErrorException
+         * @static 
+         */ 
+        public static function handleError($level, $message, $file = '', $line = 0, $context = array())
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::handleError($level, $message, $file, $line, $context);
+        }
+        
+        /**
+         * Starts a measure
+         *
+         * @param string $name Internal name, used to stop the measure
+         * @param string $label Public name
+         * @static 
+         */ 
+        public static function startMeasure($name, $label = null)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::startMeasure($name, $label);
+        }
+        
+        /**
+         * Stops a measure
+         *
+         * @param string $name
+         * @static 
+         */ 
+        public static function stopMeasure($name)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::stopMeasure($name);
+        }
+        
+        /**
+         * Adds an exception to be profiled in the debug bar
+         *
+         * @param \Exception $e
+         * @deprecated in favor of addThrowable
+         * @static 
+         */ 
+        public static function addException($e)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::addException($e);
+        }
+        
+        /**
+         * Adds an exception to be profiled in the debug bar
+         *
+         * @param \Exception $e
+         * @static 
+         */ 
+        public static function addThrowable($e)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::addThrowable($e);
+        }
+        
+        /**
+         * Returns a JavascriptRenderer for this instance
+         *
+         * @param string $baseUrl
+         * @param string $basePathng
+         * @return \Barryvdh\Debugbar\JavascriptRenderer 
+         * @static 
+         */ 
+        public static function getJavascriptRenderer($baseUrl = null, $basePath = null)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::getJavascriptRenderer($baseUrl, $basePath);
+        }
+        
+        /**
+         * Modify the response and inject the debugbar (or data in headers)
+         *
+         * @param \Symfony\Component\HttpFoundation\Request $request
+         * @param \Symfony\Component\HttpFoundation\Response $response
+         * @return \Symfony\Component\HttpFoundation\Response 
+         * @static 
+         */ 
+        public static function modifyResponse($request, $response)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::modifyResponse($request, $response);
+        }
+        
+        /**
+         * Check if the Debugbar is enabled
+         *
+         * @return boolean 
+         * @static 
+         */ 
+        public static function isEnabled()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::isEnabled();
+        }
+        
+        /**
+         * Collects the data from the collectors
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function collect()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::collect();
+        }
+        
+        /**
+         * Injects the web debug toolbar into the given Response.
+         *
+         * @param \Symfony\Component\HttpFoundation\Response $response A Response instance
+         * Based on https://github.com/symfony/WebProfilerBundle/blob/master/EventListener/WebDebugToolbarListener.php
+         * @static 
+         */ 
+        public static function injectDebugbar($response)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::injectDebugbar($response);
+        }
+        
+        /**
+         * Disable the Debugbar
+         *
+         * @static 
+         */ 
+        public static function disable()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::disable();
+        }
+        
+        /**
+         * Adds a measure
+         *
+         * @param string $label
+         * @param float $start
+         * @param float $end
+         * @static 
+         */ 
+        public static function addMeasure($label, $start, $end)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::addMeasure($label, $start, $end);
+        }
+        
+        /**
+         * Utility function to measure the execution of a Closure
+         *
+         * @param string $label
+         * @param \Closure $closure
+         * @static 
+         */ 
+        public static function measure($label, $closure)
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::measure($label, $closure);
+        }
+        
+        /**
+         * Collect data in a CLI request
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function collectConsole()
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::collectConsole();
+        }
+        
+        /**
+         * Adds a message to the MessagesCollector
+         * 
+         * A message can be anything from an object to a string
+         *
+         * @param mixed $message
+         * @param string $label
+         * @static 
+         */ 
+        public static function addMessage($message, $label = 'info')
+        {
+            return \Barryvdh\Debugbar\LaravelDebugbar::addMessage($message, $label);
+        }
+        
+        /**
+         * Checks if a data collector has been added
+         *
+         * @param string $name
+         * @return boolean 
+         * @static 
+         */ 
+        public static function hasCollector($name)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::hasCollector($name);
+        }
+        
+        /**
+         * Returns a data collector
+         *
+         * @param string $name
+         * @return \DebugBar\DataCollectorInterface 
+         * @throws DebugBarException
+         * @static 
+         */ 
+        public static function getCollector($name)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getCollector($name);
+        }
+        
+        /**
+         * Returns an array of all data collectors
+         *
+         * @return \DebugBar\array[DataCollectorInterface] 
+         * @static 
+         */ 
+        public static function getCollectors()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getCollectors();
+        }
+        
+        /**
+         * Sets the request id generator
+         *
+         * @param \DebugBar\RequestIdGeneratorInterface $generator
+         * @return $this 
+         * @static 
+         */ 
+        public static function setRequestIdGenerator($generator)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::setRequestIdGenerator($generator);
+        }
+        
+        /**
+         * 
+         *
+         * @return \DebugBar\RequestIdGeneratorInterface 
+         * @static 
+         */ 
+        public static function getRequestIdGenerator()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getRequestIdGenerator();
+        }
+        
+        /**
+         * Returns the id of the current request
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getCurrentRequestId()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getCurrentRequestId();
+        }
+        
+        /**
+         * Sets the storage backend to use to store the collected data
+         *
+         * @param \DebugBar\StorageInterface $storage
+         * @return $this 
+         * @static 
+         */ 
+        public static function setStorage($storage = null)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::setStorage($storage);
+        }
+        
+        /**
+         * 
+         *
+         * @return \DebugBar\StorageInterface 
+         * @static 
+         */ 
+        public static function getStorage()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getStorage();
+        }
+        
+        /**
+         * Checks if the data will be persisted
+         *
+         * @return boolean 
+         * @static 
+         */ 
+        public static function isDataPersisted()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::isDataPersisted();
+        }
+        
+        /**
+         * Sets the HTTP driver
+         *
+         * @param \DebugBar\HttpDriverInterface $driver
+         * @return $this 
+         * @static 
+         */ 
+        public static function setHttpDriver($driver)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::setHttpDriver($driver);
+        }
+        
+        /**
+         * Returns the HTTP driver
+         * 
+         * If no http driver where defined, a PhpHttpDriver is automatically created
+         *
+         * @return \DebugBar\HttpDriverInterface 
+         * @static 
+         */ 
+        public static function getHttpDriver()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getHttpDriver();
+        }
+        
+        /**
+         * Returns collected data
+         * 
+         * Will collect the data if none have been collected yet
+         *
+         * @return array 
+         * @static 
+         */ 
+        public static function getData()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getData();
+        }
+        
+        /**
+         * Returns an array of HTTP headers containing the data
+         *
+         * @param string $headerName
+         * @param integer $maxHeaderLength
+         * @return array 
+         * @static 
+         */ 
+        public static function getDataAsHeaders($headerName = 'phpdebugbar', $maxHeaderLength = 4096, $maxTotalHeaderLength = 250000)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getDataAsHeaders($headerName, $maxHeaderLength, $maxTotalHeaderLength);
+        }
+        
+        /**
+         * Sends the data through the HTTP headers
+         *
+         * @param bool $useOpenHandler
+         * @param string $headerName
+         * @param integer $maxHeaderLength
+         * @return $this 
+         * @static 
+         */ 
+        public static function sendDataInHeaders($useOpenHandler = null, $headerName = 'phpdebugbar', $maxHeaderLength = 4096)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::sendDataInHeaders($useOpenHandler, $headerName, $maxHeaderLength);
+        }
+        
+        /**
+         * Stacks the data in the session for later rendering
+         *
+         * @static 
+         */ 
+        public static function stackData()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::stackData();
+        }
+        
+        /**
+         * Checks if there is stacked data in the session
+         *
+         * @return boolean 
+         * @static 
+         */ 
+        public static function hasStackedData()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::hasStackedData();
+        }
+        
+        /**
+         * Returns the data stacked in the session
+         *
+         * @param boolean $delete Whether to delete the data in the session
+         * @return array 
+         * @static 
+         */ 
+        public static function getStackedData($delete = true)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getStackedData($delete);
+        }
+        
+        /**
+         * Sets the key to use in the $_SESSION array
+         *
+         * @param string $ns
+         * @return $this 
+         * @static 
+         */ 
+        public static function setStackDataSessionNamespace($ns)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::setStackDataSessionNamespace($ns);
+        }
+        
+        /**
+         * Returns the key used in the $_SESSION array
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getStackDataSessionNamespace()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::getStackDataSessionNamespace();
+        }
+        
+        /**
+         * Sets whether to only use the session to store stacked data even
+         * if a storage is enabled
+         *
+         * @param boolean $enabled
+         * @return $this 
+         * @static 
+         */ 
+        public static function setStackAlwaysUseSessionStorage($enabled = true)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::setStackAlwaysUseSessionStorage($enabled);
+        }
+        
+        /**
+         * Checks if the session is always used to store stacked data
+         * even if a storage is enabled
+         *
+         * @return boolean 
+         * @static 
+         */ 
+        public static function isStackAlwaysUseSessionStorage()
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::isStackAlwaysUseSessionStorage();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function offsetSet($key, $value)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::offsetSet($key, $value);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function offsetGet($key)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::offsetGet($key);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function offsetExists($key)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::offsetExists($key);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function offsetUnset($key)
+        {
+            //Method inherited from \DebugBar\DebugBar            
+            return \Barryvdh\Debugbar\LaravelDebugbar::offsetUnset($key);
+        }
+         
+    }
+ 
+}
+
 namespace DaveJamesMiller\Breadcrumbs\Facades { 
 
     class Breadcrumbs {
@@ -12923,164 +13819,6 @@ namespace Intervention\Image\Facades {
         public static function cache($callback, $lifetime = null, $returnObj = false)
         {
             return \Intervention\Image\ImageManager::cache($callback, $lifetime, $returnObj);
-        }
-         
-    }
- 
-}
-
-namespace Laravolt\Avatar { 
-
-    class Facade {
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setGenerator($generator)
-        {
-            return \Laravolt\Avatar\Avatar::setGenerator($generator);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function create($name)
-        {
-            return \Laravolt\Avatar\Avatar::create($name);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setFont($font)
-        {
-            return \Laravolt\Avatar\Avatar::setFont($font);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function toBase64()
-        {
-            return \Laravolt\Avatar\Avatar::toBase64();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function save($path, $quality = 90)
-        {
-            return \Laravolt\Avatar\Avatar::save($path, $quality);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function toSvg()
-        {
-            return \Laravolt\Avatar\Avatar::toSvg();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setBackground($hex)
-        {
-            return \Laravolt\Avatar\Avatar::setBackground($hex);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setForeground($hex)
-        {
-            return \Laravolt\Avatar\Avatar::setForeground($hex);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setDimension($width, $height = null)
-        {
-            return \Laravolt\Avatar\Avatar::setDimension($width, $height);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setFontSize($size)
-        {
-            return \Laravolt\Avatar\Avatar::setFontSize($size);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setBorder($size, $color)
-        {
-            return \Laravolt\Avatar\Avatar::setBorder($size, $color);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function setShape($shape)
-        {
-            return \Laravolt\Avatar\Avatar::setShape($shape);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function getInitial()
-        {
-            return \Laravolt\Avatar\Avatar::getInitial();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function getImageObject()
-        {
-            return \Laravolt\Avatar\Avatar::getImageObject();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function buildAvatar()
-        {
-            return \Laravolt\Avatar\Avatar::buildAvatar();
         }
          
     }
@@ -14126,6 +14864,164 @@ namespace Collective\Html {
  
 }
 
+namespace Laravolt\Avatar { 
+
+    class Facade {
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setGenerator($generator)
+        {
+            return \Laravolt\Avatar\Avatar::setGenerator($generator);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function create($name)
+        {
+            return \Laravolt\Avatar\Avatar::create($name);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setFont($font)
+        {
+            return \Laravolt\Avatar\Avatar::setFont($font);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function toBase64()
+        {
+            return \Laravolt\Avatar\Avatar::toBase64();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function save($path, $quality = 90)
+        {
+            return \Laravolt\Avatar\Avatar::save($path, $quality);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function toSvg()
+        {
+            return \Laravolt\Avatar\Avatar::toSvg();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setBackground($hex)
+        {
+            return \Laravolt\Avatar\Avatar::setBackground($hex);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setForeground($hex)
+        {
+            return \Laravolt\Avatar\Avatar::setForeground($hex);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setDimension($width, $height = null)
+        {
+            return \Laravolt\Avatar\Avatar::setDimension($width, $height);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setFontSize($size)
+        {
+            return \Laravolt\Avatar\Avatar::setFontSize($size);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setBorder($size, $color)
+        {
+            return \Laravolt\Avatar\Avatar::setBorder($size, $color);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function setShape($shape)
+        {
+            return \Laravolt\Avatar\Avatar::setShape($shape);
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getInitial()
+        {
+            return \Laravolt\Avatar\Avatar::getInitial();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getImageObject()
+        {
+            return \Laravolt\Avatar\Avatar::getImageObject();
+        }
+        
+        /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function buildAvatar()
+        {
+            return \Laravolt\Avatar\Avatar::buildAvatar();
+        }
+         
+    }
+ 
+}
+
 namespace Maatwebsite\Excel\Facades { 
 
     class Excel {
@@ -14259,554 +15155,6 @@ namespace Maatwebsite\Excel\Facades {
         public static function getFilters($key = false)
         {
             return \Maatwebsite\Excel\Excel::getFilters($key);
-        }
-         
-    }
- 
-}
-
-namespace Barryvdh\Debugbar { 
-
-    class Facade {
-        
-        /**
-         * Enable the Debugbar and boot, if not already booted.
-         *
-         * @static 
-         */ 
-        public static function enable()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::enable();
-        }
-        
-        /**
-         * Boot the debugbar (add collectors, renderer and listener)
-         *
-         * @static 
-         */ 
-        public static function boot()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::boot();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function shouldCollect($name, $default = false)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::shouldCollect($name, $default);
-        }
-        
-        /**
-         * Adds a data collector
-         *
-         * @param \Barryvdh\Debugbar\DataCollectorInterface $collector
-         * @throws DebugBarException
-         * @return $this 
-         * @static 
-         */ 
-        public static function addCollector($collector)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::addCollector($collector);
-        }
-        
-        /**
-         * Handle silenced errors
-         *
-         * @param $level
-         * @param $message
-         * @param string $file
-         * @param int $line
-         * @param array $context
-         * @throws \ErrorException
-         * @static 
-         */ 
-        public static function handleError($level, $message, $file = '', $line = 0, $context = array())
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::handleError($level, $message, $file, $line, $context);
-        }
-        
-        /**
-         * Starts a measure
-         *
-         * @param string $name Internal name, used to stop the measure
-         * @param string $label Public name
-         * @static 
-         */ 
-        public static function startMeasure($name, $label = null)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::startMeasure($name, $label);
-        }
-        
-        /**
-         * Stops a measure
-         *
-         * @param string $name
-         * @static 
-         */ 
-        public static function stopMeasure($name)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::stopMeasure($name);
-        }
-        
-        /**
-         * Adds an exception to be profiled in the debug bar
-         *
-         * @param \Exception $e
-         * @deprecated in favor of addThrowable
-         * @static 
-         */ 
-        public static function addException($e)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::addException($e);
-        }
-        
-        /**
-         * Adds an exception to be profiled in the debug bar
-         *
-         * @param \Exception $e
-         * @static 
-         */ 
-        public static function addThrowable($e)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::addThrowable($e);
-        }
-        
-        /**
-         * Returns a JavascriptRenderer for this instance
-         *
-         * @param string $baseUrl
-         * @param string $basePathng
-         * @return \Barryvdh\Debugbar\JavascriptRenderer 
-         * @static 
-         */ 
-        public static function getJavascriptRenderer($baseUrl = null, $basePath = null)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::getJavascriptRenderer($baseUrl, $basePath);
-        }
-        
-        /**
-         * Modify the response and inject the debugbar (or data in headers)
-         *
-         * @param \Symfony\Component\HttpFoundation\Request $request
-         * @param \Symfony\Component\HttpFoundation\Response $response
-         * @return \Symfony\Component\HttpFoundation\Response 
-         * @static 
-         */ 
-        public static function modifyResponse($request, $response)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::modifyResponse($request, $response);
-        }
-        
-        /**
-         * Check if the Debugbar is enabled
-         *
-         * @return boolean 
-         * @static 
-         */ 
-        public static function isEnabled()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::isEnabled();
-        }
-        
-        /**
-         * Collects the data from the collectors
-         *
-         * @return array 
-         * @static 
-         */ 
-        public static function collect()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::collect();
-        }
-        
-        /**
-         * Injects the web debug toolbar into the given Response.
-         *
-         * @param \Symfony\Component\HttpFoundation\Response $response A Response instance
-         * Based on https://github.com/symfony/WebProfilerBundle/blob/master/EventListener/WebDebugToolbarListener.php
-         * @static 
-         */ 
-        public static function injectDebugbar($response)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::injectDebugbar($response);
-        }
-        
-        /**
-         * Disable the Debugbar
-         *
-         * @static 
-         */ 
-        public static function disable()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::disable();
-        }
-        
-        /**
-         * Adds a measure
-         *
-         * @param string $label
-         * @param float $start
-         * @param float $end
-         * @static 
-         */ 
-        public static function addMeasure($label, $start, $end)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::addMeasure($label, $start, $end);
-        }
-        
-        /**
-         * Utility function to measure the execution of a Closure
-         *
-         * @param string $label
-         * @param \Closure $closure
-         * @static 
-         */ 
-        public static function measure($label, $closure)
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::measure($label, $closure);
-        }
-        
-        /**
-         * Collect data in a CLI request
-         *
-         * @return array 
-         * @static 
-         */ 
-        public static function collectConsole()
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::collectConsole();
-        }
-        
-        /**
-         * Adds a message to the MessagesCollector
-         * 
-         * A message can be anything from an object to a string
-         *
-         * @param mixed $message
-         * @param string $label
-         * @static 
-         */ 
-        public static function addMessage($message, $label = 'info')
-        {
-            return \Barryvdh\Debugbar\LaravelDebugbar::addMessage($message, $label);
-        }
-        
-        /**
-         * Checks if a data collector has been added
-         *
-         * @param string $name
-         * @return boolean 
-         * @static 
-         */ 
-        public static function hasCollector($name)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::hasCollector($name);
-        }
-        
-        /**
-         * Returns a data collector
-         *
-         * @param string $name
-         * @return \DebugBar\DataCollectorInterface 
-         * @throws DebugBarException
-         * @static 
-         */ 
-        public static function getCollector($name)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getCollector($name);
-        }
-        
-        /**
-         * Returns an array of all data collectors
-         *
-         * @return \DebugBar\array[DataCollectorInterface] 
-         * @static 
-         */ 
-        public static function getCollectors()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getCollectors();
-        }
-        
-        /**
-         * Sets the request id generator
-         *
-         * @param \DebugBar\RequestIdGeneratorInterface $generator
-         * @return $this 
-         * @static 
-         */ 
-        public static function setRequestIdGenerator($generator)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::setRequestIdGenerator($generator);
-        }
-        
-        /**
-         * 
-         *
-         * @return \DebugBar\RequestIdGeneratorInterface 
-         * @static 
-         */ 
-        public static function getRequestIdGenerator()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getRequestIdGenerator();
-        }
-        
-        /**
-         * Returns the id of the current request
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getCurrentRequestId()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getCurrentRequestId();
-        }
-        
-        /**
-         * Sets the storage backend to use to store the collected data
-         *
-         * @param \DebugBar\StorageInterface $storage
-         * @return $this 
-         * @static 
-         */ 
-        public static function setStorage($storage = null)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::setStorage($storage);
-        }
-        
-        /**
-         * 
-         *
-         * @return \DebugBar\StorageInterface 
-         * @static 
-         */ 
-        public static function getStorage()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getStorage();
-        }
-        
-        /**
-         * Checks if the data will be persisted
-         *
-         * @return boolean 
-         * @static 
-         */ 
-        public static function isDataPersisted()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::isDataPersisted();
-        }
-        
-        /**
-         * Sets the HTTP driver
-         *
-         * @param \DebugBar\HttpDriverInterface $driver
-         * @return $this 
-         * @static 
-         */ 
-        public static function setHttpDriver($driver)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::setHttpDriver($driver);
-        }
-        
-        /**
-         * Returns the HTTP driver
-         * 
-         * If no http driver where defined, a PhpHttpDriver is automatically created
-         *
-         * @return \DebugBar\HttpDriverInterface 
-         * @static 
-         */ 
-        public static function getHttpDriver()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getHttpDriver();
-        }
-        
-        /**
-         * Returns collected data
-         * 
-         * Will collect the data if none have been collected yet
-         *
-         * @return array 
-         * @static 
-         */ 
-        public static function getData()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getData();
-        }
-        
-        /**
-         * Returns an array of HTTP headers containing the data
-         *
-         * @param string $headerName
-         * @param integer $maxHeaderLength
-         * @return array 
-         * @static 
-         */ 
-        public static function getDataAsHeaders($headerName = 'phpdebugbar', $maxHeaderLength = 4096, $maxTotalHeaderLength = 250000)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getDataAsHeaders($headerName, $maxHeaderLength, $maxTotalHeaderLength);
-        }
-        
-        /**
-         * Sends the data through the HTTP headers
-         *
-         * @param bool $useOpenHandler
-         * @param string $headerName
-         * @param integer $maxHeaderLength
-         * @return $this 
-         * @static 
-         */ 
-        public static function sendDataInHeaders($useOpenHandler = null, $headerName = 'phpdebugbar', $maxHeaderLength = 4096)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::sendDataInHeaders($useOpenHandler, $headerName, $maxHeaderLength);
-        }
-        
-        /**
-         * Stacks the data in the session for later rendering
-         *
-         * @static 
-         */ 
-        public static function stackData()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::stackData();
-        }
-        
-        /**
-         * Checks if there is stacked data in the session
-         *
-         * @return boolean 
-         * @static 
-         */ 
-        public static function hasStackedData()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::hasStackedData();
-        }
-        
-        /**
-         * Returns the data stacked in the session
-         *
-         * @param boolean $delete Whether to delete the data in the session
-         * @return array 
-         * @static 
-         */ 
-        public static function getStackedData($delete = true)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getStackedData($delete);
-        }
-        
-        /**
-         * Sets the key to use in the $_SESSION array
-         *
-         * @param string $ns
-         * @return $this 
-         * @static 
-         */ 
-        public static function setStackDataSessionNamespace($ns)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::setStackDataSessionNamespace($ns);
-        }
-        
-        /**
-         * Returns the key used in the $_SESSION array
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getStackDataSessionNamespace()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::getStackDataSessionNamespace();
-        }
-        
-        /**
-         * Sets whether to only use the session to store stacked data even
-         * if a storage is enabled
-         *
-         * @param boolean $enabled
-         * @return $this 
-         * @static 
-         */ 
-        public static function setStackAlwaysUseSessionStorage($enabled = true)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::setStackAlwaysUseSessionStorage($enabled);
-        }
-        
-        /**
-         * Checks if the session is always used to store stacked data
-         * even if a storage is enabled
-         *
-         * @return boolean 
-         * @static 
-         */ 
-        public static function isStackAlwaysUseSessionStorage()
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::isStackAlwaysUseSessionStorage();
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function offsetSet($key, $value)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::offsetSet($key, $value);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function offsetGet($key)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::offsetGet($key);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function offsetExists($key)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::offsetExists($key);
-        }
-        
-        /**
-         * 
-         *
-         * @static 
-         */ 
-        public static function offsetUnset($key)
-        {
-            //Method inherited from \DebugBar\DebugBar            
-            return \Barryvdh\Debugbar\LaravelDebugbar::offsetUnset($key);
         }
          
     }
@@ -17139,6 +17487,8 @@ namespace  {
 
     class Redirect extends \Illuminate\Support\Facades\Redirect {}
 
+    class Redis extends \Illuminate\Support\Facades\Redis {}
+
     class Request extends \Illuminate\Support\Facades\Request {}
 
     class Response extends \Illuminate\Support\Facades\Response {}
@@ -17159,19 +17509,21 @@ namespace  {
 
     class DataTables extends \Yajra\DataTables\Facades\DataTables {}
 
+    class LaravelLocalization extends \Mcamara\LaravelLocalization\Facades\LaravelLocalization {}
+
+    class Debugbar extends \Barryvdh\Debugbar\Facade {}
+
     class Breadcrumbs extends \DaveJamesMiller\Breadcrumbs\Facades\Breadcrumbs {}
 
     class Image extends \Intervention\Image\Facades\Image {}
-
-    class Avatar extends \Laravolt\Avatar\Facade {}
 
     class Form extends \Collective\Html\FormFacade {}
 
     class Html extends \Collective\Html\HtmlFacade {}
 
-    class Excel extends \Maatwebsite\Excel\Facades\Excel {}
+    class Avatar extends \Laravolt\Avatar\Facade {}
 
-    class Debugbar extends \Barryvdh\Debugbar\Facade {}
+    class Excel extends \Maatwebsite\Excel\Facades\Excel {}
  
 }
 
