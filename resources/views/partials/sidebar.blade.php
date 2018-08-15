@@ -69,15 +69,17 @@
     <div class="widget widget_highest_points">
         <h3 class="widget_title">Highest points</h3>
         <ul>
-            @foreach($topUsers as $user)
-                <li>
-                    <div class="author-img">
-                        <a href="{{ route('profile.show', $user->name) }}"><img width="60" height="60" src="{{ $user->avatar }}" alt="{{ $user->name }}"></a>
-                    </div>
-                    <h6><a href="{{ route('profile.show', $user->name) }}">{{ $user->name }}</a></h6>
-                    <span class="comment">{{ $user->point }} {{ str_plural('Points', $user->point) }}</span>
-                </li>
-            @endforeach
+            @if($topUsers->count() > 0)
+                @foreach($topUsers as $user)
+                    <li>
+                        <div class="author-img">
+                            <a href="{{ route('profile.show', $user->name) }}"><img width="60" height="60" src="{{ $user->avatar }}" alt="{{ $user->name }}"></a>
+                        </div>
+                        <h6><a href="{{ route('profile.show', $user->name) }}">{{ $user->name }}</a></h6>
+                        <span class="comment">{{ $user->point }} {{ str_plural('Points', $user->point) }}</span>
+                    </li>
+                @endforeach
+            @endif
         </ul>
     </div>
 
