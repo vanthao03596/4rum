@@ -23,6 +23,7 @@ Route::get('/threads/create', 'ThreadController@create')->name('threads.create')
 Route::post('/threads', 'ThreadController@store')->name('threads.store');
 Route::delete('/threads/{channel}/{thread}', 'ThreadController@destroy')->name('threads.delete');
 Route::get('/threads', 'ThreadController@getData');
+Route::get('/threads/search', 'SearchController@show')->name('search');
 // Reply
 Route::get('/threads/{channel}/{thread}/replies', 'ReplyController@index');
 Route::post('/threads/{channel}/{thread}/replies', 'ReplyController@store');
@@ -68,7 +69,7 @@ Route::post('/contact', 'ContactController@store')->name('contact.store');
 // Auth
 Auth::routes();
 
-Route::view('/abc', 'welcome');
+Route::view('scan', 'search');
 
 Route::get('/123', 'Admin\ThreadController@test');
 

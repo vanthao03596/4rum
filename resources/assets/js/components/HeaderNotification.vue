@@ -82,7 +82,7 @@
 
 <script>
 import moment from 'moment'
-    
+
     export default {
         mounted() {
             Echo.private('App.User.' + window.App.user.id)
@@ -92,7 +92,7 @@ import moment from 'moment'
                         "debug": true,
                         "newestOnTop": true,
                         "progressBar": false,
-                        "positionClass": "toast-bottom-right",
+                        "positionClass": "toast-bottom-left",
                         "preventDuplicates": false,
                         "onclick": null,
                         "showDuration": "300",

@@ -4,7 +4,7 @@
         @foreach($answers as $answer)
             <article class="question user-question">
                 <h3>
-                    <a href="{{ $answer->path() }}">{{ $answer->message }}</a>
+                    <a href="{{ $answer->path() }}">{!! $answer->message !!}</a>
                 </h3>
                 <div class="question-type-main"><i class="icon-question-sign"></i>Question</div>
                 <div class="question-content">

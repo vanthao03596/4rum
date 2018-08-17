@@ -2,7 +2,7 @@
     <div class="pagination">
         {{-- Previous Page Link --}}
         @if ($paginator->onFirstPage())
-            <span class="page-link" aria-hidden="true">&lsaquo;</span>
+            <span class="page-link" aria-disabled="true">&lsaquo;</span>
         @else
             <a class="prev-button" href="{{ $paginator->previousPageUrl() }}" rel="prev" aria-label="@lang('pagination.previous')"><i class="icon-angle-left"></i></a>
         @endif

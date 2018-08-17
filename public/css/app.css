@@ -499,6 +499,10 @@ button.toast-close-button {
   }
 }
 
+.ais-highlight > em {
+  background: yellow;
+}
+
 #DIV_1,
 #DIV_2 {
   color: #1d2129;

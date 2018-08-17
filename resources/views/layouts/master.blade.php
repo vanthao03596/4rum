@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/trix.css')}}">
   <style type="text/css">
     [v-cloak] { display:none; }
+
   </style>
 	<!-- Favicons -->
   <link rel="shortcut icon" href="{{ asset('ask-me/images/favicon.png') }}">

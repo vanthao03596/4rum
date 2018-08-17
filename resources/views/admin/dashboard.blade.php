@@ -176,7 +176,7 @@
               @foreach($latestReplies as $reply)
                 <tr>
                   <td><a href="{{ $reply->path() }}">{{ $reply->id }}</a></td>
-                  <td><a href="{{ $reply->path() }}" data-toggle="tooltip" title="{{ $reply->message }}">{{ $reply->short_message }}</a></td>
+                  <td>{!! $reply->message !!}</td>
                   <td><span class="label label-success">{{ $reply->owner->name }}</span></td>
                   <td><span class="label label-info">{{ $reply->favorites->count() }}</span></td>
                 </tr>

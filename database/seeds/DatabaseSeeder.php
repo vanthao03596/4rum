@@ -29,17 +29,19 @@ class DatabaseSeeder extends Seeder
 			'password' => bcrypt('secret'),
 			'remember_token' => str_random(10)
 		]);
+        $tags = factory('App\Tag', 10)->create();
         $users = factory('App\User', 50)->create();
         $users = User::all();
-        $channels = factory('App\Channel', 5)->create()->each(function($channel) use($users){
-            $threads = factory('App\Thread', 20)->create([
+        $channels = factory('App\Channel', 5)->create()->each(function($channel) use($users, $tags){
+            $threads = factory('App\Thread', 30)->create([
                 'channel_id' => $channel->id,
                 'user_id' => $users->random()->id
             ]);
-            $threads->each(function ($thread) {
-            factory('App\Reply', 20)->create([
+            $threads->each(function ($thread) use($tags){
+            factory('App\Reply', 10)->create([
                 'thread_id' => $thread->id,
             ]);
+            $thread->tags()->attach($tags->random(3)->pluck('id'));
         });
         });
         // $threads = factory('App\Thread', 40)->create();

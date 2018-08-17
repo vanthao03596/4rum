@@ -41,6 +41,11 @@ $factory->define(App\Channel::class, function ($faker) {
         'slug' => str_slug($title)
     ];
 });
+$factory->define(App\Tag::class, function ($faker) {
+    return [
+        'name' => $faker->unique()->word(),
+    ];
+});
 
 $factory->define(App\Thread::class, function ($faker) {
     return [

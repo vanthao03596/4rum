@@ -89,7 +89,6 @@ export default {
         padding: "3em",
         backdrop: `
             rgba(0,0,123,0.4)
-            url("/images/giphy.webp")
             center left
             no-repeat
         `,

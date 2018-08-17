@@ -18,12 +18,12 @@
             <div class="block-stats-3">{{ $table['answerMonth']}}</div>
             <div class="block-stats-4">{{ $table['totalAnswer']}}</div>
         </div>
-        <div class="user-stats-item user-stats-item-last">
+        {{-- <div class="user-stats-item user-stats-item-last">
             <div class="block-stats-1">Visitors</div>
             <div class="block-stats-2">100</div>
             <div class="block-stats-3">3000</div>
             <div class="block-stats-4">5000</div>
-        </div>
+        </div> --}}
     </div>
     <!-- End user-stats -->
 </div>

@@ -43584,9 +43584,9 @@ window.Popper = __webpack_require__(100).default;
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(101);
+    window.$ = window.jQuery = __webpack_require__(101);
 
-  __webpack_require__(318);
+    __webpack_require__(318);
 } catch (e) {}
 
 /**
@@ -43608,9 +43608,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 var token = document.head.querySelector('meta[name="csrf-token"]');
 
 if (token) {
-  window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
 } else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
+    console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
 }
 
 window.swal = __webpack_require__(338);
@@ -43632,8 +43632,8 @@ window.swal = __webpack_require__(338);
 // });
 window.io = __webpack_require__(340);
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
-  broadcaster: 'socket.io',
-  host: window.location.hostname + ':6001'
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':6001'
 });
 
 /***/ }),
@@ -102671,7 +102671,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         title: "Are you sure?",
         width: 600,
         padding: "3em",
-        backdrop: "\n            rgba(0,0,123,0.4)\n            url(\"/images/giphy.webp\")\n            center left\n            no-repeat\n        ",
+        backdrop: "\n            rgba(0,0,123,0.4)\n            center left\n            no-repeat\n        ",
         text: "You won't be able to revert this!",
         type: "warning",
         showCancelButton: true,
@@ -105142,7 +105142,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 "debug": true,
                 "newestOnTop": true,
                 "progressBar": false,
-                "positionClass": "toast-bottom-right",
+                "positionClass": "toast-bottom-left",
                 "preventDuplicates": false,
                 "onclick": null,
                 "showDuration": "300",

@@ -33,6 +33,7 @@ class Thread extends Model
 {
     use Favoritable;
     use RecordActivity;
+    use Searchable;
     // use Searchable;
     const POINT = 10;
     protected $fillable = [
@@ -202,6 +203,6 @@ class Thread extends Model
 
     public function toSearchableArray()
     {
-        return $this->toArray() + ['path' => $this->path()];
+        return $this->load('channel', 'creator.profile', 'tags')->toArray() + ['path' => $this->path()];
     }
 }

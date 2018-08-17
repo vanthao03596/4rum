@@ -15,7 +15,9 @@
 
 @import "~toastr/toastr";
 
-
+.ais-highlight > em {
+      background: yellow;
+    }
 
 #DIV_1, #DIV_2 {
   color: rgb(29, 33, 41);

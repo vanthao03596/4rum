@@ -1,4 +1,44 @@
 <aside class="col-md-3 sidebar">
+    <div class="widget widget_stats">
+        <h3 class="widget_title">Search</h3>
+        <div class="ul_list ul_list-icon-ok">
+        <ul>
+            <li class="rss-subscribers">
+                @if(Request::is('threads/search'))
+                    <ais-search-box placeholder="Search something ..." :class-names="{
+                     }">
+
+                    </ais-search-box>
+
+                @else
+                <form method="GET" action="{{route('search')}}">
+                    <input type="text" name="q" placeholder="Search something ...">
+                    <button type="submit" class="button small lime-green-button custom-button">Search</button>
+                </form>
+                 @endif
+            </li>
+        </ul>
+        </div>
+
+    </div>
+    @if(Request::is('threads/search'))
+        <div class="widget widget_stats">
+            <h3 class="widget_title">Channel</h3>
+            <ul>
+                <li>
+                    <ais-refinement-list attribute-name="channel.name"></ais-refinement-list>
+                </li>
+            </ul>
+        </div>
+        <div class="widget widget_stats">
+            <h3 class="widget_title">Tags</h3>
+            <ul>
+                <li>
+                    <ais-refinement-list attribute-name="tags.name"></ais-refinement-list>
+                </li>
+            </ul>
+        </div>
+        @endif
     @auth
     <div class="widget widget_stats">
         <a href="{{ route('threads.create') }}" style="color:white;"class="button large blue-button">Ask now</a>
@@ -20,6 +60,7 @@
         </div>
     </div>
     @endauth
+
 
 
     <div class="widget widget_social">

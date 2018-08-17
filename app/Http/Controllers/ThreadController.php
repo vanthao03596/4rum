@@ -7,8 +7,8 @@ use App\Http\Requests\StoreThreadRequest;
 use App\Tag;
 use App\Thread;
 use Carbon\Carbon;
-use Illuminate\Http\Request;
 use Event;
+use Illuminate\Http\Request;
 
 class ThreadController extends Controller
 {

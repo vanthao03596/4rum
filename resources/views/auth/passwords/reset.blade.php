@@ -15,7 +15,7 @@
 
                         <div class="form-inputs clearfix">
                             <p>
-                                <label for="email" class="required">{{ __('E-Mail Address') }}<span>*</span><</label>
+                                <label for="email" class="required">{{ __('E-Mail Address') }}<span>*</span></label>
                                 <input id="email" type="email" name="email" value="{{ $email ?? old('email') }}" required autofocus>
                             </p>
                                 @if ($errors->has('email'))
@@ -25,7 +25,7 @@
                                 @endif
 
                             <p>
-                                <label for="password" class="required">{{ __('Password') }}<span>*</span><</label>
+                                <label for="password" class="required">{{ __('Password') }}<span>*</span></label>
 
                                 <input id="password" type="password" name="password" required>
                             </p>
@@ -36,7 +36,7 @@
                                 @endif
 
                             <p>
-                                <label for="password-confirm" class="required">{{ __('Confirm Password') }}<span>*</span><</label>
+                                <label for="password-confirm" class="required">{{ __('Confirm Password') }}<span>*</span></label>
 
                                 <input id="password-confirm" type="password" name="password_confirmation" required>
                             </p>
